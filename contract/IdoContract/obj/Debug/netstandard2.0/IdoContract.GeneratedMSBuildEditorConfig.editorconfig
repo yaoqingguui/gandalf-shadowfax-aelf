@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = IdoContract
+build_property.ProjectDir = /Users/chenghaiming/work/codes/code-genertor/Gandalf-boilerplate/chain/contract/IdoContract/

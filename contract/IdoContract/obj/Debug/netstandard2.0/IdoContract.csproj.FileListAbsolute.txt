@@ -1,0 +1,5 @@
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/IdoContract/obj/Debug/netstandard2.0/IdoContract.csproj.AssemblyReference.cache
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/IdoContract/obj/Debug/netstandard2.0/IdoContract.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/IdoContract/obj/Debug/netstandard2.0/IdoContract.AssemblyInfoInputs.cache
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/IdoContract/obj/Debug/netstandard2.0/IdoContract.AssemblyInfo.cs
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/IdoContract/obj/Debug/netstandard2.0/IdoContract.csproj.CoreCompileInputs.cache

@@ -1,0 +1,10 @@
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS2DemoContract/bin/Debug/netstandard2.0/AElf.Contracts.ACS2DemoContract.deps.json
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS2DemoContract/bin/Debug/netstandard2.0/AElf.Contracts.ACS2DemoContract.dll
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS2DemoContract/bin/Debug/netstandard2.0/AElf.Contracts.ACS2DemoContract.pdb
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS2DemoContract/obj/Debug/netstandard2.0/AElf.Contracts.ACS2DemoContract.csproj.AssemblyReference.cache
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS2DemoContract/obj/Debug/netstandard2.0/AElf.Contracts.ACS2DemoContract.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS2DemoContract/obj/Debug/netstandard2.0/AElf.Contracts.ACS2DemoContract.AssemblyInfoInputs.cache
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS2DemoContract/obj/Debug/netstandard2.0/AElf.Contracts.ACS2DemoContract.AssemblyInfo.cs
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS2DemoContract/obj/Debug/netstandard2.0/AElf.Contracts.ACS2DemoContract.csproj.CoreCompileInputs.cache
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS2DemoContract/obj/Debug/netstandard2.0/AElf.Contracts.ACS2DemoContract.dll
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS2DemoContract/obj/Debug/netstandard2.0/AElf.Contracts.ACS2DemoContract.pdb

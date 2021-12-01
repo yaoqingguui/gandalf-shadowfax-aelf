@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = AElf.Contracts.HelloWorldContract
+build_property.ProjectDir = /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.HelloWorldContract.Tests/

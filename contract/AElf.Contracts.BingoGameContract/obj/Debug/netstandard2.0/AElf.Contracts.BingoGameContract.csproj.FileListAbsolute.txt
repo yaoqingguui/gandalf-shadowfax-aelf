@@ -1,0 +1,9 @@
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.BingoGameContract/bin/Debug/netstandard2.0/AElf.Contracts.BingoGameContract.deps.json
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.BingoGameContract/bin/Debug/netstandard2.0/AElf.Contracts.BingoGameContract.dll
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.BingoGameContract/bin/Debug/netstandard2.0/AElf.Contracts.BingoGameContract.pdb
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.BingoGameContract/obj/Debug/netstandard2.0/AElf.Contracts.BingoGameContract.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.BingoGameContract/obj/Debug/netstandard2.0/AElf.Contracts.BingoGameContract.AssemblyInfoInputs.cache
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.BingoGameContract/obj/Debug/netstandard2.0/AElf.Contracts.BingoGameContract.AssemblyInfo.cs
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.BingoGameContract/obj/Debug/netstandard2.0/AElf.Contracts.BingoGameContract.csproj.CoreCompileInputs.cache
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.BingoGameContract/obj/Debug/netstandard2.0/AElf.Contracts.BingoGameContract.dll
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.BingoGameContract/obj/Debug/netstandard2.0/AElf.Contracts.BingoGameContract.pdb

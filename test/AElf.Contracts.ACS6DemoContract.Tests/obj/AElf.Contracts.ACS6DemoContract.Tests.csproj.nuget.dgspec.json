@@ -1,0 +1,334 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.ACS6DemoContract.Tests/AElf.Contracts.ACS6DemoContract.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS6DemoContract/AElf.Contracts.ACS6DemoContract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS6DemoContract/AElf.Contracts.ACS6DemoContract.csproj",
+        "projectName": "AElf.Contracts.ACS6DemoContract",
+        "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS6DemoContract/AElf.Contracts.ACS6DemoContract.csproj",
+        "packagesPath": "/Users/chenghaiming/.nuget/packages/",
+        "outputPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS6DemoContract/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/NuGet.Config",
+          "/Users/chenghaiming/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.hangfire.io/nuget/hangfire-pro/v3/index.json": {},
+          "https://www.myget.org/F/aelf-project-dev/api/v3/index.json": {},
+          "https://www.myget.org/F/aelf-project-dev/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "AElf.Sdk.CSharp": {
+              "target": "Package",
+              "version": "[1.1.0-18960, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj",
+        "projectName": "AElf.Boilerplate.TestBase",
+        "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj",
+        "packagesPath": "/Users/chenghaiming/.nuget/packages/",
+        "outputPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/NuGet.Config",
+          "/Users/chenghaiming/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.hangfire.io/nuget/hangfire-pro/v3/index.json": {},
+          "https://www.myget.org/F/aelf-project-dev/api/v3/index.json": {},
+          "https://www.myget.org/F/aelf-project-dev/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AElf.ContractDeployer": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.ContractTestBase": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.Association": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.Configuration": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.Consensus.AEDPoS": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.CrossChain": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.Economic": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.Election": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.MultiToken": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.Parliament": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.Profit": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.Referendum": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.TokenConverter": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.TokenHolder": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.Treasury": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.Vote": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.EconomicSystem": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.GovernmentSystem": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.3.0, )"
+            },
+            "Shouldly": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "coverlet.msbuild": {
+              "target": "Package",
+              "version": "[2.5.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.console": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.ACS6DemoContract.Tests/AElf.Contracts.ACS6DemoContract.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.ACS6DemoContract.Tests/AElf.Contracts.ACS6DemoContract.Tests.csproj",
+        "projectName": "AElf.Contracts.ACS6DemoContract.Tests",
+        "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.ACS6DemoContract.Tests/AElf.Contracts.ACS6DemoContract.Tests.csproj",
+        "packagesPath": "/Users/chenghaiming/.nuget/packages/",
+        "outputPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.ACS6DemoContract.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/NuGet.Config",
+          "/Users/chenghaiming/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.hangfire.io/nuget/hangfire-pro/v3/index.json": {},
+          "https://www.myget.org/F/aelf-project-dev/api/v3/index.json": {},
+          "https://www.myget.org/F/aelf-project-dev/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS6DemoContract/AElf.Contracts.ACS6DemoContract.csproj": {
+                "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.ACS6DemoContract/AElf.Contracts.ACS6DemoContract.csproj"
+              },
+              "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj": {
+                "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AElf.ContractTestBase": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.ContractTestKit": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Contracts.MultiToken": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.EconomicSystem": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.GovernmentSystem": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.3.0, )"
+            },
+            "Shouldly": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "coverlet.msbuild": {
+              "target": "Package",
+              "version": "[2.5.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.console": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

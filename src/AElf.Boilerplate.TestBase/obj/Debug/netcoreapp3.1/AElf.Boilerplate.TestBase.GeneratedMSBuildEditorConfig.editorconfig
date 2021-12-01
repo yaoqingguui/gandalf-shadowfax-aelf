@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = AElf.Boilerplate.TestBase
+build_property.ProjectDir = /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/
