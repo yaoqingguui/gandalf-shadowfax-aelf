@@ -1,4 +1,5 @@
 using System.Numerics;
+using System.Security.Cryptography.X509Certificates;
 using AElf.Contracts.MultiToken;
 using AElf.CSharp.Core;
 using AElf.Sdk.CSharp;
@@ -9,7 +10,7 @@ namespace Gandalf.Contracts.IdoContract
     public partial class IdoContract
     {
         public override Int64Value AddPublicOffering(AddPublicOfferingInput input)
-        {
+        {   
             Assert((BigInteger) input.OfferingTokenAmount > 0, "Need deposit some offering token.");
             Assert(input.StartTime >= Context.CurrentBlockTime, "Invaild start time.");
             Assert(input.EndTime.Seconds <= input.StartTime.Seconds + State.MinimalTimespan.Value ||
@@ -67,7 +68,7 @@ namespace Gandalf.Contracts.IdoContract
 
 
         public override Empty ChangeAscription(ChangeAscriptionInput input)
-        {
+        {   
             Assert(State.Ascription[input.TokenSymbol] == Context.Sender, "No right to assign.");
             State.Ascription[input.TokenSymbol] = input.Receiver;
             Context.Fire(new ChangeAscription
@@ -83,8 +84,36 @@ namespace Gandalf.Contracts.IdoContract
         public override Empty Withdraw(Int32Value input)
         {
             Assert(input.Value >= 0, "Invalid number.");
-            var publicOffering = State.PublicOfferList.Value.Value[input.Value];
+            var offering = State.PublicOfferList.Value.Value[input.Value];
+            Assert(!offering.Claimed,"Have withdrawn.");
+            Assert(offering.Publisher==Context.Sender,"No rights.");
+            Assert(Context.CurrentBlockTime>offering.EndTime,"EVent not over.");
+            offering.Claimed = true;
+            BigInteger wantTokenBalance = offering.WantTokenBalance;
+            BigInteger surplus = offering.OfferingTokenAmount.Sub(offering.SubscribedOfferingAmount);
+            State.TokenContract.Transfer.Send(new TransferInput
+            {
+                To = Context.Sender,
+                Amount = (long) wantTokenBalance,
+                Symbol = offering.WantTokenSymbol
+            });
+           
+            State.TokenContract.Transfer.Send(new TransferInput
+            {
+                Amount = (long)surplus,
+                Symbol = offering.OfferingTokenSymbol,
+                To = Context.Sender,
+            });
+            
+            Context.Fire( new Withdraw
+            {
+                PubilicId = input.Value,
+                To = Context.Sender,
+                OfferingToken = (long) surplus,
+                WantToken = (long) wantTokenBalance
+            });
             return new Empty();
         }
+        
     }
 }

@@ -47,41 +47,40 @@ namespace Gandalf.Contracts.IdoContract {
             "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcBIsCghlbmRfdGltZRgGIAEoCzIaLmdv",
             "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAiTgoVQ2hhbmdlQXNjcmlwdGlvbklu",
             "cHV0EhQKDHRva2VuX3N5bWJvbBgBIAEoCRIfCghyZWNlaXZlchgCIAEoCzIN",
-            "LmFlbGYuQWRkcmVzcyJRChlJbnZlc3RQdWJsaWNPZmZlcmluZ0lucHV0EhEK",
-            "CXB1YmxpY19pZBgBIAEoBRIhCgZhbW91bnQYAiABKAsyES5hZWxmLkJpZ0lu",
-            "dFZhbHVlIkAKElJlc2V0VGltZVNwYW5JbnB1dBIUCgxtYXhfdGltZXNwYW4Y",
-            "ASABKAMSFAoMbWluX3RpbWVzcGFuGAIgASgDIsYCChFBZGRQdWJsaWNPZmZl",
-            "cmluZxIdChVvZmZlcmluZ190b2tlbl9zeW1ib2wYASABKAkSMAoVb2ZmZXJp",
-            "bmdfdG9rZW5fYW1vdW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIZChF3",
-            "YW50X3Rva2VuX3N5bWJvbBgDIAEoCRIsChF3YW50X3Rva2VuX2Ftb3VudBgE",
-            "IAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSIAoJcHVibGlzaGVyGAUgASgLMg0u",
-            "YWVsZi5BZGRyZXNzEi4KCnN0YXJ0X3RpbWUYBiABKAsyGi5nb29nbGUucHJv",
-            "dG9idWYuVGltZXN0YW1wEiwKCGVuZF90aW1lGAcgASgLMhouZ29vZ2xlLnBy",
-            "b3RvYnVmLlRpbWVzdGFtcBIRCglwdWJsaWNfaWQYCCABKAM6BKC7GAEiegoQ",
-            "Q2hhbmdlQXNjcmlwdGlvbhIUCgx0b2tlbl9zeW1ib2wYASABKAkSJAoNb2xk",
-            "X3B1Ymxpc2hlchgCIAEoCzINLmFlbGYuQWRkcmVzcxIkCg1uZXdfcHVibGlz",
-            "aGVyGAMgASgLMg0uYWVsZi5BZGRyZXNzOgSguxgBImsKCFdpdGhkcmF3EhIK",
-            "CnB1YmlsaWNfaWQYASABKAMSGQoCdG8YAiABKAsyDS5hZWxmLkFkZHJlc3MS",
-            "EgoKd2FudF90b2tlbhgDIAEoAxIWCg5vZmZlcmluZ190b2tlbhgEIAEoAzoE",
-            "oLsYASKdAQoGSW52ZXN0EhEKCXB1YmxpY19pZBgBIAEoAxIfCghpbnZlc3Rv",
-            "chgCIAEoCzINLmFlbGYuQWRkcmVzcxIUCgx0b2tlbl9zeW1ib2wYAyABKAkS",
-            "IQoGaW5jb21lGAQgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIgCgVzcGVuZBgF",
-            "IAEoCzIRLmFlbGYuQmlnSW50VmFsdWU6BKC7GAEiYAoHSGFydmVzdBIRCglw",
-            "dWJsaWNfaWQYASABKAMSGQoCdG8YAiABKAsyDS5hZWxmLkFkZHJlc3MSIQoG",
-            "YW1vdW50GAMgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZToEoLsYATKfBAoLSWRv",
-            "Q29udHJhY3QSNQoKSW5pdGlhbGl6ZRINLmFlbGYuQWRkcmVzcxoWLmdvb2ds",
-            "ZS5wcm90b2J1Zi5FbXB0eSIAEksKEUFkZFB1YmxpY09mZmVyaW5nEhcuQWRk",
-            "UHVibGljT2ZmZXJpbmdJbnB1dBobLmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZh",
-            "bHVlIgASRAoQQ2hhbmdlQXNjcmlwdGlvbhIWLkNoYW5nZUFzY3JpcHRpb25J",
-            "bnB1dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEkEKCFdpdGhkcmF3Ehsu",
-            "Z29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUaFi5nb29nbGUucHJvdG9idWYu",
-            "RW1wdHkiABJMChRJbnZlc3RQdWJsaWNPZmZlcmluZxIaLkludmVzdFB1Ymxp",
-            "Y09mZmVyaW5nSW5wdXQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiABJACgdI",
-            "YXJ2ZXN0EhsuZ29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUaFi5nb29nbGUu",
-            "cHJvdG9idWYuRW1wdHkiABI+Cg1SZXNldFRpbWVTcGFuEhMuUmVzZXRUaW1l",
-            "U3BhbklucHV0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5IgAaM7LM9gEuR2Fu",
-            "ZGFsZi5Db250cmFjdHMuSWRvQ29udHJhY3QuSWRvQ29udHJhY3RTdGF0ZUIg",
-            "qgIdR2FuZGFsZi5Db250cmFjdHMuSWRvQ29udHJhY3RiBnByb3RvMw=="));
+            "LmFlbGYuQWRkcmVzcyJDCgtJbnZlc3RJbnB1dBIRCglwdWJsaWNfaWQYASAB",
+            "KAUSIQoGYW1vdW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZSJAChJSZXNl",
+            "dFRpbWVTcGFuSW5wdXQSFAoMbWF4X3RpbWVzcGFuGAEgASgDEhQKDG1pbl90",
+            "aW1lc3BhbhgCIAEoAyLGAgoRQWRkUHVibGljT2ZmZXJpbmcSHQoVb2ZmZXJp",
+            "bmdfdG9rZW5fc3ltYm9sGAEgASgJEjAKFW9mZmVyaW5nX3Rva2VuX2Ftb3Vu",
+            "dBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSGQoRd2FudF90b2tlbl9zeW1i",
+            "b2wYAyABKAkSLAoRd2FudF90b2tlbl9hbW91bnQYBCABKAsyES5hZWxmLkJp",
+            "Z0ludFZhbHVlEiAKCXB1Ymxpc2hlchgFIAEoCzINLmFlbGYuQWRkcmVzcxIu",
+            "CgpzdGFydF90aW1lGAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
+            "cBIsCghlbmRfdGltZRgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXASEQoJcHVibGljX2lkGAggASgDOgSguxgBInoKEENoYW5nZUFzY3JpcHRp",
+            "b24SFAoMdG9rZW5fc3ltYm9sGAEgASgJEiQKDW9sZF9wdWJsaXNoZXIYAiAB",
+            "KAsyDS5hZWxmLkFkZHJlc3MSJAoNbmV3X3B1Ymxpc2hlchgDIAEoCzINLmFl",
+            "bGYuQWRkcmVzczoEoLsYASJrCghXaXRoZHJhdxISCgpwdWJpbGljX2lkGAEg",
+            "ASgDEhkKAnRvGAIgASgLMg0uYWVsZi5BZGRyZXNzEhIKCndhbnRfdG9rZW4Y",
+            "AyABKAMSFgoOb2ZmZXJpbmdfdG9rZW4YBCABKAM6BKC7GAEinQEKBkludmVz",
+            "dBIRCglwdWJsaWNfaWQYASABKAMSHwoIaW52ZXN0b3IYAiABKAsyDS5hZWxm",
+            "LkFkZHJlc3MSFAoMdG9rZW5fc3ltYm9sGAMgASgJEiEKBmluY29tZRgEIAEo",
+            "CzIRLmFlbGYuQmlnSW50VmFsdWUSIAoFc3BlbmQYBSABKAsyES5hZWxmLkJp",
+            "Z0ludFZhbHVlOgSguxgBImAKB0hhcnZlc3QSEQoJcHVibGljX2lkGAEgASgD",
+            "EhkKAnRvGAIgASgLMg0uYWVsZi5BZGRyZXNzEiEKBmFtb3VudBgDIAEoCzIR",
+            "LmFlbGYuQmlnSW50VmFsdWU6BKC7GAEygwQKC0lkb0NvbnRyYWN0EjUKCklu",
+            "aXRpYWxpemUSDS5hZWxmLkFkZHJlc3MaFi5nb29nbGUucHJvdG9idWYuRW1w",
+            "dHkiABJLChFBZGRQdWJsaWNPZmZlcmluZxIXLkFkZFB1YmxpY09mZmVyaW5n",
+            "SW5wdXQaGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZSIAEkQKEENoYW5n",
+            "ZUFzY3JpcHRpb24SFi5DaGFuZ2VBc2NyaXB0aW9uSW5wdXQaFi5nb29nbGUu",
+            "cHJvdG9idWYuRW1wdHkiABJBCghXaXRoZHJhdxIbLmdvb2dsZS5wcm90b2J1",
+            "Zi5JbnQzMlZhbHVlGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5IgASMAoGSW52",
+            "ZXN0EgwuSW52ZXN0SW5wdXQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiABJA",
+            "CgdIYXJ2ZXN0EhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUaFi5nb29n",
+            "bGUucHJvdG9idWYuRW1wdHkiABI+Cg1SZXNldFRpbWVTcGFuEhMuUmVzZXRU",
+            "aW1lU3BhbklucHV0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5IgAaM7LM9gEu",
+            "R2FuZGFsZi5Db250cmFjdHMuSWRvQ29udHJhY3QuSWRvQ29udHJhY3RTdGF0",
+            "ZUIgqgIdR2FuZGFsZi5Db250cmFjdHMuSWRvQ29udHJhY3RiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::AElf.Types.CoreReflection.Descriptor, global::AElf.OptionsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -90,7 +89,7 @@ namespace Gandalf.Contracts.IdoContract {
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.PublicOfferList), global::Gandalf.Contracts.IdoContract.PublicOfferList.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.AddPublicOfferingInput), global::Gandalf.Contracts.IdoContract.AddPublicOfferingInput.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "StartTime", "EndTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ChangeAscriptionInput), global::Gandalf.Contracts.IdoContract.ChangeAscriptionInput.Parser, new[]{ "TokenSymbol", "Receiver" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.InvestPublicOfferingInput), global::Gandalf.Contracts.IdoContract.InvestPublicOfferingInput.Parser, new[]{ "PublicId", "Amount" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.InvestInput), global::Gandalf.Contracts.IdoContract.InvestInput.Parser, new[]{ "PublicId", "Amount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput), global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput.Parser, new[]{ "MaxTimespan", "MinTimespan" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.AddPublicOffering), global::Gandalf.Contracts.IdoContract.AddPublicOffering.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "Publisher", "StartTime", "EndTime", "PublicId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ChangeAscription), global::Gandalf.Contracts.IdoContract.ChangeAscription.Parser, new[]{ "TokenSymbol", "OldPublisher", "NewPublisher" }, null, null, null, null),
@@ -1269,11 +1268,11 @@ namespace Gandalf.Contracts.IdoContract {
 
   }
 
-  public sealed partial class InvestPublicOfferingInput : pb::IMessage<InvestPublicOfferingInput> {
-    private static readonly pb::MessageParser<InvestPublicOfferingInput> _parser = new pb::MessageParser<InvestPublicOfferingInput>(() => new InvestPublicOfferingInput());
+  public sealed partial class InvestInput : pb::IMessage<InvestInput> {
+    private static readonly pb::MessageParser<InvestInput> _parser = new pb::MessageParser<InvestInput>(() => new InvestInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<InvestPublicOfferingInput> Parser { get { return _parser; } }
+    public static pb::MessageParser<InvestInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -1286,22 +1285,22 @@ namespace Gandalf.Contracts.IdoContract {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public InvestPublicOfferingInput() {
+    public InvestInput() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public InvestPublicOfferingInput(InvestPublicOfferingInput other) : this() {
+    public InvestInput(InvestInput other) : this() {
       publicId_ = other.publicId_;
       amount_ = other.amount_ != null ? other.amount_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public InvestPublicOfferingInput Clone() {
-      return new InvestPublicOfferingInput(this);
+    public InvestInput Clone() {
+      return new InvestInput(this);
     }
 
     /// <summary>Field number for the "public_id" field.</summary>
@@ -1328,11 +1327,11 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as InvestPublicOfferingInput);
+      return Equals(other as InvestInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(InvestPublicOfferingInput other) {
+    public bool Equals(InvestInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1391,7 +1390,7 @@ namespace Gandalf.Contracts.IdoContract {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(InvestPublicOfferingInput other) {
+    public void MergeFrom(InvestInput other) {
       if (other == null) {
         return;
       }

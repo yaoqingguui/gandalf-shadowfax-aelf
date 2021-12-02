@@ -45,10 +45,10 @@ service IdoContract {
   rpc Withdraw(google.protobuf.Int32Value) returns(google.protobuf.Empty){
   }
 
-  rpc InvestPublicOffering(InvestPublicOfferingInput) returns(google.protobuf.Empty){
+  rpc Invest(InvestInput) returns(google.protobuf.Empty){
   }
 
-  rpc Harvest(google.protobuf.Int64Value) returns (google.protobuf.Empty){
+  rpc Harvest(google.protobuf.Int32Value) returns (google.protobuf.Empty){
   }
 
   rpc ResetTimeSpan(ResetTimeSpanInput) returns (google.protobuf.Empty){
@@ -94,7 +94,7 @@ message ChangeAscriptionInput{
   aelf.Address receiver = 2;
 }
 
-message InvestPublicOfferingInput{
+message InvestInput{
   int32 public_id = 1;
   aelf.BigIntValue amount = 2;
 }

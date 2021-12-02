@@ -146,7 +146,7 @@ namespace Gandalf.Contracts.IdoContract {
     static readonly aelf::Marshaller<global::Google.Protobuf.WellKnownTypes.Int64Value> __Marshaller_google_protobuf_Int64Value = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Int64Value.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.ChangeAscriptionInput> __Marshaller_ChangeAscriptionInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.ChangeAscriptionInput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Google.Protobuf.WellKnownTypes.Int32Value> __Marshaller_google_protobuf_Int32Value = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Int32Value.Parser.ParseFrom);
-    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.InvestPublicOfferingInput> __Marshaller_InvestPublicOfferingInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.InvestPublicOfferingInput.Parser.ParseFrom);
+    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.InvestInput> __Marshaller_InvestInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.InvestInput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput> __Marshaller_ResetTimeSpanInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput.Parser.ParseFrom);
     #endregion
 
@@ -179,18 +179,18 @@ namespace Gandalf.Contracts.IdoContract {
         __Marshaller_google_protobuf_Int32Value,
         __Marshaller_google_protobuf_Empty);
 
-    static readonly aelf::Method<global::Gandalf.Contracts.IdoContract.InvestPublicOfferingInput, global::Google.Protobuf.WellKnownTypes.Empty> __Method_InvestPublicOffering = new aelf::Method<global::Gandalf.Contracts.IdoContract.InvestPublicOfferingInput, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly aelf::Method<global::Gandalf.Contracts.IdoContract.InvestInput, global::Google.Protobuf.WellKnownTypes.Empty> __Method_Invest = new aelf::Method<global::Gandalf.Contracts.IdoContract.InvestInput, global::Google.Protobuf.WellKnownTypes.Empty>(
         aelf::MethodType.Action,
         __ServiceName,
-        "InvestPublicOffering",
-        __Marshaller_InvestPublicOfferingInput,
+        "Invest",
+        __Marshaller_InvestInput,
         __Marshaller_google_protobuf_Empty);
 
-    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Int64Value, global::Google.Protobuf.WellKnownTypes.Empty> __Method_Harvest = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Int64Value, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Google.Protobuf.WellKnownTypes.Empty> __Method_Harvest = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Google.Protobuf.WellKnownTypes.Empty>(
         aelf::MethodType.Action,
         __ServiceName,
         "Harvest",
-        __Marshaller_google_protobuf_Int64Value,
+        __Marshaller_google_protobuf_Int32Value,
         __Marshaller_google_protobuf_Empty);
 
     static readonly aelf::Method<global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput, global::Google.Protobuf.WellKnownTypes.Empty> __Method_ResetTimeSpan = new aelf::Method<global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput, global::Google.Protobuf.WellKnownTypes.Empty>(
@@ -243,12 +243,12 @@ namespace Gandalf.Contracts.IdoContract {
         throw new global::System.NotImplementedException();
       }
 
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty InvestPublicOffering(global::Gandalf.Contracts.IdoContract.InvestPublicOfferingInput input)
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty Invest(global::Gandalf.Contracts.IdoContract.InvestInput input)
       {
         throw new global::System.NotImplementedException();
       }
 
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty Harvest(global::Google.Protobuf.WellKnownTypes.Int64Value input)
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty Harvest(global::Google.Protobuf.WellKnownTypes.Int32Value input)
       {
         throw new global::System.NotImplementedException();
       }
@@ -268,7 +268,7 @@ namespace Gandalf.Contracts.IdoContract {
           .AddMethod(__Method_AddPublicOffering, serviceImpl.AddPublicOffering)
           .AddMethod(__Method_ChangeAscription, serviceImpl.ChangeAscription)
           .AddMethod(__Method_Withdraw, serviceImpl.Withdraw)
-          .AddMethod(__Method_InvestPublicOffering, serviceImpl.InvestPublicOffering)
+          .AddMethod(__Method_Invest, serviceImpl.Invest)
           .AddMethod(__Method_Harvest, serviceImpl.Harvest)
           .AddMethod(__Method_ResetTimeSpan, serviceImpl.ResetTimeSpan).Build();
     }

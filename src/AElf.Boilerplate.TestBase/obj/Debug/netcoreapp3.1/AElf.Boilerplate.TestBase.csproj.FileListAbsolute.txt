@@ -226,6 +226,7 @@
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/virgil_crypto_net.lib
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/bin/Debug/netcoreapp3.1/System.Reactive.dll
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/bin/Debug/netcoreapp3.1/System.Reactive.xml
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/obj/Debug/netcoreapp3.1/AElf.Boilerplate.TestBase.csproj.AssemblyReference.cache
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/obj/Debug/netcoreapp3.1/AElf.Boilerplate.TestBase.GeneratedMSBuildEditorConfig.editorconfig
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/obj/Debug/netcoreapp3.1/AElf.Boilerplate.TestBase.AssemblyInfoInputs.cache
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/obj/Debug/netcoreapp3.1/AElf.Boilerplate.TestBase.AssemblyInfo.cs
