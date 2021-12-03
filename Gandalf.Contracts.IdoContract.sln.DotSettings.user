@@ -25,5 +25,6 @@
     &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.init_Fail_Test&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.ResetTimeSpan_Test&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.Add_Public_Offering_Test&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.Create_Token_Test&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

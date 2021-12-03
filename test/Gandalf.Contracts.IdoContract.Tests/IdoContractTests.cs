@@ -24,7 +24,9 @@ namespace Gandalf.Contracts.IdoContract
         public Address Tom;
         public ECKeyPair TomKeyPair;
 
-
+        public const string TokenOfferSymbol = "PANDA";
+        public const string TokenWantSymbol = "CAKE";
+        
         [Fact]
         public async Task Test()
         {
@@ -78,33 +80,33 @@ namespace Gandalf.Contracts.IdoContract
         {
             await initializeGame();
             await ResetTimeSpan();
-            var stub = await getKittyStub();
-            var offeringStub = GetTokenContractStub(KittyKeyPair);
+            var tomStub = GetIdoContractStub(TomKeyPair);
+            var offeringStub = GetTokenContractStub(TomKeyPair);
             await offeringStub.Approve.SendAsync(new ApproveInput
             {
                 Spender = DAppContractAddress,
-                Symbol = "CAKE",
+                Symbol = TokenOfferSymbol,
                 Amount = long.MaxValue,
             });
 
             var startTime = DateTime.UtcNow.AddSeconds(1).ToTimestamp();
             var endTime = DateTime.UtcNow.AddSeconds(1000).ToTimestamp();
-            await stub.AddPublicOffering.SendAsync(new AddPublicOfferingInput
+            await tomStub.AddPublicOffering.SendAsync(new AddPublicOfferingInput
             {
                 StartTime = startTime,
                 EndTime = endTime,
-                OfferingTokenSymbol = "CAKE",
+                OfferingTokenSymbol = TokenOfferSymbol,
                 OfferingTokenAmount = 100000,
                 WantTokenAmount = 20000,
-                WantTokenSymbol = "PANDA",
+                WantTokenSymbol = TokenWantSymbol,
             });
 
-            var offering = await stub.GetPublicOffering.CallAsync(new Int32Value
+            var offering = await tomStub.GetPublicOffering.CallAsync(new Int32Value
             {
                 Value = 0
             });
 
-            offering.OfferingTokenSymbol.ShouldBe("CAKE");
+            offering.OfferingTokenSymbol.ShouldBe(TokenOfferSymbol);
         }
 
 
@@ -129,22 +131,46 @@ namespace Gandalf.Contracts.IdoContract
             await wantToken.Create.SendAsync(new CreateInput
             {
                 Decimals = 1,
-                Symbol = "CAKE",
+                Symbol = TokenWantSymbol,
                 Issuer = Kitty,
                 IsBurnable = false,
-                TokenName = "CAKE",
+                TokenName = TokenWantSymbol,
                 TotalSupply = 1000000,
             });
+            await wantToken.Issue.SendAsync(new IssueInput
+            {
+                Amount = 1000000,
+                Symbol = TokenWantSymbol,
+                To = Kitty
+            });
 
+            var cakeBalance = await wantToken.GetBalance.CallAsync(new GetBalanceInput
+            {
+                Owner = Kitty,
+                Symbol = TokenWantSymbol
+            });
+            cakeBalance.Balance.ShouldBe(1000000);
             var offeringToken = GetTokenContractStub(TomKeyPair);
             await offeringToken.Create.SendAsync(new CreateInput
             {
                 Decimals = 1,
                 Issuer = Tom,
-                Symbol = "PANDA",
-                TokenName = "PANDA",
+                Symbol = TokenOfferSymbol,
+                TokenName = TokenOfferSymbol,
                 TotalSupply = 500000
             });
+            await offeringToken.Issue.SendAsync(new IssueInput
+            {
+                Amount = 500000,
+                Symbol = TokenOfferSymbol,
+                To = Tom
+            });
+            var pandaBalance = await offeringToken.GetBalance.CallAsync(new GetBalanceInput
+            {
+                Owner = Tom,
+                Symbol = TokenOfferSymbol
+            });
+            pandaBalance.Balance.ShouldBe(500000);
         }
 
         private async Task<IdoContractContainer.IdoContractStub> getKittyStub()

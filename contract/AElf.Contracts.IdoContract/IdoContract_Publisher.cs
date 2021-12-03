@@ -46,7 +46,8 @@ namespace Gandalf.Contracts.IdoContract
                 WantTokenBalance = 0,
                 SubscribedOfferingAmount = 0
             });
-
+            
+            State.PublicOfferList.Value = publicOfferList;
             var publicId = publicOfferList.Value.Count - 1;
             Context.Fire(new AddPublicOffering
             {
