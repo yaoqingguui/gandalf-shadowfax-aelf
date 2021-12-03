@@ -148,6 +148,8 @@ namespace Gandalf.Contracts.IdoContract {
     static readonly aelf::Marshaller<global::Google.Protobuf.WellKnownTypes.Int32Value> __Marshaller_google_protobuf_Int32Value = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Int32Value.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.InvestInput> __Marshaller_InvestInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.InvestInput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput> __Marshaller_ResetTimeSpanInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput.Parser.ParseFrom);
+    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput> __Marshaller_ResetTimeSpanOutput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput.Parser.ParseFrom);
+    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.PublicOfferingOutput> __Marshaller_PublicOfferingOutput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.PublicOfferingOutput.Parser.ParseFrom);
     #endregion
 
     #region Methods
@@ -199,6 +201,27 @@ namespace Gandalf.Contracts.IdoContract {
         "ResetTimeSpan",
         __Marshaller_ResetTimeSpanInput,
         __Marshaller_google_protobuf_Empty);
+
+    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::AElf.Types.Address> __Method_GetOwner = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::AElf.Types.Address>(
+        aelf::MethodType.View,
+        __ServiceName,
+        "GetOwner",
+        __Marshaller_google_protobuf_Empty,
+        __Marshaller_aelf_Address);
+
+    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput> __Method_GetTimespan = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput>(
+        aelf::MethodType.View,
+        __ServiceName,
+        "GetTimespan",
+        __Marshaller_google_protobuf_Empty,
+        __Marshaller_ResetTimeSpanOutput);
+
+    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.IdoContract.PublicOfferingOutput> __Method_GetPublicOffering = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.IdoContract.PublicOfferingOutput>(
+        aelf::MethodType.View,
+        __ServiceName,
+        "GetPublicOffering",
+        __Marshaller_google_protobuf_Int32Value,
+        __Marshaller_PublicOfferingOutput);
 
     #endregion
 
@@ -258,6 +281,21 @@ namespace Gandalf.Contracts.IdoContract {
         throw new global::System.NotImplementedException();
       }
 
+      public virtual global::AElf.Types.Address GetOwner(global::Google.Protobuf.WellKnownTypes.Empty input)
+      {
+        throw new global::System.NotImplementedException();
+      }
+
+      public virtual global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput GetTimespan(global::Google.Protobuf.WellKnownTypes.Empty input)
+      {
+        throw new global::System.NotImplementedException();
+      }
+
+      public virtual global::Gandalf.Contracts.IdoContract.PublicOfferingOutput GetPublicOffering(global::Google.Protobuf.WellKnownTypes.Int32Value input)
+      {
+        throw new global::System.NotImplementedException();
+      }
+
     }
 
     public static aelf::ServerServiceDefinition BindService(IdoContractBase serviceImpl)
@@ -270,7 +308,10 @@ namespace Gandalf.Contracts.IdoContract {
           .AddMethod(__Method_Withdraw, serviceImpl.Withdraw)
           .AddMethod(__Method_Invest, serviceImpl.Invest)
           .AddMethod(__Method_Harvest, serviceImpl.Harvest)
-          .AddMethod(__Method_ResetTimeSpan, serviceImpl.ResetTimeSpan).Build();
+          .AddMethod(__Method_ResetTimeSpan, serviceImpl.ResetTimeSpan)
+          .AddMethod(__Method_GetOwner, serviceImpl.GetOwner)
+          .AddMethod(__Method_GetTimespan, serviceImpl.GetTimespan)
+          .AddMethod(__Method_GetPublicOffering, serviceImpl.GetPublicOffering).Build();
     }
 
   }

@@ -1,3 +1,4 @@
+using AElf;
 using AElf.Types;
 using Google.Protobuf.WellKnownTypes;
 
@@ -11,9 +12,10 @@ namespace Gandalf.Contracts.IdoContract
     public partial class IdoContract : IdoContractContainer.IdoContractBase
     {
         public override Empty Initialize(Address input)
-        {   
-            Assert(State.Owner.Value==null,"Already initialized.");
-            State.Owner.Value = input ?? Context.Sender;
+        {
+            Assert(State.Owner.Value == null, "Already initialized.");
+            State.Owner.Value = input == null || input.Value.IsNullOrEmpty() ? Context.Sender : input;
+            Context.LogDebug(()=>State.Owner.Value.ToString());
             return new Empty();
         }
     }

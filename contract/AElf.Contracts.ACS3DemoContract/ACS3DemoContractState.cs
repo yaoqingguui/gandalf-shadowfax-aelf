@@ -14,5 +14,6 @@ namespace AElf.Contracts.ACS3DemoContract
         public SingletonState<ProposalReleaseThreshold> ProposalReleaseThreshold { get; set; }
 
         public StringState Slogan { get; set; }
+        
     }
 }

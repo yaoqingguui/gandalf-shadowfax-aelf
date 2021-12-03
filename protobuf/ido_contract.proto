@@ -20,6 +20,7 @@ import "aelf/options.proto";
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/timestamp.proto";
+
 // the name of the C# namespace in which the contract code will be,
 // generated code will also be in this namespace.
 option csharp_namespace = "Gandalf.Contracts.IdoContract";
@@ -33,6 +34,7 @@ service IdoContract {
   // an action defined as a gRPC service method.
   // this action take a google.protobuf.Empty (placeholder for void) as input
   // and returns a custom defined type: HelloReturn.
+  //  Action
   rpc Initialize(aelf.Address) returns(google.protobuf.Empty){
   }
 
@@ -52,6 +54,19 @@ service IdoContract {
   }
 
   rpc ResetTimeSpan(ResetTimeSpanInput) returns (google.protobuf.Empty){
+  }
+
+  //  View
+  rpc GetOwner(google.protobuf.Empty) returns (aelf.Address){
+    option (aelf.is_view) = true;
+  }
+
+  rpc GetTimespan(google.protobuf.Empty) returns (ResetTimeSpanOutput){
+    option (aelf.is_view) = true;
+  }
+
+  rpc GetPublicOffering(google.protobuf.Int32Value) returns (PublicOfferingOutput){
+    option (aelf.is_view) = true;
   }
 }
 
@@ -103,6 +118,27 @@ message InvestInput{
 message ResetTimeSpanInput{
   int64 max_timespan = 1;
   int64 min_timespan = 2;
+}
+
+//out put
+
+message ResetTimeSpanOutput{
+  int64 max_timespan = 1;
+  int64 min_timespan = 2;
+}
+
+message PublicOfferingOutput{
+  string offering_token_symbol = 1;
+  aelf.BigIntValue offering_token_amount = 2;
+  string want_token_symbol = 3;
+  aelf.BigIntValue want_token_amount = 4;
+  google.protobuf.Timestamp start_time = 5;
+  google.protobuf.Timestamp end_time = 6;
+  int64 public_id = 7;
+  aelf.Address publisher = 8;
+  bool claimed = 9;
+  aelf.BigIntValue Want_Token_Balance = 10;
+  aelf.BigIntValue Subscribed_Offering_Amount = 11;
 }
 
 //Events

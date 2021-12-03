@@ -50,37 +50,53 @@ namespace Gandalf.Contracts.IdoContract {
             "LmFlbGYuQWRkcmVzcyJDCgtJbnZlc3RJbnB1dBIRCglwdWJsaWNfaWQYASAB",
             "KAUSIQoGYW1vdW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZSJAChJSZXNl",
             "dFRpbWVTcGFuSW5wdXQSFAoMbWF4X3RpbWVzcGFuGAEgASgDEhQKDG1pbl90",
-            "aW1lc3BhbhgCIAEoAyLGAgoRQWRkUHVibGljT2ZmZXJpbmcSHQoVb2ZmZXJp",
-            "bmdfdG9rZW5fc3ltYm9sGAEgASgJEjAKFW9mZmVyaW5nX3Rva2VuX2Ftb3Vu",
-            "dBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSGQoRd2FudF90b2tlbl9zeW1i",
-            "b2wYAyABKAkSLAoRd2FudF90b2tlbl9hbW91bnQYBCABKAsyES5hZWxmLkJp",
-            "Z0ludFZhbHVlEiAKCXB1Ymxpc2hlchgFIAEoCzINLmFlbGYuQWRkcmVzcxIu",
-            "CgpzdGFydF90aW1lGAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
-            "cBIsCghlbmRfdGltZRgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
-            "bXASEQoJcHVibGljX2lkGAggASgDOgSguxgBInoKEENoYW5nZUFzY3JpcHRp",
-            "b24SFAoMdG9rZW5fc3ltYm9sGAEgASgJEiQKDW9sZF9wdWJsaXNoZXIYAiAB",
-            "KAsyDS5hZWxmLkFkZHJlc3MSJAoNbmV3X3B1Ymxpc2hlchgDIAEoCzINLmFl",
-            "bGYuQWRkcmVzczoEoLsYASJrCghXaXRoZHJhdxISCgpwdWJpbGljX2lkGAEg",
-            "ASgDEhkKAnRvGAIgASgLMg0uYWVsZi5BZGRyZXNzEhIKCndhbnRfdG9rZW4Y",
-            "AyABKAMSFgoOb2ZmZXJpbmdfdG9rZW4YBCABKAM6BKC7GAEinQEKBkludmVz",
-            "dBIRCglwdWJsaWNfaWQYASABKAMSHwoIaW52ZXN0b3IYAiABKAsyDS5hZWxm",
-            "LkFkZHJlc3MSFAoMdG9rZW5fc3ltYm9sGAMgASgJEiEKBmluY29tZRgEIAEo",
-            "CzIRLmFlbGYuQmlnSW50VmFsdWUSIAoFc3BlbmQYBSABKAsyES5hZWxmLkJp",
-            "Z0ludFZhbHVlOgSguxgBImAKB0hhcnZlc3QSEQoJcHVibGljX2lkGAEgASgD",
-            "EhkKAnRvGAIgASgLMg0uYWVsZi5BZGRyZXNzEiEKBmFtb3VudBgDIAEoCzIR",
-            "LmFlbGYuQmlnSW50VmFsdWU6BKC7GAEygwQKC0lkb0NvbnRyYWN0EjUKCklu",
-            "aXRpYWxpemUSDS5hZWxmLkFkZHJlc3MaFi5nb29nbGUucHJvdG9idWYuRW1w",
-            "dHkiABJLChFBZGRQdWJsaWNPZmZlcmluZxIXLkFkZFB1YmxpY09mZmVyaW5n",
-            "SW5wdXQaGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZSIAEkQKEENoYW5n",
-            "ZUFzY3JpcHRpb24SFi5DaGFuZ2VBc2NyaXB0aW9uSW5wdXQaFi5nb29nbGUu",
-            "cHJvdG9idWYuRW1wdHkiABJBCghXaXRoZHJhdxIbLmdvb2dsZS5wcm90b2J1",
-            "Zi5JbnQzMlZhbHVlGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5IgASMAoGSW52",
-            "ZXN0EgwuSW52ZXN0SW5wdXQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiABJA",
-            "CgdIYXJ2ZXN0EhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUaFi5nb29n",
-            "bGUucHJvdG9idWYuRW1wdHkiABI+Cg1SZXNldFRpbWVTcGFuEhMuUmVzZXRU",
-            "aW1lU3BhbklucHV0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5IgAaM7LM9gEu",
-            "R2FuZGFsZi5Db250cmFjdHMuSWRvQ29udHJhY3QuSWRvQ29udHJhY3RTdGF0",
-            "ZUIgqgIdR2FuZGFsZi5Db250cmFjdHMuSWRvQ29udHJhY3RiBnByb3RvMw=="));
+            "aW1lc3BhbhgCIAEoAyJBChNSZXNldFRpbWVTcGFuT3V0cHV0EhQKDG1heF90",
+            "aW1lc3BhbhgBIAEoAxIUCgxtaW5fdGltZXNwYW4YAiABKAMiugMKFFB1Ymxp",
+            "Y09mZmVyaW5nT3V0cHV0Eh0KFW9mZmVyaW5nX3Rva2VuX3N5bWJvbBgBIAEo",
+            "CRIwChVvZmZlcmluZ190b2tlbl9hbW91bnQYAiABKAsyES5hZWxmLkJpZ0lu",
+            "dFZhbHVlEhkKEXdhbnRfdG9rZW5fc3ltYm9sGAMgASgJEiwKEXdhbnRfdG9r",
+            "ZW5fYW1vdW50GAQgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIuCgpzdGFydF90",
+            "aW1lGAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIsCghlbmRf",
+            "dGltZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASEQoJcHVi",
+            "bGljX2lkGAcgASgDEiAKCXB1Ymxpc2hlchgIIAEoCzINLmFlbGYuQWRkcmVz",
+            "cxIPCgdjbGFpbWVkGAkgASgIEi0KEldhbnRfVG9rZW5fQmFsYW5jZRgKIAEo",
+            "CzIRLmFlbGYuQmlnSW50VmFsdWUSNQoaU3Vic2NyaWJlZF9PZmZlcmluZ19B",
+            "bW91bnQYCyABKAsyES5hZWxmLkJpZ0ludFZhbHVlIsYCChFBZGRQdWJsaWNP",
+            "ZmZlcmluZxIdChVvZmZlcmluZ190b2tlbl9zeW1ib2wYASABKAkSMAoVb2Zm",
+            "ZXJpbmdfdG9rZW5fYW1vdW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIZ",
+            "ChF3YW50X3Rva2VuX3N5bWJvbBgDIAEoCRIsChF3YW50X3Rva2VuX2Ftb3Vu",
+            "dBgEIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSIAoJcHVibGlzaGVyGAUgASgL",
+            "Mg0uYWVsZi5BZGRyZXNzEi4KCnN0YXJ0X3RpbWUYBiABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wEiwKCGVuZF90aW1lGAcgASgLMhouZ29vZ2xl",
+            "LnByb3RvYnVmLlRpbWVzdGFtcBIRCglwdWJsaWNfaWQYCCABKAM6BKC7GAEi",
+            "egoQQ2hhbmdlQXNjcmlwdGlvbhIUCgx0b2tlbl9zeW1ib2wYASABKAkSJAoN",
+            "b2xkX3B1Ymxpc2hlchgCIAEoCzINLmFlbGYuQWRkcmVzcxIkCg1uZXdfcHVi",
+            "bGlzaGVyGAMgASgLMg0uYWVsZi5BZGRyZXNzOgSguxgBImsKCFdpdGhkcmF3",
+            "EhIKCnB1YmlsaWNfaWQYASABKAMSGQoCdG8YAiABKAsyDS5hZWxmLkFkZHJl",
+            "c3MSEgoKd2FudF90b2tlbhgDIAEoAxIWCg5vZmZlcmluZ190b2tlbhgEIAEo",
+            "AzoEoLsYASKdAQoGSW52ZXN0EhEKCXB1YmxpY19pZBgBIAEoAxIfCghpbnZl",
+            "c3RvchgCIAEoCzINLmFlbGYuQWRkcmVzcxIUCgx0b2tlbl9zeW1ib2wYAyAB",
+            "KAkSIQoGaW5jb21lGAQgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIgCgVzcGVu",
+            "ZBgFIAEoCzIRLmFlbGYuQmlnSW50VmFsdWU6BKC7GAEiYAoHSGFydmVzdBIR",
+            "CglwdWJsaWNfaWQYASABKAMSGQoCdG8YAiABKAsyDS5hZWxmLkFkZHJlc3MS",
+            "IQoGYW1vdW50GAMgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZToEoLsYATLRBQoL",
+            "SWRvQ29udHJhY3QSNQoKSW5pdGlhbGl6ZRINLmFlbGYuQWRkcmVzcxoWLmdv",
+            "b2dsZS5wcm90b2J1Zi5FbXB0eSIAEksKEUFkZFB1YmxpY09mZmVyaW5nEhcu",
+            "QWRkUHVibGljT2ZmZXJpbmdJbnB1dBobLmdvb2dsZS5wcm90b2J1Zi5JbnQ2",
+            "NFZhbHVlIgASRAoQQ2hhbmdlQXNjcmlwdGlvbhIWLkNoYW5nZUFzY3JpcHRp",
+            "b25JbnB1dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEkEKCFdpdGhkcmF3",
+            "EhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUaFi5nb29nbGUucHJvdG9i",
+            "dWYuRW1wdHkiABIwCgZJbnZlc3QSDC5JbnZlc3RJbnB1dBoWLmdvb2dsZS5w",
+            "cm90b2J1Zi5FbXB0eSIAEkAKB0hhcnZlc3QSGy5nb29nbGUucHJvdG9idWYu",
+            "SW50MzJWYWx1ZRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEj4KDVJlc2V0",
+            "VGltZVNwYW4SEy5SZXNldFRpbWVTcGFuSW5wdXQaFi5nb29nbGUucHJvdG9i",
+            "dWYuRW1wdHkiABI4CghHZXRPd25lchIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
+            "eRoNLmFlbGYuQWRkcmVzcyIFiIn3AQESQgoLR2V0VGltZXNwYW4SFi5nb29n",
+            "bGUucHJvdG9idWYuRW1wdHkaFC5SZXNldFRpbWVTcGFuT3V0cHV0IgWIifcB",
+            "ARJOChFHZXRQdWJsaWNPZmZlcmluZxIbLmdvb2dsZS5wcm90b2J1Zi5JbnQz",
+            "MlZhbHVlGhUuUHVibGljT2ZmZXJpbmdPdXRwdXQiBYiJ9wEBGjOyzPYBLkdh",
+            "bmRhbGYuQ29udHJhY3RzLklkb0NvbnRyYWN0Lklkb0NvbnRyYWN0U3RhdGVC",
+            "IKoCHUdhbmRhbGYuQ29udHJhY3RzLklkb0NvbnRyYWN0YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::AElf.Types.CoreReflection.Descriptor, global::AElf.OptionsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -91,6 +107,8 @@ namespace Gandalf.Contracts.IdoContract {
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ChangeAscriptionInput), global::Gandalf.Contracts.IdoContract.ChangeAscriptionInput.Parser, new[]{ "TokenSymbol", "Receiver" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.InvestInput), global::Gandalf.Contracts.IdoContract.InvestInput.Parser, new[]{ "PublicId", "Amount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput), global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput.Parser, new[]{ "MaxTimespan", "MinTimespan" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput), global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput.Parser, new[]{ "MaxTimespan", "MinTimespan" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.PublicOfferingOutput), global::Gandalf.Contracts.IdoContract.PublicOfferingOutput.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "StartTime", "EndTime", "PublicId", "Publisher", "Claimed", "WantTokenBalance", "SubscribedOfferingAmount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.AddPublicOffering), global::Gandalf.Contracts.IdoContract.AddPublicOffering.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "Publisher", "StartTime", "EndTime", "PublicId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ChangeAscription), global::Gandalf.Contracts.IdoContract.ChangeAscription.Parser, new[]{ "TokenSymbol", "OldPublisher", "NewPublisher" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.Withdraw), global::Gandalf.Contracts.IdoContract.Withdraw.Parser, new[]{ "PubilicId", "To", "WantToken", "OfferingToken" }, null, null, null, null),
@@ -1591,6 +1609,614 @@ namespace Gandalf.Contracts.IdoContract {
 
   }
 
+  public sealed partial class ResetTimeSpanOutput : pb::IMessage<ResetTimeSpanOutput> {
+    private static readonly pb::MessageParser<ResetTimeSpanOutput> _parser = new pb::MessageParser<ResetTimeSpanOutput>(() => new ResetTimeSpanOutput());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ResetTimeSpanOutput> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ResetTimeSpanOutput() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ResetTimeSpanOutput(ResetTimeSpanOutput other) : this() {
+      maxTimespan_ = other.maxTimespan_;
+      minTimespan_ = other.minTimespan_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ResetTimeSpanOutput Clone() {
+      return new ResetTimeSpanOutput(this);
+    }
+
+    /// <summary>Field number for the "max_timespan" field.</summary>
+    public const int MaxTimespanFieldNumber = 1;
+    private long maxTimespan_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long MaxTimespan {
+      get { return maxTimespan_; }
+      set {
+        maxTimespan_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "min_timespan" field.</summary>
+    public const int MinTimespanFieldNumber = 2;
+    private long minTimespan_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long MinTimespan {
+      get { return minTimespan_; }
+      set {
+        minTimespan_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ResetTimeSpanOutput);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ResetTimeSpanOutput other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MaxTimespan != other.MaxTimespan) return false;
+      if (MinTimespan != other.MinTimespan) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (MaxTimespan != 0L) hash ^= MaxTimespan.GetHashCode();
+      if (MinTimespan != 0L) hash ^= MinTimespan.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (MaxTimespan != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(MaxTimespan);
+      }
+      if (MinTimespan != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(MinTimespan);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (MaxTimespan != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MaxTimespan);
+      }
+      if (MinTimespan != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MinTimespan);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ResetTimeSpanOutput other) {
+      if (other == null) {
+        return;
+      }
+      if (other.MaxTimespan != 0L) {
+        MaxTimespan = other.MaxTimespan;
+      }
+      if (other.MinTimespan != 0L) {
+        MinTimespan = other.MinTimespan;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            MaxTimespan = input.ReadInt64();
+            break;
+          }
+          case 16: {
+            MinTimespan = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class PublicOfferingOutput : pb::IMessage<PublicOfferingOutput> {
+    private static readonly pb::MessageParser<PublicOfferingOutput> _parser = new pb::MessageParser<PublicOfferingOutput>(() => new PublicOfferingOutput());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PublicOfferingOutput> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PublicOfferingOutput() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PublicOfferingOutput(PublicOfferingOutput other) : this() {
+      offeringTokenSymbol_ = other.offeringTokenSymbol_;
+      offeringTokenAmount_ = other.offeringTokenAmount_ != null ? other.offeringTokenAmount_.Clone() : null;
+      wantTokenSymbol_ = other.wantTokenSymbol_;
+      wantTokenAmount_ = other.wantTokenAmount_ != null ? other.wantTokenAmount_.Clone() : null;
+      startTime_ = other.startTime_ != null ? other.startTime_.Clone() : null;
+      endTime_ = other.endTime_ != null ? other.endTime_.Clone() : null;
+      publicId_ = other.publicId_;
+      publisher_ = other.publisher_ != null ? other.publisher_.Clone() : null;
+      claimed_ = other.claimed_;
+      wantTokenBalance_ = other.wantTokenBalance_ != null ? other.wantTokenBalance_.Clone() : null;
+      subscribedOfferingAmount_ = other.subscribedOfferingAmount_ != null ? other.subscribedOfferingAmount_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PublicOfferingOutput Clone() {
+      return new PublicOfferingOutput(this);
+    }
+
+    /// <summary>Field number for the "offering_token_symbol" field.</summary>
+    public const int OfferingTokenSymbolFieldNumber = 1;
+    private string offeringTokenSymbol_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string OfferingTokenSymbol {
+      get { return offeringTokenSymbol_; }
+      set {
+        offeringTokenSymbol_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "offering_token_amount" field.</summary>
+    public const int OfferingTokenAmountFieldNumber = 2;
+    private global::AElf.Types.BigIntValue offeringTokenAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::AElf.Types.BigIntValue OfferingTokenAmount {
+      get { return offeringTokenAmount_; }
+      set {
+        offeringTokenAmount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "want_token_symbol" field.</summary>
+    public const int WantTokenSymbolFieldNumber = 3;
+    private string wantTokenSymbol_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string WantTokenSymbol {
+      get { return wantTokenSymbol_; }
+      set {
+        wantTokenSymbol_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "want_token_amount" field.</summary>
+    public const int WantTokenAmountFieldNumber = 4;
+    private global::AElf.Types.BigIntValue wantTokenAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::AElf.Types.BigIntValue WantTokenAmount {
+      get { return wantTokenAmount_; }
+      set {
+        wantTokenAmount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "start_time" field.</summary>
+    public const int StartTimeFieldNumber = 5;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp startTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
+      get { return startTime_; }
+      set {
+        startTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "end_time" field.</summary>
+    public const int EndTimeFieldNumber = 6;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp endTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp EndTime {
+      get { return endTime_; }
+      set {
+        endTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "public_id" field.</summary>
+    public const int PublicIdFieldNumber = 7;
+    private long publicId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long PublicId {
+      get { return publicId_; }
+      set {
+        publicId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "publisher" field.</summary>
+    public const int PublisherFieldNumber = 8;
+    private global::AElf.Types.Address publisher_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::AElf.Types.Address Publisher {
+      get { return publisher_; }
+      set {
+        publisher_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "claimed" field.</summary>
+    public const int ClaimedFieldNumber = 9;
+    private bool claimed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Claimed {
+      get { return claimed_; }
+      set {
+        claimed_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Want_Token_Balance" field.</summary>
+    public const int WantTokenBalanceFieldNumber = 10;
+    private global::AElf.Types.BigIntValue wantTokenBalance_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::AElf.Types.BigIntValue WantTokenBalance {
+      get { return wantTokenBalance_; }
+      set {
+        wantTokenBalance_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Subscribed_Offering_Amount" field.</summary>
+    public const int SubscribedOfferingAmountFieldNumber = 11;
+    private global::AElf.Types.BigIntValue subscribedOfferingAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::AElf.Types.BigIntValue SubscribedOfferingAmount {
+      get { return subscribedOfferingAmount_; }
+      set {
+        subscribedOfferingAmount_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PublicOfferingOutput);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PublicOfferingOutput other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (OfferingTokenSymbol != other.OfferingTokenSymbol) return false;
+      if (!object.Equals(OfferingTokenAmount, other.OfferingTokenAmount)) return false;
+      if (WantTokenSymbol != other.WantTokenSymbol) return false;
+      if (!object.Equals(WantTokenAmount, other.WantTokenAmount)) return false;
+      if (!object.Equals(StartTime, other.StartTime)) return false;
+      if (!object.Equals(EndTime, other.EndTime)) return false;
+      if (PublicId != other.PublicId) return false;
+      if (!object.Equals(Publisher, other.Publisher)) return false;
+      if (Claimed != other.Claimed) return false;
+      if (!object.Equals(WantTokenBalance, other.WantTokenBalance)) return false;
+      if (!object.Equals(SubscribedOfferingAmount, other.SubscribedOfferingAmount)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (OfferingTokenSymbol.Length != 0) hash ^= OfferingTokenSymbol.GetHashCode();
+      if (offeringTokenAmount_ != null) hash ^= OfferingTokenAmount.GetHashCode();
+      if (WantTokenSymbol.Length != 0) hash ^= WantTokenSymbol.GetHashCode();
+      if (wantTokenAmount_ != null) hash ^= WantTokenAmount.GetHashCode();
+      if (startTime_ != null) hash ^= StartTime.GetHashCode();
+      if (endTime_ != null) hash ^= EndTime.GetHashCode();
+      if (PublicId != 0L) hash ^= PublicId.GetHashCode();
+      if (publisher_ != null) hash ^= Publisher.GetHashCode();
+      if (Claimed != false) hash ^= Claimed.GetHashCode();
+      if (wantTokenBalance_ != null) hash ^= WantTokenBalance.GetHashCode();
+      if (subscribedOfferingAmount_ != null) hash ^= SubscribedOfferingAmount.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (OfferingTokenSymbol.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(OfferingTokenSymbol);
+      }
+      if (offeringTokenAmount_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(OfferingTokenAmount);
+      }
+      if (WantTokenSymbol.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(WantTokenSymbol);
+      }
+      if (wantTokenAmount_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(WantTokenAmount);
+      }
+      if (startTime_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(StartTime);
+      }
+      if (endTime_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(EndTime);
+      }
+      if (PublicId != 0L) {
+        output.WriteRawTag(56);
+        output.WriteInt64(PublicId);
+      }
+      if (publisher_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Publisher);
+      }
+      if (Claimed != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(Claimed);
+      }
+      if (wantTokenBalance_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(WantTokenBalance);
+      }
+      if (subscribedOfferingAmount_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(SubscribedOfferingAmount);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (OfferingTokenSymbol.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(OfferingTokenSymbol);
+      }
+      if (offeringTokenAmount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OfferingTokenAmount);
+      }
+      if (WantTokenSymbol.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(WantTokenSymbol);
+      }
+      if (wantTokenAmount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(WantTokenAmount);
+      }
+      if (startTime_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartTime);
+      }
+      if (endTime_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EndTime);
+      }
+      if (PublicId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PublicId);
+      }
+      if (publisher_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Publisher);
+      }
+      if (Claimed != false) {
+        size += 1 + 1;
+      }
+      if (wantTokenBalance_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(WantTokenBalance);
+      }
+      if (subscribedOfferingAmount_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SubscribedOfferingAmount);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PublicOfferingOutput other) {
+      if (other == null) {
+        return;
+      }
+      if (other.OfferingTokenSymbol.Length != 0) {
+        OfferingTokenSymbol = other.OfferingTokenSymbol;
+      }
+      if (other.offeringTokenAmount_ != null) {
+        if (offeringTokenAmount_ == null) {
+          OfferingTokenAmount = new global::AElf.Types.BigIntValue();
+        }
+        OfferingTokenAmount.MergeFrom(other.OfferingTokenAmount);
+      }
+      if (other.WantTokenSymbol.Length != 0) {
+        WantTokenSymbol = other.WantTokenSymbol;
+      }
+      if (other.wantTokenAmount_ != null) {
+        if (wantTokenAmount_ == null) {
+          WantTokenAmount = new global::AElf.Types.BigIntValue();
+        }
+        WantTokenAmount.MergeFrom(other.WantTokenAmount);
+      }
+      if (other.startTime_ != null) {
+        if (startTime_ == null) {
+          StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        StartTime.MergeFrom(other.StartTime);
+      }
+      if (other.endTime_ != null) {
+        if (endTime_ == null) {
+          EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        EndTime.MergeFrom(other.EndTime);
+      }
+      if (other.PublicId != 0L) {
+        PublicId = other.PublicId;
+      }
+      if (other.publisher_ != null) {
+        if (publisher_ == null) {
+          Publisher = new global::AElf.Types.Address();
+        }
+        Publisher.MergeFrom(other.Publisher);
+      }
+      if (other.Claimed != false) {
+        Claimed = other.Claimed;
+      }
+      if (other.wantTokenBalance_ != null) {
+        if (wantTokenBalance_ == null) {
+          WantTokenBalance = new global::AElf.Types.BigIntValue();
+        }
+        WantTokenBalance.MergeFrom(other.WantTokenBalance);
+      }
+      if (other.subscribedOfferingAmount_ != null) {
+        if (subscribedOfferingAmount_ == null) {
+          SubscribedOfferingAmount = new global::AElf.Types.BigIntValue();
+        }
+        SubscribedOfferingAmount.MergeFrom(other.SubscribedOfferingAmount);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            OfferingTokenSymbol = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (offeringTokenAmount_ == null) {
+              OfferingTokenAmount = new global::AElf.Types.BigIntValue();
+            }
+            input.ReadMessage(OfferingTokenAmount);
+            break;
+          }
+          case 26: {
+            WantTokenSymbol = input.ReadString();
+            break;
+          }
+          case 34: {
+            if (wantTokenAmount_ == null) {
+              WantTokenAmount = new global::AElf.Types.BigIntValue();
+            }
+            input.ReadMessage(WantTokenAmount);
+            break;
+          }
+          case 42: {
+            if (startTime_ == null) {
+              StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(StartTime);
+            break;
+          }
+          case 50: {
+            if (endTime_ == null) {
+              EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(EndTime);
+            break;
+          }
+          case 56: {
+            PublicId = input.ReadInt64();
+            break;
+          }
+          case 66: {
+            if (publisher_ == null) {
+              Publisher = new global::AElf.Types.Address();
+            }
+            input.ReadMessage(Publisher);
+            break;
+          }
+          case 72: {
+            Claimed = input.ReadBool();
+            break;
+          }
+          case 82: {
+            if (wantTokenBalance_ == null) {
+              WantTokenBalance = new global::AElf.Types.BigIntValue();
+            }
+            input.ReadMessage(WantTokenBalance);
+            break;
+          }
+          case 90: {
+            if (subscribedOfferingAmount_ == null) {
+              SubscribedOfferingAmount = new global::AElf.Types.BigIntValue();
+            }
+            input.ReadMessage(SubscribedOfferingAmount);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   /// <summary>
   ///Events
   /// </summary>
@@ -1602,7 +2228,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1957,7 +2583,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2154,7 +2780,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2373,7 +2999,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2632,7 +3258,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

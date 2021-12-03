@@ -15,6 +15,6 @@ namespace Gandalf.Contracts.IdoContract
         public Int64State MinimalTimespan { get; set; }
         public MappedState<long,Address,UserInfo> UserInfo { get; set; }
         public SingletonState<PublicOfferList> PublicOfferList { get; set; }
-        public MappedState<string, Address> Ascription;
+        public MappedState<string, Address> Ascription { get; set; } 
     }
 }

@@ -1,0 +1,29 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=15598a62_002D4e62_002D434c_002D944b_002D5f0820d73bc0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ResetTimeSpan_Test" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.ResetTimeSpan_Test&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4c49ff77_002Dc1e3_002D4ce8_002Db63e_002D8c12ca579784/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="init_Fail_Test" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.init_Fail_Test&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6778cbf4_002D9fe2_002D4ea2_002D87cd_002Dd08ecf4db6a0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="initTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.init_Fail_Test&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.init_Success_Test&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8aa1d95b_002D18a7_002D4df7_002D9dda_002D8ff733022f83/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ResetTimeSpan_Test #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.ResetTimeSpan_Test&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ae48874a_002D3b49_002D4d47_002D8986_002D12dcd3cc8a22/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="init_Fail_Test #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.init_Fail_Test&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.ResetTimeSpan_Test&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.Add_Public_Offering_Test&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

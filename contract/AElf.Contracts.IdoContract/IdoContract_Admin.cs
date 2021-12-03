@@ -1,6 +1,4 @@
-using Gandalf.Contracts.IdoContract;
 using Google.Protobuf.WellKnownTypes;
-
 namespace Gandalf.Contracts.IdoContract
 {
     public partial class IdoContract
