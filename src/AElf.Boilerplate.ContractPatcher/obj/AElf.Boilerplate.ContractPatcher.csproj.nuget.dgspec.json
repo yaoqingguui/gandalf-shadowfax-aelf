@@ -44,15 +44,15 @@
           "dependencies": {
             "AElf.CSharp.CodeOps": {
               "target": "Package",
-              "version": "[1.1.0-18960, )"
+              "version": "[1.1.1-18963, )"
             },
             "AElf.Runtime.CSharp.Core": {
               "target": "Package",
-              "version": "[1.1.0-18960, )"
+              "version": "[1.1.1-18963, )"
             },
             "AElf.Types": {
               "target": "Package",
-              "version": "[1.1.0-18960, )"
+              "version": "[1.1.1-18963, )"
             },
             "CommandLineParser": {
               "target": "Package",

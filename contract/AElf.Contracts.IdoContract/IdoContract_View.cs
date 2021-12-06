@@ -34,9 +34,23 @@ namespace Gandalf.Contracts.IdoContract
                 OfferingTokenAmount = offering.OfferingTokenAmount,
                 OfferingTokenSymbol = offering.OfferingTokenSymbol,
                 SubscribedOfferingAmount = offering.SubscribedOfferingAmount,
-                WantTokenAmount = offering.OfferingTokenAmount,
+                WantTokenAmount = offering.WantTokenAmount,
                 WantTokenSymbol = offering.WantTokenSymbol,
                 WantTokenBalance = offering.WantTokenBalance
+            };
+        }
+
+        public override UserInfo GetUserInfo(UserInfoInput input)
+        {
+            var userInfo = State.UserInfo[input.PublicId][input.User];
+            if (userInfo!=null)
+            {
+                return userInfo;
+            }
+            return new UserInfo
+            {
+                Claimed = false,
+                ObtainAmount = 0
             };
         }
     }

@@ -15,13 +15,13 @@ namespace Gandalf.Contracts.IdoContract
             Assert(offering != null, "Activity not exist.");
             Assert(Context.CurrentBlockTime >= offering.StartTime && Context.CurrentBlockTime < offering.EndTime,
                 "Not ido time.");
-            Assert((BigInteger) offering.OfferingTokenAmount > (BigInteger) offering.SubscribedOfferingAmount,
+            Assert(offering.OfferingTokenAmount > offering.SubscribedOfferingAmount,
                 "Out of stock.");
             var stock = offering.WantTokenAmount.Sub(offering.WantTokenBalance);
-            var actualUsed = (BigInteger) input.Amount > (BigInteger) stock ? stock : input.Amount;
+            var actualUsed = input.Amount > stock ? stock : input.Amount;
             State.TokenContract.TransferFrom.Send(new TransferFromInput
             {
-                Amount = long.Parse(actualUsed.ToString()),
+                Amount = long.Parse(actualUsed.Value),
                 From = Context.Sender,
                 Symbol = offering.WantTokenSymbol,
                 To = Context.Self
@@ -39,7 +39,7 @@ namespace Gandalf.Contracts.IdoContract
             };
             userInfo.ObtainAmount = userInfo.ObtainAmount.Add(obtainAmount);
             State.UserInfo[input.PublicId][Context.Sender] = userInfo;
-            offering.WantTokenAmount = offering.WantTokenAmount.Add(actualUsed);
+            offering.WantTokenBalance = offering.WantTokenBalance.Add(actualUsed);
             offering.SubscribedOfferingAmount = offering.SubscribedOfferingAmount.Add(obtainAmount);
             State.PublicOfferList.Value.Value[input.PublicId] = offering;
 
@@ -67,7 +67,7 @@ namespace Gandalf.Contracts.IdoContract
             State.UserInfo[input.Value][Context.Sender] = userInfo;
             State.TokenContract.Transfer.Send(new TransferInput
             {
-                Amount = long.Parse(userInfo.ObtainAmount.ToString()),
+                Amount = long.Parse(userInfo.ObtainAmount.Value),
                 Symbol = offering.OfferingTokenSymbol,
                 To = Context.Sender
             });

@@ -68,6 +68,10 @@ service IdoContract {
   rpc GetPublicOffering(google.protobuf.Int32Value) returns (PublicOfferingOutput){
     option (aelf.is_view) = true;
   }
+
+  rpc GetUserInfo(UserInfoInput) returns (UserInfo){
+    option (aelf.is_view) = true;
+  }
 }
 
 // stuct
@@ -114,6 +118,11 @@ message InvestInput{
   aelf.BigIntValue amount = 2;
 }
 
+message UserInfoInput{
+  int32 public_id = 1;
+  aelf.Address user = 2;
+}
+
 //seconds
 message ResetTimeSpanInput{
   int64 max_timespan = 1;
@@ -140,6 +149,7 @@ message PublicOfferingOutput{
   aelf.BigIntValue Want_Token_Balance = 10;
   aelf.BigIntValue Subscribed_Offering_Amount = 11;
 }
+
 
 //Events
 message AddPublicOffering{

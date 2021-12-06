@@ -20,11 +20,16 @@
     &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.ResetTimeSpan_Test&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ae48874a_002D3b49_002D4d47_002D8986_002D12dcd3cc8a22/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="init_Fail_Test #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ae48874a_002D3b49_002D4d47_002D8986_002D12dcd3cc8a22/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="init_Fail_Test #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.Invest_And_Harvest_Should_Success_Test&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.Publisher_Should_Withdraw_Success_Test&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.init_Fail_Test&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.ResetTimeSpan_Test&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.Add_Public_Offering_Test&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.Create_Token_Test&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests.Publisher_Should_Change_Ascription_Test&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d4ea9d89_002Da385_002D40db_002D99a3_002Da74b059716e5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Publisher_Should_Change_Ascription_Test" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::3631B538-C617-4FCE-9C9B-1D1B5F290A7F::.NETCoreApp,Version=v3.1::Gandalf.Contracts.IdoContract.IdoContractTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
