@@ -48,7 +48,7 @@
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.CodeGenerator/obj/Debug/netcoreapp3.1/AElf.Boilerplate.CodeGenerator.AssemblyInfoInputs.cache
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.CodeGenerator/obj/Debug/netcoreapp3.1/AElf.Boilerplate.CodeGenerator.AssemblyInfo.cs
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.CodeGenerator/obj/Debug/netcoreapp3.1/AElf.Boilerplate.CodeGenerator.csproj.CoreCompileInputs.cache
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.CodeGenerator/obj/Debug/netcoreapp3.1/AElf.Boilerplate.CodeGenerator.csproj.CopyComplete
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.CodeGenerator/obj/Debug/netcoreapp3.1/AElf.Boilerplate.CodeGenerator.dll
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.CodeGenerator/obj/Debug/netcoreapp3.1/AElf.Boilerplate.CodeGenerator.pdb
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.CodeGenerator/obj/Debug/netcoreapp3.1/AElf.Boilerplate.CodeGenerator.genruntimeconfig.cache
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.CodeGenerator/obj/Debug/netcoreapp3.1/AElf.Boilerplate.CodeGenerator.csproj.CopyComplete

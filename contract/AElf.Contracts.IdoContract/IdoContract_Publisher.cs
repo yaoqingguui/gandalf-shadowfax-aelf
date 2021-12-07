@@ -12,7 +12,7 @@ namespace Gandalf.Contracts.IdoContract
         {   
             Assert((BigInteger) input.OfferingTokenAmount > 0, "Need deposit some offering token.");
             Assert(input.StartTime >= Context.CurrentBlockTime, "Invaild start time.");
-            Assert(input.EndTime.Seconds <= input.StartTime.Seconds + State.MinimalTimespan.Value ||
+            Assert(input.EndTime.Seconds <= input.StartTime.Seconds + State.MaximalTimeSpan.Value ||
                    input.EndTime.Seconds >= input.StartTime.Seconds + State.MinimalTimespan.Value, "Invaild end time.");
             var owner = State.Ascription[input.OfferingTokenSymbol];
             if (owner != null)
@@ -87,7 +87,7 @@ namespace Gandalf.Contracts.IdoContract
             var offering = State.PublicOfferList.Value.Value[input.Value];
             Assert(!offering.Claimed,"Have withdrawn.");
             Assert(offering.Publisher==Context.Sender,"No rights.");
-            Assert(Context.CurrentBlockTime>offering.EndTime,"EVent not over.");
+            Assert(Context.CurrentBlockTime>offering.EndTime,"Game not over.");
             offering.Claimed = true;
             BigInteger wantTokenBalance = offering.WantTokenBalance;
             BigInteger surplus = offering.OfferingTokenAmount.Sub(offering.SubscribedOfferingAmount);

@@ -102,3 +102,4 @@
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.ContractPatcher/obj/Debug/netcoreapp3.1/AElf.Boilerplate.ContractPatcher.pdb
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.ContractPatcher/obj/Debug/netcoreapp3.1/AElf.Boilerplate.ContractPatcher.genruntimeconfig.cache
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.ContractPatcher/obj/Debug/netcoreapp3.1/AElf.Boilerplate.ContractPatcher.csproj.AssemblyReference.cache
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.ContractPatcher/obj/Debug/netcoreapp3.1/AElf.Boilerplate.ContractPatcher.csproj.CopyComplete

@@ -234,3 +234,4 @@
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/obj/Debug/netcoreapp3.1/AElf.Boilerplate.TestBase.pdb
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/obj/Debug/netcoreapp3.1/AElf.Boilerplate.TestBase.genruntimeconfig.cache
 /Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/obj/Debug/netcoreapp3.1/AElf.Boilerplate.TestBase.csproj.AssemblyReference.cache
+/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/obj/Debug/netcoreapp3.1/AElf.Boilerplate.TestBase.csproj.CopyComplete
