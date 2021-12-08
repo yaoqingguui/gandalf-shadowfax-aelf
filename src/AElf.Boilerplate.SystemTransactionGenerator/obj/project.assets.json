@@ -6889,14 +6889,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj",
+      "projectUniqueName": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj",
       "projectName": "AElf.Boilerplate.SystemTransactionGenerator",
-      "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj",
+      "projectPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj",
       "packagesPath": "/Users/chenghaiming/.nuget/packages/",
-      "outputPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.SystemTransactionGenerator/obj/",
+      "outputPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.SystemTransactionGenerator/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/NuGet.Config",
+        "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/NuGet.Config",
         "/Users/chenghaiming/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [

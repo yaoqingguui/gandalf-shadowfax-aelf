@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K3yTUHFIHD1GIS8sShh/M8H5qP6p/hkCuq3Xczi1TUfcCiCrGei5EkpwJ+bvKWsTuTyFBa5rnlgxFBnggxnTsQ==",
+  "dgSpecHash": "vRJ9tiwsl/SEVMdZ3aafXB6d2ORJiqi5mIEZDOszW2RXO2/Zi9sJ+j+Ucjw0fSKz6qhRF60w4K+IHKbMlpesFA==",
   "success": true,
-  "projectFilePath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.MainChain/AElf.Boilerplate.MainChain.csproj",
+  "projectFilePath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.MainChain/AElf.Boilerplate.MainChain.csproj",
   "expectedPackageFiles": [
     "/Users/chenghaiming/.nuget/packages/aelf.blockchains.basicbasechain/1.0.0/aelf.blockchains.basicbasechain.1.0.0.nupkg.sha512",
     "/Users/chenghaiming/.nuget/packages/aelf.contractdeployer/1.0.0/aelf.contractdeployer.1.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YWt/5Mb4fSzsS2TfEBEF+RJ1eFiEFyPYAOQJnb7aWt6K+TBShqn98kdae2+RWkIQ1N2RXNTFRKo0vk8WK+FYWg==",
+  "dgSpecHash": "i+ZAz6vVZxHd0YLyD8TqMmsK7qGKTWK4mXm+4SNG69xPdEooASE7YBnuuqvuXBWgIsnSjIy7GllKN7ikC4PZFw==",
   "success": true,
-  "projectFilePath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.CodeGenerator/AElf.Boilerplate.CodeGenerator.csproj",
+  "projectFilePath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.CodeGenerator/AElf.Boilerplate.CodeGenerator.csproj",
   "expectedPackageFiles": [
     "/Users/chenghaiming/.nuget/packages/autofac/5.2.0/autofac.5.2.0.nupkg.sha512",
     "/Users/chenghaiming/.nuget/packages/autofac.extras.dynamicproxy/5.0.0/autofac.extras.dynamicproxy.5.0.0.nupkg.sha512",

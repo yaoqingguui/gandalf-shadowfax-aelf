@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4H8+rV74A+G+zKKhG+LyX1EwLmQ4bulDHtKYfDPIp5toL47NI435cte9SinqlFUIZI/05sfPfO4gK6PyklQpUA==",
+  "dgSpecHash": "Wc0sVWk2anrJ2Ros+/hDRMevvsov+CxpuYqBSj74p/vcWtHhiVk71ZdFLzOU6XDTuo7J8Dopxf3X/jpzYjoBug==",
   "success": true,
-  "projectFilePath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj",
+  "projectFilePath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj",
   "expectedPackageFiles": [
     "/Users/chenghaiming/.nuget/packages/aelf.contractdeployer/1.0.0/aelf.contractdeployer.1.0.0.nupkg.sha512",
     "/Users/chenghaiming/.nuget/packages/aelf.contracts.association/1.0.0/aelf.contracts.association.1.0.0.nupkg.sha512",

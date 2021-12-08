@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.IdoContract.Launcher/AElf.Boilerplate.IdoContract.Launcher.csproj": {}
+    "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.IdoContract.Launcher/AElf.Boilerplate.IdoContract.Launcher.csproj": {}
   },
   "projects": {
-    "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.IdoContract.Launcher/AElf.Boilerplate.IdoContract.Launcher.csproj": {
+    "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.IdoContract.Launcher/AElf.Boilerplate.IdoContract.Launcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.IdoContract.Launcher/AElf.Boilerplate.IdoContract.Launcher.csproj",
+        "projectUniqueName": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.IdoContract.Launcher/AElf.Boilerplate.IdoContract.Launcher.csproj",
         "projectName": "AElf.Boilerplate.IdoContract.Launcher",
-        "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.IdoContract.Launcher/AElf.Boilerplate.IdoContract.Launcher.csproj",
+        "projectPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.IdoContract.Launcher/AElf.Boilerplate.IdoContract.Launcher.csproj",
         "packagesPath": "/Users/chenghaiming/.nuget/packages/",
-        "outputPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.IdoContract.Launcher/obj/",
+        "outputPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.IdoContract.Launcher/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/NuGet.Config",
+          "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/NuGet.Config",
           "/Users/chenghaiming/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.MainChain/AElf.Boilerplate.MainChain.csproj": {
-                "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.MainChain/AElf.Boilerplate.MainChain.csproj"
+              "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.MainChain/AElf.Boilerplate.MainChain.csproj": {
+                "projectPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.MainChain/AElf.Boilerplate.MainChain.csproj"
               }
             }
           }
@@ -89,17 +89,17 @@
         }
       }
     },
-    "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.MainChain/AElf.Boilerplate.MainChain.csproj": {
+    "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.MainChain/AElf.Boilerplate.MainChain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.MainChain/AElf.Boilerplate.MainChain.csproj",
+        "projectUniqueName": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.MainChain/AElf.Boilerplate.MainChain.csproj",
         "projectName": "AElf.Boilerplate.MainChain",
-        "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.MainChain/AElf.Boilerplate.MainChain.csproj",
+        "projectPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.MainChain/AElf.Boilerplate.MainChain.csproj",
         "packagesPath": "/Users/chenghaiming/.nuget/packages/",
-        "outputPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.MainChain/obj/",
+        "outputPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.MainChain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/NuGet.Config",
+          "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/NuGet.Config",
           "/Users/chenghaiming/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
@@ -115,8 +115,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj": {
-                "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj"
+              "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj": {
+                "projectPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj"
               }
             }
           }
@@ -234,17 +234,17 @@
         }
       }
     },
-    "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj": {
+    "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj",
+        "projectUniqueName": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj",
         "projectName": "AElf.Boilerplate.SystemTransactionGenerator",
-        "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj",
+        "projectPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj",
         "packagesPath": "/Users/chenghaiming/.nuget/packages/",
-        "outputPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.SystemTransactionGenerator/obj/",
+        "outputPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.SystemTransactionGenerator/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/NuGet.Config",
+          "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/NuGet.Config",
           "/Users/chenghaiming/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [

@@ -6406,14 +6406,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.CodeGenerator/AElf.Boilerplate.CodeGenerator.csproj",
+      "projectUniqueName": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.CodeGenerator/AElf.Boilerplate.CodeGenerator.csproj",
       "projectName": "AElf.Boilerplate.CodeGenerator",
-      "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.CodeGenerator/AElf.Boilerplate.CodeGenerator.csproj",
+      "projectPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.CodeGenerator/AElf.Boilerplate.CodeGenerator.csproj",
       "packagesPath": "/Users/chenghaiming/.nuget/packages/",
-      "outputPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.CodeGenerator/obj/",
+      "outputPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.CodeGenerator/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/NuGet.Config",
+        "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/NuGet.Config",
         "/Users/chenghaiming/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [

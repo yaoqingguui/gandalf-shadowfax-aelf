@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj": {}
+    "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj": {}
   },
   "projects": {
-    "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj": {
+    "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj",
+        "projectUniqueName": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj",
         "projectName": "AElf.Boilerplate.TestBase",
-        "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj",
+        "projectPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.TestBase/AElf.Boilerplate.TestBase.csproj",
         "packagesPath": "/Users/chenghaiming/.nuget/packages/",
-        "outputPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.TestBase/obj/",
+        "outputPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.TestBase/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/NuGet.Config",
+          "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/NuGet.Config",
           "/Users/chenghaiming/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [

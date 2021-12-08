@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DarcGiw/+jZO2hsDKXRMUDBq0eYICmsOjJuDy1PtsF/lajc/BVN0Q7JWUptlZu/Om0ZPYaeuxKfPBWFfjDMWyQ==",
+  "dgSpecHash": "UwFS7BtQKgw1CafX6eVgsCcn9fcwmMWnfIG2scrNS+YnL9XmvpHpa9K/Nbobv9x2xl4k6EHqhxvVJk0kYIhsfw==",
   "success": true,
-  "projectFilePath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj",
+  "projectFilePath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.SystemTransactionGenerator/AElf.Boilerplate.SystemTransactionGenerator.csproj",
   "expectedPackageFiles": [
     "/Users/chenghaiming/.nuget/packages/aelf.core/1.0.0/aelf.core.1.0.0.nupkg.sha512",
     "/Users/chenghaiming/.nuget/packages/aelf.cryptography/1.0.0/aelf.cryptography.1.0.0.nupkg.sha512",

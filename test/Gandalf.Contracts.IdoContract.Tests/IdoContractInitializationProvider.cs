@@ -13,6 +13,6 @@ namespace AElf.Contracts.IdoContract
         }
 
         public Hash SystemSmartContractName { get; } = DAppSmartContractAddressNameProvider.Name;
-        public string ContractCodeName { get; } = "AElf.Contracts.IdoContract";
+        public string ContractCodeName { get; } = "Gandalf.Contracts.IdoContract";
     }
 }

@@ -7078,14 +7078,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.ContractPatcher/AElf.Boilerplate.ContractPatcher.csproj",
+      "projectUniqueName": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.ContractPatcher/AElf.Boilerplate.ContractPatcher.csproj",
       "projectName": "AElf.Boilerplate.ContractPatcher",
-      "projectPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.ContractPatcher/AElf.Boilerplate.ContractPatcher.csproj",
+      "projectPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.ContractPatcher/AElf.Boilerplate.ContractPatcher.csproj",
       "packagesPath": "/Users/chenghaiming/.nuget/packages/",
-      "outputPath": "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/src/AElf.Boilerplate.ContractPatcher/obj/",
+      "outputPath": "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.ContractPatcher/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/NuGet.Config",
+        "/Users/chenghaiming/work/codes/AElf/Ido-aelf/gandalf-shadowfax-aelf/NuGet.Config",
         "/Users/chenghaiming/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [

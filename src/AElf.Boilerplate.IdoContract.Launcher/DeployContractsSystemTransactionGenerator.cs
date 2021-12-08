@@ -49,7 +49,7 @@ namespace AElf.Boilerplate.IdoContract.Launcher
         private byte[] GetContractCodes()
         {
             return ContractsDeployer.GetContractCodes<DeployContractsSystemTransactionGenerator>(_contractOptions
-                .GenesisContractDir)["AElf.Contracts.IdoContract"];
+                .GenesisContractDir)["Gandalf.Contracts.IdoContract"];
         }
     }
 }
