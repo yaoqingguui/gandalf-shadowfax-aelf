@@ -17,7 +17,6 @@
         <!-- Reference the protobuf definition of the contract -->
         <ContractCode Include="..\..\protobuf\ido_contract.proto">
             <Link>Protobuf\Proto\ido_contract.proto</Link>
-            <SystemContract>true</SystemContract>
         </ContractCode>
     </ItemGroup>
     
