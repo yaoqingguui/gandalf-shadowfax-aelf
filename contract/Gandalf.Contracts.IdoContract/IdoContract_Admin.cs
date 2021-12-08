@@ -15,7 +15,7 @@ namespace Gandalf.Contracts.IdoContract
         private void AssertSenderIsOwner()
         {
             Assert(State.Owner.Value != null, "Contract not initialized.");
-            Assert(Context.Sender == State.Owner.Value);
+            Assert(Context.Sender == State.Owner.Value,"Not Owner.");
         }
     }
 }
