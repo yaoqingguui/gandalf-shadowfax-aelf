@@ -84,6 +84,27 @@ namespace Gandalf.Contracts.IdoContract
             offering.WantTokenBalance.ShouldBe(0);
             offering.PublicId.ShouldBe(0);
         }
+        
+        [Fact]
+        public async  Task Invest_Should_Fail_Withdrawout_Add_Offering_Test()
+        {
+            await InitializeGame();
+            await ResetTimeSpan();
+            var kittyStub = GetIdoContractStub(KittyKeyPair);
+            var tokenKitty = GetTokenContractStub(KittyKeyPair);
+            await tokenKitty.Approve.SendAsync(new ApproveInput
+            {
+                Spender = DAppContractAddress,
+                Amount = 200000,
+                Symbol = TokenWantSymbol
+            });
+
+            (await Assert.ThrowsAsync<Exception>(() =>  kittyStub.Invest.SendAsync(new InvestInput
+            {
+                PublicId = 0,
+                Amount = 2000
+            }))).Message.ShouldContain("Activity id not exist.");
+        }
 
         [Fact]
         public async Task Invest_And_Harvest_Should_Success_Test()
@@ -92,7 +113,7 @@ namespace Gandalf.Contracts.IdoContract
             await ResetTimeSpan();
             var tomStub = GetIdoContractStub(TomKeyPair);
             var startTime = DateTime.UtcNow.AddSeconds(1).ToTimestamp();
-            var endTime = DateTime.UtcNow.AddSeconds(50).ToTimestamp();
+            var endTime = DateTime.UtcNow.AddSeconds(60).ToTimestamp();
             await AddPublicOffering(startTime, endTime);
             var offering = await tomStub.GetPublicOffering.CallAsync(new Int32Value
             {
@@ -172,7 +193,7 @@ namespace Gandalf.Contracts.IdoContract
             userInfo.Claimed.ShouldBe(false);
             userInfo.ObtainAmount.ShouldBe(100000);
 
-            await Task.Delay(50 * 1000);
+            await Task.Delay(60 * 1000);
             
             var offerTokenbalance = await tokenKitty.GetBalance.CallAsync(new GetBalanceInput
             {
@@ -208,7 +229,7 @@ namespace Gandalf.Contracts.IdoContract
             await InitializeGame();
             await ResetTimeSpan();
             var startTime = DateTime.UtcNow.AddSeconds(1).ToTimestamp();
-            var endTime = DateTime.UtcNow.AddSeconds(50).ToTimestamp();
+            var endTime = DateTime.UtcNow.AddSeconds(60).ToTimestamp();
             await AddPublicOffering(startTime, endTime);
 
             var tokenKitty = GetTokenContractStub(KittyKeyPair);
@@ -263,7 +284,7 @@ namespace Gandalf.Contracts.IdoContract
             kittyOfferingTokenBalacne.Balance.ShouldBe(20000);
             
             var startTime = DateTime.UtcNow.AddSeconds(1).ToTimestamp();
-            var endTime = DateTime.UtcNow.AddSeconds(50).ToTimestamp();
+            var endTime = DateTime.UtcNow.AddSeconds(60).ToTimestamp();
             await AddPublicOffering(startTime, endTime);
             var kittyStub = GetKittyStub();
             var tokenKittyStub = GetTokenContractStub(KittyKeyPair);

@@ -11,8 +11,7 @@ namespace Gandalf.Contracts.IdoContract
     {
         public override Empty Invest(InvestInput input)
         {
-            var offering = State.PublicOfferList.Value.Value[input.PublicId];
-            Assert(offering != null, "Activity not exist.");
+            var offering = GetOffering(input.PublicId);
             Assert(Context.CurrentBlockTime >= offering.StartTime && Context.CurrentBlockTime < offering.EndTime,
                 "Not ido time.");
             Assert(offering.OfferingTokenAmount > offering.SubscribedOfferingAmount,
@@ -56,9 +55,9 @@ namespace Gandalf.Contracts.IdoContract
 
         public override Empty Harvest(Int32Value input)
         {
-            var offering = State.PublicOfferList.Value.Value[input.Value];
+            var offering = GetOffering(input.Value);
             Assert(offering != null, "Activity not exist.");
-            Assert(Context.CurrentBlockTime > offering.EndTime, "The activity is not over.");
+             Assert(Context.CurrentBlockTime > offering.EndTime, "The activity is not over.");
             var userInfo = State.UserInfo[input.Value][Context.Sender];
             Assert(userInfo != null, "Not participate in.");
             Assert(!userInfo.Claimed, "Have harvested.");
@@ -71,7 +70,7 @@ namespace Gandalf.Contracts.IdoContract
                 Symbol = offering.OfferingTokenSymbol,
                 To = Context.Sender
             });
-            
+
             Context.Fire(new Harvest
             {
                 Amount = userInfo.ObtainAmount,
@@ -79,6 +78,14 @@ namespace Gandalf.Contracts.IdoContract
                 PublicId = input.Value
             });
             return new Empty();
+        }
+
+        private PublicOffering GetOffering(int index)
+        {
+            Assert(State.PublicOfferList.Value.Value.Count >= index + 1, "Activity id not exist.");
+            var offering = State.PublicOfferList.Value.Value[index];
+            Assert(offering != null, "Activity not exist.");
+            return offering;
         }
     }
 }
