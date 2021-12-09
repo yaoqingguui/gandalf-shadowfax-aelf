@@ -58,7 +58,6 @@ namespace Gandalf.Contracts.IdoContract
         public override Empty Harvest(Int32Value input)
         {
             var offering = GetOffering(input.Value);
-            Assert(offering != null, "Activity not exist.");
             Assert(Context.CurrentBlockTime > offering.EndTime, "The activity is not over.");
             var userInfo = State.UserInfo[input.Value][Context.Sender];
             Assert(userInfo != null, "Not participate in.");
