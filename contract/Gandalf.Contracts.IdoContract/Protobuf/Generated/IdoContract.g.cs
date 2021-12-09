@@ -47,61 +47,62 @@ namespace Gandalf.Contracts.IdoContract {
             "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcBIsCghlbmRfdGltZRgGIAEoCzIaLmdv",
             "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAiTgoVQ2hhbmdlQXNjcmlwdGlvbklu",
             "cHV0EhQKDHRva2VuX3N5bWJvbBgBIAEoCRIfCghyZWNlaXZlchgCIAEoCzIN",
-            "LmFlbGYuQWRkcmVzcyJDCgtJbnZlc3RJbnB1dBIRCglwdWJsaWNfaWQYASAB",
-            "KAUSIQoGYW1vdW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZSI/Cg1Vc2Vy",
-            "SW5mb0lucHV0EhEKCXB1YmxpY19pZBgBIAEoBRIbCgR1c2VyGAIgASgLMg0u",
-            "YWVsZi5BZGRyZXNzIkAKElJlc2V0VGltZVNwYW5JbnB1dBIUCgxtYXhfdGlt",
-            "ZXNwYW4YASABKAMSFAoMbWluX3RpbWVzcGFuGAIgASgDIkEKE1Jlc2V0VGlt",
-            "ZVNwYW5PdXRwdXQSFAoMbWF4X3RpbWVzcGFuGAEgASgDEhQKDG1pbl90aW1l",
-            "c3BhbhgCIAEoAyK6AwoUUHVibGljT2ZmZXJpbmdPdXRwdXQSHQoVb2ZmZXJp",
-            "bmdfdG9rZW5fc3ltYm9sGAEgASgJEjAKFW9mZmVyaW5nX3Rva2VuX2Ftb3Vu",
-            "dBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSGQoRd2FudF90b2tlbl9zeW1i",
-            "b2wYAyABKAkSLAoRd2FudF90b2tlbl9hbW91bnQYBCABKAsyES5hZWxmLkJp",
-            "Z0ludFZhbHVlEi4KCnN0YXJ0X3RpbWUYBSABKAsyGi5nb29nbGUucHJvdG9i",
-            "dWYuVGltZXN0YW1wEiwKCGVuZF90aW1lGAYgASgLMhouZ29vZ2xlLnByb3Rv",
-            "YnVmLlRpbWVzdGFtcBIRCglwdWJsaWNfaWQYByABKAMSIAoJcHVibGlzaGVy",
-            "GAggASgLMg0uYWVsZi5BZGRyZXNzEg8KB2NsYWltZWQYCSABKAgSLQoSV2Fu",
-            "dF9Ub2tlbl9CYWxhbmNlGAogASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRI1ChpT",
-            "dWJzY3JpYmVkX09mZmVyaW5nX0Ftb3VudBgLIAEoCzIRLmFlbGYuQmlnSW50",
-            "VmFsdWUixgIKEUFkZFB1YmxpY09mZmVyaW5nEh0KFW9mZmVyaW5nX3Rva2Vu",
-            "X3N5bWJvbBgBIAEoCRIwChVvZmZlcmluZ190b2tlbl9hbW91bnQYAiABKAsy",
-            "ES5hZWxmLkJpZ0ludFZhbHVlEhkKEXdhbnRfdG9rZW5fc3ltYm9sGAMgASgJ",
-            "EiwKEXdhbnRfdG9rZW5fYW1vdW50GAQgASgLMhEuYWVsZi5CaWdJbnRWYWx1",
-            "ZRIgCglwdWJsaXNoZXIYBSABKAsyDS5hZWxmLkFkZHJlc3MSLgoKc3RhcnRf",
-            "dGltZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLAoIZW5k",
-            "X3RpbWUYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhEKCXB1",
-            "YmxpY19pZBgIIAEoAzoEoLsYASJ6ChBDaGFuZ2VBc2NyaXB0aW9uEhQKDHRv",
-            "a2VuX3N5bWJvbBgBIAEoCRIkCg1vbGRfcHVibGlzaGVyGAIgASgLMg0uYWVs",
-            "Zi5BZGRyZXNzEiQKDW5ld19wdWJsaXNoZXIYAyABKAsyDS5hZWxmLkFkZHJl",
-            "c3M6BKC7GAEiawoIV2l0aGRyYXcSEgoKcHViaWxpY19pZBgBIAEoAxIZCgJ0",
-            "bxgCIAEoCzINLmFlbGYuQWRkcmVzcxISCgp3YW50X3Rva2VuGAMgASgDEhYK",
-            "Dm9mZmVyaW5nX3Rva2VuGAQgASgDOgSguxgBIp0BCgZJbnZlc3QSEQoJcHVi",
-            "bGljX2lkGAEgASgDEh8KCGludmVzdG9yGAIgASgLMg0uYWVsZi5BZGRyZXNz",
-            "EhQKDHRva2VuX3N5bWJvbBgDIAEoCRIhCgZpbmNvbWUYBCABKAsyES5hZWxm",
-            "LkJpZ0ludFZhbHVlEiAKBXNwZW5kGAUgASgLMhEuYWVsZi5CaWdJbnRWYWx1",
-            "ZToEoLsYASJgCgdIYXJ2ZXN0EhEKCXB1YmxpY19pZBgBIAEoAxIZCgJ0bxgC",
-            "IAEoCzINLmFlbGYuQWRkcmVzcxIhCgZhbW91bnQYAyABKAsyES5hZWxmLkJp",
-            "Z0ludFZhbHVlOgSguxgBMtkGCgtJZG9Db250cmFjdBI1CgpJbml0aWFsaXpl",
-            "Eg0uYWVsZi5BZGRyZXNzGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5IgASSwoR",
-            "QWRkUHVibGljT2ZmZXJpbmcSFy5BZGRQdWJsaWNPZmZlcmluZ0lucHV0Ghsu",
-            "Z29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUiABJEChBDaGFuZ2VBc2NyaXB0",
-            "aW9uEhYuQ2hhbmdlQXNjcmlwdGlvbklucHV0GhYuZ29vZ2xlLnByb3RvYnVm",
-            "LkVtcHR5IgASQQoIV2l0aGRyYXcSGy5nb29nbGUucHJvdG9idWYuSW50MzJW",
-            "YWx1ZRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEjAKBkludmVzdBIMLklu",
-            "dmVzdElucHV0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5IgASQAoHSGFydmVz",
-            "dBIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlGhYuZ29vZ2xlLnByb3Rv",
-            "YnVmLkVtcHR5IgASPgoNUmVzZXRUaW1lU3BhbhITLlJlc2V0VGltZVNwYW5J",
-            "bnB1dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEjgKCEdldE93bmVyEhYu",
-            "Z29vZ2xlLnByb3RvYnVmLkVtcHR5Gg0uYWVsZi5BZGRyZXNzIgWIifcBARJC",
-            "CgtHZXRUaW1lc3BhbhIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoULlJlc2V0",
-            "VGltZVNwYW5PdXRwdXQiBYiJ9wEBEk4KEUdldFB1YmxpY09mZmVyaW5nEhsu",
-            "Z29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUaFS5QdWJsaWNPZmZlcmluZ091",
-            "dHB1dCIFiIn3AQESLwoLR2V0VXNlckluZm8SDi5Vc2VySW5mb0lucHV0Ggku",
-            "VXNlckluZm8iBYiJ9wEBElUKF0dldFB1YmxpY09mZmVyaW5nTGVuZ3RoEhYu",
-            "Z29vZ2xlLnByb3RvYnVmLkVtcHR5GhsuZ29vZ2xlLnByb3RvYnVmLkludDMy",
-            "VmFsdWUiBYiJ9wEBGjOyzPYBLkdhbmRhbGYuQ29udHJhY3RzLklkb0NvbnRy",
-            "YWN0Lklkb0NvbnRyYWN0U3RhdGVCIKoCHUdhbmRhbGYuQ29udHJhY3RzLklk",
-            "b0NvbnRyYWN0YgZwcm90bzM="));
+            "LmFlbGYuQWRkcmVzcyJUCgtJbnZlc3RJbnB1dBIRCglwdWJsaWNfaWQYASAB",
+            "KAUSIQoGYW1vdW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIPCgdjaGFu",
+            "bmVsGAMgASgJIj8KDVVzZXJJbmZvSW5wdXQSEQoJcHVibGljX2lkGAEgASgF",
+            "EhsKBHVzZXIYAiABKAsyDS5hZWxmLkFkZHJlc3MiQAoSUmVzZXRUaW1lU3Bh",
+            "bklucHV0EhQKDG1heF90aW1lc3BhbhgBIAEoAxIUCgxtaW5fdGltZXNwYW4Y",
+            "AiABKAMiQQoTUmVzZXRUaW1lU3Bhbk91dHB1dBIUCgxtYXhfdGltZXNwYW4Y",
+            "ASABKAMSFAoMbWluX3RpbWVzcGFuGAIgASgDIroDChRQdWJsaWNPZmZlcmlu",
+            "Z091dHB1dBIdChVvZmZlcmluZ190b2tlbl9zeW1ib2wYASABKAkSMAoVb2Zm",
+            "ZXJpbmdfdG9rZW5fYW1vdW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIZ",
+            "ChF3YW50X3Rva2VuX3N5bWJvbBgDIAEoCRIsChF3YW50X3Rva2VuX2Ftb3Vu",
+            "dBgEIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSLgoKc3RhcnRfdGltZRgFIAEo",
+            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLAoIZW5kX3RpbWUYBiAB",
+            "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhEKCXB1YmxpY19pZBgH",
+            "IAEoAxIgCglwdWJsaXNoZXIYCCABKAsyDS5hZWxmLkFkZHJlc3MSDwoHY2xh",
+            "aW1lZBgJIAEoCBItChJXYW50X1Rva2VuX0JhbGFuY2UYCiABKAsyES5hZWxm",
+            "LkJpZ0ludFZhbHVlEjUKGlN1YnNjcmliZWRfT2ZmZXJpbmdfQW1vdW50GAsg",
+            "ASgLMhEuYWVsZi5CaWdJbnRWYWx1ZSLGAgoRQWRkUHVibGljT2ZmZXJpbmcS",
+            "HQoVb2ZmZXJpbmdfdG9rZW5fc3ltYm9sGAEgASgJEjAKFW9mZmVyaW5nX3Rv",
+            "a2VuX2Ftb3VudBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSGQoRd2FudF90",
+            "b2tlbl9zeW1ib2wYAyABKAkSLAoRd2FudF90b2tlbl9hbW91bnQYBCABKAsy",
+            "ES5hZWxmLkJpZ0ludFZhbHVlEiAKCXB1Ymxpc2hlchgFIAEoCzINLmFlbGYu",
+            "QWRkcmVzcxIuCgpzdGFydF90aW1lGAYgASgLMhouZ29vZ2xlLnByb3RvYnVm",
+            "LlRpbWVzdGFtcBIsCghlbmRfdGltZRgHIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5UaW1lc3RhbXASEQoJcHVibGljX2lkGAggASgDOgSguxgBInoKEENoYW5n",
+            "ZUFzY3JpcHRpb24SFAoMdG9rZW5fc3ltYm9sGAEgASgJEiQKDW9sZF9wdWJs",
+            "aXNoZXIYAiABKAsyDS5hZWxmLkFkZHJlc3MSJAoNbmV3X3B1Ymxpc2hlchgD",
+            "IAEoCzINLmFlbGYuQWRkcmVzczoEoLsYASJrCghXaXRoZHJhdxISCgpwdWJp",
+            "bGljX2lkGAEgASgDEhkKAnRvGAIgASgLMg0uYWVsZi5BZGRyZXNzEhIKCndh",
+            "bnRfdG9rZW4YAyABKAMSFgoOb2ZmZXJpbmdfdG9rZW4YBCABKAM6BKC7GAEi",
+            "rgEKBkludmVzdBIRCglwdWJsaWNfaWQYASABKAMSHwoIaW52ZXN0b3IYAiAB",
+            "KAsyDS5hZWxmLkFkZHJlc3MSFAoMdG9rZW5fc3ltYm9sGAMgASgJEiEKBmlu",
+            "Y29tZRgEIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSIAoFc3BlbmQYBSABKAsy",
+            "ES5hZWxmLkJpZ0ludFZhbHVlEg8KB2NoYW5uZWwYBiABKAk6BKC7GAEiYAoH",
+            "SGFydmVzdBIRCglwdWJsaWNfaWQYASABKAMSGQoCdG8YAiABKAsyDS5hZWxm",
+            "LkFkZHJlc3MSIQoGYW1vdW50GAMgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZToE",
+            "oLsYATLZBgoLSWRvQ29udHJhY3QSNQoKSW5pdGlhbGl6ZRINLmFlbGYuQWRk",
+            "cmVzcxoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEksKEUFkZFB1YmxpY09m",
+            "ZmVyaW5nEhcuQWRkUHVibGljT2ZmZXJpbmdJbnB1dBobLmdvb2dsZS5wcm90",
+            "b2J1Zi5JbnQ2NFZhbHVlIgASRAoQQ2hhbmdlQXNjcmlwdGlvbhIWLkNoYW5n",
+            "ZUFzY3JpcHRpb25JbnB1dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEkEK",
+            "CFdpdGhkcmF3EhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUaFi5nb29n",
+            "bGUucHJvdG9idWYuRW1wdHkiABIwCgZJbnZlc3QSDC5JbnZlc3RJbnB1dBoW",
+            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEkAKB0hhcnZlc3QSGy5nb29nbGUu",
+            "cHJvdG9idWYuSW50MzJWYWx1ZRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIA",
+            "Ej4KDVJlc2V0VGltZVNwYW4SEy5SZXNldFRpbWVTcGFuSW5wdXQaFi5nb29n",
+            "bGUucHJvdG9idWYuRW1wdHkiABI4CghHZXRPd25lchIWLmdvb2dsZS5wcm90",
+            "b2J1Zi5FbXB0eRoNLmFlbGYuQWRkcmVzcyIFiIn3AQESQgoLR2V0VGltZXNw",
+            "YW4SFi5nb29nbGUucHJvdG9idWYuRW1wdHkaFC5SZXNldFRpbWVTcGFuT3V0",
+            "cHV0IgWIifcBARJOChFHZXRQdWJsaWNPZmZlcmluZxIbLmdvb2dsZS5wcm90",
+            "b2J1Zi5JbnQzMlZhbHVlGhUuUHVibGljT2ZmZXJpbmdPdXRwdXQiBYiJ9wEB",
+            "Ei8KC0dldFVzZXJJbmZvEg4uVXNlckluZm9JbnB1dBoJLlVzZXJJbmZvIgWI",
+            "ifcBARJVChdHZXRQdWJsaWNPZmZlcmluZ0xlbmd0aBIWLmdvb2dsZS5wcm90",
+            "b2J1Zi5FbXB0eRobLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlIgWIifcB",
+            "ARozssz2AS5HYW5kYWxmLkNvbnRyYWN0cy5JZG9Db250cmFjdC5JZG9Db250",
+            "cmFjdFN0YXRlQiCqAh1HYW5kYWxmLkNvbnRyYWN0cy5JZG9Db250cmFjdGIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::AElf.Types.CoreReflection.Descriptor, global::AElf.OptionsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -110,7 +111,7 @@ namespace Gandalf.Contracts.IdoContract {
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.PublicOfferList), global::Gandalf.Contracts.IdoContract.PublicOfferList.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.AddPublicOfferingInput), global::Gandalf.Contracts.IdoContract.AddPublicOfferingInput.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "StartTime", "EndTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ChangeAscriptionInput), global::Gandalf.Contracts.IdoContract.ChangeAscriptionInput.Parser, new[]{ "TokenSymbol", "Receiver" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.InvestInput), global::Gandalf.Contracts.IdoContract.InvestInput.Parser, new[]{ "PublicId", "Amount" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.InvestInput), global::Gandalf.Contracts.IdoContract.InvestInput.Parser, new[]{ "PublicId", "Amount", "Channel" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.UserInfoInput), global::Gandalf.Contracts.IdoContract.UserInfoInput.Parser, new[]{ "PublicId", "User" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput), global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput.Parser, new[]{ "MaxTimespan", "MinTimespan" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput), global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput.Parser, new[]{ "MaxTimespan", "MinTimespan" }, null, null, null, null),
@@ -118,7 +119,7 @@ namespace Gandalf.Contracts.IdoContract {
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.AddPublicOffering), global::Gandalf.Contracts.IdoContract.AddPublicOffering.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "Publisher", "StartTime", "EndTime", "PublicId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ChangeAscription), global::Gandalf.Contracts.IdoContract.ChangeAscription.Parser, new[]{ "TokenSymbol", "OldPublisher", "NewPublisher" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.Withdraw), global::Gandalf.Contracts.IdoContract.Withdraw.Parser, new[]{ "PubilicId", "To", "WantToken", "OfferingToken" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.Invest), global::Gandalf.Contracts.IdoContract.Invest.Parser, new[]{ "PublicId", "Investor", "TokenSymbol", "Income", "Spend" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.Invest), global::Gandalf.Contracts.IdoContract.Invest.Parser, new[]{ "PublicId", "Investor", "TokenSymbol", "Income", "Spend", "Channel" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.Harvest), global::Gandalf.Contracts.IdoContract.Harvest.Parser, new[]{ "PublicId", "To", "Amount" }, null, null, null, null)
           }));
     }
@@ -1319,6 +1320,7 @@ namespace Gandalf.Contracts.IdoContract {
     public InvestInput(InvestInput other) : this() {
       publicId_ = other.publicId_;
       amount_ = other.amount_ != null ? other.amount_.Clone() : null;
+      channel_ = other.channel_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1349,6 +1351,17 @@ namespace Gandalf.Contracts.IdoContract {
       }
     }
 
+    /// <summary>Field number for the "channel" field.</summary>
+    public const int ChannelFieldNumber = 3;
+    private string channel_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Channel {
+      get { return channel_; }
+      set {
+        channel_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as InvestInput);
@@ -1364,6 +1377,7 @@ namespace Gandalf.Contracts.IdoContract {
       }
       if (PublicId != other.PublicId) return false;
       if (!object.Equals(Amount, other.Amount)) return false;
+      if (Channel != other.Channel) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1372,6 +1386,7 @@ namespace Gandalf.Contracts.IdoContract {
       int hash = 1;
       if (PublicId != 0) hash ^= PublicId.GetHashCode();
       if (amount_ != null) hash ^= Amount.GetHashCode();
+      if (Channel.Length != 0) hash ^= Channel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1393,6 +1408,10 @@ namespace Gandalf.Contracts.IdoContract {
         output.WriteRawTag(18);
         output.WriteMessage(Amount);
       }
+      if (Channel.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Channel);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1406,6 +1425,9 @@ namespace Gandalf.Contracts.IdoContract {
       }
       if (amount_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Amount);
+      }
+      if (Channel.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Channel);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1427,6 +1449,9 @@ namespace Gandalf.Contracts.IdoContract {
         }
         Amount.MergeFrom(other.Amount);
       }
+      if (other.Channel.Length != 0) {
+        Channel = other.Channel;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1447,6 +1472,10 @@ namespace Gandalf.Contracts.IdoContract {
               Amount = new global::AElf.Types.BigIntValue();
             }
             input.ReadMessage(Amount);
+            break;
+          }
+          case 26: {
+            Channel = input.ReadString();
             break;
           }
         }
@@ -1778,6 +1807,9 @@ namespace Gandalf.Contracts.IdoContract {
 
   }
 
+  /// <summary>
+  ///out put
+  /// </summary>
   public sealed partial class ResetTimeSpanOutput : pb::IMessage<ResetTimeSpanOutput> {
     private static readonly pb::MessageParser<ResetTimeSpanOutput> _parser = new pb::MessageParser<ResetTimeSpanOutput>(() => new ResetTimeSpanOutput());
     private pb::UnknownFieldSet _unknownFields;
@@ -3190,6 +3222,7 @@ namespace Gandalf.Contracts.IdoContract {
       tokenSymbol_ = other.tokenSymbol_;
       income_ = other.income_ != null ? other.income_.Clone() : null;
       spend_ = other.spend_ != null ? other.spend_.Clone() : null;
+      channel_ = other.channel_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3253,6 +3286,17 @@ namespace Gandalf.Contracts.IdoContract {
       }
     }
 
+    /// <summary>Field number for the "channel" field.</summary>
+    public const int ChannelFieldNumber = 6;
+    private string channel_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Channel {
+      get { return channel_; }
+      set {
+        channel_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Invest);
@@ -3271,6 +3315,7 @@ namespace Gandalf.Contracts.IdoContract {
       if (TokenSymbol != other.TokenSymbol) return false;
       if (!object.Equals(Income, other.Income)) return false;
       if (!object.Equals(Spend, other.Spend)) return false;
+      if (Channel != other.Channel) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3282,6 +3327,7 @@ namespace Gandalf.Contracts.IdoContract {
       if (TokenSymbol.Length != 0) hash ^= TokenSymbol.GetHashCode();
       if (income_ != null) hash ^= Income.GetHashCode();
       if (spend_ != null) hash ^= Spend.GetHashCode();
+      if (Channel.Length != 0) hash ^= Channel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3315,6 +3361,10 @@ namespace Gandalf.Contracts.IdoContract {
         output.WriteRawTag(42);
         output.WriteMessage(Spend);
       }
+      if (Channel.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Channel);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3337,6 +3387,9 @@ namespace Gandalf.Contracts.IdoContract {
       }
       if (spend_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Spend);
+      }
+      if (Channel.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Channel);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3372,6 +3425,9 @@ namespace Gandalf.Contracts.IdoContract {
           Spend = new global::AElf.Types.BigIntValue();
         }
         Spend.MergeFrom(other.Spend);
+      }
+      if (other.Channel.Length != 0) {
+        Channel = other.Channel;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3411,6 +3467,10 @@ namespace Gandalf.Contracts.IdoContract {
               Spend = new global::AElf.Types.BigIntValue();
             }
             input.ReadMessage(Spend);
+            break;
+          }
+          case 50: {
+            Channel = input.ReadString();
             break;
           }
         }

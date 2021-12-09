@@ -107,6 +107,7 @@ namespace Gandalf.Contracts.IdoContract {
         TokenSymbol = TokenSymbol,
         Income = Income,
         Spend = Spend,
+        Channel = Channel,
       };
     }
   }

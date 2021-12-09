@@ -11,6 +11,7 @@ namespace Gandalf.Contracts.IdoContract
     {
         public override Empty Invest(InvestInput input)
         {
+            Assert(input.Channel != null, "Invalid channel.");
             var offering = GetOffering(input.PublicId);
             Assert(Context.CurrentBlockTime >= offering.StartTime && Context.CurrentBlockTime < offering.EndTime,
                 "Not ido time.");
@@ -48,7 +49,8 @@ namespace Gandalf.Contracts.IdoContract
                 Investor = Context.Sender,
                 TokenSymbol = offering.WantTokenSymbol,
                 Spend = actualUsed,
-                Income = obtainAmount
+                Income = obtainAmount,
+                Channel = input.Channel
             });
             return new Empty();
         }
@@ -57,7 +59,7 @@ namespace Gandalf.Contracts.IdoContract
         {
             var offering = GetOffering(input.Value);
             Assert(offering != null, "Activity not exist.");
-             Assert(Context.CurrentBlockTime > offering.EndTime, "The activity is not over.");
+            Assert(Context.CurrentBlockTime > offering.EndTime, "The activity is not over.");
             var userInfo = State.UserInfo[input.Value][Context.Sender];
             Assert(userInfo != null, "Not participate in.");
             Assert(!userInfo.Claimed, "Have harvested.");
