@@ -232,6 +232,13 @@ namespace Gandalf.Contracts.IdoContract {
         __Marshaller_UserInfoInput,
         __Marshaller_UserInfo);
 
+    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int32Value> __Method_GetPublicOfferingLength = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int32Value>(
+        aelf::MethodType.View,
+        __ServiceName,
+        "GetPublicOfferingLength",
+        __Marshaller_google_protobuf_Empty,
+        __Marshaller_google_protobuf_Int32Value);
+
     #endregion
 
     #region Descriptors
@@ -307,6 +314,11 @@ namespace Gandalf.Contracts.IdoContract {
       public aelf::IMethodStub<global::Gandalf.Contracts.IdoContract.UserInfoInput, global::Gandalf.Contracts.IdoContract.UserInfo> GetUserInfo
       {
         get { return __factory.Create(__Method_GetUserInfo); }
+      }
+
+      public aelf::IMethodStub<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int32Value> GetPublicOfferingLength
+      {
+        get { return __factory.Create(__Method_GetPublicOfferingLength); }
       }
 
     }

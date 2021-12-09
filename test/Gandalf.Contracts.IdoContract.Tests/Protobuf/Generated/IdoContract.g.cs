@@ -81,7 +81,7 @@ namespace Gandalf.Contracts.IdoContract {
             "LkJpZ0ludFZhbHVlEiAKBXNwZW5kGAUgASgLMhEuYWVsZi5CaWdJbnRWYWx1",
             "ZToEoLsYASJgCgdIYXJ2ZXN0EhEKCXB1YmxpY19pZBgBIAEoAxIZCgJ0bxgC",
             "IAEoCzINLmFlbGYuQWRkcmVzcxIhCgZhbW91bnQYAyABKAsyES5hZWxmLkJp",
-            "Z0ludFZhbHVlOgSguxgBMoIGCgtJZG9Db250cmFjdBI1CgpJbml0aWFsaXpl",
+            "Z0ludFZhbHVlOgSguxgBMtkGCgtJZG9Db250cmFjdBI1CgpJbml0aWFsaXpl",
             "Eg0uYWVsZi5BZGRyZXNzGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5IgASSwoR",
             "QWRkUHVibGljT2ZmZXJpbmcSFy5BZGRQdWJsaWNPZmZlcmluZ0lucHV0Ghsu",
             "Z29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUiABJEChBDaGFuZ2VBc2NyaXB0",
@@ -97,9 +97,11 @@ namespace Gandalf.Contracts.IdoContract {
             "VGltZVNwYW5PdXRwdXQiBYiJ9wEBEk4KEUdldFB1YmxpY09mZmVyaW5nEhsu",
             "Z29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUaFS5QdWJsaWNPZmZlcmluZ091",
             "dHB1dCIFiIn3AQESLwoLR2V0VXNlckluZm8SDi5Vc2VySW5mb0lucHV0Ggku",
-            "VXNlckluZm8iBYiJ9wEBGjOyzPYBLkdhbmRhbGYuQ29udHJhY3RzLklkb0Nv",
-            "bnRyYWN0Lklkb0NvbnRyYWN0U3RhdGVCIKoCHUdhbmRhbGYuQ29udHJhY3Rz",
-            "Lklkb0NvbnRyYWN0YgZwcm90bzM="));
+            "VXNlckluZm8iBYiJ9wEBElUKF0dldFB1YmxpY09mZmVyaW5nTGVuZ3RoEhYu",
+            "Z29vZ2xlLnByb3RvYnVmLkVtcHR5GhsuZ29vZ2xlLnByb3RvYnVmLkludDMy",
+            "VmFsdWUiBYiJ9wEBGjOyzPYBLkdhbmRhbGYuQ29udHJhY3RzLklkb0NvbnRy",
+            "YWN0Lklkb0NvbnRyYWN0U3RhdGVCIKoCHUdhbmRhbGYuQ29udHJhY3RzLklk",
+            "b0NvbnRyYWN0YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::AElf.Types.CoreReflection.Descriptor, global::AElf.OptionsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

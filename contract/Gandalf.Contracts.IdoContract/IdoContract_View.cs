@@ -53,6 +53,14 @@ namespace Gandalf.Contracts.IdoContract
                 ObtainAmount = 0
             };
         }
+        
+        public override Int32Value GetPublicOfferingLength(Empty input)
+        {
+            return new Int32Value
+            {
+                Value = State.PublicOfferList.Value.Value.Count
+            };
+        }
     }
     
 }

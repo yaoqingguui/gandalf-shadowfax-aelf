@@ -46,7 +46,7 @@ namespace Gandalf.Contracts.IdoContract
                     stub.Initialize.SendAsync(SampleAccount.Accounts[1].Address))).Message
                 .ShouldContain("Already initialized.");
         }
-
+        
 
         [Fact]
         public async Task ResetTimeSpan_Test()
@@ -83,6 +83,9 @@ namespace Gandalf.Contracts.IdoContract
             offering.SubscribedOfferingAmount.ShouldBe(0);
             offering.WantTokenBalance.ShouldBe(0);
             offering.PublicId.ShouldBe(0);
+
+            var int32Value = await tomStub.GetPublicOfferingLength.CallAsync(new Empty());
+            int32Value.Value.ShouldBe(1);
         }
         
         [Fact]

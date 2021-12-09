@@ -232,6 +232,13 @@ namespace Gandalf.Contracts.IdoContract {
         __Marshaller_UserInfoInput,
         __Marshaller_UserInfo);
 
+    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int32Value> __Method_GetPublicOfferingLength = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int32Value>(
+        aelf::MethodType.View,
+        __ServiceName,
+        "GetPublicOfferingLength",
+        __Marshaller_google_protobuf_Empty,
+        __Marshaller_google_protobuf_Int32Value);
+
     #endregion
 
     #region Descriptors
@@ -310,6 +317,11 @@ namespace Gandalf.Contracts.IdoContract {
         throw new global::System.NotImplementedException();
       }
 
+      public virtual global::Google.Protobuf.WellKnownTypes.Int32Value GetPublicOfferingLength(global::Google.Protobuf.WellKnownTypes.Empty input)
+      {
+        throw new global::System.NotImplementedException();
+      }
+
     }
 
     public static aelf::ServerServiceDefinition BindService(IdoContractBase serviceImpl)
@@ -326,7 +338,8 @@ namespace Gandalf.Contracts.IdoContract {
           .AddMethod(__Method_GetOwner, serviceImpl.GetOwner)
           .AddMethod(__Method_GetTimespan, serviceImpl.GetTimespan)
           .AddMethod(__Method_GetPublicOffering, serviceImpl.GetPublicOffering)
-          .AddMethod(__Method_GetUserInfo, serviceImpl.GetUserInfo).Build();
+          .AddMethod(__Method_GetUserInfo, serviceImpl.GetUserInfo)
+          .AddMethod(__Method_GetPublicOfferingLength, serviceImpl.GetPublicOfferingLength).Build();
     }
 
   }

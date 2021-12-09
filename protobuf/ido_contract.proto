@@ -72,6 +72,10 @@ service IdoContract {
   rpc GetUserInfo(UserInfoInput) returns (UserInfo){
     option (aelf.is_view) = true;
   }
+  
+  rpc GetPublicOfferingLength(google.protobuf.Empty) returns (google.protobuf.Int32Value){
+    option (aelf.is_view) = true;
+  }
 }
 
 // stuct
