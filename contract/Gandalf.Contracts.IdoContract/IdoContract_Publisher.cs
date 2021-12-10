@@ -9,7 +9,7 @@ namespace Gandalf.Contracts.IdoContract
     public partial class IdoContract
     {
         public override Int64Value AddPublicOffering(AddPublicOfferingInput input)
-        {   
+        {
             Assert((BigInteger) input.OfferingTokenAmount > 0, "Need deposit some offering token.");
             Assert(input.StartTime >= Context.CurrentBlockTime, "Invaild start time.");
             Assert(input.EndTime.Seconds <= input.StartTime.Seconds + State.MaximalTimeSpan.Value &&
@@ -46,7 +46,7 @@ namespace Gandalf.Contracts.IdoContract
                 WantTokenBalance = 0,
                 SubscribedOfferingAmount = 0
             });
-            
+
             State.PublicOfferList.Value = publicOfferList;
             var publicId = publicOfferList.Value.Count - 1;
             Context.Fire(new AddPublicOffering
@@ -68,7 +68,7 @@ namespace Gandalf.Contracts.IdoContract
 
 
         public override Empty ChangeAscription(ChangeAscriptionInput input)
-        {   
+        {
             Assert(State.Ascription[input.TokenSymbol] == Context.Sender, "No right to assign.");
             State.Ascription[input.TokenSymbol] = input.Receiver;
             Context.Fire(new ChangeAscription
@@ -85,9 +85,9 @@ namespace Gandalf.Contracts.IdoContract
         {
             Assert(input.Value >= 0, "Invalid number.");
             var offering = GetOffering(input.Value);
-            Assert(!offering.Claimed,"Have withdrawn.");
-            Assert(offering.Publisher==Context.Sender,"No rights.");
-            Assert(Context.CurrentBlockTime>offering.EndTime,"Game not over.");
+            Assert(!offering.Claimed, "Have withdrawn.");
+            Assert(offering.Publisher == Context.Sender, "No rights.");
+            Assert(Context.CurrentBlockTime > offering.EndTime, "Game not over.");
             offering.Claimed = true;
             BigInteger wantTokenBalance = offering.WantTokenBalance;
             BigInteger surplus = offering.OfferingTokenAmount.Sub(offering.SubscribedOfferingAmount);
@@ -97,15 +97,18 @@ namespace Gandalf.Contracts.IdoContract
                 Amount = (long) wantTokenBalance,
                 Symbol = offering.WantTokenSymbol
             });
-           
-            State.TokenContract.Transfer.Send(new TransferInput
+
+            if (surplus > 0)
             {
-                Amount = (long)surplus,
-                Symbol = offering.OfferingTokenSymbol,
-                To = Context.Sender,
-            });
-            
-            Context.Fire( new Withdraw
+                State.TokenContract.Transfer.Send(new TransferInput
+                {
+                    Amount = (long) surplus,
+                    Symbol = offering.OfferingTokenSymbol,
+                    To = Context.Sender,
+                });
+            }
+
+            Context.Fire(new Withdraw
             {
                 PubilicId = input.Value,
                 To = Context.Sender,
@@ -114,6 +117,5 @@ namespace Gandalf.Contracts.IdoContract
             });
             return new Empty();
         }
-        
     }
 }

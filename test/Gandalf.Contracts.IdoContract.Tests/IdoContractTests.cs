@@ -225,7 +225,52 @@ namespace Gandalf.Contracts.IdoContract
 
             offerTokenbalance.Balance.ShouldBe(100000);
         }
+        
+        [Fact]
+        public async Task Pulisher_Raise_Full_And_Withdraw_Test()
+        {
+            await InitializeGame();
+            await ResetTimeSpan();
+            var startTime = DateTime.UtcNow.AddSeconds(1).ToTimestamp();
+            var endTime = DateTime.UtcNow.AddSeconds(60).ToTimestamp();
+            await AddPublicOffering(startTime, endTime);
+            var tokenKitty = GetTokenContractStub(KittyKeyPair);
+            var kittyStub = GetIdoContractStub(KittyKeyPair);
+            await tokenKitty.Approve.SendAsync(new ApproveInput
+            {
+                Amount = 20000,
+                Spender = DAppContractAddress,
+                Symbol = TokenWantSymbol,
+            });
+            await Task.Delay(2000);
+            await kittyStub.Invest.SendAsync(new InvestInput
+            {
+                Amount = 20000,
+                PublicId = 0
+            });
 
+            var tomStub = GetIdoContractStub(TomKeyPair);
+           
+
+            (await Assert.ThrowsAsync<Exception>(() => tomStub.Withdraw.SendAsync(new Int32Value
+            {
+                Value = 0
+            }))).Message.ShouldContain("Game not over.");
+
+            await Task.Delay(60 * 1000);
+            await tomStub.Withdraw.SendAsync(new Int32Value
+            {
+                Value = 0
+            });
+            
+            var balanceCallAsync = await tokenKitty.GetBalance.CallAsync(new GetBalanceInput
+            {
+                Owner = Tom,
+                Symbol = TokenWantSymbol
+            });
+            balanceCallAsync.Balance.ShouldBe(20000);
+        }
+        
         [Fact]
         public async Task Publisher_Should_Withdraw_Success_Test()
         {
@@ -264,6 +309,19 @@ namespace Gandalf.Contracts.IdoContract
             {
                 Value = 0
             }))).Message.ShouldContain( "No rights.");
+            await Task.Delay(60 * 1000);
+
+            var tomStub = GetIdoContractStub(TomKeyPair);
+            await tomStub.Withdraw.SendAsync(new Int32Value
+            {
+                Value = 0
+            });
+            var tomWantTokenBalance = await tokenKitty.GetBalance.CallAsync(new GetBalanceInput
+            {
+                Owner = Tom,
+                Symbol = TokenWantSymbol
+            });
+            tomWantTokenBalance.Balance.ShouldBe(2000);
         }
         
         
