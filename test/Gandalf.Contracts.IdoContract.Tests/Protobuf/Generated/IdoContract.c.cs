@@ -153,6 +153,7 @@ namespace Gandalf.Contracts.IdoContract {
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.PublicOfferingOutput> __Marshaller_PublicOfferingOutput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.PublicOfferingOutput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.UserInfoInput> __Marshaller_UserInfoInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.UserInfoInput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.UserInfo> __Marshaller_UserInfo = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.UserInfo.Parser.ParseFrom);
+    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.Token> __Marshaller_Token = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.Token.Parser.ParseFrom);
     #endregion
 
     #region Methods
@@ -240,6 +241,13 @@ namespace Gandalf.Contracts.IdoContract {
         __Marshaller_google_protobuf_Empty,
         __Marshaller_google_protobuf_Int32Value);
 
+    static readonly aelf::Method<global::Gandalf.Contracts.IdoContract.Token, global::AElf.Types.Address> __Method_GetTokenOwnership = new aelf::Method<global::Gandalf.Contracts.IdoContract.Token, global::AElf.Types.Address>(
+        aelf::MethodType.View,
+        __ServiceName,
+        "GetTokenOwnership",
+        __Marshaller_Token,
+        __Marshaller_aelf_Address);
+
     #endregion
 
     #region Descriptors
@@ -320,6 +328,11 @@ namespace Gandalf.Contracts.IdoContract {
       public aelf::IMethodStub<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int32Value> GetPublicOfferingLength
       {
         get { return __factory.Create(__Method_GetPublicOfferingLength); }
+      }
+
+      public aelf::IMethodStub<global::Gandalf.Contracts.IdoContract.Token, global::AElf.Types.Address> GetTokenOwnership
+      {
+        get { return __factory.Create(__Method_GetTokenOwnership); }
       }
 
     }

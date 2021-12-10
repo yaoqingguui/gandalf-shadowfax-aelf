@@ -153,6 +153,7 @@ namespace Gandalf.Contracts.IdoContract {
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.PublicOfferingOutput> __Marshaller_PublicOfferingOutput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.PublicOfferingOutput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.UserInfoInput> __Marshaller_UserInfoInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.UserInfoInput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.UserInfo> __Marshaller_UserInfo = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.UserInfo.Parser.ParseFrom);
+    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.Token> __Marshaller_Token = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.Token.Parser.ParseFrom);
     #endregion
 
     #region Methods
@@ -240,6 +241,13 @@ namespace Gandalf.Contracts.IdoContract {
         __Marshaller_google_protobuf_Empty,
         __Marshaller_google_protobuf_Int32Value);
 
+    static readonly aelf::Method<global::Gandalf.Contracts.IdoContract.Token, global::AElf.Types.Address> __Method_GetTokenOwnership = new aelf::Method<global::Gandalf.Contracts.IdoContract.Token, global::AElf.Types.Address>(
+        aelf::MethodType.View,
+        __ServiceName,
+        "GetTokenOwnership",
+        __Marshaller_Token,
+        __Marshaller_aelf_Address);
+
     #endregion
 
     #region Descriptors
@@ -323,6 +331,11 @@ namespace Gandalf.Contracts.IdoContract {
         throw new global::System.NotImplementedException();
       }
 
+      public virtual global::AElf.Types.Address GetTokenOwnership(global::Gandalf.Contracts.IdoContract.Token input)
+      {
+        throw new global::System.NotImplementedException();
+      }
+
     }
 
     public static aelf::ServerServiceDefinition BindService(IdoContractBase serviceImpl)
@@ -340,7 +353,8 @@ namespace Gandalf.Contracts.IdoContract {
           .AddMethod(__Method_GetTimespan, serviceImpl.GetTimespan)
           .AddMethod(__Method_GetPublicOffering, serviceImpl.GetPublicOffering)
           .AddMethod(__Method_GetUserInfo, serviceImpl.GetUserInfo)
-          .AddMethod(__Method_GetPublicOfferingLength, serviceImpl.GetPublicOfferingLength).Build();
+          .AddMethod(__Method_GetPublicOfferingLength, serviceImpl.GetPublicOfferingLength)
+          .AddMethod(__Method_GetTokenOwnership, serviceImpl.GetTokenOwnership).Build();
     }
 
   }

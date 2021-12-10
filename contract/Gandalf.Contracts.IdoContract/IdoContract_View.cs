@@ -61,6 +61,11 @@ namespace Gandalf.Contracts.IdoContract
                 Value = State.PublicOfferList.Value.Value.Count
             };
         }
+        
+        public override Address GetTokenOwnership(Token input)
+        {
+            return State.Ascription[input.TokenSymbol];
+        }
     }
     
 }

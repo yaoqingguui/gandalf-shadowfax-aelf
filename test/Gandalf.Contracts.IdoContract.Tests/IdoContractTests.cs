@@ -266,6 +266,8 @@ namespace Gandalf.Contracts.IdoContract
             }))).Message.ShouldContain( "No rights.");
         }
         
+        
+        
         [Fact]
         public async Task Publisher_Should_Change_Ascription_Test()
         {
@@ -290,6 +292,11 @@ namespace Gandalf.Contracts.IdoContract
             var endTime = DateTime.UtcNow.AddSeconds(60).ToTimestamp();
             await AddPublicOffering(startTime, endTime);
             var kittyStub = GetKittyStub();
+            var tokenOwner = await kittyStub.Result.GetTokenOwnership.CallAsync(new Token
+            {
+                TokenSymbol =  TokenOfferSymbol
+            });
+            tokenOwner.Value.ShouldBe(Tom.Value);
             var tokenKittyStub = GetTokenContractStub(KittyKeyPair);
             await tokenKittyStub.Approve.SendAsync(new ApproveInput
             {
@@ -309,13 +316,28 @@ namespace Gandalf.Contracts.IdoContract
                     WantTokenSymbol = TokenWantSymbol
                 }))).Message.ShouldContain("Another has published the token before.");
 
+            (await Assert.ThrowsAsync<Exception>(() => kittyStub.Result.ChangeAscription.SendAsync(
+                new ChangeAscriptionInput
+                {
+                    Receiver = Tom,
+                    TokenSymbol = TokenOfferSymbol
+                }))).Message.ShouldContain("No right to assign.");
+            
+            
+            
             var tomStub = GetIdoContractStub(TomKeyPair);
             await tomStub.ChangeAscription.SendAsync(new ChangeAscriptionInput
             {
                 Receiver = Kitty,
                 TokenSymbol = TokenOfferSymbol
             });
-
+            
+            tokenOwner = await kittyStub.Result.GetTokenOwnership.CallAsync(new Token
+            {
+                TokenSymbol =  TokenOfferSymbol
+            });
+            
+            tokenOwner.Value.ShouldBe(Kitty.Value);
             await kittyStub.Result.AddPublicOffering.SendAsync(new AddPublicOfferingInput
             {
                 StartTime = startTime,

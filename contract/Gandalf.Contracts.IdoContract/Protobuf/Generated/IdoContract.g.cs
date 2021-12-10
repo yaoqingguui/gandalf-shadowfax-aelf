@@ -39,76 +39,78 @@ namespace Gandalf.Contracts.IdoContract {
             "YW1vdW50GAogASgLMhEuYWVsZi5CaWdJbnRWYWx1ZSJFCghVc2VySW5mbxIP",
             "CgdjbGFpbWVkGAEgASgIEigKDW9idGFpbl9hbW91bnQYAiABKAsyES5hZWxm",
             "LkJpZ0ludFZhbHVlIjEKD1B1YmxpY09mZmVyTGlzdBIeCgV2YWx1ZRgBIAMo",
-            "CzIPLlB1YmxpY09mZmVyaW5nIpACChZBZGRQdWJsaWNPZmZlcmluZ0lucHV0",
-            "Eh0KFW9mZmVyaW5nX3Rva2VuX3N5bWJvbBgBIAEoCRIwChVvZmZlcmluZ190",
-            "b2tlbl9hbW91bnQYAiABKAsyES5hZWxmLkJpZ0ludFZhbHVlEhkKEXdhbnRf",
-            "dG9rZW5fc3ltYm9sGAMgASgJEiwKEXdhbnRfdG9rZW5fYW1vdW50GAQgASgL",
-            "MhEuYWVsZi5CaWdJbnRWYWx1ZRIuCgpzdGFydF90aW1lGAUgASgLMhouZ29v",
-            "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcBIsCghlbmRfdGltZRgGIAEoCzIaLmdv",
-            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAiTgoVQ2hhbmdlQXNjcmlwdGlvbklu",
-            "cHV0EhQKDHRva2VuX3N5bWJvbBgBIAEoCRIfCghyZWNlaXZlchgCIAEoCzIN",
-            "LmFlbGYuQWRkcmVzcyJUCgtJbnZlc3RJbnB1dBIRCglwdWJsaWNfaWQYASAB",
-            "KAUSIQoGYW1vdW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIPCgdjaGFu",
-            "bmVsGAMgASgJIj8KDVVzZXJJbmZvSW5wdXQSEQoJcHVibGljX2lkGAEgASgF",
-            "EhsKBHVzZXIYAiABKAsyDS5hZWxmLkFkZHJlc3MiQAoSUmVzZXRUaW1lU3Bh",
-            "bklucHV0EhQKDG1heF90aW1lc3BhbhgBIAEoAxIUCgxtaW5fdGltZXNwYW4Y",
-            "AiABKAMiQQoTUmVzZXRUaW1lU3Bhbk91dHB1dBIUCgxtYXhfdGltZXNwYW4Y",
-            "ASABKAMSFAoMbWluX3RpbWVzcGFuGAIgASgDIroDChRQdWJsaWNPZmZlcmlu",
-            "Z091dHB1dBIdChVvZmZlcmluZ190b2tlbl9zeW1ib2wYASABKAkSMAoVb2Zm",
-            "ZXJpbmdfdG9rZW5fYW1vdW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIZ",
-            "ChF3YW50X3Rva2VuX3N5bWJvbBgDIAEoCRIsChF3YW50X3Rva2VuX2Ftb3Vu",
-            "dBgEIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSLgoKc3RhcnRfdGltZRgFIAEo",
-            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLAoIZW5kX3RpbWUYBiAB",
-            "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhEKCXB1YmxpY19pZBgH",
-            "IAEoAxIgCglwdWJsaXNoZXIYCCABKAsyDS5hZWxmLkFkZHJlc3MSDwoHY2xh",
-            "aW1lZBgJIAEoCBItChJXYW50X1Rva2VuX0JhbGFuY2UYCiABKAsyES5hZWxm",
-            "LkJpZ0ludFZhbHVlEjUKGlN1YnNjcmliZWRfT2ZmZXJpbmdfQW1vdW50GAsg",
-            "ASgLMhEuYWVsZi5CaWdJbnRWYWx1ZSLGAgoRQWRkUHVibGljT2ZmZXJpbmcS",
-            "HQoVb2ZmZXJpbmdfdG9rZW5fc3ltYm9sGAEgASgJEjAKFW9mZmVyaW5nX3Rv",
-            "a2VuX2Ftb3VudBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSGQoRd2FudF90",
-            "b2tlbl9zeW1ib2wYAyABKAkSLAoRd2FudF90b2tlbl9hbW91bnQYBCABKAsy",
-            "ES5hZWxmLkJpZ0ludFZhbHVlEiAKCXB1Ymxpc2hlchgFIAEoCzINLmFlbGYu",
-            "QWRkcmVzcxIuCgpzdGFydF90aW1lGAYgASgLMhouZ29vZ2xlLnByb3RvYnVm",
-            "LlRpbWVzdGFtcBIsCghlbmRfdGltZRgHIAEoCzIaLmdvb2dsZS5wcm90b2J1",
-            "Zi5UaW1lc3RhbXASEQoJcHVibGljX2lkGAggASgDOgSguxgBInoKEENoYW5n",
-            "ZUFzY3JpcHRpb24SFAoMdG9rZW5fc3ltYm9sGAEgASgJEiQKDW9sZF9wdWJs",
-            "aXNoZXIYAiABKAsyDS5hZWxmLkFkZHJlc3MSJAoNbmV3X3B1Ymxpc2hlchgD",
-            "IAEoCzINLmFlbGYuQWRkcmVzczoEoLsYASJrCghXaXRoZHJhdxISCgpwdWJp",
-            "bGljX2lkGAEgASgDEhkKAnRvGAIgASgLMg0uYWVsZi5BZGRyZXNzEhIKCndh",
-            "bnRfdG9rZW4YAyABKAMSFgoOb2ZmZXJpbmdfdG9rZW4YBCABKAM6BKC7GAEi",
-            "rgEKBkludmVzdBIRCglwdWJsaWNfaWQYASABKAMSHwoIaW52ZXN0b3IYAiAB",
-            "KAsyDS5hZWxmLkFkZHJlc3MSFAoMdG9rZW5fc3ltYm9sGAMgASgJEiEKBmlu",
-            "Y29tZRgEIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSIAoFc3BlbmQYBSABKAsy",
-            "ES5hZWxmLkJpZ0ludFZhbHVlEg8KB2NoYW5uZWwYBiABKAk6BKC7GAEiYAoH",
-            "SGFydmVzdBIRCglwdWJsaWNfaWQYASABKAMSGQoCdG8YAiABKAsyDS5hZWxm",
-            "LkFkZHJlc3MSIQoGYW1vdW50GAMgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZToE",
-            "oLsYATLZBgoLSWRvQ29udHJhY3QSNQoKSW5pdGlhbGl6ZRINLmFlbGYuQWRk",
-            "cmVzcxoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEksKEUFkZFB1YmxpY09m",
-            "ZmVyaW5nEhcuQWRkUHVibGljT2ZmZXJpbmdJbnB1dBobLmdvb2dsZS5wcm90",
-            "b2J1Zi5JbnQ2NFZhbHVlIgASRAoQQ2hhbmdlQXNjcmlwdGlvbhIWLkNoYW5n",
-            "ZUFzY3JpcHRpb25JbnB1dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEkEK",
-            "CFdpdGhkcmF3EhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUaFi5nb29n",
-            "bGUucHJvdG9idWYuRW1wdHkiABIwCgZJbnZlc3QSDC5JbnZlc3RJbnB1dBoW",
-            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEkAKB0hhcnZlc3QSGy5nb29nbGUu",
-            "cHJvdG9idWYuSW50MzJWYWx1ZRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIA",
-            "Ej4KDVJlc2V0VGltZVNwYW4SEy5SZXNldFRpbWVTcGFuSW5wdXQaFi5nb29n",
-            "bGUucHJvdG9idWYuRW1wdHkiABI4CghHZXRPd25lchIWLmdvb2dsZS5wcm90",
-            "b2J1Zi5FbXB0eRoNLmFlbGYuQWRkcmVzcyIFiIn3AQESQgoLR2V0VGltZXNw",
-            "YW4SFi5nb29nbGUucHJvdG9idWYuRW1wdHkaFC5SZXNldFRpbWVTcGFuT3V0",
-            "cHV0IgWIifcBARJOChFHZXRQdWJsaWNPZmZlcmluZxIbLmdvb2dsZS5wcm90",
-            "b2J1Zi5JbnQzMlZhbHVlGhUuUHVibGljT2ZmZXJpbmdPdXRwdXQiBYiJ9wEB",
-            "Ei8KC0dldFVzZXJJbmZvEg4uVXNlckluZm9JbnB1dBoJLlVzZXJJbmZvIgWI",
-            "ifcBARJVChdHZXRQdWJsaWNPZmZlcmluZ0xlbmd0aBIWLmdvb2dsZS5wcm90",
-            "b2J1Zi5FbXB0eRobLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlIgWIifcB",
-            "ARozssz2AS5HYW5kYWxmLkNvbnRyYWN0cy5JZG9Db250cmFjdC5JZG9Db250",
-            "cmFjdFN0YXRlQiCqAh1HYW5kYWxmLkNvbnRyYWN0cy5JZG9Db250cmFjdGIG",
-            "cHJvdG8z"));
+            "CzIPLlB1YmxpY09mZmVyaW5nIh0KBVRva2VuEhQKDHRva2VuX3N5bWJvbBgB",
+            "IAEoCSKQAgoWQWRkUHVibGljT2ZmZXJpbmdJbnB1dBIdChVvZmZlcmluZ190",
+            "b2tlbl9zeW1ib2wYASABKAkSMAoVb2ZmZXJpbmdfdG9rZW5fYW1vdW50GAIg",
+            "ASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIZChF3YW50X3Rva2VuX3N5bWJvbBgD",
+            "IAEoCRIsChF3YW50X3Rva2VuX2Ftb3VudBgEIAEoCzIRLmFlbGYuQmlnSW50",
+            "VmFsdWUSLgoKc3RhcnRfdGltZRgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U",
+            "aW1lc3RhbXASLAoIZW5kX3RpbWUYBiABKAsyGi5nb29nbGUucHJvdG9idWYu",
+            "VGltZXN0YW1wIk4KFUNoYW5nZUFzY3JpcHRpb25JbnB1dBIUCgx0b2tlbl9z",
+            "eW1ib2wYASABKAkSHwoIcmVjZWl2ZXIYAiABKAsyDS5hZWxmLkFkZHJlc3Mi",
+            "VAoLSW52ZXN0SW5wdXQSEQoJcHVibGljX2lkGAEgASgFEiEKBmFtb3VudBgC",
+            "IAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSDwoHY2hhbm5lbBgDIAEoCSI/Cg1V",
+            "c2VySW5mb0lucHV0EhEKCXB1YmxpY19pZBgBIAEoBRIbCgR1c2VyGAIgASgL",
+            "Mg0uYWVsZi5BZGRyZXNzIkAKElJlc2V0VGltZVNwYW5JbnB1dBIUCgxtYXhf",
+            "dGltZXNwYW4YASABKAMSFAoMbWluX3RpbWVzcGFuGAIgASgDIkEKE1Jlc2V0",
+            "VGltZVNwYW5PdXRwdXQSFAoMbWF4X3RpbWVzcGFuGAEgASgDEhQKDG1pbl90",
+            "aW1lc3BhbhgCIAEoAyK6AwoUUHVibGljT2ZmZXJpbmdPdXRwdXQSHQoVb2Zm",
+            "ZXJpbmdfdG9rZW5fc3ltYm9sGAEgASgJEjAKFW9mZmVyaW5nX3Rva2VuX2Ft",
+            "b3VudBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSGQoRd2FudF90b2tlbl9z",
+            "eW1ib2wYAyABKAkSLAoRd2FudF90b2tlbl9hbW91bnQYBCABKAsyES5hZWxm",
+            "LkJpZ0ludFZhbHVlEi4KCnN0YXJ0X3RpbWUYBSABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuVGltZXN0YW1wEiwKCGVuZF90aW1lGAYgASgLMhouZ29vZ2xlLnBy",
+            "b3RvYnVmLlRpbWVzdGFtcBIRCglwdWJsaWNfaWQYByABKAMSIAoJcHVibGlz",
+            "aGVyGAggASgLMg0uYWVsZi5BZGRyZXNzEg8KB2NsYWltZWQYCSABKAgSLQoS",
+            "V2FudF9Ub2tlbl9CYWxhbmNlGAogASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRI1",
+            "ChpTdWJzY3JpYmVkX09mZmVyaW5nX0Ftb3VudBgLIAEoCzIRLmFlbGYuQmln",
+            "SW50VmFsdWUixgIKEUFkZFB1YmxpY09mZmVyaW5nEh0KFW9mZmVyaW5nX3Rv",
+            "a2VuX3N5bWJvbBgBIAEoCRIwChVvZmZlcmluZ190b2tlbl9hbW91bnQYAiAB",
+            "KAsyES5hZWxmLkJpZ0ludFZhbHVlEhkKEXdhbnRfdG9rZW5fc3ltYm9sGAMg",
+            "ASgJEiwKEXdhbnRfdG9rZW5fYW1vdW50GAQgASgLMhEuYWVsZi5CaWdJbnRW",
+            "YWx1ZRIgCglwdWJsaXNoZXIYBSABKAsyDS5hZWxmLkFkZHJlc3MSLgoKc3Rh",
+            "cnRfdGltZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLAoI",
+            "ZW5kX3RpbWUYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhEK",
+            "CXB1YmxpY19pZBgIIAEoAzoEoLsYASJ6ChBDaGFuZ2VBc2NyaXB0aW9uEhQK",
+            "DHRva2VuX3N5bWJvbBgBIAEoCRIkCg1vbGRfcHVibGlzaGVyGAIgASgLMg0u",
+            "YWVsZi5BZGRyZXNzEiQKDW5ld19wdWJsaXNoZXIYAyABKAsyDS5hZWxmLkFk",
+            "ZHJlc3M6BKC7GAEiawoIV2l0aGRyYXcSEgoKcHViaWxpY19pZBgBIAEoAxIZ",
+            "CgJ0bxgCIAEoCzINLmFlbGYuQWRkcmVzcxISCgp3YW50X3Rva2VuGAMgASgD",
+            "EhYKDm9mZmVyaW5nX3Rva2VuGAQgASgDOgSguxgBIq4BCgZJbnZlc3QSEQoJ",
+            "cHVibGljX2lkGAEgASgDEh8KCGludmVzdG9yGAIgASgLMg0uYWVsZi5BZGRy",
+            "ZXNzEhQKDHRva2VuX3N5bWJvbBgDIAEoCRIhCgZpbmNvbWUYBCABKAsyES5h",
+            "ZWxmLkJpZ0ludFZhbHVlEiAKBXNwZW5kGAUgASgLMhEuYWVsZi5CaWdJbnRW",
+            "YWx1ZRIPCgdjaGFubmVsGAYgASgJOgSguxgBImAKB0hhcnZlc3QSEQoJcHVi",
+            "bGljX2lkGAEgASgDEhkKAnRvGAIgASgLMg0uYWVsZi5BZGRyZXNzEiEKBmFt",
+            "b3VudBgDIAEoCzIRLmFlbGYuQmlnSW50VmFsdWU6BKC7GAEyjAcKC0lkb0Nv",
+            "bnRyYWN0EjUKCkluaXRpYWxpemUSDS5hZWxmLkFkZHJlc3MaFi5nb29nbGUu",
+            "cHJvdG9idWYuRW1wdHkiABJLChFBZGRQdWJsaWNPZmZlcmluZxIXLkFkZFB1",
+            "YmxpY09mZmVyaW5nSW5wdXQaGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1",
+            "ZSIAEkQKEENoYW5nZUFzY3JpcHRpb24SFi5DaGFuZ2VBc2NyaXB0aW9uSW5w",
+            "dXQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiABJBCghXaXRoZHJhdxIbLmdv",
+            "b2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlGhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5IgASMAoGSW52ZXN0EgwuSW52ZXN0SW5wdXQaFi5nb29nbGUucHJvdG9i",
+            "dWYuRW1wdHkiABJACgdIYXJ2ZXN0EhsuZ29vZ2xlLnByb3RvYnVmLkludDMy",
+            "VmFsdWUaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiABI+Cg1SZXNldFRpbWVT",
+            "cGFuEhMuUmVzZXRUaW1lU3BhbklucHV0GhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5IgASOAoIR2V0T3duZXISFi5nb29nbGUucHJvdG9idWYuRW1wdHkaDS5h",
+            "ZWxmLkFkZHJlc3MiBYiJ9wEBEkIKC0dldFRpbWVzcGFuEhYuZ29vZ2xlLnBy",
+            "b3RvYnVmLkVtcHR5GhQuUmVzZXRUaW1lU3Bhbk91dHB1dCIFiIn3AQESTgoR",
+            "R2V0UHVibGljT2ZmZXJpbmcSGy5nb29nbGUucHJvdG9idWYuSW50MzJWYWx1",
+            "ZRoVLlB1YmxpY09mZmVyaW5nT3V0cHV0IgWIifcBARIvCgtHZXRVc2VySW5m",
+            "bxIOLlVzZXJJbmZvSW5wdXQaCS5Vc2VySW5mbyIFiIn3AQESVQoXR2V0UHVi",
+            "bGljT2ZmZXJpbmdMZW5ndGgSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaGy5n",
+            "b29nbGUucHJvdG9idWYuSW50MzJWYWx1ZSIFiIn3AQESMQoRR2V0VG9rZW5P",
+            "d25lcnNoaXASBi5Ub2tlbhoNLmFlbGYuQWRkcmVzcyIFiIn3AQEaM7LM9gEu",
+            "R2FuZGFsZi5Db250cmFjdHMuSWRvQ29udHJhY3QuSWRvQ29udHJhY3RTdGF0",
+            "ZUIgqgIdR2FuZGFsZi5Db250cmFjdHMuSWRvQ29udHJhY3RiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::AElf.Types.CoreReflection.Descriptor, global::AElf.OptionsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.PublicOffering), global::Gandalf.Contracts.IdoContract.PublicOffering.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "StartTime", "EndTime", "Publisher", "Claimed", "WantTokenBalance", "SubscribedOfferingAmount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.UserInfo), global::Gandalf.Contracts.IdoContract.UserInfo.Parser, new[]{ "Claimed", "ObtainAmount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.PublicOfferList), global::Gandalf.Contracts.IdoContract.PublicOfferList.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.Token), global::Gandalf.Contracts.IdoContract.Token.Parser, new[]{ "TokenSymbol" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.AddPublicOfferingInput), global::Gandalf.Contracts.IdoContract.AddPublicOfferingInput.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "StartTime", "EndTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ChangeAscriptionInput), global::Gandalf.Contracts.IdoContract.ChangeAscriptionInput.Parser, new[]{ "TokenSymbol", "Receiver" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.InvestInput), global::Gandalf.Contracts.IdoContract.InvestInput.Parser, new[]{ "PublicId", "Amount", "Channel" }, null, null, null, null),
@@ -837,6 +839,138 @@ namespace Gandalf.Contracts.IdoContract {
 
   }
 
+  /// <summary>
+  ///input
+  /// </summary>
+  public sealed partial class Token : pb::IMessage<Token> {
+    private static readonly pb::MessageParser<Token> _parser = new pb::MessageParser<Token>(() => new Token());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Token> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Token() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Token(Token other) : this() {
+      tokenSymbol_ = other.tokenSymbol_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Token Clone() {
+      return new Token(this);
+    }
+
+    /// <summary>Field number for the "token_symbol" field.</summary>
+    public const int TokenSymbolFieldNumber = 1;
+    private string tokenSymbol_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string TokenSymbol {
+      get { return tokenSymbol_; }
+      set {
+        tokenSymbol_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Token);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Token other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (TokenSymbol != other.TokenSymbol) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (TokenSymbol.Length != 0) hash ^= TokenSymbol.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (TokenSymbol.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(TokenSymbol);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (TokenSymbol.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TokenSymbol);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Token other) {
+      if (other == null) {
+        return;
+      }
+      if (other.TokenSymbol.Length != 0) {
+        TokenSymbol = other.TokenSymbol;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            TokenSymbol = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class AddPublicOfferingInput : pb::IMessage<AddPublicOfferingInput> {
     private static readonly pb::MessageParser<AddPublicOfferingInput> _parser = new pb::MessageParser<AddPublicOfferingInput>(() => new AddPublicOfferingInput());
     private pb::UnknownFieldSet _unknownFields;
@@ -845,7 +979,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1138,7 +1272,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1301,7 +1435,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1492,7 +1626,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1658,7 +1792,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1818,7 +1952,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1975,7 +2109,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2429,7 +2563,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2784,7 +2918,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2981,7 +3115,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3200,7 +3334,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3487,7 +3621,7 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Gandalf.Contracts.IdoContract.IdoContractReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
