@@ -129,8 +129,5 @@
             <Link>Protobuf\Proto\profit_contract.proto</Link>
         </ContractStub>
     </ItemGroup>
-    <ItemGroup>
-      <Content Include="obj\Debug\netcoreapp3.1\AElf.Boilerplate.TestBase.csproj.AssemblyReference.cache" />
-    </ItemGroup>
 
 </Project>

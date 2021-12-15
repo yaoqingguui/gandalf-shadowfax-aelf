@@ -36,23 +36,31 @@ internal static partial class AuthorityInfoReflection {
 
 }
 #region Messages
-internal sealed partial class AuthorityInfo : pb::IMessage<AuthorityInfo> {
+internal sealed partial class AuthorityInfo : pb::IMessage<AuthorityInfo>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
   private static readonly pb::MessageParser<AuthorityInfo> _parser = new pb::MessageParser<AuthorityInfo>(() => new AuthorityInfo());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public static pb::MessageParser<AuthorityInfo> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public static pbr::MessageDescriptor Descriptor {
     get { return global::AuthorityInfoReflection.Descriptor.MessageTypes[0]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   pbr::MessageDescriptor pb::IMessage.Descriptor {
     get { return Descriptor; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public AuthorityInfo() {
     OnConstruction();
   }
@@ -60,6 +68,7 @@ internal sealed partial class AuthorityInfo : pb::IMessage<AuthorityInfo> {
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public AuthorityInfo(AuthorityInfo other) : this() {
     contractAddress_ = other.contractAddress_ != null ? other.contractAddress_.Clone() : null;
     ownerAddress_ = other.ownerAddress_ != null ? other.ownerAddress_.Clone() : null;
@@ -67,6 +76,7 @@ internal sealed partial class AuthorityInfo : pb::IMessage<AuthorityInfo> {
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public AuthorityInfo Clone() {
     return new AuthorityInfo(this);
   }
@@ -75,6 +85,7 @@ internal sealed partial class AuthorityInfo : pb::IMessage<AuthorityInfo> {
   public const int ContractAddressFieldNumber = 1;
   private global::AElf.Types.Address contractAddress_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public global::AElf.Types.Address ContractAddress {
     get { return contractAddress_; }
     set {
@@ -86,6 +97,7 @@ internal sealed partial class AuthorityInfo : pb::IMessage<AuthorityInfo> {
   public const int OwnerAddressFieldNumber = 2;
   private global::AElf.Types.Address ownerAddress_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public global::AElf.Types.Address OwnerAddress {
     get { return ownerAddress_; }
     set {
@@ -94,11 +106,13 @@ internal sealed partial class AuthorityInfo : pb::IMessage<AuthorityInfo> {
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public override bool Equals(object other) {
     return Equals(other as AuthorityInfo);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public bool Equals(AuthorityInfo other) {
     if (ReferenceEquals(other, null)) {
       return false;
@@ -112,6 +126,7 @@ internal sealed partial class AuthorityInfo : pb::IMessage<AuthorityInfo> {
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public override int GetHashCode() {
     int hash = 1;
     if (contractAddress_ != null) hash ^= ContractAddress.GetHashCode();
@@ -123,12 +138,17 @@ internal sealed partial class AuthorityInfo : pb::IMessage<AuthorityInfo> {
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public override string ToString() {
     return pb::JsonFormatter.ToDiagnosticString(this);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
     if (contractAddress_ != null) {
       output.WriteRawTag(10);
       output.WriteMessage(ContractAddress);
@@ -140,9 +160,29 @@ internal sealed partial class AuthorityInfo : pb::IMessage<AuthorityInfo> {
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
+  #endif
   }
 
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (contractAddress_ != null) {
+      output.WriteRawTag(10);
+      output.WriteMessage(ContractAddress);
+    }
+    if (ownerAddress_ != null) {
+      output.WriteRawTag(18);
+      output.WriteMessage(OwnerAddress);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public int CalculateSize() {
     int size = 0;
     if (contractAddress_ != null) {
@@ -158,6 +198,7 @@ internal sealed partial class AuthorityInfo : pb::IMessage<AuthorityInfo> {
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public void MergeFrom(AuthorityInfo other) {
     if (other == null) {
       return;
@@ -178,7 +219,11 @@ internal sealed partial class AuthorityInfo : pb::IMessage<AuthorityInfo> {
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
     uint tag;
     while ((tag = input.ReadTag()) != 0) {
       switch(tag) {
@@ -201,7 +246,37 @@ internal sealed partial class AuthorityInfo : pb::IMessage<AuthorityInfo> {
         }
       }
     }
+  #endif
   }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          if (contractAddress_ == null) {
+            ContractAddress = new global::AElf.Types.Address();
+          }
+          input.ReadMessage(ContractAddress);
+          break;
+        }
+        case 18: {
+          if (ownerAddress_ == null) {
+            OwnerAddress = new global::AElf.Types.Address();
+          }
+          input.ReadMessage(OwnerAddress);
+          break;
+        }
+      }
+    }
+  }
+  #endif
 
 }
 
