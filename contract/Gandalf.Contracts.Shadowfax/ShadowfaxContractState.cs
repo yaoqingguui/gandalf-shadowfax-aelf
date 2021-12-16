@@ -3,9 +3,6 @@ using AElf.Types;
 
 namespace Gandalf.Contracts.Shadowfax
 {
-    /// <summary>
-    /// The state class of the contract, it inherits from the AElf.Sdk.CSharp.State.ContractState type. 
-    /// </summary>
     public partial class ShadowfaxContractState : ContractState
     {
         // Admin

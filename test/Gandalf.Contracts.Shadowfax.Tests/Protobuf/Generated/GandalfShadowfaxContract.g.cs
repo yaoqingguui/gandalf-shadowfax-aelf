@@ -24,108 +24,6 @@ namespace Gandalf.Contracts.Shadowfax {
     static GandalfShadowfaxContractReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-<<<<<<< HEAD:test/Gandalf.Contracts.IdoContract.Tests/Protobuf/Generated/IdoContract.g.cs
-            "ChJpZG9fY29udHJhY3QucHJvdG8aD2FlbGYvY29yZS5wcm90bxoSYWVsZi9v",
-            "cHRpb25zLnByb3RvGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8aHmdv",
-            "b2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxofZ29vZ2xlL3Byb3RvYnVm",
-            "L3RpbWVzdGFtcC5wcm90byKhAwoOUHVibGljT2ZmZXJpbmcSHQoVb2ZmZXJp",
-            "bmdfdG9rZW5fc3ltYm9sGAEgASgJEjAKFW9mZmVyaW5nX3Rva2VuX2Ftb3Vu",
-            "dBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSGQoRd2FudF90b2tlbl9zeW1i",
-            "b2wYAyABKAkSLAoRd2FudF90b2tlbl9hbW91bnQYBCABKAsyES5hZWxmLkJp",
-            "Z0ludFZhbHVlEi4KCnN0YXJ0X3RpbWUYBSABKAsyGi5nb29nbGUucHJvdG9i",
-            "dWYuVGltZXN0YW1wEiwKCGVuZF90aW1lGAYgASgLMhouZ29vZ2xlLnByb3Rv",
-            "YnVmLlRpbWVzdGFtcBIgCglwdWJsaXNoZXIYByABKAsyDS5hZWxmLkFkZHJl",
-            "c3MSDwoHY2xhaW1lZBgIIAEoCBItChJ3YW50X3Rva2VuX2JhbGFuY2UYCSAB",
-            "KAsyES5hZWxmLkJpZ0ludFZhbHVlEjUKGnN1YnNjcmliZWRfb2ZmZXJpbmdf",
-            "YW1vdW50GAogASgLMhEuYWVsZi5CaWdJbnRWYWx1ZSJLCg5Vc2VySW5mb1N0",
-            "cnVjdBIPCgdjbGFpbWVkGAEgASgIEigKDW9idGFpbl9hbW91bnQYAiABKAsy",
-            "ES5hZWxmLkJpZ0ludFZhbHVlIjEKD1B1YmxpY09mZmVyTGlzdBIeCgV2YWx1",
-            "ZRgBIAMoCzIPLlB1YmxpY09mZmVyaW5nIh0KBVRva2VuEhQKDHRva2VuX3N5",
-            "bWJvbBgBIAEoCSKQAgoWQWRkUHVibGljT2ZmZXJpbmdJbnB1dBIdChVvZmZl",
-            "cmluZ190b2tlbl9zeW1ib2wYASABKAkSMAoVb2ZmZXJpbmdfdG9rZW5fYW1v",
-            "dW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIZChF3YW50X3Rva2VuX3N5",
-            "bWJvbBgDIAEoCRIsChF3YW50X3Rva2VuX2Ftb3VudBgEIAEoCzIRLmFlbGYu",
-            "QmlnSW50VmFsdWUSLgoKc3RhcnRfdGltZRgFIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5UaW1lc3RhbXASLAoIZW5kX3RpbWUYBiABKAsyGi5nb29nbGUucHJv",
-            "dG9idWYuVGltZXN0YW1wIk4KFUNoYW5nZUFzY3JpcHRpb25JbnB1dBIUCgx0",
-            "b2tlbl9zeW1ib2wYASABKAkSHwoIcmVjZWl2ZXIYAiABKAsyDS5hZWxmLkFk",
-            "ZHJlc3MiVAoLSW52ZXN0SW5wdXQSEQoJcHVibGljX2lkGAEgASgFEiEKBmFt",
-            "b3VudBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSDwoHY2hhbm5lbBgDIAEo",
-            "CSI/Cg1Vc2VySW5mb0lucHV0EhEKCXB1YmxpY19pZBgBIAEoBRIbCgR1c2Vy",
-            "GAIgASgLMg0uYWVsZi5BZGRyZXNzIkAKElJlc2V0VGltZVNwYW5JbnB1dBIU",
-            "CgxtYXhfdGltZXNwYW4YASABKAMSFAoMbWluX3RpbWVzcGFuGAIgASgDIkEK",
-            "E1Jlc2V0VGltZVNwYW5PdXRwdXQSFAoMbWF4X3RpbWVzcGFuGAEgASgDEhQK",
-            "DG1pbl90aW1lc3BhbhgCIAEoAyK6AwoUUHVibGljT2ZmZXJpbmdPdXRwdXQS",
-            "HQoVb2ZmZXJpbmdfdG9rZW5fc3ltYm9sGAEgASgJEjAKFW9mZmVyaW5nX3Rv",
-            "a2VuX2Ftb3VudBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSGQoRd2FudF90",
-            "b2tlbl9zeW1ib2wYAyABKAkSLAoRd2FudF90b2tlbl9hbW91bnQYBCABKAsy",
-            "ES5hZWxmLkJpZ0ludFZhbHVlEi4KCnN0YXJ0X3RpbWUYBSABKAsyGi5nb29n",
-            "bGUucHJvdG9idWYuVGltZXN0YW1wEiwKCGVuZF90aW1lGAYgASgLMhouZ29v",
-            "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcBIRCglwdWJsaWNfaWQYByABKAMSIAoJ",
-            "cHVibGlzaGVyGAggASgLMg0uYWVsZi5BZGRyZXNzEg8KB2NsYWltZWQYCSAB",
-            "KAgSLQoSd2FudF90b2tlbl9iYWxhbmNlGAogASgLMhEuYWVsZi5CaWdJbnRW",
-            "YWx1ZRI1ChpzdWJzY3JpYmVkX29mZmVyaW5nX2Ftb3VudBgLIAEoCzIRLmFl",
-            "bGYuQmlnSW50VmFsdWUixgIKEUFkZFB1YmxpY09mZmVyaW5nEh0KFW9mZmVy",
-            "aW5nX3Rva2VuX3N5bWJvbBgBIAEoCRIwChVvZmZlcmluZ190b2tlbl9hbW91",
-            "bnQYAiABKAsyES5hZWxmLkJpZ0ludFZhbHVlEhkKEXdhbnRfdG9rZW5fc3lt",
-            "Ym9sGAMgASgJEiwKEXdhbnRfdG9rZW5fYW1vdW50GAQgASgLMhEuYWVsZi5C",
-            "aWdJbnRWYWx1ZRIgCglwdWJsaXNoZXIYBSABKAsyDS5hZWxmLkFkZHJlc3MS",
-            "LgoKc3RhcnRfdGltZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
-            "bXASLAoIZW5kX3RpbWUYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
-            "YW1wEhEKCXB1YmxpY19pZBgIIAEoAzoEoLsYASJ6ChBDaGFuZ2VBc2NyaXB0",
-            "aW9uEhQKDHRva2VuX3N5bWJvbBgBIAEoCRIkCg1vbGRfcHVibGlzaGVyGAIg",
-            "ASgLMg0uYWVsZi5BZGRyZXNzEiQKDW5ld19wdWJsaXNoZXIYAyABKAsyDS5h",
-            "ZWxmLkFkZHJlc3M6BKC7GAEiawoIV2l0aGRyYXcSEgoKcHViaWxpY19pZBgB",
-            "IAEoAxIZCgJ0bxgCIAEoCzINLmFlbGYuQWRkcmVzcxISCgp3YW50X3Rva2Vu",
-            "GAMgASgDEhYKDm9mZmVyaW5nX3Rva2VuGAQgASgDOgSguxgBIq4BCgZJbnZl",
-            "c3QSEQoJcHVibGljX2lkGAEgASgDEh8KCGludmVzdG9yGAIgASgLMg0uYWVs",
-            "Zi5BZGRyZXNzEhQKDHRva2VuX3N5bWJvbBgDIAEoCRIhCgZpbmNvbWUYBCAB",
-            "KAsyES5hZWxmLkJpZ0ludFZhbHVlEiAKBXNwZW5kGAUgASgLMhEuYWVsZi5C",
-            "aWdJbnRWYWx1ZRIPCgdjaGFubmVsGAYgASgJOgSguxgBImAKB0hhcnZlc3QS",
-            "EQoJcHVibGljX2lkGAEgASgDEhkKAnRvGAIgASgLMg0uYWVsZi5BZGRyZXNz",
-            "EiEKBmFtb3VudBgDIAEoCzIRLmFlbGYuQmlnSW50VmFsdWU6BKC7GAEyjQcK",
-            "C0lkb0NvbnRyYWN0EjUKCkluaXRpYWxpemUSDS5hZWxmLkFkZHJlc3MaFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkiABJLChFBZGRQdWJsaWNPZmZlcmluZxIX",
-            "LkFkZFB1YmxpY09mZmVyaW5nSW5wdXQaGy5nb29nbGUucHJvdG9idWYuSW50",
-            "NjRWYWx1ZSIAEkQKEENoYW5nZUFzY3JpcHRpb24SFi5DaGFuZ2VBc2NyaXB0",
-            "aW9uSW5wdXQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiABJBCghXaXRoZHJh",
-            "dxIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlGhYuZ29vZ2xlLnByb3Rv",
-            "YnVmLkVtcHR5IgASMAoGSW52ZXN0EgwuSW52ZXN0SW5wdXQaFi5nb29nbGUu",
-            "cHJvdG9idWYuRW1wdHkiABJACgdIYXJ2ZXN0EhsuZ29vZ2xlLnByb3RvYnVm",
-            "LkludDMyVmFsdWUaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiABI+Cg1SZXNl",
-            "dFRpbWVTcGFuEhMuUmVzZXRUaW1lU3BhbklucHV0GhYuZ29vZ2xlLnByb3Rv",
-            "YnVmLkVtcHR5IgASOAoIR2V0T3duZXISFi5nb29nbGUucHJvdG9idWYuRW1w",
-            "dHkaDS5hZWxmLkFkZHJlc3MiBYiJ9wEBEkIKC0dldFRpbWVzcGFuEhYuZ29v",
-            "Z2xlLnByb3RvYnVmLkVtcHR5GhQuUmVzZXRUaW1lU3Bhbk91dHB1dCIFiIn3",
-            "AQESTAoPUHVibGljT2ZmZXJpbmdzEhsuZ29vZ2xlLnByb3RvYnVmLkludDMy",
-            "VmFsdWUaFS5QdWJsaWNPZmZlcmluZ091dHB1dCIFiIn3AQESMgoIVXNlcklu",
-            "Zm8SDi5Vc2VySW5mb0lucHV0Gg8uVXNlckluZm9TdHJ1Y3QiBYiJ9wEBElUK",
-            "F0dldFB1YmxpY09mZmVyaW5nTGVuZ3RoEhYuZ29vZ2xlLnByb3RvYnVmLkVt",
-            "cHR5GhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUiBYiJ9wEBEjEKEUdl",
-            "dFRva2VuT3duZXJzaGlwEgYuVG9rZW4aDS5hZWxmLkFkZHJlc3MiBYiJ9wEB",
-            "GjOyzPYBLkdhbmRhbGYuQ29udHJhY3RzLklkb0NvbnRyYWN0Lklkb0NvbnRy",
-            "YWN0U3RhdGVCIKoCHUdhbmRhbGYuQ29udHJhY3RzLklkb0NvbnRyYWN0YgZw",
-            "cm90bzM="));
-      descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::AElf.Types.CoreReflection.Descriptor, global::AElf.OptionsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.PublicOffering), global::Gandalf.Contracts.IdoContract.PublicOffering.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "StartTime", "EndTime", "Publisher", "Claimed", "WantTokenBalance", "SubscribedOfferingAmount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.UserInfoStruct), global::Gandalf.Contracts.IdoContract.UserInfoStruct.Parser, new[]{ "Claimed", "ObtainAmount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.PublicOfferList), global::Gandalf.Contracts.IdoContract.PublicOfferList.Parser, new[]{ "Value" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.Token), global::Gandalf.Contracts.IdoContract.Token.Parser, new[]{ "TokenSymbol" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.AddPublicOfferingInput), global::Gandalf.Contracts.IdoContract.AddPublicOfferingInput.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "StartTime", "EndTime" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ChangeAscriptionInput), global::Gandalf.Contracts.IdoContract.ChangeAscriptionInput.Parser, new[]{ "TokenSymbol", "Receiver" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.InvestInput), global::Gandalf.Contracts.IdoContract.InvestInput.Parser, new[]{ "PublicId", "Amount", "Channel" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.UserInfoInput), global::Gandalf.Contracts.IdoContract.UserInfoInput.Parser, new[]{ "PublicId", "User" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput), global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput.Parser, new[]{ "MaxTimespan", "MinTimespan" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput), global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput.Parser, new[]{ "MaxTimespan", "MinTimespan" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.PublicOfferingOutput), global::Gandalf.Contracts.IdoContract.PublicOfferingOutput.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "StartTime", "EndTime", "PublicId", "Publisher", "Claimed", "WantTokenBalance", "SubscribedOfferingAmount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.AddPublicOffering), global::Gandalf.Contracts.IdoContract.AddPublicOffering.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "Publisher", "StartTime", "EndTime", "PublicId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.ChangeAscription), global::Gandalf.Contracts.IdoContract.ChangeAscription.Parser, new[]{ "TokenSymbol", "OldPublisher", "NewPublisher" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.Withdraw), global::Gandalf.Contracts.IdoContract.Withdraw.Parser, new[]{ "PubilicId", "To", "WantToken", "OfferingToken" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.Invest), global::Gandalf.Contracts.IdoContract.Invest.Parser, new[]{ "PublicId", "Investor", "TokenSymbol", "Income", "Spend", "Channel" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.Harvest), global::Gandalf.Contracts.IdoContract.Harvest.Parser, new[]{ "PublicId", "To", "Amount" }, null, null, null, null)
-=======
             "CiBnYW5kYWxmX3NoYWRvd2ZheF9jb250cmFjdC5wcm90bxoPYWVsZi9jb3Jl",
             "LnByb3RvGhJhZWxmL29wdGlvbnMucHJvdG8aG2dvb2dsZS9wcm90b2J1Zi9l",
             "bXB0eS5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGh9n",
@@ -139,79 +37,79 @@ namespace Gandalf.Contracts.Shadowfax {
             "CzINLmFlbGYuQWRkcmVzcxIPCgdjbGFpbWVkGAggASgIEi0KEndhbnRfdG9r",
             "ZW5fYmFsYW5jZRgJIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSNQoac3Vic2Ny",
             "aWJlZF9vZmZlcmluZ19hbW91bnQYCiABKAsyES5hZWxmLkJpZ0ludFZhbHVl",
-            "IkUKCFVzZXJJbmZvEg8KB2NsYWltZWQYASABKAgSKAoNb2J0YWluX2Ftb3Vu",
-            "dBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUiMQoPUHVibGljT2ZmZXJMaXN0",
-            "Eh4KBXZhbHVlGAEgAygLMg8uUHVibGljT2ZmZXJpbmciHQoFVG9rZW4SFAoM",
-            "dG9rZW5fc3ltYm9sGAEgASgJIpACChZBZGRQdWJsaWNPZmZlcmluZ0lucHV0",
-            "Eh0KFW9mZmVyaW5nX3Rva2VuX3N5bWJvbBgBIAEoCRIwChVvZmZlcmluZ190",
-            "b2tlbl9hbW91bnQYAiABKAsyES5hZWxmLkJpZ0ludFZhbHVlEhkKEXdhbnRf",
-            "dG9rZW5fc3ltYm9sGAMgASgJEiwKEXdhbnRfdG9rZW5fYW1vdW50GAQgASgL",
-            "MhEuYWVsZi5CaWdJbnRWYWx1ZRIuCgpzdGFydF90aW1lGAUgASgLMhouZ29v",
-            "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcBIsCghlbmRfdGltZRgGIAEoCzIaLmdv",
-            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAiTgoVQ2hhbmdlQXNjcmlwdGlvbklu",
-            "cHV0EhQKDHRva2VuX3N5bWJvbBgBIAEoCRIfCghyZWNlaXZlchgCIAEoCzIN",
-            "LmFlbGYuQWRkcmVzcyJUCgtJbnZlc3RJbnB1dBIRCglwdWJsaWNfaWQYASAB",
-            "KAUSIQoGYW1vdW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIPCgdjaGFu",
-            "bmVsGAMgASgJIj8KDVVzZXJJbmZvSW5wdXQSEQoJcHVibGljX2lkGAEgASgF",
-            "EhsKBHVzZXIYAiABKAsyDS5hZWxmLkFkZHJlc3MiQAoSUmVzZXRUaW1lU3Bh",
-            "bklucHV0EhQKDG1heF90aW1lc3BhbhgBIAEoAxIUCgxtaW5fdGltZXNwYW4Y",
-            "AiABKAMiQQoTUmVzZXRUaW1lU3Bhbk91dHB1dBIUCgxtYXhfdGltZXNwYW4Y",
-            "ASABKAMSFAoMbWluX3RpbWVzcGFuGAIgASgDIroDChRQdWJsaWNPZmZlcmlu",
-            "Z091dHB1dBIdChVvZmZlcmluZ190b2tlbl9zeW1ib2wYASABKAkSMAoVb2Zm",
-            "ZXJpbmdfdG9rZW5fYW1vdW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIZ",
-            "ChF3YW50X3Rva2VuX3N5bWJvbBgDIAEoCRIsChF3YW50X3Rva2VuX2Ftb3Vu",
-            "dBgEIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSLgoKc3RhcnRfdGltZRgFIAEo",
-            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLAoIZW5kX3RpbWUYBiAB",
-            "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhEKCXB1YmxpY19pZBgH",
-            "IAEoAxIgCglwdWJsaXNoZXIYCCABKAsyDS5hZWxmLkFkZHJlc3MSDwoHY2xh",
-            "aW1lZBgJIAEoCBItChJXYW50X1Rva2VuX0JhbGFuY2UYCiABKAsyES5hZWxm",
-            "LkJpZ0ludFZhbHVlEjUKGlN1YnNjcmliZWRfT2ZmZXJpbmdfQW1vdW50GAsg",
-            "ASgLMhEuYWVsZi5CaWdJbnRWYWx1ZSLGAgoRQWRkUHVibGljT2ZmZXJpbmcS",
-            "HQoVb2ZmZXJpbmdfdG9rZW5fc3ltYm9sGAEgASgJEjAKFW9mZmVyaW5nX3Rv",
-            "a2VuX2Ftb3VudBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSGQoRd2FudF90",
-            "b2tlbl9zeW1ib2wYAyABKAkSLAoRd2FudF90b2tlbl9hbW91bnQYBCABKAsy",
-            "ES5hZWxmLkJpZ0ludFZhbHVlEiAKCXB1Ymxpc2hlchgFIAEoCzINLmFlbGYu",
-            "QWRkcmVzcxIuCgpzdGFydF90aW1lGAYgASgLMhouZ29vZ2xlLnByb3RvYnVm",
-            "LlRpbWVzdGFtcBIsCghlbmRfdGltZRgHIAEoCzIaLmdvb2dsZS5wcm90b2J1",
-            "Zi5UaW1lc3RhbXASEQoJcHVibGljX2lkGAggASgDOgSguxgBInoKEENoYW5n",
-            "ZUFzY3JpcHRpb24SFAoMdG9rZW5fc3ltYm9sGAEgASgJEiQKDW9sZF9wdWJs",
-            "aXNoZXIYAiABKAsyDS5hZWxmLkFkZHJlc3MSJAoNbmV3X3B1Ymxpc2hlchgD",
-            "IAEoCzINLmFlbGYuQWRkcmVzczoEoLsYASJrCghXaXRoZHJhdxISCgpwdWJp",
-            "bGljX2lkGAEgASgDEhkKAnRvGAIgASgLMg0uYWVsZi5BZGRyZXNzEhIKCndh",
-            "bnRfdG9rZW4YAyABKAMSFgoOb2ZmZXJpbmdfdG9rZW4YBCABKAM6BKC7GAEi",
-            "rgEKBkludmVzdBIRCglwdWJsaWNfaWQYASABKAMSHwoIaW52ZXN0b3IYAiAB",
-            "KAsyDS5hZWxmLkFkZHJlc3MSFAoMdG9rZW5fc3ltYm9sGAMgASgJEiEKBmlu",
-            "Y29tZRgEIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSIAoFc3BlbmQYBSABKAsy",
-            "ES5hZWxmLkJpZ0ludFZhbHVlEg8KB2NoYW5uZWwYBiABKAk6BKC7GAEiYAoH",
-            "SGFydmVzdBIRCglwdWJsaWNfaWQYASABKAMSGQoCdG8YAiABKAsyDS5hZWxm",
-            "LkFkZHJlc3MSIQoGYW1vdW50GAMgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZToE",
-            "oLsYATKWBwoRU2hhZG93ZmF4Q29udHJhY3QSNQoKSW5pdGlhbGl6ZRINLmFl",
-            "bGYuQWRkcmVzcxoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEksKEUFkZFB1",
-            "YmxpY09mZmVyaW5nEhcuQWRkUHVibGljT2ZmZXJpbmdJbnB1dBobLmdvb2ds",
-            "ZS5wcm90b2J1Zi5JbnQ2NFZhbHVlIgASRAoQQ2hhbmdlQXNjcmlwdGlvbhIW",
-            "LkNoYW5nZUFzY3JpcHRpb25JbnB1dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
-            "eSIAEkEKCFdpdGhkcmF3EhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUa",
-            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkiABIwCgZJbnZlc3QSDC5JbnZlc3RJ",
-            "bnB1dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEkAKB0hhcnZlc3QSGy5n",
-            "b29nbGUucHJvdG9idWYuSW50MzJWYWx1ZRoWLmdvb2dsZS5wcm90b2J1Zi5F",
-            "bXB0eSIAEj4KDVJlc2V0VGltZVNwYW4SEy5SZXNldFRpbWVTcGFuSW5wdXQa",
-            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkiABI4CghHZXRPd25lchIWLmdvb2ds",
-            "ZS5wcm90b2J1Zi5FbXB0eRoNLmFlbGYuQWRkcmVzcyIFiIn3AQESQgoLR2V0",
-            "VGltZXNwYW4SFi5nb29nbGUucHJvdG9idWYuRW1wdHkaFC5SZXNldFRpbWVT",
-            "cGFuT3V0cHV0IgWIifcBARJOChFHZXRQdWJsaWNPZmZlcmluZxIbLmdvb2ds",
-            "ZS5wcm90b2J1Zi5JbnQzMlZhbHVlGhUuUHVibGljT2ZmZXJpbmdPdXRwdXQi",
-            "BYiJ9wEBEi8KC0dldFVzZXJJbmZvEg4uVXNlckluZm9JbnB1dBoJLlVzZXJJ",
-            "bmZvIgWIifcBARJVChdHZXRQdWJsaWNPZmZlcmluZ0xlbmd0aBIWLmdvb2ds",
-            "ZS5wcm90b2J1Zi5FbXB0eRobLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVl",
-            "IgWIifcBARIxChFHZXRUb2tlbk93bmVyc2hpcBIGLlRva2VuGg0uYWVsZi5B",
-            "ZGRyZXNzIgWIifcBARo3ssz2ATJHYW5kYWxmLkNvbnRyYWN0cy5TaGFkb3dm",
-            "YXguU2hhZG93ZmF4Q29udHJhY3RTdGF0ZUIeqgIbR2FuZGFsZi5Db250cmFj",
-            "dHMuU2hhZG93ZmF4YgZwcm90bzM="));
+            "IksKDlVzZXJJbmZvU3RydWN0Eg8KB2NsYWltZWQYASABKAgSKAoNb2J0YWlu",
+            "X2Ftb3VudBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUiMQoPUHVibGljT2Zm",
+            "ZXJMaXN0Eh4KBXZhbHVlGAEgAygLMg8uUHVibGljT2ZmZXJpbmciHQoFVG9r",
+            "ZW4SFAoMdG9rZW5fc3ltYm9sGAEgASgJIpACChZBZGRQdWJsaWNPZmZlcmlu",
+            "Z0lucHV0Eh0KFW9mZmVyaW5nX3Rva2VuX3N5bWJvbBgBIAEoCRIwChVvZmZl",
+            "cmluZ190b2tlbl9hbW91bnQYAiABKAsyES5hZWxmLkJpZ0ludFZhbHVlEhkK",
+            "EXdhbnRfdG9rZW5fc3ltYm9sGAMgASgJEiwKEXdhbnRfdG9rZW5fYW1vdW50",
+            "GAQgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIuCgpzdGFydF90aW1lGAUgASgL",
+            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIsCghlbmRfdGltZRgGIAEo",
+            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAiTgoVQ2hhbmdlQXNjcmlw",
+            "dGlvbklucHV0EhQKDHRva2VuX3N5bWJvbBgBIAEoCRIfCghyZWNlaXZlchgC",
+            "IAEoCzINLmFlbGYuQWRkcmVzcyJUCgtJbnZlc3RJbnB1dBIRCglwdWJsaWNf",
+            "aWQYASABKAUSIQoGYW1vdW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIP",
+            "CgdjaGFubmVsGAMgASgJIj8KDVVzZXJJbmZvSW5wdXQSEQoJcHVibGljX2lk",
+            "GAEgASgFEhsKBHVzZXIYAiABKAsyDS5hZWxmLkFkZHJlc3MiQAoSUmVzZXRU",
+            "aW1lU3BhbklucHV0EhQKDG1heF90aW1lc3BhbhgBIAEoAxIUCgxtaW5fdGlt",
+            "ZXNwYW4YAiABKAMiQQoTUmVzZXRUaW1lU3Bhbk91dHB1dBIUCgxtYXhfdGlt",
+            "ZXNwYW4YASABKAMSFAoMbWluX3RpbWVzcGFuGAIgASgDIroDChRQdWJsaWNP",
+            "ZmZlcmluZ091dHB1dBIdChVvZmZlcmluZ190b2tlbl9zeW1ib2wYASABKAkS",
+            "MAoVb2ZmZXJpbmdfdG9rZW5fYW1vdW50GAIgASgLMhEuYWVsZi5CaWdJbnRW",
+            "YWx1ZRIZChF3YW50X3Rva2VuX3N5bWJvbBgDIAEoCRIsChF3YW50X3Rva2Vu",
+            "X2Ftb3VudBgEIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSLgoKc3RhcnRfdGlt",
+            "ZRgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLAoIZW5kX3Rp",
+            "bWUYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhEKCXB1Ymxp",
+            "Y19pZBgHIAEoAxIgCglwdWJsaXNoZXIYCCABKAsyDS5hZWxmLkFkZHJlc3MS",
+            "DwoHY2xhaW1lZBgJIAEoCBItChJ3YW50X3Rva2VuX2JhbGFuY2UYCiABKAsy",
+            "ES5hZWxmLkJpZ0ludFZhbHVlEjUKGnN1YnNjcmliZWRfb2ZmZXJpbmdfYW1v",
+            "dW50GAsgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZSLGAgoRQWRkUHVibGljT2Zm",
+            "ZXJpbmcSHQoVb2ZmZXJpbmdfdG9rZW5fc3ltYm9sGAEgASgJEjAKFW9mZmVy",
+            "aW5nX3Rva2VuX2Ftb3VudBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSGQoR",
+            "d2FudF90b2tlbl9zeW1ib2wYAyABKAkSLAoRd2FudF90b2tlbl9hbW91bnQY",
+            "BCABKAsyES5hZWxmLkJpZ0ludFZhbHVlEiAKCXB1Ymxpc2hlchgFIAEoCzIN",
+            "LmFlbGYuQWRkcmVzcxIuCgpzdGFydF90aW1lGAYgASgLMhouZ29vZ2xlLnBy",
+            "b3RvYnVmLlRpbWVzdGFtcBIsCghlbmRfdGltZRgHIAEoCzIaLmdvb2dsZS5w",
+            "cm90b2J1Zi5UaW1lc3RhbXASEQoJcHVibGljX2lkGAggASgDOgSguxgBInoK",
+            "EENoYW5nZUFzY3JpcHRpb24SFAoMdG9rZW5fc3ltYm9sGAEgASgJEiQKDW9s",
+            "ZF9wdWJsaXNoZXIYAiABKAsyDS5hZWxmLkFkZHJlc3MSJAoNbmV3X3B1Ymxp",
+            "c2hlchgDIAEoCzINLmFlbGYuQWRkcmVzczoEoLsYASJrCghXaXRoZHJhdxIS",
+            "CgpwdWJpbGljX2lkGAEgASgDEhkKAnRvGAIgASgLMg0uYWVsZi5BZGRyZXNz",
+            "EhIKCndhbnRfdG9rZW4YAyABKAMSFgoOb2ZmZXJpbmdfdG9rZW4YBCABKAM6",
+            "BKC7GAEirgEKBkludmVzdBIRCglwdWJsaWNfaWQYASABKAMSHwoIaW52ZXN0",
+            "b3IYAiABKAsyDS5hZWxmLkFkZHJlc3MSFAoMdG9rZW5fc3ltYm9sGAMgASgJ",
+            "EiEKBmluY29tZRgEIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSIAoFc3BlbmQY",
+            "BSABKAsyES5hZWxmLkJpZ0ludFZhbHVlEg8KB2NoYW5uZWwYBiABKAk6BKC7",
+            "GAEiYAoHSGFydmVzdBIRCglwdWJsaWNfaWQYASABKAMSGQoCdG8YAiABKAsy",
+            "DS5hZWxmLkFkZHJlc3MSIQoGYW1vdW50GAMgASgLMhEuYWVsZi5CaWdJbnRW",
+            "YWx1ZToEoLsYATKXBwoRU2hhZG93ZmF4Q29udHJhY3QSNQoKSW5pdGlhbGl6",
+            "ZRINLmFlbGYuQWRkcmVzcxoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEksK",
+            "EUFkZFB1YmxpY09mZmVyaW5nEhcuQWRkUHVibGljT2ZmZXJpbmdJbnB1dBob",
+            "Lmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlIgASRAoQQ2hhbmdlQXNjcmlw",
+            "dGlvbhIWLkNoYW5nZUFzY3JpcHRpb25JbnB1dBoWLmdvb2dsZS5wcm90b2J1",
+            "Zi5FbXB0eSIAEkEKCFdpdGhkcmF3EhsuZ29vZ2xlLnByb3RvYnVmLkludDMy",
+            "VmFsdWUaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiABIwCgZJbnZlc3QSDC5J",
+            "bnZlc3RJbnB1dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eSIAEkAKB0hhcnZl",
+            "c3QSGy5nb29nbGUucHJvdG9idWYuSW50MzJWYWx1ZRoWLmdvb2dsZS5wcm90",
+            "b2J1Zi5FbXB0eSIAEj4KDVJlc2V0VGltZVNwYW4SEy5SZXNldFRpbWVTcGFu",
+            "SW5wdXQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiABI4CghHZXRPd25lchIW",
+            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoNLmFlbGYuQWRkcmVzcyIFiIn3AQES",
+            "QgoLR2V0VGltZXNwYW4SFi5nb29nbGUucHJvdG9idWYuRW1wdHkaFC5SZXNl",
+            "dFRpbWVTcGFuT3V0cHV0IgWIifcBARJMCg9QdWJsaWNPZmZlcmluZ3MSGy5n",
+            "b29nbGUucHJvdG9idWYuSW50MzJWYWx1ZRoVLlB1YmxpY09mZmVyaW5nT3V0",
+            "cHV0IgWIifcBARIyCghVc2VySW5mbxIOLlVzZXJJbmZvSW5wdXQaDy5Vc2Vy",
+            "SW5mb1N0cnVjdCIFiIn3AQESVQoXR2V0UHVibGljT2ZmZXJpbmdMZW5ndGgS",
+            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkaGy5nb29nbGUucHJvdG9idWYuSW50",
+            "MzJWYWx1ZSIFiIn3AQESMQoRR2V0VG9rZW5Pd25lcnNoaXASBi5Ub2tlbhoN",
+            "LmFlbGYuQWRkcmVzcyIFiIn3AQEaN7LM9gEyR2FuZGFsZi5Db250cmFjdHMu",
+            "U2hhZG93ZmF4LlNoYWRvd2ZheENvbnRyYWN0U3RhdGVCHqoCG0dhbmRhbGYu",
+            "Q29udHJhY3RzLlNoYWRvd2ZheGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::AElf.Types.CoreReflection.Descriptor, global::AElf.OptionsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.Shadowfax.PublicOffering), global::Gandalf.Contracts.Shadowfax.PublicOffering.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "StartTime", "EndTime", "Publisher", "Claimed", "WantTokenBalance", "SubscribedOfferingAmount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.Shadowfax.UserInfo), global::Gandalf.Contracts.Shadowfax.UserInfo.Parser, new[]{ "Claimed", "ObtainAmount" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.Shadowfax.UserInfoStruct), global::Gandalf.Contracts.Shadowfax.UserInfoStruct.Parser, new[]{ "Claimed", "ObtainAmount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.Shadowfax.PublicOfferList), global::Gandalf.Contracts.Shadowfax.PublicOfferList.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.Shadowfax.Token), global::Gandalf.Contracts.Shadowfax.Token.Parser, new[]{ "TokenSymbol" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.Shadowfax.AddPublicOfferingInput), global::Gandalf.Contracts.Shadowfax.AddPublicOfferingInput.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "StartTime", "EndTime" }, null, null, null, null),
@@ -226,7 +124,6 @@ namespace Gandalf.Contracts.Shadowfax {
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.Shadowfax.Withdraw), global::Gandalf.Contracts.Shadowfax.Withdraw.Parser, new[]{ "PubilicId", "To", "WantToken", "OfferingToken" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.Shadowfax.Invest), global::Gandalf.Contracts.Shadowfax.Invest.Parser, new[]{ "PublicId", "Investor", "TokenSymbol", "Income", "Spend", "Channel" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.Shadowfax.Harvest), global::Gandalf.Contracts.Shadowfax.Harvest.Parser, new[]{ "PublicId", "To", "Amount" }, null, null, null, null)
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:test/Gandalf.Contracts.Shadowfax.Tests/Protobuf/Generated/GandalfShadowfaxContract.g.cs
           }));
     }
     #endregion
@@ -234,37 +131,25 @@ namespace Gandalf.Contracts.Shadowfax {
   }
   #region Messages
   /// <summary>
-<<<<<<< HEAD:test/Gandalf.Contracts.IdoContract.Tests/Protobuf/Generated/IdoContract.g.cs
-  /// struct
-=======
   /// Stucts
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:test/Gandalf.Contracts.Shadowfax.Tests/Protobuf/Generated/GandalfShadowfaxContract.g.cs
   /// </summary>
-  internal sealed partial class PublicOffering : pb::IMessage<PublicOffering>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class PublicOffering : pb::IMessage<PublicOffering> {
     private static readonly pb::MessageParser<PublicOffering> _parser = new pb::MessageParser<PublicOffering>(() => new PublicOffering());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PublicOffering> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PublicOffering() {
       OnConstruction();
     }
@@ -272,7 +157,6 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PublicOffering(PublicOffering other) : this() {
       offeringTokenSymbol_ = other.offeringTokenSymbol_;
       offeringTokenAmount_ = other.offeringTokenAmount_ != null ? other.offeringTokenAmount_.Clone() : null;
@@ -288,7 +172,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PublicOffering Clone() {
       return new PublicOffering(this);
     }
@@ -297,7 +180,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int OfferingTokenSymbolFieldNumber = 1;
     private string offeringTokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OfferingTokenSymbol {
       get { return offeringTokenSymbol_; }
       set {
@@ -309,7 +191,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int OfferingTokenAmountFieldNumber = 2;
     private global::AElf.Types.BigIntValue offeringTokenAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue OfferingTokenAmount {
       get { return offeringTokenAmount_; }
       set {
@@ -321,7 +202,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int WantTokenSymbolFieldNumber = 3;
     private string wantTokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string WantTokenSymbol {
       get { return wantTokenSymbol_; }
       set {
@@ -333,7 +213,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int WantTokenAmountFieldNumber = 4;
     private global::AElf.Types.BigIntValue wantTokenAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue WantTokenAmount {
       get { return wantTokenAmount_; }
       set {
@@ -345,7 +224,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int StartTimeFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp startTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
       get { return startTime_; }
       set {
@@ -357,7 +235,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int EndTimeFieldNumber = 6;
     private global::Google.Protobuf.WellKnownTypes.Timestamp endTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp EndTime {
       get { return endTime_; }
       set {
@@ -369,7 +246,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int PublisherFieldNumber = 7;
     private global::AElf.Types.Address publisher_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Publisher {
       get { return publisher_; }
       set {
@@ -381,7 +257,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int ClaimedFieldNumber = 8;
     private bool claimed_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Claimed {
       get { return claimed_; }
       set {
@@ -393,7 +268,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int WantTokenBalanceFieldNumber = 9;
     private global::AElf.Types.BigIntValue wantTokenBalance_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue WantTokenBalance {
       get { return wantTokenBalance_; }
       set {
@@ -405,7 +279,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int SubscribedOfferingAmountFieldNumber = 10;
     private global::AElf.Types.BigIntValue subscribedOfferingAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue SubscribedOfferingAmount {
       get { return subscribedOfferingAmount_; }
       set {
@@ -414,13 +287,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PublicOffering);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PublicOffering other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -442,7 +313,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (OfferingTokenSymbol.Length != 0) hash ^= OfferingTokenSymbol.GetHashCode();
@@ -462,17 +332,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (OfferingTokenSymbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(OfferingTokenSymbol);
@@ -516,61 +381,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (OfferingTokenSymbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(OfferingTokenSymbol);
-      }
-      if (offeringTokenAmount_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(OfferingTokenAmount);
-      }
-      if (WantTokenSymbol.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(WantTokenSymbol);
-      }
-      if (wantTokenAmount_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(WantTokenAmount);
-      }
-      if (startTime_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(StartTime);
-      }
-      if (endTime_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(EndTime);
-      }
-      if (publisher_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(Publisher);
-      }
-      if (Claimed != false) {
-        output.WriteRawTag(64);
-        output.WriteBool(Claimed);
-      }
-      if (wantTokenBalance_ != null) {
-        output.WriteRawTag(74);
-        output.WriteMessage(WantTokenBalance);
-      }
-      if (subscribedOfferingAmount_ != null) {
-        output.WriteRawTag(82);
-        output.WriteMessage(SubscribedOfferingAmount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (OfferingTokenSymbol.Length != 0) {
@@ -610,7 +423,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PublicOffering other) {
       if (other == null) {
         return;
@@ -670,11 +482,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -744,158 +552,49 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            OfferingTokenSymbol = input.ReadString();
-            break;
-          }
-          case 18: {
-            if (offeringTokenAmount_ == null) {
-              OfferingTokenAmount = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(OfferingTokenAmount);
-            break;
-          }
-          case 26: {
-            WantTokenSymbol = input.ReadString();
-            break;
-          }
-          case 34: {
-            if (wantTokenAmount_ == null) {
-              WantTokenAmount = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(WantTokenAmount);
-            break;
-          }
-          case 42: {
-            if (startTime_ == null) {
-              StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(StartTime);
-            break;
-          }
-          case 50: {
-            if (endTime_ == null) {
-              EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(EndTime);
-            break;
-          }
-          case 58: {
-            if (publisher_ == null) {
-              Publisher = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Publisher);
-            break;
-          }
-          case 64: {
-            Claimed = input.ReadBool();
-            break;
-          }
-          case 74: {
-            if (wantTokenBalance_ == null) {
-              WantTokenBalance = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(WantTokenBalance);
-            break;
-          }
-          case 82: {
-            if (subscribedOfferingAmount_ == null) {
-              SubscribedOfferingAmount = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(SubscribedOfferingAmount);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-<<<<<<< HEAD:test/Gandalf.Contracts.IdoContract.Tests/Protobuf/Generated/IdoContract.g.cs
   internal sealed partial class UserInfoStruct : pb::IMessage<UserInfoStruct> {
     private static readonly pb::MessageParser<UserInfoStruct> _parser = new pb::MessageParser<UserInfoStruct>(() => new UserInfoStruct());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pb::MessageParser<UserInfoStruct> Parser { get { return _parser; } }
-=======
-  internal sealed partial class UserInfo : pb::IMessage<UserInfo>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<UserInfo> _parser = new pb::MessageParser<UserInfo>(() => new UserInfo());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<UserInfo> Parser { get { return _parser; } }
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:test/Gandalf.Contracts.Shadowfax.Tests/Protobuf/Generated/GandalfShadowfaxContract.g.cs
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-<<<<<<< HEAD:test/Gandalf.Contracts.IdoContract.Tests/Protobuf/Generated/IdoContract.g.cs
     public UserInfoStruct() {
-=======
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public UserInfo() {
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:test/Gandalf.Contracts.Shadowfax.Tests/Protobuf/Generated/GandalfShadowfaxContract.g.cs
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-<<<<<<< HEAD:test/Gandalf.Contracts.IdoContract.Tests/Protobuf/Generated/IdoContract.g.cs
     public UserInfoStruct(UserInfoStruct other) : this() {
-=======
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public UserInfo(UserInfo other) : this() {
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:test/Gandalf.Contracts.Shadowfax.Tests/Protobuf/Generated/GandalfShadowfaxContract.g.cs
       claimed_ = other.claimed_;
       obtainAmount_ = other.obtainAmount_ != null ? other.obtainAmount_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-<<<<<<< HEAD:test/Gandalf.Contracts.IdoContract.Tests/Protobuf/Generated/IdoContract.g.cs
     public UserInfoStruct Clone() {
       return new UserInfoStruct(this);
-=======
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public UserInfo Clone() {
-      return new UserInfo(this);
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:test/Gandalf.Contracts.Shadowfax.Tests/Protobuf/Generated/GandalfShadowfaxContract.g.cs
     }
 
     /// <summary>Field number for the "claimed" field.</summary>
     public const int ClaimedFieldNumber = 1;
     private bool claimed_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Claimed {
       get { return claimed_; }
       set {
@@ -907,7 +606,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int ObtainAmountFieldNumber = 2;
     private global::AElf.Types.BigIntValue obtainAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue ObtainAmount {
       get { return obtainAmount_; }
       set {
@@ -916,18 +614,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as UserInfoStruct);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-<<<<<<< HEAD:test/Gandalf.Contracts.IdoContract.Tests/Protobuf/Generated/IdoContract.g.cs
     public bool Equals(UserInfoStruct other) {
-=======
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(UserInfo other) {
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:test/Gandalf.Contracts.Shadowfax.Tests/Protobuf/Generated/GandalfShadowfaxContract.g.cs
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -940,7 +632,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Claimed != false) hash ^= Claimed.GetHashCode();
@@ -952,17 +643,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Claimed != false) {
         output.WriteRawTag(8);
         output.WriteBool(Claimed);
@@ -974,29 +660,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Claimed != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(Claimed);
-      }
-      if (obtainAmount_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ObtainAmount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Claimed != false) {
@@ -1012,12 +678,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-<<<<<<< HEAD:test/Gandalf.Contracts.IdoContract.Tests/Protobuf/Generated/IdoContract.g.cs
     public void MergeFrom(UserInfoStruct other) {
-=======
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(UserInfo other) {
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:test/Gandalf.Contracts.Shadowfax.Tests/Protobuf/Generated/GandalfShadowfaxContract.g.cs
       if (other == null) {
         return;
       }
@@ -1034,11 +695,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1058,62 +715,27 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Claimed = input.ReadBool();
-            break;
-          }
-          case 18: {
-            if (obtainAmount_ == null) {
-              ObtainAmount = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(ObtainAmount);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class PublicOfferList : pb::IMessage<PublicOfferList>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class PublicOfferList : pb::IMessage<PublicOfferList> {
     private static readonly pb::MessageParser<PublicOfferList> _parser = new pb::MessageParser<PublicOfferList>(() => new PublicOfferList());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PublicOfferList> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PublicOfferList() {
       OnConstruction();
     }
@@ -1121,14 +743,12 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PublicOfferList(PublicOfferList other) : this() {
       value_ = other.value_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PublicOfferList Clone() {
       return new PublicOfferList(this);
     }
@@ -1139,19 +759,16 @@ namespace Gandalf.Contracts.Shadowfax {
         = pb::FieldCodec.ForMessage(10, global::Gandalf.Contracts.Shadowfax.PublicOffering.Parser);
     private readonly pbc::RepeatedField<global::Gandalf.Contracts.Shadowfax.PublicOffering> value_ = new pbc::RepeatedField<global::Gandalf.Contracts.Shadowfax.PublicOffering>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Gandalf.Contracts.Shadowfax.PublicOffering> Value {
       get { return value_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PublicOfferList);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PublicOfferList other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1164,7 +781,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= value_.GetHashCode();
@@ -1175,37 +791,19 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       value_.WriteTo(output, _repeated_value_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      value_.WriteTo(ref output, _repeated_value_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += value_.CalculateSize(_repeated_value_codec);
@@ -1216,7 +814,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PublicOfferList other) {
       if (other == null) {
         return;
@@ -1226,11 +823,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1243,58 +836,30 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            value_.AddEntriesFrom(ref input, _repeated_value_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
   /// <summary>
   /// Inputs
   /// </summary>
-  internal sealed partial class Token : pb::IMessage<Token>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class Token : pb::IMessage<Token> {
     private static readonly pb::MessageParser<Token> _parser = new pb::MessageParser<Token>(() => new Token());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Token> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Token() {
       OnConstruction();
     }
@@ -1302,14 +867,12 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Token(Token other) : this() {
       tokenSymbol_ = other.tokenSymbol_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Token Clone() {
       return new Token(this);
     }
@@ -1318,7 +881,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int TokenSymbolFieldNumber = 1;
     private string tokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TokenSymbol {
       get { return tokenSymbol_; }
       set {
@@ -1327,13 +889,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Token);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Token other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1346,7 +906,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (TokenSymbol.Length != 0) hash ^= TokenSymbol.GetHashCode();
@@ -1357,17 +916,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (TokenSymbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(TokenSymbol);
@@ -1375,25 +929,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TokenSymbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(TokenSymbol);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (TokenSymbol.Length != 0) {
@@ -1406,7 +944,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Token other) {
       if (other == null) {
         return;
@@ -1418,11 +955,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1435,55 +968,27 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            TokenSymbol = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class AddPublicOfferingInput : pb::IMessage<AddPublicOfferingInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class AddPublicOfferingInput : pb::IMessage<AddPublicOfferingInput> {
     private static readonly pb::MessageParser<AddPublicOfferingInput> _parser = new pb::MessageParser<AddPublicOfferingInput>(() => new AddPublicOfferingInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AddPublicOfferingInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AddPublicOfferingInput() {
       OnConstruction();
     }
@@ -1491,7 +996,6 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AddPublicOfferingInput(AddPublicOfferingInput other) : this() {
       offeringTokenSymbol_ = other.offeringTokenSymbol_;
       offeringTokenAmount_ = other.offeringTokenAmount_ != null ? other.offeringTokenAmount_.Clone() : null;
@@ -1503,7 +1007,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AddPublicOfferingInput Clone() {
       return new AddPublicOfferingInput(this);
     }
@@ -1512,7 +1015,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int OfferingTokenSymbolFieldNumber = 1;
     private string offeringTokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OfferingTokenSymbol {
       get { return offeringTokenSymbol_; }
       set {
@@ -1524,7 +1026,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int OfferingTokenAmountFieldNumber = 2;
     private global::AElf.Types.BigIntValue offeringTokenAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue OfferingTokenAmount {
       get { return offeringTokenAmount_; }
       set {
@@ -1536,7 +1037,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int WantTokenSymbolFieldNumber = 3;
     private string wantTokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string WantTokenSymbol {
       get { return wantTokenSymbol_; }
       set {
@@ -1548,7 +1048,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int WantTokenAmountFieldNumber = 4;
     private global::AElf.Types.BigIntValue wantTokenAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue WantTokenAmount {
       get { return wantTokenAmount_; }
       set {
@@ -1560,7 +1059,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int StartTimeFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp startTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
       get { return startTime_; }
       set {
@@ -1572,7 +1070,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int EndTimeFieldNumber = 6;
     private global::Google.Protobuf.WellKnownTypes.Timestamp endTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp EndTime {
       get { return endTime_; }
       set {
@@ -1581,13 +1078,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AddPublicOfferingInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AddPublicOfferingInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1605,7 +1100,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (OfferingTokenSymbol.Length != 0) hash ^= OfferingTokenSymbol.GetHashCode();
@@ -1621,17 +1115,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (OfferingTokenSymbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(OfferingTokenSymbol);
@@ -1659,45 +1148,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (OfferingTokenSymbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(OfferingTokenSymbol);
-      }
-      if (offeringTokenAmount_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(OfferingTokenAmount);
-      }
-      if (WantTokenSymbol.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(WantTokenSymbol);
-      }
-      if (wantTokenAmount_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(WantTokenAmount);
-      }
-      if (startTime_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(StartTime);
-      }
-      if (endTime_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(EndTime);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (OfferingTokenSymbol.Length != 0) {
@@ -1725,7 +1178,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AddPublicOfferingInput other) {
       if (other == null) {
         return;
@@ -1764,11 +1216,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1813,87 +1261,27 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            OfferingTokenSymbol = input.ReadString();
-            break;
-          }
-          case 18: {
-            if (offeringTokenAmount_ == null) {
-              OfferingTokenAmount = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(OfferingTokenAmount);
-            break;
-          }
-          case 26: {
-            WantTokenSymbol = input.ReadString();
-            break;
-          }
-          case 34: {
-            if (wantTokenAmount_ == null) {
-              WantTokenAmount = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(WantTokenAmount);
-            break;
-          }
-          case 42: {
-            if (startTime_ == null) {
-              StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(StartTime);
-            break;
-          }
-          case 50: {
-            if (endTime_ == null) {
-              EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(EndTime);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ChangeAscriptionInput : pb::IMessage<ChangeAscriptionInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ChangeAscriptionInput : pb::IMessage<ChangeAscriptionInput> {
     private static readonly pb::MessageParser<ChangeAscriptionInput> _parser = new pb::MessageParser<ChangeAscriptionInput>(() => new ChangeAscriptionInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ChangeAscriptionInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChangeAscriptionInput() {
       OnConstruction();
     }
@@ -1901,7 +1289,6 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChangeAscriptionInput(ChangeAscriptionInput other) : this() {
       tokenSymbol_ = other.tokenSymbol_;
       receiver_ = other.receiver_ != null ? other.receiver_.Clone() : null;
@@ -1909,7 +1296,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChangeAscriptionInput Clone() {
       return new ChangeAscriptionInput(this);
     }
@@ -1918,7 +1304,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int TokenSymbolFieldNumber = 1;
     private string tokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TokenSymbol {
       get { return tokenSymbol_; }
       set {
@@ -1930,7 +1315,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int ReceiverFieldNumber = 2;
     private global::AElf.Types.Address receiver_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Receiver {
       get { return receiver_; }
       set {
@@ -1939,13 +1323,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ChangeAscriptionInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ChangeAscriptionInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1959,7 +1341,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (TokenSymbol.Length != 0) hash ^= TokenSymbol.GetHashCode();
@@ -1971,17 +1352,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (TokenSymbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(TokenSymbol);
@@ -1993,29 +1369,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TokenSymbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(TokenSymbol);
-      }
-      if (receiver_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Receiver);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (TokenSymbol.Length != 0) {
@@ -2031,7 +1387,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ChangeAscriptionInput other) {
       if (other == null) {
         return;
@@ -2049,11 +1404,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2073,62 +1424,27 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            TokenSymbol = input.ReadString();
-            break;
-          }
-          case 18: {
-            if (receiver_ == null) {
-              Receiver = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Receiver);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class InvestInput : pb::IMessage<InvestInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class InvestInput : pb::IMessage<InvestInput> {
     private static readonly pb::MessageParser<InvestInput> _parser = new pb::MessageParser<InvestInput>(() => new InvestInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<InvestInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InvestInput() {
       OnConstruction();
     }
@@ -2136,7 +1452,6 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InvestInput(InvestInput other) : this() {
       publicId_ = other.publicId_;
       amount_ = other.amount_ != null ? other.amount_.Clone() : null;
@@ -2145,7 +1460,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InvestInput Clone() {
       return new InvestInput(this);
     }
@@ -2154,7 +1468,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int PublicIdFieldNumber = 1;
     private int publicId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int PublicId {
       get { return publicId_; }
       set {
@@ -2166,7 +1479,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int AmountFieldNumber = 2;
     private global::AElf.Types.BigIntValue amount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue Amount {
       get { return amount_; }
       set {
@@ -2178,7 +1490,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int ChannelFieldNumber = 3;
     private string channel_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Channel {
       get { return channel_; }
       set {
@@ -2187,13 +1498,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as InvestInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(InvestInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2208,7 +1517,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PublicId != 0) hash ^= PublicId.GetHashCode();
@@ -2221,17 +1529,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (PublicId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(PublicId);
@@ -2247,33 +1550,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PublicId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PublicId);
-      }
-      if (amount_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Amount);
-      }
-      if (Channel.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Channel);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PublicId != 0) {
@@ -2292,7 +1571,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(InvestInput other) {
       if (other == null) {
         return;
@@ -2313,11 +1591,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2341,66 +1615,27 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            PublicId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            if (amount_ == null) {
-              Amount = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(Amount);
-            break;
-          }
-          case 26: {
-            Channel = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class UserInfoInput : pb::IMessage<UserInfoInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class UserInfoInput : pb::IMessage<UserInfoInput> {
     private static readonly pb::MessageParser<UserInfoInput> _parser = new pb::MessageParser<UserInfoInput>(() => new UserInfoInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<UserInfoInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UserInfoInput() {
       OnConstruction();
     }
@@ -2408,7 +1643,6 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UserInfoInput(UserInfoInput other) : this() {
       publicId_ = other.publicId_;
       user_ = other.user_ != null ? other.user_.Clone() : null;
@@ -2416,7 +1650,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UserInfoInput Clone() {
       return new UserInfoInput(this);
     }
@@ -2425,7 +1658,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int PublicIdFieldNumber = 1;
     private int publicId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int PublicId {
       get { return publicId_; }
       set {
@@ -2437,7 +1669,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int UserFieldNumber = 2;
     private global::AElf.Types.Address user_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address User {
       get { return user_; }
       set {
@@ -2446,13 +1677,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as UserInfoInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(UserInfoInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2466,7 +1695,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PublicId != 0) hash ^= PublicId.GetHashCode();
@@ -2478,17 +1706,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (PublicId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(PublicId);
@@ -2500,29 +1723,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PublicId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PublicId);
-      }
-      if (user_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(User);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PublicId != 0) {
@@ -2538,7 +1741,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(UserInfoInput other) {
       if (other == null) {
         return;
@@ -2556,11 +1758,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2580,65 +1778,30 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            PublicId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            if (user_ == null) {
-              User = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(User);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
   /// <summary>
   /// Seconds
   /// </summary>
-  internal sealed partial class ResetTimeSpanInput : pb::IMessage<ResetTimeSpanInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ResetTimeSpanInput : pb::IMessage<ResetTimeSpanInput> {
     private static readonly pb::MessageParser<ResetTimeSpanInput> _parser = new pb::MessageParser<ResetTimeSpanInput>(() => new ResetTimeSpanInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ResetTimeSpanInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResetTimeSpanInput() {
       OnConstruction();
     }
@@ -2646,7 +1809,6 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResetTimeSpanInput(ResetTimeSpanInput other) : this() {
       maxTimespan_ = other.maxTimespan_;
       minTimespan_ = other.minTimespan_;
@@ -2654,7 +1816,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResetTimeSpanInput Clone() {
       return new ResetTimeSpanInput(this);
     }
@@ -2663,7 +1824,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int MaxTimespanFieldNumber = 1;
     private long maxTimespan_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long MaxTimespan {
       get { return maxTimespan_; }
       set {
@@ -2675,7 +1835,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int MinTimespanFieldNumber = 2;
     private long minTimespan_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long MinTimespan {
       get { return minTimespan_; }
       set {
@@ -2684,13 +1843,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ResetTimeSpanInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ResetTimeSpanInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2704,7 +1861,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (MaxTimespan != 0L) hash ^= MaxTimespan.GetHashCode();
@@ -2716,17 +1872,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (MaxTimespan != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(MaxTimespan);
@@ -2738,29 +1889,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MaxTimespan != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(MaxTimespan);
-      }
-      if (MinTimespan != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(MinTimespan);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (MaxTimespan != 0L) {
@@ -2776,7 +1907,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ResetTimeSpanInput other) {
       if (other == null) {
         return;
@@ -2791,11 +1921,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2812,62 +1938,30 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            MaxTimespan = input.ReadInt64();
-            break;
-          }
-          case 16: {
-            MinTimespan = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
   /// <summary>
   /// Outputs
   /// </summary>
-  internal sealed partial class ResetTimeSpanOutput : pb::IMessage<ResetTimeSpanOutput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ResetTimeSpanOutput : pb::IMessage<ResetTimeSpanOutput> {
     private static readonly pb::MessageParser<ResetTimeSpanOutput> _parser = new pb::MessageParser<ResetTimeSpanOutput>(() => new ResetTimeSpanOutput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ResetTimeSpanOutput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResetTimeSpanOutput() {
       OnConstruction();
     }
@@ -2875,7 +1969,6 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResetTimeSpanOutput(ResetTimeSpanOutput other) : this() {
       maxTimespan_ = other.maxTimespan_;
       minTimespan_ = other.minTimespan_;
@@ -2883,7 +1976,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResetTimeSpanOutput Clone() {
       return new ResetTimeSpanOutput(this);
     }
@@ -2892,7 +1984,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int MaxTimespanFieldNumber = 1;
     private long maxTimespan_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long MaxTimespan {
       get { return maxTimespan_; }
       set {
@@ -2904,7 +1995,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int MinTimespanFieldNumber = 2;
     private long minTimespan_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long MinTimespan {
       get { return minTimespan_; }
       set {
@@ -2913,13 +2003,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ResetTimeSpanOutput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ResetTimeSpanOutput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2933,7 +2021,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (MaxTimespan != 0L) hash ^= MaxTimespan.GetHashCode();
@@ -2945,17 +2032,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (MaxTimespan != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(MaxTimespan);
@@ -2967,29 +2049,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MaxTimespan != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(MaxTimespan);
-      }
-      if (MinTimespan != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(MinTimespan);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (MaxTimespan != 0L) {
@@ -3005,7 +2067,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ResetTimeSpanOutput other) {
       if (other == null) {
         return;
@@ -3020,11 +2081,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3041,59 +2098,27 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            MaxTimespan = input.ReadInt64();
-            break;
-          }
-          case 16: {
-            MinTimespan = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class PublicOfferingOutput : pb::IMessage<PublicOfferingOutput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class PublicOfferingOutput : pb::IMessage<PublicOfferingOutput> {
     private static readonly pb::MessageParser<PublicOfferingOutput> _parser = new pb::MessageParser<PublicOfferingOutput>(() => new PublicOfferingOutput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PublicOfferingOutput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PublicOfferingOutput() {
       OnConstruction();
     }
@@ -3101,7 +2126,6 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PublicOfferingOutput(PublicOfferingOutput other) : this() {
       offeringTokenSymbol_ = other.offeringTokenSymbol_;
       offeringTokenAmount_ = other.offeringTokenAmount_ != null ? other.offeringTokenAmount_.Clone() : null;
@@ -3118,7 +2142,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PublicOfferingOutput Clone() {
       return new PublicOfferingOutput(this);
     }
@@ -3127,7 +2150,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int OfferingTokenSymbolFieldNumber = 1;
     private string offeringTokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OfferingTokenSymbol {
       get { return offeringTokenSymbol_; }
       set {
@@ -3139,7 +2161,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int OfferingTokenAmountFieldNumber = 2;
     private global::AElf.Types.BigIntValue offeringTokenAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue OfferingTokenAmount {
       get { return offeringTokenAmount_; }
       set {
@@ -3151,7 +2172,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int WantTokenSymbolFieldNumber = 3;
     private string wantTokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string WantTokenSymbol {
       get { return wantTokenSymbol_; }
       set {
@@ -3163,7 +2183,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int WantTokenAmountFieldNumber = 4;
     private global::AElf.Types.BigIntValue wantTokenAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue WantTokenAmount {
       get { return wantTokenAmount_; }
       set {
@@ -3175,7 +2194,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int StartTimeFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp startTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
       get { return startTime_; }
       set {
@@ -3187,7 +2205,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int EndTimeFieldNumber = 6;
     private global::Google.Protobuf.WellKnownTypes.Timestamp endTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp EndTime {
       get { return endTime_; }
       set {
@@ -3199,7 +2216,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int PublicIdFieldNumber = 7;
     private long publicId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long PublicId {
       get { return publicId_; }
       set {
@@ -3211,7 +2227,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int PublisherFieldNumber = 8;
     private global::AElf.Types.Address publisher_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Publisher {
       get { return publisher_; }
       set {
@@ -3223,7 +2238,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int ClaimedFieldNumber = 9;
     private bool claimed_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Claimed {
       get { return claimed_; }
       set {
@@ -3235,7 +2249,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int WantTokenBalanceFieldNumber = 10;
     private global::AElf.Types.BigIntValue wantTokenBalance_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue WantTokenBalance {
       get { return wantTokenBalance_; }
       set {
@@ -3247,7 +2260,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int SubscribedOfferingAmountFieldNumber = 11;
     private global::AElf.Types.BigIntValue subscribedOfferingAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue SubscribedOfferingAmount {
       get { return subscribedOfferingAmount_; }
       set {
@@ -3256,13 +2268,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PublicOfferingOutput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PublicOfferingOutput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3285,7 +2295,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (OfferingTokenSymbol.Length != 0) hash ^= OfferingTokenSymbol.GetHashCode();
@@ -3306,17 +2315,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (OfferingTokenSymbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(OfferingTokenSymbol);
@@ -3364,65 +2368,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (OfferingTokenSymbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(OfferingTokenSymbol);
-      }
-      if (offeringTokenAmount_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(OfferingTokenAmount);
-      }
-      if (WantTokenSymbol.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(WantTokenSymbol);
-      }
-      if (wantTokenAmount_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(WantTokenAmount);
-      }
-      if (startTime_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(StartTime);
-      }
-      if (endTime_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(EndTime);
-      }
-      if (PublicId != 0L) {
-        output.WriteRawTag(56);
-        output.WriteInt64(PublicId);
-      }
-      if (publisher_ != null) {
-        output.WriteRawTag(66);
-        output.WriteMessage(Publisher);
-      }
-      if (Claimed != false) {
-        output.WriteRawTag(72);
-        output.WriteBool(Claimed);
-      }
-      if (wantTokenBalance_ != null) {
-        output.WriteRawTag(82);
-        output.WriteMessage(WantTokenBalance);
-      }
-      if (subscribedOfferingAmount_ != null) {
-        output.WriteRawTag(90);
-        output.WriteMessage(SubscribedOfferingAmount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (OfferingTokenSymbol.Length != 0) {
@@ -3465,7 +2413,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PublicOfferingOutput other) {
       if (other == null) {
         return;
@@ -3528,11 +2475,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3606,119 +2549,30 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            OfferingTokenSymbol = input.ReadString();
-            break;
-          }
-          case 18: {
-            if (offeringTokenAmount_ == null) {
-              OfferingTokenAmount = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(OfferingTokenAmount);
-            break;
-          }
-          case 26: {
-            WantTokenSymbol = input.ReadString();
-            break;
-          }
-          case 34: {
-            if (wantTokenAmount_ == null) {
-              WantTokenAmount = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(WantTokenAmount);
-            break;
-          }
-          case 42: {
-            if (startTime_ == null) {
-              StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(StartTime);
-            break;
-          }
-          case 50: {
-            if (endTime_ == null) {
-              EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(EndTime);
-            break;
-          }
-          case 56: {
-            PublicId = input.ReadInt64();
-            break;
-          }
-          case 66: {
-            if (publisher_ == null) {
-              Publisher = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Publisher);
-            break;
-          }
-          case 72: {
-            Claimed = input.ReadBool();
-            break;
-          }
-          case 82: {
-            if (wantTokenBalance_ == null) {
-              WantTokenBalance = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(WantTokenBalance);
-            break;
-          }
-          case 90: {
-            if (subscribedOfferingAmount_ == null) {
-              SubscribedOfferingAmount = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(SubscribedOfferingAmount);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
   /// <summary>
   /// Events
   /// </summary>
-  internal sealed partial class AddPublicOffering : pb::IMessage<AddPublicOffering>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class AddPublicOffering : pb::IMessage<AddPublicOffering> {
     private static readonly pb::MessageParser<AddPublicOffering> _parser = new pb::MessageParser<AddPublicOffering>(() => new AddPublicOffering());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AddPublicOffering> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AddPublicOffering() {
       OnConstruction();
     }
@@ -3726,7 +2580,6 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AddPublicOffering(AddPublicOffering other) : this() {
       offeringTokenSymbol_ = other.offeringTokenSymbol_;
       offeringTokenAmount_ = other.offeringTokenAmount_ != null ? other.offeringTokenAmount_.Clone() : null;
@@ -3740,7 +2593,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AddPublicOffering Clone() {
       return new AddPublicOffering(this);
     }
@@ -3749,7 +2601,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int OfferingTokenSymbolFieldNumber = 1;
     private string offeringTokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OfferingTokenSymbol {
       get { return offeringTokenSymbol_; }
       set {
@@ -3761,7 +2612,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int OfferingTokenAmountFieldNumber = 2;
     private global::AElf.Types.BigIntValue offeringTokenAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue OfferingTokenAmount {
       get { return offeringTokenAmount_; }
       set {
@@ -3773,7 +2623,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int WantTokenSymbolFieldNumber = 3;
     private string wantTokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string WantTokenSymbol {
       get { return wantTokenSymbol_; }
       set {
@@ -3785,7 +2634,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int WantTokenAmountFieldNumber = 4;
     private global::AElf.Types.BigIntValue wantTokenAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue WantTokenAmount {
       get { return wantTokenAmount_; }
       set {
@@ -3797,7 +2645,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int PublisherFieldNumber = 5;
     private global::AElf.Types.Address publisher_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Publisher {
       get { return publisher_; }
       set {
@@ -3809,7 +2656,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int StartTimeFieldNumber = 6;
     private global::Google.Protobuf.WellKnownTypes.Timestamp startTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
       get { return startTime_; }
       set {
@@ -3821,7 +2667,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int EndTimeFieldNumber = 7;
     private global::Google.Protobuf.WellKnownTypes.Timestamp endTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp EndTime {
       get { return endTime_; }
       set {
@@ -3833,7 +2678,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int PublicIdFieldNumber = 8;
     private long publicId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long PublicId {
       get { return publicId_; }
       set {
@@ -3842,13 +2686,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AddPublicOffering);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AddPublicOffering other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3868,7 +2710,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (OfferingTokenSymbol.Length != 0) hash ^= OfferingTokenSymbol.GetHashCode();
@@ -3886,17 +2727,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (OfferingTokenSymbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(OfferingTokenSymbol);
@@ -3932,53 +2768,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (OfferingTokenSymbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(OfferingTokenSymbol);
-      }
-      if (offeringTokenAmount_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(OfferingTokenAmount);
-      }
-      if (WantTokenSymbol.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(WantTokenSymbol);
-      }
-      if (wantTokenAmount_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(WantTokenAmount);
-      }
-      if (publisher_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(Publisher);
-      }
-      if (startTime_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(StartTime);
-      }
-      if (endTime_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(EndTime);
-      }
-      if (PublicId != 0L) {
-        output.WriteRawTag(64);
-        output.WriteInt64(PublicId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (OfferingTokenSymbol.Length != 0) {
@@ -4012,7 +2804,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AddPublicOffering other) {
       if (other == null) {
         return;
@@ -4060,11 +2851,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4120,98 +2907,27 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            OfferingTokenSymbol = input.ReadString();
-            break;
-          }
-          case 18: {
-            if (offeringTokenAmount_ == null) {
-              OfferingTokenAmount = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(OfferingTokenAmount);
-            break;
-          }
-          case 26: {
-            WantTokenSymbol = input.ReadString();
-            break;
-          }
-          case 34: {
-            if (wantTokenAmount_ == null) {
-              WantTokenAmount = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(WantTokenAmount);
-            break;
-          }
-          case 42: {
-            if (publisher_ == null) {
-              Publisher = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Publisher);
-            break;
-          }
-          case 50: {
-            if (startTime_ == null) {
-              StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(StartTime);
-            break;
-          }
-          case 58: {
-            if (endTime_ == null) {
-              EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(EndTime);
-            break;
-          }
-          case 64: {
-            PublicId = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ChangeAscription : pb::IMessage<ChangeAscription>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ChangeAscription : pb::IMessage<ChangeAscription> {
     private static readonly pb::MessageParser<ChangeAscription> _parser = new pb::MessageParser<ChangeAscription>(() => new ChangeAscription());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ChangeAscription> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChangeAscription() {
       OnConstruction();
     }
@@ -4219,7 +2935,6 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChangeAscription(ChangeAscription other) : this() {
       tokenSymbol_ = other.tokenSymbol_;
       oldPublisher_ = other.oldPublisher_ != null ? other.oldPublisher_.Clone() : null;
@@ -4228,7 +2943,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChangeAscription Clone() {
       return new ChangeAscription(this);
     }
@@ -4237,7 +2951,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int TokenSymbolFieldNumber = 1;
     private string tokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TokenSymbol {
       get { return tokenSymbol_; }
       set {
@@ -4249,7 +2962,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int OldPublisherFieldNumber = 2;
     private global::AElf.Types.Address oldPublisher_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address OldPublisher {
       get { return oldPublisher_; }
       set {
@@ -4261,7 +2973,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int NewPublisherFieldNumber = 3;
     private global::AElf.Types.Address newPublisher_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address NewPublisher {
       get { return newPublisher_; }
       set {
@@ -4270,13 +2981,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ChangeAscription);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ChangeAscription other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4291,7 +3000,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (TokenSymbol.Length != 0) hash ^= TokenSymbol.GetHashCode();
@@ -4304,17 +3012,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (TokenSymbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(TokenSymbol);
@@ -4330,33 +3033,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TokenSymbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(TokenSymbol);
-      }
-      if (oldPublisher_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(OldPublisher);
-      }
-      if (newPublisher_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(NewPublisher);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (TokenSymbol.Length != 0) {
@@ -4375,7 +3054,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ChangeAscription other) {
       if (other == null) {
         return;
@@ -4399,11 +3077,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4430,69 +3104,27 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            TokenSymbol = input.ReadString();
-            break;
-          }
-          case 18: {
-            if (oldPublisher_ == null) {
-              OldPublisher = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(OldPublisher);
-            break;
-          }
-          case 26: {
-            if (newPublisher_ == null) {
-              NewPublisher = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(NewPublisher);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class Withdraw : pb::IMessage<Withdraw>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class Withdraw : pb::IMessage<Withdraw> {
     private static readonly pb::MessageParser<Withdraw> _parser = new pb::MessageParser<Withdraw>(() => new Withdraw());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Withdraw> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Withdraw() {
       OnConstruction();
     }
@@ -4500,7 +3132,6 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Withdraw(Withdraw other) : this() {
       pubilicId_ = other.pubilicId_;
       to_ = other.to_ != null ? other.to_.Clone() : null;
@@ -4510,7 +3141,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Withdraw Clone() {
       return new Withdraw(this);
     }
@@ -4519,7 +3149,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int PubilicIdFieldNumber = 1;
     private long pubilicId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long PubilicId {
       get { return pubilicId_; }
       set {
@@ -4531,7 +3160,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int ToFieldNumber = 2;
     private global::AElf.Types.Address to_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address To {
       get { return to_; }
       set {
@@ -4543,7 +3171,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int WantTokenFieldNumber = 3;
     private long wantToken_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long WantToken {
       get { return wantToken_; }
       set {
@@ -4555,7 +3182,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int OfferingTokenFieldNumber = 4;
     private long offeringToken_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long OfferingToken {
       get { return offeringToken_; }
       set {
@@ -4564,13 +3190,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Withdraw);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Withdraw other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4586,7 +3210,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PubilicId != 0L) hash ^= PubilicId.GetHashCode();
@@ -4600,17 +3223,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (PubilicId != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(PubilicId);
@@ -4630,37 +3248,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PubilicId != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(PubilicId);
-      }
-      if (to_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(To);
-      }
-      if (WantToken != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(WantToken);
-      }
-      if (OfferingToken != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(OfferingToken);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PubilicId != 0L) {
@@ -4682,7 +3272,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Withdraw other) {
       if (other == null) {
         return;
@@ -4706,11 +3295,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4738,70 +3323,27 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            PubilicId = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            if (to_ == null) {
-              To = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(To);
-            break;
-          }
-          case 24: {
-            WantToken = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            OfferingToken = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class Invest : pb::IMessage<Invest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class Invest : pb::IMessage<Invest> {
     private static readonly pb::MessageParser<Invest> _parser = new pb::MessageParser<Invest>(() => new Invest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Invest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Invest() {
       OnConstruction();
     }
@@ -4809,7 +3351,6 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Invest(Invest other) : this() {
       publicId_ = other.publicId_;
       investor_ = other.investor_ != null ? other.investor_.Clone() : null;
@@ -4821,7 +3362,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Invest Clone() {
       return new Invest(this);
     }
@@ -4830,7 +3370,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int PublicIdFieldNumber = 1;
     private long publicId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long PublicId {
       get { return publicId_; }
       set {
@@ -4842,7 +3381,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int InvestorFieldNumber = 2;
     private global::AElf.Types.Address investor_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Investor {
       get { return investor_; }
       set {
@@ -4854,7 +3392,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int TokenSymbolFieldNumber = 3;
     private string tokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TokenSymbol {
       get { return tokenSymbol_; }
       set {
@@ -4866,7 +3403,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int IncomeFieldNumber = 4;
     private global::AElf.Types.BigIntValue income_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue Income {
       get { return income_; }
       set {
@@ -4878,7 +3414,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int SpendFieldNumber = 5;
     private global::AElf.Types.BigIntValue spend_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue Spend {
       get { return spend_; }
       set {
@@ -4890,7 +3425,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int ChannelFieldNumber = 6;
     private string channel_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Channel {
       get { return channel_; }
       set {
@@ -4899,13 +3433,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Invest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Invest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4923,7 +3455,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PublicId != 0L) hash ^= PublicId.GetHashCode();
@@ -4939,17 +3470,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (PublicId != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(PublicId);
@@ -4977,45 +3503,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PublicId != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(PublicId);
-      }
-      if (investor_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Investor);
-      }
-      if (TokenSymbol.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(TokenSymbol);
-      }
-      if (income_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Income);
-      }
-      if (spend_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(Spend);
-      }
-      if (Channel.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(Channel);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PublicId != 0L) {
@@ -5043,7 +3533,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Invest other) {
       if (other == null) {
         return;
@@ -5079,11 +3568,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5125,84 +3610,27 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            PublicId = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            if (investor_ == null) {
-              Investor = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Investor);
-            break;
-          }
-          case 26: {
-            TokenSymbol = input.ReadString();
-            break;
-          }
-          case 34: {
-            if (income_ == null) {
-              Income = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(Income);
-            break;
-          }
-          case 42: {
-            if (spend_ == null) {
-              Spend = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(Spend);
-            break;
-          }
-          case 50: {
-            Channel = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class Harvest : pb::IMessage<Harvest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class Harvest : pb::IMessage<Harvest> {
     private static readonly pb::MessageParser<Harvest> _parser = new pb::MessageParser<Harvest>(() => new Harvest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Harvest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Gandalf.Contracts.Shadowfax.GandalfShadowfaxContractReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Harvest() {
       OnConstruction();
     }
@@ -5210,7 +3638,6 @@ namespace Gandalf.Contracts.Shadowfax {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Harvest(Harvest other) : this() {
       publicId_ = other.publicId_;
       to_ = other.to_ != null ? other.to_.Clone() : null;
@@ -5219,7 +3646,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Harvest Clone() {
       return new Harvest(this);
     }
@@ -5228,7 +3654,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int PublicIdFieldNumber = 1;
     private long publicId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long PublicId {
       get { return publicId_; }
       set {
@@ -5240,7 +3665,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int ToFieldNumber = 2;
     private global::AElf.Types.Address to_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address To {
       get { return to_; }
       set {
@@ -5252,7 +3676,6 @@ namespace Gandalf.Contracts.Shadowfax {
     public const int AmountFieldNumber = 3;
     private global::AElf.Types.BigIntValue amount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.BigIntValue Amount {
       get { return amount_; }
       set {
@@ -5261,13 +3684,11 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Harvest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Harvest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5282,7 +3703,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (PublicId != 0L) hash ^= PublicId.GetHashCode();
@@ -5295,17 +3715,12 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (PublicId != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(PublicId);
@@ -5321,33 +3736,9 @@ namespace Gandalf.Contracts.Shadowfax {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PublicId != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(PublicId);
-      }
-      if (to_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(To);
-      }
-      if (amount_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(Amount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (PublicId != 0L) {
@@ -5366,7 +3757,6 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Harvest other) {
       if (other == null) {
         return;
@@ -5390,11 +3780,7 @@ namespace Gandalf.Contracts.Shadowfax {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5421,41 +3807,7 @@ namespace Gandalf.Contracts.Shadowfax {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            PublicId = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            if (to_ == null) {
-              To = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(To);
-            break;
-          }
-          case 26: {
-            if (amount_ == null) {
-              Amount = new global::AElf.Types.BigIntValue();
-            }
-            input.ReadMessage(Amount);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

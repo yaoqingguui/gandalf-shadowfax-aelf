@@ -114,31 +114,23 @@ namespace AElf.Standards.ACS3 {
 
   }
   #region Messages
-  internal sealed partial class CreateProposalInput : pb::IMessage<CreateProposalInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class CreateProposalInput : pb::IMessage<CreateProposalInput> {
     private static readonly pb::MessageParser<CreateProposalInput> _parser = new pb::MessageParser<CreateProposalInput>(() => new CreateProposalInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CreateProposalInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS3.Acs3Reflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateProposalInput() {
       OnConstruction();
     }
@@ -146,7 +138,6 @@ namespace AElf.Standards.ACS3 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateProposalInput(CreateProposalInput other) : this() {
       contractMethodName_ = other.contractMethodName_;
       toAddress_ = other.toAddress_ != null ? other.toAddress_.Clone() : null;
@@ -159,7 +150,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateProposalInput Clone() {
       return new CreateProposalInput(this);
     }
@@ -168,7 +158,6 @@ namespace AElf.Standards.ACS3 {
     public const int ContractMethodNameFieldNumber = 1;
     private string contractMethodName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ContractMethodName {
       get { return contractMethodName_; }
       set {
@@ -180,7 +169,6 @@ namespace AElf.Standards.ACS3 {
     public const int ToAddressFieldNumber = 2;
     private global::AElf.Types.Address toAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address ToAddress {
       get { return toAddress_; }
       set {
@@ -192,7 +180,6 @@ namespace AElf.Standards.ACS3 {
     public const int ParamsFieldNumber = 3;
     private pb::ByteString params_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Params {
       get { return params_; }
       set {
@@ -204,7 +191,6 @@ namespace AElf.Standards.ACS3 {
     public const int ExpiredTimeFieldNumber = 4;
     private global::Google.Protobuf.WellKnownTypes.Timestamp expiredTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ExpiredTime {
       get { return expiredTime_; }
       set {
@@ -216,7 +202,6 @@ namespace AElf.Standards.ACS3 {
     public const int OrganizationAddressFieldNumber = 5;
     private global::AElf.Types.Address organizationAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address OrganizationAddress {
       get { return organizationAddress_; }
       set {
@@ -228,7 +213,6 @@ namespace AElf.Standards.ACS3 {
     public const int ProposalDescriptionUrlFieldNumber = 6;
     private string proposalDescriptionUrl_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProposalDescriptionUrl {
       get { return proposalDescriptionUrl_; }
       set {
@@ -240,7 +224,6 @@ namespace AElf.Standards.ACS3 {
     public const int TokenFieldNumber = 7;
     private global::AElf.Types.Hash token_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash Token {
       get { return token_; }
       set {
@@ -249,13 +232,11 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CreateProposalInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CreateProposalInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -274,7 +255,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ContractMethodName.Length != 0) hash ^= ContractMethodName.GetHashCode();
@@ -291,17 +271,12 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (ContractMethodName.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ContractMethodName);
@@ -333,49 +308,9 @@ namespace AElf.Standards.ACS3 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ContractMethodName.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(ContractMethodName);
-      }
-      if (toAddress_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ToAddress);
-      }
-      if (Params.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteBytes(Params);
-      }
-      if (expiredTime_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(ExpiredTime);
-      }
-      if (organizationAddress_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(OrganizationAddress);
-      }
-      if (ProposalDescriptionUrl.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(ProposalDescriptionUrl);
-      }
-      if (token_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(Token);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ContractMethodName.Length != 0) {
@@ -406,7 +341,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CreateProposalInput other) {
       if (other == null) {
         return;
@@ -448,11 +382,7 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -501,91 +431,27 @@ namespace AElf.Standards.ACS3 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            ContractMethodName = input.ReadString();
-            break;
-          }
-          case 18: {
-            if (toAddress_ == null) {
-              ToAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(ToAddress);
-            break;
-          }
-          case 26: {
-            Params = input.ReadBytes();
-            break;
-          }
-          case 34: {
-            if (expiredTime_ == null) {
-              ExpiredTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(ExpiredTime);
-            break;
-          }
-          case 42: {
-            if (organizationAddress_ == null) {
-              OrganizationAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(OrganizationAddress);
-            break;
-          }
-          case 50: {
-            ProposalDescriptionUrl = input.ReadString();
-            break;
-          }
-          case 58: {
-            if (token_ == null) {
-              Token = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(Token);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ProposalOutput : pb::IMessage<ProposalOutput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ProposalOutput : pb::IMessage<ProposalOutput> {
     private static readonly pb::MessageParser<ProposalOutput> _parser = new pb::MessageParser<ProposalOutput>(() => new ProposalOutput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ProposalOutput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS3.Acs3Reflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposalOutput() {
       OnConstruction();
     }
@@ -593,7 +459,6 @@ namespace AElf.Standards.ACS3 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposalOutput(ProposalOutput other) : this() {
       proposalId_ = other.proposalId_ != null ? other.proposalId_.Clone() : null;
       contractMethodName_ = other.contractMethodName_;
@@ -610,7 +475,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposalOutput Clone() {
       return new ProposalOutput(this);
     }
@@ -619,7 +483,6 @@ namespace AElf.Standards.ACS3 {
     public const int ProposalIdFieldNumber = 1;
     private global::AElf.Types.Hash proposalId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash ProposalId {
       get { return proposalId_; }
       set {
@@ -631,7 +494,6 @@ namespace AElf.Standards.ACS3 {
     public const int ContractMethodNameFieldNumber = 2;
     private string contractMethodName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ContractMethodName {
       get { return contractMethodName_; }
       set {
@@ -643,7 +505,6 @@ namespace AElf.Standards.ACS3 {
     public const int ToAddressFieldNumber = 3;
     private global::AElf.Types.Address toAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address ToAddress {
       get { return toAddress_; }
       set {
@@ -655,7 +516,6 @@ namespace AElf.Standards.ACS3 {
     public const int ParamsFieldNumber = 4;
     private pb::ByteString params_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Params {
       get { return params_; }
       set {
@@ -667,7 +527,6 @@ namespace AElf.Standards.ACS3 {
     public const int ExpiredTimeFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp expiredTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ExpiredTime {
       get { return expiredTime_; }
       set {
@@ -679,7 +538,6 @@ namespace AElf.Standards.ACS3 {
     public const int OrganizationAddressFieldNumber = 6;
     private global::AElf.Types.Address organizationAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address OrganizationAddress {
       get { return organizationAddress_; }
       set {
@@ -691,7 +549,6 @@ namespace AElf.Standards.ACS3 {
     public const int ProposerFieldNumber = 7;
     private global::AElf.Types.Address proposer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Proposer {
       get { return proposer_; }
       set {
@@ -703,7 +560,6 @@ namespace AElf.Standards.ACS3 {
     public const int ToBeReleasedFieldNumber = 8;
     private bool toBeReleased_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ToBeReleased {
       get { return toBeReleased_; }
       set {
@@ -715,7 +571,6 @@ namespace AElf.Standards.ACS3 {
     public const int ApprovalCountFieldNumber = 9;
     private long approvalCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ApprovalCount {
       get { return approvalCount_; }
       set {
@@ -727,7 +582,6 @@ namespace AElf.Standards.ACS3 {
     public const int RejectionCountFieldNumber = 10;
     private long rejectionCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RejectionCount {
       get { return rejectionCount_; }
       set {
@@ -739,7 +593,6 @@ namespace AElf.Standards.ACS3 {
     public const int AbstentionCountFieldNumber = 11;
     private long abstentionCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long AbstentionCount {
       get { return abstentionCount_; }
       set {
@@ -748,13 +601,11 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ProposalOutput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ProposalOutput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -777,7 +628,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (proposalId_ != null) hash ^= ProposalId.GetHashCode();
@@ -798,17 +648,12 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (proposalId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(ProposalId);
@@ -856,65 +701,9 @@ namespace AElf.Standards.ACS3 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (proposalId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ProposalId);
-      }
-      if (ContractMethodName.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(ContractMethodName);
-      }
-      if (toAddress_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(ToAddress);
-      }
-      if (Params.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteBytes(Params);
-      }
-      if (expiredTime_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(ExpiredTime);
-      }
-      if (organizationAddress_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(OrganizationAddress);
-      }
-      if (proposer_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(Proposer);
-      }
-      if (ToBeReleased != false) {
-        output.WriteRawTag(64);
-        output.WriteBool(ToBeReleased);
-      }
-      if (ApprovalCount != 0L) {
-        output.WriteRawTag(72);
-        output.WriteInt64(ApprovalCount);
-      }
-      if (RejectionCount != 0L) {
-        output.WriteRawTag(80);
-        output.WriteInt64(RejectionCount);
-      }
-      if (AbstentionCount != 0L) {
-        output.WriteRawTag(88);
-        output.WriteInt64(AbstentionCount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (proposalId_ != null) {
@@ -957,7 +746,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ProposalOutput other) {
       if (other == null) {
         return;
@@ -1014,11 +802,7 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1086,110 +870,27 @@ namespace AElf.Standards.ACS3 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (proposalId_ == null) {
-              ProposalId = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(ProposalId);
-            break;
-          }
-          case 18: {
-            ContractMethodName = input.ReadString();
-            break;
-          }
-          case 26: {
-            if (toAddress_ == null) {
-              ToAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(ToAddress);
-            break;
-          }
-          case 34: {
-            Params = input.ReadBytes();
-            break;
-          }
-          case 42: {
-            if (expiredTime_ == null) {
-              ExpiredTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(ExpiredTime);
-            break;
-          }
-          case 50: {
-            if (organizationAddress_ == null) {
-              OrganizationAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(OrganizationAddress);
-            break;
-          }
-          case 58: {
-            if (proposer_ == null) {
-              Proposer = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Proposer);
-            break;
-          }
-          case 64: {
-            ToBeReleased = input.ReadBool();
-            break;
-          }
-          case 72: {
-            ApprovalCount = input.ReadInt64();
-            break;
-          }
-          case 80: {
-            RejectionCount = input.ReadInt64();
-            break;
-          }
-          case 88: {
-            AbstentionCount = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ProposalReleaseThreshold : pb::IMessage<ProposalReleaseThreshold>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ProposalReleaseThreshold : pb::IMessage<ProposalReleaseThreshold> {
     private static readonly pb::MessageParser<ProposalReleaseThreshold> _parser = new pb::MessageParser<ProposalReleaseThreshold>(() => new ProposalReleaseThreshold());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ProposalReleaseThreshold> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS3.Acs3Reflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposalReleaseThreshold() {
       OnConstruction();
     }
@@ -1197,7 +898,6 @@ namespace AElf.Standards.ACS3 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposalReleaseThreshold(ProposalReleaseThreshold other) : this() {
       minimalApprovalThreshold_ = other.minimalApprovalThreshold_;
       maximalRejectionThreshold_ = other.maximalRejectionThreshold_;
@@ -1207,7 +907,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposalReleaseThreshold Clone() {
       return new ProposalReleaseThreshold(this);
     }
@@ -1216,7 +915,6 @@ namespace AElf.Standards.ACS3 {
     public const int MinimalApprovalThresholdFieldNumber = 1;
     private long minimalApprovalThreshold_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long MinimalApprovalThreshold {
       get { return minimalApprovalThreshold_; }
       set {
@@ -1228,7 +926,6 @@ namespace AElf.Standards.ACS3 {
     public const int MaximalRejectionThresholdFieldNumber = 2;
     private long maximalRejectionThreshold_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long MaximalRejectionThreshold {
       get { return maximalRejectionThreshold_; }
       set {
@@ -1240,7 +937,6 @@ namespace AElf.Standards.ACS3 {
     public const int MaximalAbstentionThresholdFieldNumber = 3;
     private long maximalAbstentionThreshold_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long MaximalAbstentionThreshold {
       get { return maximalAbstentionThreshold_; }
       set {
@@ -1252,7 +948,6 @@ namespace AElf.Standards.ACS3 {
     public const int MinimalVoteThresholdFieldNumber = 4;
     private long minimalVoteThreshold_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long MinimalVoteThreshold {
       get { return minimalVoteThreshold_; }
       set {
@@ -1261,13 +956,11 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ProposalReleaseThreshold);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ProposalReleaseThreshold other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1283,7 +976,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (MinimalApprovalThreshold != 0L) hash ^= MinimalApprovalThreshold.GetHashCode();
@@ -1297,17 +989,12 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (MinimalApprovalThreshold != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(MinimalApprovalThreshold);
@@ -1327,37 +1014,9 @@ namespace AElf.Standards.ACS3 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MinimalApprovalThreshold != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(MinimalApprovalThreshold);
-      }
-      if (MaximalRejectionThreshold != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(MaximalRejectionThreshold);
-      }
-      if (MaximalAbstentionThreshold != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(MaximalAbstentionThreshold);
-      }
-      if (MinimalVoteThreshold != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(MinimalVoteThreshold);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (MinimalApprovalThreshold != 0L) {
@@ -1379,7 +1038,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ProposalReleaseThreshold other) {
       if (other == null) {
         return;
@@ -1400,11 +1058,7 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1429,67 +1083,27 @@ namespace AElf.Standards.ACS3 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            MinimalApprovalThreshold = input.ReadInt64();
-            break;
-          }
-          case 16: {
-            MaximalRejectionThreshold = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            MaximalAbstentionThreshold = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            MinimalVoteThreshold = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ProposerWhiteList : pb::IMessage<ProposerWhiteList>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ProposerWhiteList : pb::IMessage<ProposerWhiteList> {
     private static readonly pb::MessageParser<ProposerWhiteList> _parser = new pb::MessageParser<ProposerWhiteList>(() => new ProposerWhiteList());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ProposerWhiteList> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS3.Acs3Reflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposerWhiteList() {
       OnConstruction();
     }
@@ -1497,14 +1111,12 @@ namespace AElf.Standards.ACS3 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposerWhiteList(ProposerWhiteList other) : this() {
       proposers_ = other.proposers_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposerWhiteList Clone() {
       return new ProposerWhiteList(this);
     }
@@ -1515,19 +1127,16 @@ namespace AElf.Standards.ACS3 {
         = pb::FieldCodec.ForMessage(10, global::AElf.Types.Address.Parser);
     private readonly pbc::RepeatedField<global::AElf.Types.Address> proposers_ = new pbc::RepeatedField<global::AElf.Types.Address>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::AElf.Types.Address> Proposers {
       get { return proposers_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ProposerWhiteList);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ProposerWhiteList other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1540,7 +1149,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= proposers_.GetHashCode();
@@ -1551,37 +1159,19 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       proposers_.WriteTo(output, _repeated_proposers_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      proposers_.WriteTo(ref output, _repeated_proposers_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += proposers_.CalculateSize(_repeated_proposers_codec);
@@ -1592,7 +1182,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ProposerWhiteList other) {
       if (other == null) {
         return;
@@ -1602,11 +1191,7 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1619,55 +1204,27 @@ namespace AElf.Standards.ACS3 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            proposers_.AddEntriesFrom(ref input, _repeated_proposers_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class OrganizationHashAddressPair : pb::IMessage<OrganizationHashAddressPair>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class OrganizationHashAddressPair : pb::IMessage<OrganizationHashAddressPair> {
     private static readonly pb::MessageParser<OrganizationHashAddressPair> _parser = new pb::MessageParser<OrganizationHashAddressPair>(() => new OrganizationHashAddressPair());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<OrganizationHashAddressPair> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS3.Acs3Reflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrganizationHashAddressPair() {
       OnConstruction();
     }
@@ -1675,7 +1232,6 @@ namespace AElf.Standards.ACS3 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrganizationHashAddressPair(OrganizationHashAddressPair other) : this() {
       organizationHash_ = other.organizationHash_ != null ? other.organizationHash_.Clone() : null;
       organizationAddress_ = other.organizationAddress_ != null ? other.organizationAddress_.Clone() : null;
@@ -1683,7 +1239,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrganizationHashAddressPair Clone() {
       return new OrganizationHashAddressPair(this);
     }
@@ -1692,7 +1247,6 @@ namespace AElf.Standards.ACS3 {
     public const int OrganizationHashFieldNumber = 1;
     private global::AElf.Types.Hash organizationHash_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash OrganizationHash {
       get { return organizationHash_; }
       set {
@@ -1704,7 +1258,6 @@ namespace AElf.Standards.ACS3 {
     public const int OrganizationAddressFieldNumber = 2;
     private global::AElf.Types.Address organizationAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address OrganizationAddress {
       get { return organizationAddress_; }
       set {
@@ -1713,13 +1266,11 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as OrganizationHashAddressPair);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(OrganizationHashAddressPair other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1733,7 +1284,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (organizationHash_ != null) hash ^= OrganizationHash.GetHashCode();
@@ -1745,17 +1295,12 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (organizationHash_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(OrganizationHash);
@@ -1767,29 +1312,9 @@ namespace AElf.Standards.ACS3 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (organizationHash_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(OrganizationHash);
-      }
-      if (organizationAddress_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(OrganizationAddress);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (organizationHash_ != null) {
@@ -1805,7 +1330,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(OrganizationHashAddressPair other) {
       if (other == null) {
         return;
@@ -1826,11 +1350,7 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1853,65 +1373,27 @@ namespace AElf.Standards.ACS3 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (organizationHash_ == null) {
-              OrganizationHash = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(OrganizationHash);
-            break;
-          }
-          case 18: {
-            if (organizationAddress_ == null) {
-              OrganizationAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(OrganizationAddress);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class CreateProposalBySystemContractInput : pb::IMessage<CreateProposalBySystemContractInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class CreateProposalBySystemContractInput : pb::IMessage<CreateProposalBySystemContractInput> {
     private static readonly pb::MessageParser<CreateProposalBySystemContractInput> _parser = new pb::MessageParser<CreateProposalBySystemContractInput>(() => new CreateProposalBySystemContractInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CreateProposalBySystemContractInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS3.Acs3Reflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateProposalBySystemContractInput() {
       OnConstruction();
     }
@@ -1919,7 +1401,6 @@ namespace AElf.Standards.ACS3 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateProposalBySystemContractInput(CreateProposalBySystemContractInput other) : this() {
       proposalInput_ = other.proposalInput_ != null ? other.proposalInput_.Clone() : null;
       originProposer_ = other.originProposer_ != null ? other.originProposer_.Clone() : null;
@@ -1927,7 +1408,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateProposalBySystemContractInput Clone() {
       return new CreateProposalBySystemContractInput(this);
     }
@@ -1936,7 +1416,6 @@ namespace AElf.Standards.ACS3 {
     public const int ProposalInputFieldNumber = 1;
     private global::AElf.Standards.ACS3.CreateProposalInput proposalInput_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS3.CreateProposalInput ProposalInput {
       get { return proposalInput_; }
       set {
@@ -1948,7 +1427,6 @@ namespace AElf.Standards.ACS3 {
     public const int OriginProposerFieldNumber = 2;
     private global::AElf.Types.Address originProposer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address OriginProposer {
       get { return originProposer_; }
       set {
@@ -1957,13 +1435,11 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CreateProposalBySystemContractInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CreateProposalBySystemContractInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1977,7 +1453,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (proposalInput_ != null) hash ^= ProposalInput.GetHashCode();
@@ -1989,17 +1464,12 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (proposalInput_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(ProposalInput);
@@ -2011,29 +1481,9 @@ namespace AElf.Standards.ACS3 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (proposalInput_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ProposalInput);
-      }
-      if (originProposer_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(OriginProposer);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (proposalInput_ != null) {
@@ -2049,7 +1499,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CreateProposalBySystemContractInput other) {
       if (other == null) {
         return;
@@ -2070,11 +1519,7 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2097,65 +1542,27 @@ namespace AElf.Standards.ACS3 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (proposalInput_ == null) {
-              ProposalInput = new global::AElf.Standards.ACS3.CreateProposalInput();
-            }
-            input.ReadMessage(ProposalInput);
-            break;
-          }
-          case 18: {
-            if (originProposer_ == null) {
-              OriginProposer = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(OriginProposer);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ValidateProposerInWhiteListInput : pb::IMessage<ValidateProposerInWhiteListInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ValidateProposerInWhiteListInput : pb::IMessage<ValidateProposerInWhiteListInput> {
     private static readonly pb::MessageParser<ValidateProposerInWhiteListInput> _parser = new pb::MessageParser<ValidateProposerInWhiteListInput>(() => new ValidateProposerInWhiteListInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ValidateProposerInWhiteListInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS3.Acs3Reflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ValidateProposerInWhiteListInput() {
       OnConstruction();
     }
@@ -2163,7 +1570,6 @@ namespace AElf.Standards.ACS3 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ValidateProposerInWhiteListInput(ValidateProposerInWhiteListInput other) : this() {
       proposer_ = other.proposer_ != null ? other.proposer_.Clone() : null;
       organizationAddress_ = other.organizationAddress_ != null ? other.organizationAddress_.Clone() : null;
@@ -2171,7 +1577,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ValidateProposerInWhiteListInput Clone() {
       return new ValidateProposerInWhiteListInput(this);
     }
@@ -2180,7 +1585,6 @@ namespace AElf.Standards.ACS3 {
     public const int ProposerFieldNumber = 1;
     private global::AElf.Types.Address proposer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Proposer {
       get { return proposer_; }
       set {
@@ -2192,7 +1596,6 @@ namespace AElf.Standards.ACS3 {
     public const int OrganizationAddressFieldNumber = 2;
     private global::AElf.Types.Address organizationAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address OrganizationAddress {
       get { return organizationAddress_; }
       set {
@@ -2201,13 +1604,11 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ValidateProposerInWhiteListInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ValidateProposerInWhiteListInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2221,7 +1622,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (proposer_ != null) hash ^= Proposer.GetHashCode();
@@ -2233,17 +1633,12 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (proposer_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Proposer);
@@ -2255,29 +1650,9 @@ namespace AElf.Standards.ACS3 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (proposer_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Proposer);
-      }
-      if (organizationAddress_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(OrganizationAddress);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (proposer_ != null) {
@@ -2293,7 +1668,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ValidateProposerInWhiteListInput other) {
       if (other == null) {
         return;
@@ -2314,11 +1688,7 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2341,65 +1711,27 @@ namespace AElf.Standards.ACS3 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (proposer_ == null) {
-              Proposer = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Proposer);
-            break;
-          }
-          case 18: {
-            if (organizationAddress_ == null) {
-              OrganizationAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(OrganizationAddress);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ProposalCreated : pb::IMessage<ProposalCreated>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ProposalCreated : pb::IMessage<ProposalCreated> {
     private static readonly pb::MessageParser<ProposalCreated> _parser = new pb::MessageParser<ProposalCreated>(() => new ProposalCreated());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ProposalCreated> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS3.Acs3Reflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposalCreated() {
       OnConstruction();
     }
@@ -2407,7 +1739,6 @@ namespace AElf.Standards.ACS3 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposalCreated(ProposalCreated other) : this() {
       proposalId_ = other.proposalId_ != null ? other.proposalId_.Clone() : null;
       organizationAddress_ = other.organizationAddress_ != null ? other.organizationAddress_.Clone() : null;
@@ -2415,7 +1746,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposalCreated Clone() {
       return new ProposalCreated(this);
     }
@@ -2424,7 +1754,6 @@ namespace AElf.Standards.ACS3 {
     public const int ProposalIdFieldNumber = 1;
     private global::AElf.Types.Hash proposalId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash ProposalId {
       get { return proposalId_; }
       set {
@@ -2436,7 +1765,6 @@ namespace AElf.Standards.ACS3 {
     public const int OrganizationAddressFieldNumber = 2;
     private global::AElf.Types.Address organizationAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address OrganizationAddress {
       get { return organizationAddress_; }
       set {
@@ -2445,13 +1773,11 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ProposalCreated);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ProposalCreated other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2465,7 +1791,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (proposalId_ != null) hash ^= ProposalId.GetHashCode();
@@ -2477,17 +1802,12 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (proposalId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(ProposalId);
@@ -2499,29 +1819,9 @@ namespace AElf.Standards.ACS3 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (proposalId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ProposalId);
-      }
-      if (organizationAddress_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(OrganizationAddress);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (proposalId_ != null) {
@@ -2537,7 +1837,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ProposalCreated other) {
       if (other == null) {
         return;
@@ -2558,11 +1857,7 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2585,65 +1880,27 @@ namespace AElf.Standards.ACS3 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (proposalId_ == null) {
-              ProposalId = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(ProposalId);
-            break;
-          }
-          case 18: {
-            if (organizationAddress_ == null) {
-              OrganizationAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(OrganizationAddress);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ProposalReleased : pb::IMessage<ProposalReleased>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ProposalReleased : pb::IMessage<ProposalReleased> {
     private static readonly pb::MessageParser<ProposalReleased> _parser = new pb::MessageParser<ProposalReleased>(() => new ProposalReleased());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ProposalReleased> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS3.Acs3Reflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposalReleased() {
       OnConstruction();
     }
@@ -2651,7 +1908,6 @@ namespace AElf.Standards.ACS3 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposalReleased(ProposalReleased other) : this() {
       proposalId_ = other.proposalId_ != null ? other.proposalId_.Clone() : null;
       organizationAddress_ = other.organizationAddress_ != null ? other.organizationAddress_.Clone() : null;
@@ -2659,7 +1915,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposalReleased Clone() {
       return new ProposalReleased(this);
     }
@@ -2668,7 +1923,6 @@ namespace AElf.Standards.ACS3 {
     public const int ProposalIdFieldNumber = 1;
     private global::AElf.Types.Hash proposalId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash ProposalId {
       get { return proposalId_; }
       set {
@@ -2680,7 +1934,6 @@ namespace AElf.Standards.ACS3 {
     public const int OrganizationAddressFieldNumber = 2;
     private global::AElf.Types.Address organizationAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address OrganizationAddress {
       get { return organizationAddress_; }
       set {
@@ -2689,13 +1942,11 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ProposalReleased);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ProposalReleased other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2709,7 +1960,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (proposalId_ != null) hash ^= ProposalId.GetHashCode();
@@ -2721,17 +1971,12 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (proposalId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(ProposalId);
@@ -2743,29 +1988,9 @@ namespace AElf.Standards.ACS3 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (proposalId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ProposalId);
-      }
-      if (organizationAddress_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(OrganizationAddress);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (proposalId_ != null) {
@@ -2781,7 +2006,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ProposalReleased other) {
       if (other == null) {
         return;
@@ -2802,11 +2026,7 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2829,65 +2049,27 @@ namespace AElf.Standards.ACS3 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (proposalId_ == null) {
-              ProposalId = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(ProposalId);
-            break;
-          }
-          case 18: {
-            if (organizationAddress_ == null) {
-              OrganizationAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(OrganizationAddress);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class OrganizationCreated : pb::IMessage<OrganizationCreated>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class OrganizationCreated : pb::IMessage<OrganizationCreated> {
     private static readonly pb::MessageParser<OrganizationCreated> _parser = new pb::MessageParser<OrganizationCreated>(() => new OrganizationCreated());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<OrganizationCreated> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS3.Acs3Reflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrganizationCreated() {
       OnConstruction();
     }
@@ -2895,14 +2077,12 @@ namespace AElf.Standards.ACS3 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrganizationCreated(OrganizationCreated other) : this() {
       organizationAddress_ = other.organizationAddress_ != null ? other.organizationAddress_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrganizationCreated Clone() {
       return new OrganizationCreated(this);
     }
@@ -2911,7 +2091,6 @@ namespace AElf.Standards.ACS3 {
     public const int OrganizationAddressFieldNumber = 1;
     private global::AElf.Types.Address organizationAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address OrganizationAddress {
       get { return organizationAddress_; }
       set {
@@ -2920,13 +2099,11 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as OrganizationCreated);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(OrganizationCreated other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2939,7 +2116,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (organizationAddress_ != null) hash ^= OrganizationAddress.GetHashCode();
@@ -2950,17 +2126,12 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (organizationAddress_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(OrganizationAddress);
@@ -2968,25 +2139,9 @@ namespace AElf.Standards.ACS3 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (organizationAddress_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(OrganizationAddress);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (organizationAddress_ != null) {
@@ -2999,7 +2154,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(OrganizationCreated other) {
       if (other == null) {
         return;
@@ -3014,11 +2168,7 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3034,58 +2184,27 @@ namespace AElf.Standards.ACS3 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (organizationAddress_ == null) {
-              OrganizationAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(OrganizationAddress);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ReceiptCreated : pb::IMessage<ReceiptCreated>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ReceiptCreated : pb::IMessage<ReceiptCreated> {
     private static readonly pb::MessageParser<ReceiptCreated> _parser = new pb::MessageParser<ReceiptCreated>(() => new ReceiptCreated());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ReceiptCreated> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS3.Acs3Reflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReceiptCreated() {
       OnConstruction();
     }
@@ -3093,7 +2212,6 @@ namespace AElf.Standards.ACS3 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReceiptCreated(ReceiptCreated other) : this() {
       proposalId_ = other.proposalId_ != null ? other.proposalId_.Clone() : null;
       address_ = other.address_ != null ? other.address_.Clone() : null;
@@ -3104,7 +2222,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReceiptCreated Clone() {
       return new ReceiptCreated(this);
     }
@@ -3113,7 +2230,6 @@ namespace AElf.Standards.ACS3 {
     public const int ProposalIdFieldNumber = 1;
     private global::AElf.Types.Hash proposalId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash ProposalId {
       get { return proposalId_; }
       set {
@@ -3125,7 +2241,6 @@ namespace AElf.Standards.ACS3 {
     public const int AddressFieldNumber = 2;
     private global::AElf.Types.Address address_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Address {
       get { return address_; }
       set {
@@ -3137,7 +2252,6 @@ namespace AElf.Standards.ACS3 {
     public const int ReceiptTypeFieldNumber = 3;
     private string receiptType_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ReceiptType {
       get { return receiptType_; }
       set {
@@ -3149,7 +2263,6 @@ namespace AElf.Standards.ACS3 {
     public const int TimeFieldNumber = 4;
     private global::Google.Protobuf.WellKnownTypes.Timestamp time_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Time {
       get { return time_; }
       set {
@@ -3161,7 +2274,6 @@ namespace AElf.Standards.ACS3 {
     public const int OrganizationAddressFieldNumber = 5;
     private global::AElf.Types.Address organizationAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address OrganizationAddress {
       get { return organizationAddress_; }
       set {
@@ -3170,13 +2282,11 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ReceiptCreated);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ReceiptCreated other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3193,7 +2303,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (proposalId_ != null) hash ^= ProposalId.GetHashCode();
@@ -3208,17 +2317,12 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (proposalId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(ProposalId);
@@ -3242,41 +2346,9 @@ namespace AElf.Standards.ACS3 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (proposalId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ProposalId);
-      }
-      if (address_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Address);
-      }
-      if (ReceiptType.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(ReceiptType);
-      }
-      if (time_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(Time);
-      }
-      if (organizationAddress_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(OrganizationAddress);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (proposalId_ != null) {
@@ -3301,7 +2373,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ReceiptCreated other) {
       if (other == null) {
         return;
@@ -3337,11 +2408,7 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3382,83 +2449,27 @@ namespace AElf.Standards.ACS3 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (proposalId_ == null) {
-              ProposalId = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(ProposalId);
-            break;
-          }
-          case 18: {
-            if (address_ == null) {
-              Address = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Address);
-            break;
-          }
-          case 26: {
-            ReceiptType = input.ReadString();
-            break;
-          }
-          case 34: {
-            if (time_ == null) {
-              Time = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(Time);
-            break;
-          }
-          case 42: {
-            if (organizationAddress_ == null) {
-              OrganizationAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(OrganizationAddress);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class OrganizationWhiteListChanged : pb::IMessage<OrganizationWhiteListChanged>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class OrganizationWhiteListChanged : pb::IMessage<OrganizationWhiteListChanged> {
     private static readonly pb::MessageParser<OrganizationWhiteListChanged> _parser = new pb::MessageParser<OrganizationWhiteListChanged>(() => new OrganizationWhiteListChanged());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<OrganizationWhiteListChanged> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS3.Acs3Reflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrganizationWhiteListChanged() {
       OnConstruction();
     }
@@ -3466,7 +2477,6 @@ namespace AElf.Standards.ACS3 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrganizationWhiteListChanged(OrganizationWhiteListChanged other) : this() {
       organizationAddress_ = other.organizationAddress_ != null ? other.organizationAddress_.Clone() : null;
       proposerWhiteList_ = other.proposerWhiteList_ != null ? other.proposerWhiteList_.Clone() : null;
@@ -3474,7 +2484,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrganizationWhiteListChanged Clone() {
       return new OrganizationWhiteListChanged(this);
     }
@@ -3483,7 +2492,6 @@ namespace AElf.Standards.ACS3 {
     public const int OrganizationAddressFieldNumber = 1;
     private global::AElf.Types.Address organizationAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address OrganizationAddress {
       get { return organizationAddress_; }
       set {
@@ -3495,7 +2503,6 @@ namespace AElf.Standards.ACS3 {
     public const int ProposerWhiteListFieldNumber = 2;
     private global::AElf.Standards.ACS3.ProposerWhiteList proposerWhiteList_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS3.ProposerWhiteList ProposerWhiteList {
       get { return proposerWhiteList_; }
       set {
@@ -3504,13 +2511,11 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as OrganizationWhiteListChanged);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(OrganizationWhiteListChanged other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3524,7 +2529,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (organizationAddress_ != null) hash ^= OrganizationAddress.GetHashCode();
@@ -3536,17 +2540,12 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (organizationAddress_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(OrganizationAddress);
@@ -3558,29 +2557,9 @@ namespace AElf.Standards.ACS3 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (organizationAddress_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(OrganizationAddress);
-      }
-      if (proposerWhiteList_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ProposerWhiteList);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (organizationAddress_ != null) {
@@ -3596,7 +2575,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(OrganizationWhiteListChanged other) {
       if (other == null) {
         return;
@@ -3617,11 +2595,7 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3644,65 +2618,27 @@ namespace AElf.Standards.ACS3 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (organizationAddress_ == null) {
-              OrganizationAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(OrganizationAddress);
-            break;
-          }
-          case 18: {
-            if (proposerWhiteList_ == null) {
-              ProposerWhiteList = new global::AElf.Standards.ACS3.ProposerWhiteList();
-            }
-            input.ReadMessage(ProposerWhiteList);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class OrganizationThresholdChanged : pb::IMessage<OrganizationThresholdChanged>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class OrganizationThresholdChanged : pb::IMessage<OrganizationThresholdChanged> {
     private static readonly pb::MessageParser<OrganizationThresholdChanged> _parser = new pb::MessageParser<OrganizationThresholdChanged>(() => new OrganizationThresholdChanged());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<OrganizationThresholdChanged> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS3.Acs3Reflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrganizationThresholdChanged() {
       OnConstruction();
     }
@@ -3710,7 +2646,6 @@ namespace AElf.Standards.ACS3 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrganizationThresholdChanged(OrganizationThresholdChanged other) : this() {
       organizationAddress_ = other.organizationAddress_ != null ? other.organizationAddress_.Clone() : null;
       proposerReleaseThreshold_ = other.proposerReleaseThreshold_ != null ? other.proposerReleaseThreshold_.Clone() : null;
@@ -3718,7 +2653,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OrganizationThresholdChanged Clone() {
       return new OrganizationThresholdChanged(this);
     }
@@ -3727,7 +2661,6 @@ namespace AElf.Standards.ACS3 {
     public const int OrganizationAddressFieldNumber = 1;
     private global::AElf.Types.Address organizationAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address OrganizationAddress {
       get { return organizationAddress_; }
       set {
@@ -3739,7 +2672,6 @@ namespace AElf.Standards.ACS3 {
     public const int ProposerReleaseThresholdFieldNumber = 2;
     private global::AElf.Standards.ACS3.ProposalReleaseThreshold proposerReleaseThreshold_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS3.ProposalReleaseThreshold ProposerReleaseThreshold {
       get { return proposerReleaseThreshold_; }
       set {
@@ -3748,13 +2680,11 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as OrganizationThresholdChanged);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(OrganizationThresholdChanged other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3768,7 +2698,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (organizationAddress_ != null) hash ^= OrganizationAddress.GetHashCode();
@@ -3780,17 +2709,12 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (organizationAddress_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(OrganizationAddress);
@@ -3802,29 +2726,9 @@ namespace AElf.Standards.ACS3 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (organizationAddress_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(OrganizationAddress);
-      }
-      if (proposerReleaseThreshold_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ProposerReleaseThreshold);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (organizationAddress_ != null) {
@@ -3840,7 +2744,6 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(OrganizationThresholdChanged other) {
       if (other == null) {
         return;
@@ -3861,11 +2764,7 @@ namespace AElf.Standards.ACS3 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3888,37 +2787,7 @@ namespace AElf.Standards.ACS3 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (organizationAddress_ == null) {
-              OrganizationAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(OrganizationAddress);
-            break;
-          }
-          case 18: {
-            if (proposerReleaseThreshold_ == null) {
-              ProposerReleaseThreshold = new global::AElf.Standards.ACS3.ProposalReleaseThreshold();
-            }
-            input.ReadMessage(ProposerReleaseThreshold);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

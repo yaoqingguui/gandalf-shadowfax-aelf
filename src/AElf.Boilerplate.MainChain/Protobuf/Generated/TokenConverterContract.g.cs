@@ -112,31 +112,23 @@ namespace AElf.Contracts.TokenConverter {
 
   }
   #region Messages
-  internal sealed partial class Connector : pb::IMessage<Connector>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class Connector : pb::IMessage<Connector> {
     private static readonly pb::MessageParser<Connector> _parser = new pb::MessageParser<Connector>(() => new Connector());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Connector> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.TokenConverter.TokenConverterContractReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Connector() {
       OnConstruction();
     }
@@ -144,7 +136,6 @@ namespace AElf.Contracts.TokenConverter {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Connector(Connector other) : this() {
       symbol_ = other.symbol_;
       virtualBalance_ = other.virtualBalance_;
@@ -157,7 +148,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Connector Clone() {
       return new Connector(this);
     }
@@ -166,7 +156,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int SymbolFieldNumber = 1;
     private string symbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Symbol {
       get { return symbol_; }
       set {
@@ -178,7 +167,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int VirtualBalanceFieldNumber = 2;
     private long virtualBalance_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long VirtualBalance {
       get { return virtualBalance_; }
       set {
@@ -190,7 +178,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int WeightFieldNumber = 3;
     private string weight_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Weight {
       get { return weight_; }
       set {
@@ -205,7 +192,6 @@ namespace AElf.Contracts.TokenConverter {
     /// true if virtual balance is enabled, false if not
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsVirtualBalanceEnabled {
       get { return isVirtualBalanceEnabled_; }
       set {
@@ -217,7 +203,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int IsPurchaseEnabledFieldNumber = 5;
     private bool isPurchaseEnabled_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsPurchaseEnabled {
       get { return isPurchaseEnabled_; }
       set {
@@ -229,7 +214,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int RelatedSymbolFieldNumber = 6;
     private string relatedSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string RelatedSymbol {
       get { return relatedSymbol_; }
       set {
@@ -241,7 +225,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int IsDepositAccountFieldNumber = 7;
     private bool isDepositAccount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsDepositAccount {
       get { return isDepositAccount_; }
       set {
@@ -250,13 +233,11 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Connector);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Connector other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -275,7 +256,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Symbol.Length != 0) hash ^= Symbol.GetHashCode();
@@ -292,17 +272,12 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Symbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Symbol);
@@ -334,49 +309,9 @@ namespace AElf.Contracts.TokenConverter {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Symbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Symbol);
-      }
-      if (VirtualBalance != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(VirtualBalance);
-      }
-      if (Weight.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Weight);
-      }
-      if (IsVirtualBalanceEnabled != false) {
-        output.WriteRawTag(32);
-        output.WriteBool(IsVirtualBalanceEnabled);
-      }
-      if (IsPurchaseEnabled != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(IsPurchaseEnabled);
-      }
-      if (RelatedSymbol.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(RelatedSymbol);
-      }
-      if (IsDepositAccount != false) {
-        output.WriteRawTag(56);
-        output.WriteBool(IsDepositAccount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Symbol.Length != 0) {
@@ -407,7 +342,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Connector other) {
       if (other == null) {
         return;
@@ -437,11 +371,7 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -478,79 +408,27 @@ namespace AElf.Contracts.TokenConverter {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Symbol = input.ReadString();
-            break;
-          }
-          case 16: {
-            VirtualBalance = input.ReadInt64();
-            break;
-          }
-          case 26: {
-            Weight = input.ReadString();
-            break;
-          }
-          case 32: {
-            IsVirtualBalanceEnabled = input.ReadBool();
-            break;
-          }
-          case 40: {
-            IsPurchaseEnabled = input.ReadBool();
-            break;
-          }
-          case 50: {
-            RelatedSymbol = input.ReadString();
-            break;
-          }
-          case 56: {
-            IsDepositAccount = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class TokenSymbol : pb::IMessage<TokenSymbol>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class TokenSymbol : pb::IMessage<TokenSymbol> {
     private static readonly pb::MessageParser<TokenSymbol> _parser = new pb::MessageParser<TokenSymbol>(() => new TokenSymbol());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TokenSymbol> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.TokenConverter.TokenConverterContractReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TokenSymbol() {
       OnConstruction();
     }
@@ -558,14 +436,12 @@ namespace AElf.Contracts.TokenConverter {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TokenSymbol(TokenSymbol other) : this() {
       symbol_ = other.symbol_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TokenSymbol Clone() {
       return new TokenSymbol(this);
     }
@@ -574,7 +450,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int SymbolFieldNumber = 1;
     private string symbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Symbol {
       get { return symbol_; }
       set {
@@ -583,13 +458,11 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TokenSymbol);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TokenSymbol other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -602,7 +475,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Symbol.Length != 0) hash ^= Symbol.GetHashCode();
@@ -613,17 +485,12 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Symbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Symbol);
@@ -631,25 +498,9 @@ namespace AElf.Contracts.TokenConverter {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Symbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Symbol);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Symbol.Length != 0) {
@@ -662,7 +513,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TokenSymbol other) {
       if (other == null) {
         return;
@@ -674,11 +524,7 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -691,55 +537,27 @@ namespace AElf.Contracts.TokenConverter {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Symbol = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class InitializeInput : pb::IMessage<InitializeInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class InitializeInput : pb::IMessage<InitializeInput> {
     private static readonly pb::MessageParser<InitializeInput> _parser = new pb::MessageParser<InitializeInput>(() => new InitializeInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<InitializeInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.TokenConverter.TokenConverterContractReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InitializeInput() {
       OnConstruction();
     }
@@ -747,7 +565,6 @@ namespace AElf.Contracts.TokenConverter {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InitializeInput(InitializeInput other) : this() {
       baseTokenSymbol_ = other.baseTokenSymbol_;
       feeRate_ = other.feeRate_;
@@ -756,7 +573,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InitializeInput Clone() {
       return new InitializeInput(this);
     }
@@ -765,7 +581,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int BaseTokenSymbolFieldNumber = 1;
     private string baseTokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BaseTokenSymbol {
       get { return baseTokenSymbol_; }
       set {
@@ -777,7 +592,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int FeeRateFieldNumber = 2;
     private string feeRate_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FeeRate {
       get { return feeRate_; }
       set {
@@ -791,19 +605,16 @@ namespace AElf.Contracts.TokenConverter {
         = pb::FieldCodec.ForMessage(26, global::AElf.Contracts.TokenConverter.Connector.Parser);
     private readonly pbc::RepeatedField<global::AElf.Contracts.TokenConverter.Connector> connectors_ = new pbc::RepeatedField<global::AElf.Contracts.TokenConverter.Connector>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::AElf.Contracts.TokenConverter.Connector> Connectors {
       get { return connectors_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as InitializeInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(InitializeInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -818,7 +629,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (BaseTokenSymbol.Length != 0) hash ^= BaseTokenSymbol.GetHashCode();
@@ -831,17 +641,12 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (BaseTokenSymbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(BaseTokenSymbol);
@@ -854,30 +659,9 @@ namespace AElf.Contracts.TokenConverter {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (BaseTokenSymbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(BaseTokenSymbol);
-      }
-      if (FeeRate.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(FeeRate);
-      }
-      connectors_.WriteTo(ref output, _repeated_connectors_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (BaseTokenSymbol.Length != 0) {
@@ -894,7 +678,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(InitializeInput other) {
       if (other == null) {
         return;
@@ -910,11 +693,7 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -935,63 +714,27 @@ namespace AElf.Contracts.TokenConverter {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            BaseTokenSymbol = input.ReadString();
-            break;
-          }
-          case 18: {
-            FeeRate = input.ReadString();
-            break;
-          }
-          case 26: {
-            connectors_.AddEntriesFrom(ref input, _repeated_connectors_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class BuyInput : pb::IMessage<BuyInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class BuyInput : pb::IMessage<BuyInput> {
     private static readonly pb::MessageParser<BuyInput> _parser = new pb::MessageParser<BuyInput>(() => new BuyInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<BuyInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.TokenConverter.TokenConverterContractReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BuyInput() {
       OnConstruction();
     }
@@ -999,7 +742,6 @@ namespace AElf.Contracts.TokenConverter {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BuyInput(BuyInput other) : this() {
       symbol_ = other.symbol_;
       amount_ = other.amount_;
@@ -1008,7 +750,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BuyInput Clone() {
       return new BuyInput(this);
     }
@@ -1017,7 +758,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int SymbolFieldNumber = 1;
     private string symbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Symbol {
       get { return symbol_; }
       set {
@@ -1029,7 +769,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int AmountFieldNumber = 2;
     private long amount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Amount {
       get { return amount_; }
       set {
@@ -1044,7 +783,6 @@ namespace AElf.Contracts.TokenConverter {
     /// No buy if paying more than this, 0 if no limit
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long PayLimit {
       get { return payLimit_; }
       set {
@@ -1053,13 +791,11 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as BuyInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(BuyInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1074,7 +810,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Symbol.Length != 0) hash ^= Symbol.GetHashCode();
@@ -1087,17 +822,12 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Symbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Symbol);
@@ -1113,33 +843,9 @@ namespace AElf.Contracts.TokenConverter {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Symbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Symbol);
-      }
-      if (Amount != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Amount);
-      }
-      if (PayLimit != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(PayLimit);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Symbol.Length != 0) {
@@ -1158,7 +864,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(BuyInput other) {
       if (other == null) {
         return;
@@ -1176,11 +881,7 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1201,63 +902,27 @@ namespace AElf.Contracts.TokenConverter {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Symbol = input.ReadString();
-            break;
-          }
-          case 16: {
-            Amount = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            PayLimit = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class SellInput : pb::IMessage<SellInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class SellInput : pb::IMessage<SellInput> {
     private static readonly pb::MessageParser<SellInput> _parser = new pb::MessageParser<SellInput>(() => new SellInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SellInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.TokenConverter.TokenConverterContractReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SellInput() {
       OnConstruction();
     }
@@ -1265,7 +930,6 @@ namespace AElf.Contracts.TokenConverter {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SellInput(SellInput other) : this() {
       symbol_ = other.symbol_;
       amount_ = other.amount_;
@@ -1274,7 +938,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SellInput Clone() {
       return new SellInput(this);
     }
@@ -1283,7 +946,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int SymbolFieldNumber = 1;
     private string symbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Symbol {
       get { return symbol_; }
       set {
@@ -1295,7 +957,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int AmountFieldNumber = 2;
     private long amount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Amount {
       get { return amount_; }
       set {
@@ -1310,7 +971,6 @@ namespace AElf.Contracts.TokenConverter {
     /// No sell if receiving less than this, 0 if no limit
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ReceiveLimit {
       get { return receiveLimit_; }
       set {
@@ -1319,13 +979,11 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SellInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SellInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1340,7 +998,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Symbol.Length != 0) hash ^= Symbol.GetHashCode();
@@ -1353,17 +1010,12 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Symbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Symbol);
@@ -1379,33 +1031,9 @@ namespace AElf.Contracts.TokenConverter {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Symbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Symbol);
-      }
-      if (Amount != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Amount);
-      }
-      if (ReceiveLimit != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(ReceiveLimit);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Symbol.Length != 0) {
@@ -1424,7 +1052,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SellInput other) {
       if (other == null) {
         return;
@@ -1442,11 +1069,7 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1467,63 +1090,27 @@ namespace AElf.Contracts.TokenConverter {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Symbol = input.ReadString();
-            break;
-          }
-          case 16: {
-            Amount = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            ReceiveLimit = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class GetExchangeRateInput : pb::IMessage<GetExchangeRateInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class GetExchangeRateInput : pb::IMessage<GetExchangeRateInput> {
     private static readonly pb::MessageParser<GetExchangeRateInput> _parser = new pb::MessageParser<GetExchangeRateInput>(() => new GetExchangeRateInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GetExchangeRateInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.TokenConverter.TokenConverterContractReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetExchangeRateInput() {
       OnConstruction();
     }
@@ -1531,7 +1118,6 @@ namespace AElf.Contracts.TokenConverter {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetExchangeRateInput(GetExchangeRateInput other) : this() {
       fromSymbol_ = other.fromSymbol_;
       toSymbol_ = other.toSymbol_;
@@ -1539,7 +1125,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetExchangeRateInput Clone() {
       return new GetExchangeRateInput(this);
     }
@@ -1548,7 +1133,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int FromSymbolFieldNumber = 1;
     private string fromSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FromSymbol {
       get { return fromSymbol_; }
       set {
@@ -1560,7 +1144,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int ToSymbolFieldNumber = 2;
     private string toSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ToSymbol {
       get { return toSymbol_; }
       set {
@@ -1569,13 +1152,11 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GetExchangeRateInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GetExchangeRateInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1589,7 +1170,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (FromSymbol.Length != 0) hash ^= FromSymbol.GetHashCode();
@@ -1601,17 +1181,12 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (FromSymbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(FromSymbol);
@@ -1623,29 +1198,9 @@ namespace AElf.Contracts.TokenConverter {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (FromSymbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(FromSymbol);
-      }
-      if (ToSymbol.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(ToSymbol);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (FromSymbol.Length != 0) {
@@ -1661,7 +1216,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GetExchangeRateInput other) {
       if (other == null) {
         return;
@@ -1676,11 +1230,7 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1697,59 +1247,27 @@ namespace AElf.Contracts.TokenConverter {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            FromSymbol = input.ReadString();
-            break;
-          }
-          case 18: {
-            ToSymbol = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class SellWithInlineActionInput : pb::IMessage<SellWithInlineActionInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class SellWithInlineActionInput : pb::IMessage<SellWithInlineActionInput> {
     private static readonly pb::MessageParser<SellWithInlineActionInput> _parser = new pb::MessageParser<SellWithInlineActionInput>(() => new SellWithInlineActionInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SellWithInlineActionInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.TokenConverter.TokenConverterContractReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SellWithInlineActionInput() {
       OnConstruction();
     }
@@ -1757,7 +1275,6 @@ namespace AElf.Contracts.TokenConverter {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SellWithInlineActionInput(SellWithInlineActionInput other) : this() {
       symbol_ = other.symbol_;
       amount_ = other.amount_;
@@ -1769,7 +1286,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SellWithInlineActionInput Clone() {
       return new SellWithInlineActionInput(this);
     }
@@ -1778,7 +1294,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int SymbolFieldNumber = 1;
     private string symbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Symbol {
       get { return symbol_; }
       set {
@@ -1790,7 +1305,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int AmountFieldNumber = 2;
     private long amount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Amount {
       get { return amount_; }
       set {
@@ -1805,7 +1319,6 @@ namespace AElf.Contracts.TokenConverter {
     /// No sell if receiving less than this, 0 if no limit
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ReceiveLimit {
       get { return receiveLimit_; }
       set {
@@ -1817,7 +1330,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int ContractAddressFieldNumber = 4;
     private global::AElf.Types.Address contractAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address ContractAddress {
       get { return contractAddress_; }
       set {
@@ -1829,7 +1341,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int MethodNameFieldNumber = 5;
     private string methodName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MethodName {
       get { return methodName_; }
       set {
@@ -1841,7 +1352,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int ParamsFieldNumber = 6;
     private pb::ByteString params_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Params {
       get { return params_; }
       set {
@@ -1850,13 +1360,11 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SellWithInlineActionInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SellWithInlineActionInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1874,7 +1382,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Symbol.Length != 0) hash ^= Symbol.GetHashCode();
@@ -1890,17 +1397,12 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Symbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Symbol);
@@ -1928,45 +1430,9 @@ namespace AElf.Contracts.TokenConverter {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Symbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Symbol);
-      }
-      if (Amount != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Amount);
-      }
-      if (ReceiveLimit != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(ReceiveLimit);
-      }
-      if (contractAddress_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(ContractAddress);
-      }
-      if (MethodName.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(MethodName);
-      }
-      if (Params.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteBytes(Params);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Symbol.Length != 0) {
@@ -1994,7 +1460,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SellWithInlineActionInput other) {
       if (other == null) {
         return;
@@ -2024,11 +1489,7 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2064,81 +1525,30 @@ namespace AElf.Contracts.TokenConverter {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Symbol = input.ReadString();
-            break;
-          }
-          case 16: {
-            Amount = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            ReceiveLimit = input.ReadInt64();
-            break;
-          }
-          case 34: {
-            if (contractAddress_ == null) {
-              ContractAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(ContractAddress);
-            break;
-          }
-          case 42: {
-            MethodName = input.ReadString();
-            break;
-          }
-          case 50: {
-            Params = input.ReadBytes();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
   /// <summary>
   /// Events
   /// </summary>
-  internal sealed partial class TokenBought : pb::IMessage<TokenBought>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class TokenBought : pb::IMessage<TokenBought> {
     private static readonly pb::MessageParser<TokenBought> _parser = new pb::MessageParser<TokenBought>(() => new TokenBought());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TokenBought> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.TokenConverter.TokenConverterContractReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TokenBought() {
       OnConstruction();
     }
@@ -2146,7 +1556,6 @@ namespace AElf.Contracts.TokenConverter {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TokenBought(TokenBought other) : this() {
       symbol_ = other.symbol_;
       boughtAmount_ = other.boughtAmount_;
@@ -2156,7 +1565,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TokenBought Clone() {
       return new TokenBought(this);
     }
@@ -2165,7 +1573,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int SymbolFieldNumber = 1;
     private string symbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Symbol {
       get { return symbol_; }
       set {
@@ -2177,7 +1584,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int BoughtAmountFieldNumber = 2;
     private long boughtAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long BoughtAmount {
       get { return boughtAmount_; }
       set {
@@ -2189,7 +1595,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int BaseAmountFieldNumber = 3;
     private long baseAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long BaseAmount {
       get { return baseAmount_; }
       set {
@@ -2201,7 +1606,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int FeeAmountFieldNumber = 4;
     private long feeAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long FeeAmount {
       get { return feeAmount_; }
       set {
@@ -2210,13 +1614,11 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TokenBought);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TokenBought other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2232,7 +1634,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Symbol.Length != 0) hash ^= Symbol.GetHashCode();
@@ -2246,17 +1647,12 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Symbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Symbol);
@@ -2276,37 +1672,9 @@ namespace AElf.Contracts.TokenConverter {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Symbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Symbol);
-      }
-      if (BoughtAmount != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(BoughtAmount);
-      }
-      if (BaseAmount != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(BaseAmount);
-      }
-      if (FeeAmount != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(FeeAmount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Symbol.Length != 0) {
@@ -2328,7 +1696,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TokenBought other) {
       if (other == null) {
         return;
@@ -2349,11 +1716,7 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2378,67 +1741,27 @@ namespace AElf.Contracts.TokenConverter {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Symbol = input.ReadString();
-            break;
-          }
-          case 16: {
-            BoughtAmount = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            BaseAmount = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            FeeAmount = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class TokenSold : pb::IMessage<TokenSold>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class TokenSold : pb::IMessage<TokenSold> {
     private static readonly pb::MessageParser<TokenSold> _parser = new pb::MessageParser<TokenSold>(() => new TokenSold());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TokenSold> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.TokenConverter.TokenConverterContractReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TokenSold() {
       OnConstruction();
     }
@@ -2446,7 +1769,6 @@ namespace AElf.Contracts.TokenConverter {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TokenSold(TokenSold other) : this() {
       symbol_ = other.symbol_;
       soldAmount_ = other.soldAmount_;
@@ -2456,7 +1778,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TokenSold Clone() {
       return new TokenSold(this);
     }
@@ -2465,7 +1786,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int SymbolFieldNumber = 1;
     private string symbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Symbol {
       get { return symbol_; }
       set {
@@ -2477,7 +1797,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int SoldAmountFieldNumber = 2;
     private long soldAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long SoldAmount {
       get { return soldAmount_; }
       set {
@@ -2489,7 +1808,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int BaseAmountFieldNumber = 3;
     private long baseAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long BaseAmount {
       get { return baseAmount_; }
       set {
@@ -2501,7 +1819,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int FeeAmountFieldNumber = 4;
     private long feeAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long FeeAmount {
       get { return feeAmount_; }
       set {
@@ -2510,13 +1827,11 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TokenSold);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TokenSold other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2532,7 +1847,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Symbol.Length != 0) hash ^= Symbol.GetHashCode();
@@ -2546,17 +1860,12 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Symbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Symbol);
@@ -2576,37 +1885,9 @@ namespace AElf.Contracts.TokenConverter {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Symbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Symbol);
-      }
-      if (SoldAmount != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(SoldAmount);
-      }
-      if (BaseAmount != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(BaseAmount);
-      }
-      if (FeeAmount != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(FeeAmount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Symbol.Length != 0) {
@@ -2628,7 +1909,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TokenSold other) {
       if (other == null) {
         return;
@@ -2649,11 +1929,7 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2678,67 +1954,27 @@ namespace AElf.Contracts.TokenConverter {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Symbol = input.ReadString();
-            break;
-          }
-          case 16: {
-            SoldAmount = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            BaseAmount = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            FeeAmount = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class PairConnectorParam : pb::IMessage<PairConnectorParam>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class PairConnectorParam : pb::IMessage<PairConnectorParam> {
     private static readonly pb::MessageParser<PairConnectorParam> _parser = new pb::MessageParser<PairConnectorParam>(() => new PairConnectorParam());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PairConnectorParam> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.TokenConverter.TokenConverterContractReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PairConnectorParam() {
       OnConstruction();
     }
@@ -2746,7 +1982,6 @@ namespace AElf.Contracts.TokenConverter {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PairConnectorParam(PairConnectorParam other) : this() {
       resourceConnectorSymbol_ = other.resourceConnectorSymbol_;
       resourceWeight_ = other.resourceWeight_;
@@ -2756,7 +1991,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PairConnectorParam Clone() {
       return new PairConnectorParam(this);
     }
@@ -2765,7 +1999,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int ResourceConnectorSymbolFieldNumber = 1;
     private string resourceConnectorSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResourceConnectorSymbol {
       get { return resourceConnectorSymbol_; }
       set {
@@ -2777,7 +2010,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int ResourceWeightFieldNumber = 2;
     private string resourceWeight_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResourceWeight {
       get { return resourceWeight_; }
       set {
@@ -2789,7 +2021,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int NativeVirtualBalanceFieldNumber = 3;
     private long nativeVirtualBalance_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long NativeVirtualBalance {
       get { return nativeVirtualBalance_; }
       set {
@@ -2801,7 +2032,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int NativeWeightFieldNumber = 4;
     private string nativeWeight_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string NativeWeight {
       get { return nativeWeight_; }
       set {
@@ -2810,13 +2040,11 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PairConnectorParam);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PairConnectorParam other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2832,7 +2060,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceConnectorSymbol.Length != 0) hash ^= ResourceConnectorSymbol.GetHashCode();
@@ -2846,17 +2073,12 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (ResourceConnectorSymbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(ResourceConnectorSymbol);
@@ -2876,37 +2098,9 @@ namespace AElf.Contracts.TokenConverter {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ResourceConnectorSymbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(ResourceConnectorSymbol);
-      }
-      if (ResourceWeight.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(ResourceWeight);
-      }
-      if (NativeVirtualBalance != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(NativeVirtualBalance);
-      }
-      if (NativeWeight.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(NativeWeight);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ResourceConnectorSymbol.Length != 0) {
@@ -2928,7 +2122,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PairConnectorParam other) {
       if (other == null) {
         return;
@@ -2949,11 +2142,7 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2978,67 +2167,27 @@ namespace AElf.Contracts.TokenConverter {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            ResourceConnectorSymbol = input.ReadString();
-            break;
-          }
-          case 18: {
-            ResourceWeight = input.ReadString();
-            break;
-          }
-          case 24: {
-            NativeVirtualBalance = input.ReadInt64();
-            break;
-          }
-          case 34: {
-            NativeWeight = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ToBeConnectedTokenInfo : pb::IMessage<ToBeConnectedTokenInfo>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ToBeConnectedTokenInfo : pb::IMessage<ToBeConnectedTokenInfo> {
     private static readonly pb::MessageParser<ToBeConnectedTokenInfo> _parser = new pb::MessageParser<ToBeConnectedTokenInfo>(() => new ToBeConnectedTokenInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ToBeConnectedTokenInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.TokenConverter.TokenConverterContractReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ToBeConnectedTokenInfo() {
       OnConstruction();
     }
@@ -3046,7 +2195,6 @@ namespace AElf.Contracts.TokenConverter {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ToBeConnectedTokenInfo(ToBeConnectedTokenInfo other) : this() {
       tokenSymbol_ = other.tokenSymbol_;
       amountToTokenConvert_ = other.amountToTokenConvert_;
@@ -3054,7 +2202,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ToBeConnectedTokenInfo Clone() {
       return new ToBeConnectedTokenInfo(this);
     }
@@ -3063,7 +2210,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int TokenSymbolFieldNumber = 1;
     private string tokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TokenSymbol {
       get { return tokenSymbol_; }
       set {
@@ -3075,7 +2221,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int AmountToTokenConvertFieldNumber = 2;
     private long amountToTokenConvert_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long AmountToTokenConvert {
       get { return amountToTokenConvert_; }
       set {
@@ -3084,13 +2229,11 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ToBeConnectedTokenInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ToBeConnectedTokenInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3104,7 +2247,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (TokenSymbol.Length != 0) hash ^= TokenSymbol.GetHashCode();
@@ -3116,17 +2258,12 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (TokenSymbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(TokenSymbol);
@@ -3138,29 +2275,9 @@ namespace AElf.Contracts.TokenConverter {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TokenSymbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(TokenSymbol);
-      }
-      if (AmountToTokenConvert != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(AmountToTokenConvert);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (TokenSymbol.Length != 0) {
@@ -3176,7 +2293,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ToBeConnectedTokenInfo other) {
       if (other == null) {
         return;
@@ -3191,11 +2307,7 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3212,59 +2324,27 @@ namespace AElf.Contracts.TokenConverter {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            TokenSymbol = input.ReadString();
-            break;
-          }
-          case 16: {
-            AmountToTokenConvert = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class DepositInfo : pb::IMessage<DepositInfo>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class DepositInfo : pb::IMessage<DepositInfo> {
     private static readonly pb::MessageParser<DepositInfo> _parser = new pb::MessageParser<DepositInfo>(() => new DepositInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<DepositInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.TokenConverter.TokenConverterContractReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DepositInfo() {
       OnConstruction();
     }
@@ -3272,7 +2352,6 @@ namespace AElf.Contracts.TokenConverter {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DepositInfo(DepositInfo other) : this() {
       needAmount_ = other.needAmount_;
       amountOutOfTokenConvert_ = other.amountOutOfTokenConvert_;
@@ -3280,7 +2359,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DepositInfo Clone() {
       return new DepositInfo(this);
     }
@@ -3289,7 +2367,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int NeedAmountFieldNumber = 1;
     private long needAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long NeedAmount {
       get { return needAmount_; }
       set {
@@ -3301,7 +2378,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int AmountOutOfTokenConvertFieldNumber = 2;
     private long amountOutOfTokenConvert_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long AmountOutOfTokenConvert {
       get { return amountOutOfTokenConvert_; }
       set {
@@ -3310,13 +2386,11 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as DepositInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(DepositInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3330,7 +2404,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (NeedAmount != 0L) hash ^= NeedAmount.GetHashCode();
@@ -3342,17 +2415,12 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (NeedAmount != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(NeedAmount);
@@ -3364,29 +2432,9 @@ namespace AElf.Contracts.TokenConverter {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (NeedAmount != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(NeedAmount);
-      }
-      if (AmountOutOfTokenConvert != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(AmountOutOfTokenConvert);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (NeedAmount != 0L) {
@@ -3402,7 +2450,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(DepositInfo other) {
       if (other == null) {
         return;
@@ -3417,11 +2464,7 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3438,59 +2481,27 @@ namespace AElf.Contracts.TokenConverter {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            NeedAmount = input.ReadInt64();
-            break;
-          }
-          case 16: {
-            AmountOutOfTokenConvert = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class PairConnector : pb::IMessage<PairConnector>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class PairConnector : pb::IMessage<PairConnector> {
     private static readonly pb::MessageParser<PairConnector> _parser = new pb::MessageParser<PairConnector>(() => new PairConnector());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PairConnector> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.TokenConverter.TokenConverterContractReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PairConnector() {
       OnConstruction();
     }
@@ -3498,7 +2509,6 @@ namespace AElf.Contracts.TokenConverter {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PairConnector(PairConnector other) : this() {
       resourceConnector_ = other.resourceConnector_ != null ? other.resourceConnector_.Clone() : null;
       depositConnector_ = other.depositConnector_ != null ? other.depositConnector_.Clone() : null;
@@ -3506,7 +2516,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PairConnector Clone() {
       return new PairConnector(this);
     }
@@ -3515,7 +2524,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int ResourceConnectorFieldNumber = 1;
     private global::AElf.Contracts.TokenConverter.Connector resourceConnector_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Contracts.TokenConverter.Connector ResourceConnector {
       get { return resourceConnector_; }
       set {
@@ -3527,7 +2535,6 @@ namespace AElf.Contracts.TokenConverter {
     public const int DepositConnectorFieldNumber = 2;
     private global::AElf.Contracts.TokenConverter.Connector depositConnector_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Contracts.TokenConverter.Connector DepositConnector {
       get { return depositConnector_; }
       set {
@@ -3536,13 +2543,11 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PairConnector);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PairConnector other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3556,7 +2561,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (resourceConnector_ != null) hash ^= ResourceConnector.GetHashCode();
@@ -3568,17 +2572,12 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (resourceConnector_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(ResourceConnector);
@@ -3590,29 +2589,9 @@ namespace AElf.Contracts.TokenConverter {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (resourceConnector_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ResourceConnector);
-      }
-      if (depositConnector_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(DepositConnector);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (resourceConnector_ != null) {
@@ -3628,7 +2607,6 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PairConnector other) {
       if (other == null) {
         return;
@@ -3649,11 +2627,7 @@ namespace AElf.Contracts.TokenConverter {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3676,37 +2650,7 @@ namespace AElf.Contracts.TokenConverter {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (resourceConnector_ == null) {
-              ResourceConnector = new global::AElf.Contracts.TokenConverter.Connector();
-            }
-            input.ReadMessage(ResourceConnector);
-            break;
-          }
-          case 18: {
-            if (depositConnector_ == null) {
-              DepositConnector = new global::AElf.Contracts.TokenConverter.Connector();
-            }
-            input.ReadMessage(DepositConnector);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

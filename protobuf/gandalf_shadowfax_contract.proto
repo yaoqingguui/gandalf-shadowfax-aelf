@@ -61,11 +61,7 @@ service ShadowfaxContract {
 
 }
 
-<<<<<<< HEAD:protobuf/ido_contract.proto
-// struct
-=======
 // Stucts
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:protobuf/gandalf_shadowfax_contract.proto
 message PublicOffering {
   string offering_token_symbol = 1;
   aelf.BigIntValue offering_token_amount = 2;

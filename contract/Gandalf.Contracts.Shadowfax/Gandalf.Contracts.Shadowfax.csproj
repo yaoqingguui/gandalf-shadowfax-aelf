@@ -22,5 +22,9 @@
             <Link>Protobuf\Proto\reference\token_contract.proto</Link>
         </ContractReference>
     </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="xunit.assert" Version="2.4.1" />
+    </ItemGroup>
 
 </Project>

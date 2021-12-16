@@ -195,31 +195,23 @@ namespace AElf.Standards.ACS7 {
 
   }
   #region Messages
-  internal sealed partial class SideChainBlockData : pb::IMessage<SideChainBlockData>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class SideChainBlockData : pb::IMessage<SideChainBlockData> {
     private static readonly pb::MessageParser<SideChainBlockData> _parser = new pb::MessageParser<SideChainBlockData>(() => new SideChainBlockData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SideChainBlockData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainBlockData() {
       OnConstruction();
     }
@@ -227,7 +219,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainBlockData(SideChainBlockData other) : this() {
       height_ = other.height_;
       blockHeaderHash_ = other.blockHeaderHash_ != null ? other.blockHeaderHash_.Clone() : null;
@@ -237,7 +228,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainBlockData Clone() {
       return new SideChainBlockData(this);
     }
@@ -246,7 +236,6 @@ namespace AElf.Standards.ACS7 {
     public const int HeightFieldNumber = 1;
     private long height_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Height {
       get { return height_; }
       set {
@@ -258,7 +247,6 @@ namespace AElf.Standards.ACS7 {
     public const int BlockHeaderHashFieldNumber = 2;
     private global::AElf.Types.Hash blockHeaderHash_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash BlockHeaderHash {
       get { return blockHeaderHash_; }
       set {
@@ -270,7 +258,6 @@ namespace AElf.Standards.ACS7 {
     public const int TransactionStatusMerkleTreeRootFieldNumber = 3;
     private global::AElf.Types.Hash transactionStatusMerkleTreeRoot_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash TransactionStatusMerkleTreeRoot {
       get { return transactionStatusMerkleTreeRoot_; }
       set {
@@ -282,7 +269,6 @@ namespace AElf.Standards.ACS7 {
     public const int ChainIdFieldNumber = 4;
     private int chainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ChainId {
       get { return chainId_; }
       set {
@@ -291,13 +277,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SideChainBlockData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SideChainBlockData other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -313,7 +297,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Height != 0L) hash ^= Height.GetHashCode();
@@ -327,17 +310,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Height != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(Height);
@@ -357,37 +335,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Height != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(Height);
-      }
-      if (blockHeaderHash_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(BlockHeaderHash);
-      }
-      if (transactionStatusMerkleTreeRoot_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(TransactionStatusMerkleTreeRoot);
-      }
-      if (ChainId != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(ChainId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Height != 0L) {
@@ -409,7 +359,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SideChainBlockData other) {
       if (other == null) {
         return;
@@ -436,11 +385,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -471,73 +416,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Height = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            if (blockHeaderHash_ == null) {
-              BlockHeaderHash = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(BlockHeaderHash);
-            break;
-          }
-          case 26: {
-            if (transactionStatusMerkleTreeRoot_ == null) {
-              TransactionStatusMerkleTreeRoot = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(TransactionStatusMerkleTreeRoot);
-            break;
-          }
-          case 32: {
-            ChainId = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class RechargeInput : pb::IMessage<RechargeInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class RechargeInput : pb::IMessage<RechargeInput> {
     private static readonly pb::MessageParser<RechargeInput> _parser = new pb::MessageParser<RechargeInput>(() => new RechargeInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RechargeInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RechargeInput() {
       OnConstruction();
     }
@@ -545,7 +444,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RechargeInput(RechargeInput other) : this() {
       chainId_ = other.chainId_;
       amount_ = other.amount_;
@@ -553,7 +451,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RechargeInput Clone() {
       return new RechargeInput(this);
     }
@@ -562,7 +459,6 @@ namespace AElf.Standards.ACS7 {
     public const int ChainIdFieldNumber = 1;
     private int chainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ChainId {
       get { return chainId_; }
       set {
@@ -574,7 +470,6 @@ namespace AElf.Standards.ACS7 {
     public const int AmountFieldNumber = 2;
     private long amount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Amount {
       get { return amount_; }
       set {
@@ -583,13 +478,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RechargeInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RechargeInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -603,7 +496,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ChainId != 0) hash ^= ChainId.GetHashCode();
@@ -615,17 +507,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (ChainId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(ChainId);
@@ -637,29 +524,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ChainId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ChainId);
-      }
-      if (Amount != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Amount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ChainId != 0) {
@@ -675,7 +542,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RechargeInput other) {
       if (other == null) {
         return;
@@ -690,11 +556,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -711,59 +573,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            ChainId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Amount = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class IndexedSideChainBlockDataResult : pb::IMessage<IndexedSideChainBlockDataResult>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class IndexedSideChainBlockDataResult : pb::IMessage<IndexedSideChainBlockDataResult> {
     private static readonly pb::MessageParser<IndexedSideChainBlockDataResult> _parser = new pb::MessageParser<IndexedSideChainBlockDataResult>(() => new IndexedSideChainBlockDataResult());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<IndexedSideChainBlockDataResult> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IndexedSideChainBlockDataResult() {
       OnConstruction();
     }
@@ -771,7 +601,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IndexedSideChainBlockDataResult(IndexedSideChainBlockDataResult other) : this() {
       height_ = other.height_;
       miner_ = other.miner_ != null ? other.miner_.Clone() : null;
@@ -780,7 +609,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IndexedSideChainBlockDataResult Clone() {
       return new IndexedSideChainBlockDataResult(this);
     }
@@ -789,7 +617,6 @@ namespace AElf.Standards.ACS7 {
     public const int HeightFieldNumber = 1;
     private long height_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Height {
       get { return height_; }
       set {
@@ -801,7 +628,6 @@ namespace AElf.Standards.ACS7 {
     public const int MinerFieldNumber = 2;
     private global::AElf.Types.Address miner_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Miner {
       get { return miner_; }
       set {
@@ -815,19 +641,16 @@ namespace AElf.Standards.ACS7 {
         = pb::FieldCodec.ForMessage(26, global::AElf.Standards.ACS7.SideChainBlockData.Parser);
     private readonly pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainBlockData> sideChainBlockData_ = new pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainBlockData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainBlockData> SideChainBlockData {
       get { return sideChainBlockData_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as IndexedSideChainBlockDataResult);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(IndexedSideChainBlockDataResult other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -842,7 +665,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Height != 0L) hash ^= Height.GetHashCode();
@@ -855,17 +677,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Height != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(Height);
@@ -878,30 +695,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Height != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(Height);
-      }
-      if (miner_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Miner);
-      }
-      sideChainBlockData_.WriteTo(ref output, _repeated_sideChainBlockData_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Height != 0L) {
@@ -918,7 +714,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(IndexedSideChainBlockDataResult other) {
       if (other == null) {
         return;
@@ -937,11 +732,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -965,66 +756,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Height = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            if (miner_ == null) {
-              Miner = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Miner);
-            break;
-          }
-          case 26: {
-            sideChainBlockData_.AddEntriesFrom(ref input, _repeated_sideChainBlockData_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ParentChainBlockData : pb::IMessage<ParentChainBlockData>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ParentChainBlockData : pb::IMessage<ParentChainBlockData> {
     private static readonly pb::MessageParser<ParentChainBlockData> _parser = new pb::MessageParser<ParentChainBlockData>(() => new ParentChainBlockData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ParentChainBlockData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ParentChainBlockData() {
       OnConstruction();
     }
@@ -1032,7 +784,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ParentChainBlockData(ParentChainBlockData other) : this() {
       height_ = other.height_;
       crossChainExtraData_ = other.crossChainExtraData_ != null ? other.crossChainExtraData_.Clone() : null;
@@ -1044,7 +795,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ParentChainBlockData Clone() {
       return new ParentChainBlockData(this);
     }
@@ -1053,7 +803,6 @@ namespace AElf.Standards.ACS7 {
     public const int HeightFieldNumber = 1;
     private long height_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Height {
       get { return height_; }
       set {
@@ -1065,7 +814,6 @@ namespace AElf.Standards.ACS7 {
     public const int CrossChainExtraDataFieldNumber = 2;
     private global::AElf.Standards.ACS7.CrossChainExtraData crossChainExtraData_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS7.CrossChainExtraData CrossChainExtraData {
       get { return crossChainExtraData_; }
       set {
@@ -1077,7 +825,6 @@ namespace AElf.Standards.ACS7 {
     public const int ChainIdFieldNumber = 3;
     private int chainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ChainId {
       get { return chainId_; }
       set {
@@ -1089,7 +836,6 @@ namespace AElf.Standards.ACS7 {
     public const int TransactionStatusMerkleTreeRootFieldNumber = 4;
     private global::AElf.Types.Hash transactionStatusMerkleTreeRoot_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash TransactionStatusMerkleTreeRoot {
       get { return transactionStatusMerkleTreeRoot_; }
       set {
@@ -1106,7 +852,6 @@ namespace AElf.Standards.ACS7 {
     /// Indexed block height from side chain and merkle path for this side chain block
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<long, global::AElf.Types.MerklePath> IndexedMerklePath {
       get { return indexedMerklePath_; }
     }
@@ -1117,19 +862,16 @@ namespace AElf.Standards.ACS7 {
         = new pbc::MapField<string, pb::ByteString>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForBytes(18, pb::ByteString.Empty), 50);
     private readonly pbc::MapField<string, pb::ByteString> extraData_ = new pbc::MapField<string, pb::ByteString>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, pb::ByteString> ExtraData {
       get { return extraData_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ParentChainBlockData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ParentChainBlockData other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1147,7 +889,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Height != 0L) hash ^= Height.GetHashCode();
@@ -1163,17 +904,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Height != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(Height);
@@ -1195,39 +931,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Height != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(Height);
-      }
-      if (crossChainExtraData_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(CrossChainExtraData);
-      }
-      if (ChainId != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(ChainId);
-      }
-      if (transactionStatusMerkleTreeRoot_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(TransactionStatusMerkleTreeRoot);
-      }
-      indexedMerklePath_.WriteTo(ref output, _map_indexedMerklePath_codec);
-      extraData_.WriteTo(ref output, _map_extraData_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Height != 0L) {
@@ -1251,7 +957,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ParentChainBlockData other) {
       if (other == null) {
         return;
@@ -1280,11 +985,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1323,81 +1024,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Height = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            if (crossChainExtraData_ == null) {
-              CrossChainExtraData = new global::AElf.Standards.ACS7.CrossChainExtraData();
-            }
-            input.ReadMessage(CrossChainExtraData);
-            break;
-          }
-          case 24: {
-            ChainId = input.ReadInt32();
-            break;
-          }
-          case 34: {
-            if (transactionStatusMerkleTreeRoot_ == null) {
-              TransactionStatusMerkleTreeRoot = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(TransactionStatusMerkleTreeRoot);
-            break;
-          }
-          case 42: {
-            indexedMerklePath_.AddEntriesFrom(ref input, _map_indexedMerklePath_codec);
-            break;
-          }
-          case 50: {
-            extraData_.AddEntriesFrom(ref input, _map_extraData_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class CrossChainExtraData : pb::IMessage<CrossChainExtraData>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class CrossChainExtraData : pb::IMessage<CrossChainExtraData> {
     private static readonly pb::MessageParser<CrossChainExtraData> _parser = new pb::MessageParser<CrossChainExtraData>(() => new CrossChainExtraData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CrossChainExtraData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainExtraData() {
       OnConstruction();
     }
@@ -1405,14 +1052,12 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainExtraData(CrossChainExtraData other) : this() {
       transactionStatusMerkleTreeRoot_ = other.transactionStatusMerkleTreeRoot_ != null ? other.transactionStatusMerkleTreeRoot_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainExtraData Clone() {
       return new CrossChainExtraData(this);
     }
@@ -1424,7 +1069,6 @@ namespace AElf.Standards.ACS7 {
     /// Merkle tree root of side chain block transaction status root
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash TransactionStatusMerkleTreeRoot {
       get { return transactionStatusMerkleTreeRoot_; }
       set {
@@ -1433,13 +1077,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CrossChainExtraData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CrossChainExtraData other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1452,7 +1094,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (transactionStatusMerkleTreeRoot_ != null) hash ^= TransactionStatusMerkleTreeRoot.GetHashCode();
@@ -1463,17 +1104,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (transactionStatusMerkleTreeRoot_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(TransactionStatusMerkleTreeRoot);
@@ -1481,25 +1117,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (transactionStatusMerkleTreeRoot_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(TransactionStatusMerkleTreeRoot);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (transactionStatusMerkleTreeRoot_ != null) {
@@ -1512,7 +1132,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CrossChainExtraData other) {
       if (other == null) {
         return;
@@ -1527,11 +1146,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1547,58 +1162,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (transactionStatusMerkleTreeRoot_ == null) {
-              TransactionStatusMerkleTreeRoot = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(TransactionStatusMerkleTreeRoot);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ChainIdAndHeightDict : pb::IMessage<ChainIdAndHeightDict>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ChainIdAndHeightDict : pb::IMessage<ChainIdAndHeightDict> {
     private static readonly pb::MessageParser<ChainIdAndHeightDict> _parser = new pb::MessageParser<ChainIdAndHeightDict>(() => new ChainIdAndHeightDict());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ChainIdAndHeightDict> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainIdAndHeightDict() {
       OnConstruction();
     }
@@ -1606,14 +1190,12 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainIdAndHeightDict(ChainIdAndHeightDict other) : this() {
       idHeightDict_ = other.idHeightDict_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainIdAndHeightDict Clone() {
       return new ChainIdAndHeightDict(this);
     }
@@ -1624,19 +1206,16 @@ namespace AElf.Standards.ACS7 {
         = new pbc::MapField<int, long>.Codec(pb::FieldCodec.ForInt32(8, 0), pb::FieldCodec.ForInt64(16, 0L), 10);
     private readonly pbc::MapField<int, long> idHeightDict_ = new pbc::MapField<int, long>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<int, long> IdHeightDict {
       get { return idHeightDict_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ChainIdAndHeightDict);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ChainIdAndHeightDict other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1649,7 +1228,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= IdHeightDict.GetHashCode();
@@ -1660,37 +1238,19 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       idHeightDict_.WriteTo(output, _map_idHeightDict_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      idHeightDict_.WriteTo(ref output, _map_idHeightDict_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += idHeightDict_.CalculateSize(_map_idHeightDict_codec);
@@ -1701,7 +1261,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ChainIdAndHeightDict other) {
       if (other == null) {
         return;
@@ -1711,11 +1270,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1728,55 +1283,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            idHeightDict_.AddEntriesFrom(ref input, _map_idHeightDict_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class SideChainIndexingInformationList : pb::IMessage<SideChainIndexingInformationList>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class SideChainIndexingInformationList : pb::IMessage<SideChainIndexingInformationList> {
     private static readonly pb::MessageParser<SideChainIndexingInformationList> _parser = new pb::MessageParser<SideChainIndexingInformationList>(() => new SideChainIndexingInformationList());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SideChainIndexingInformationList> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainIndexingInformationList() {
       OnConstruction();
     }
@@ -1784,14 +1311,12 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainIndexingInformationList(SideChainIndexingInformationList other) : this() {
       indexingInformationList_ = other.indexingInformationList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainIndexingInformationList Clone() {
       return new SideChainIndexingInformationList(this);
     }
@@ -1802,19 +1327,16 @@ namespace AElf.Standards.ACS7 {
         = pb::FieldCodec.ForMessage(10, global::AElf.Standards.ACS7.SideChainIndexingInformation.Parser);
     private readonly pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainIndexingInformation> indexingInformationList_ = new pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainIndexingInformation>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainIndexingInformation> IndexingInformationList {
       get { return indexingInformationList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SideChainIndexingInformationList);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SideChainIndexingInformationList other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1827,7 +1349,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= indexingInformationList_.GetHashCode();
@@ -1838,37 +1359,19 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       indexingInformationList_.WriteTo(output, _repeated_indexingInformationList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      indexingInformationList_.WriteTo(ref output, _repeated_indexingInformationList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += indexingInformationList_.CalculateSize(_repeated_indexingInformationList_codec);
@@ -1879,7 +1382,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SideChainIndexingInformationList other) {
       if (other == null) {
         return;
@@ -1889,11 +1391,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1906,55 +1404,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            indexingInformationList_.AddEntriesFrom(ref input, _repeated_indexingInformationList_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class SideChainIndexingInformation : pb::IMessage<SideChainIndexingInformation>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class SideChainIndexingInformation : pb::IMessage<SideChainIndexingInformation> {
     private static readonly pb::MessageParser<SideChainIndexingInformation> _parser = new pb::MessageParser<SideChainIndexingInformation>(() => new SideChainIndexingInformation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SideChainIndexingInformation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainIndexingInformation() {
       OnConstruction();
     }
@@ -1962,7 +1432,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainIndexingInformation(SideChainIndexingInformation other) : this() {
       chainId_ = other.chainId_;
       indexedHeight_ = other.indexedHeight_;
@@ -1970,7 +1439,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainIndexingInformation Clone() {
       return new SideChainIndexingInformation(this);
     }
@@ -1979,7 +1447,6 @@ namespace AElf.Standards.ACS7 {
     public const int ChainIdFieldNumber = 1;
     private int chainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ChainId {
       get { return chainId_; }
       set {
@@ -1991,7 +1458,6 @@ namespace AElf.Standards.ACS7 {
     public const int IndexedHeightFieldNumber = 2;
     private long indexedHeight_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long IndexedHeight {
       get { return indexedHeight_; }
       set {
@@ -2000,13 +1466,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SideChainIndexingInformation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SideChainIndexingInformation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2020,7 +1484,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ChainId != 0) hash ^= ChainId.GetHashCode();
@@ -2032,17 +1495,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (ChainId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(ChainId);
@@ -2054,29 +1512,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ChainId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ChainId);
-      }
-      if (IndexedHeight != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(IndexedHeight);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ChainId != 0) {
@@ -2092,7 +1530,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SideChainIndexingInformation other) {
       if (other == null) {
         return;
@@ -2107,11 +1544,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2128,59 +1561,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            ChainId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            IndexedHeight = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class CrossChainBlockData : pb::IMessage<CrossChainBlockData>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class CrossChainBlockData : pb::IMessage<CrossChainBlockData> {
     private static readonly pb::MessageParser<CrossChainBlockData> _parser = new pb::MessageParser<CrossChainBlockData>(() => new CrossChainBlockData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CrossChainBlockData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainBlockData() {
       OnConstruction();
     }
@@ -2188,7 +1589,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainBlockData(CrossChainBlockData other) : this() {
       sideChainBlockDataList_ = other.sideChainBlockDataList_.Clone();
       parentChainBlockDataList_ = other.parentChainBlockDataList_.Clone();
@@ -2196,7 +1596,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainBlockData Clone() {
       return new CrossChainBlockData(this);
     }
@@ -2207,7 +1606,6 @@ namespace AElf.Standards.ACS7 {
         = pb::FieldCodec.ForMessage(10, global::AElf.Standards.ACS7.SideChainBlockData.Parser);
     private readonly pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainBlockData> sideChainBlockDataList_ = new pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainBlockData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainBlockData> SideChainBlockDataList {
       get { return sideChainBlockDataList_; }
     }
@@ -2218,19 +1616,16 @@ namespace AElf.Standards.ACS7 {
         = pb::FieldCodec.ForMessage(18, global::AElf.Standards.ACS7.ParentChainBlockData.Parser);
     private readonly pbc::RepeatedField<global::AElf.Standards.ACS7.ParentChainBlockData> parentChainBlockDataList_ = new pbc::RepeatedField<global::AElf.Standards.ACS7.ParentChainBlockData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::AElf.Standards.ACS7.ParentChainBlockData> ParentChainBlockDataList {
       get { return parentChainBlockDataList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CrossChainBlockData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CrossChainBlockData other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2244,7 +1639,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= sideChainBlockDataList_.GetHashCode();
@@ -2256,39 +1650,20 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       sideChainBlockDataList_.WriteTo(output, _repeated_sideChainBlockDataList_codec);
       parentChainBlockDataList_.WriteTo(output, _repeated_parentChainBlockDataList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      sideChainBlockDataList_.WriteTo(ref output, _repeated_sideChainBlockDataList_codec);
-      parentChainBlockDataList_.WriteTo(ref output, _repeated_parentChainBlockDataList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += sideChainBlockDataList_.CalculateSize(_repeated_sideChainBlockDataList_codec);
@@ -2300,7 +1675,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CrossChainBlockData other) {
       if (other == null) {
         return;
@@ -2311,11 +1685,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2332,59 +1702,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            sideChainBlockDataList_.AddEntriesFrom(ref input, _repeated_sideChainBlockDataList_codec);
-            break;
-          }
-          case 18: {
-            parentChainBlockDataList_.AddEntriesFrom(ref input, _repeated_parentChainBlockDataList_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class CrossChainMerkleProofContext : pb::IMessage<CrossChainMerkleProofContext>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class CrossChainMerkleProofContext : pb::IMessage<CrossChainMerkleProofContext> {
     private static readonly pb::MessageParser<CrossChainMerkleProofContext> _parser = new pb::MessageParser<CrossChainMerkleProofContext>(() => new CrossChainMerkleProofContext());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CrossChainMerkleProofContext> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainMerkleProofContext() {
       OnConstruction();
     }
@@ -2392,7 +1730,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainMerkleProofContext(CrossChainMerkleProofContext other) : this() {
       boundParentChainHeight_ = other.boundParentChainHeight_;
       merklePathFromParentChain_ = other.merklePathFromParentChain_ != null ? other.merklePathFromParentChain_.Clone() : null;
@@ -2400,7 +1737,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainMerkleProofContext Clone() {
       return new CrossChainMerkleProofContext(this);
     }
@@ -2409,7 +1745,6 @@ namespace AElf.Standards.ACS7 {
     public const int BoundParentChainHeightFieldNumber = 1;
     private long boundParentChainHeight_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long BoundParentChainHeight {
       get { return boundParentChainHeight_; }
       set {
@@ -2421,7 +1756,6 @@ namespace AElf.Standards.ACS7 {
     public const int MerklePathFromParentChainFieldNumber = 2;
     private global::AElf.Types.MerklePath merklePathFromParentChain_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.MerklePath MerklePathFromParentChain {
       get { return merklePathFromParentChain_; }
       set {
@@ -2430,13 +1764,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CrossChainMerkleProofContext);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CrossChainMerkleProofContext other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2450,7 +1782,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (BoundParentChainHeight != 0L) hash ^= BoundParentChainHeight.GetHashCode();
@@ -2462,17 +1793,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (BoundParentChainHeight != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(BoundParentChainHeight);
@@ -2484,29 +1810,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (BoundParentChainHeight != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(BoundParentChainHeight);
-      }
-      if (merklePathFromParentChain_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(MerklePathFromParentChain);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (BoundParentChainHeight != 0L) {
@@ -2522,7 +1828,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CrossChainMerkleProofContext other) {
       if (other == null) {
         return;
@@ -2540,11 +1845,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2564,62 +1865,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            BoundParentChainHeight = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            if (merklePathFromParentChain_ == null) {
-              MerklePathFromParentChain = new global::AElf.Types.MerklePath();
-            }
-            input.ReadMessage(MerklePathFromParentChain);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ChainInitializationData : pb::IMessage<ChainInitializationData>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ChainInitializationData : pb::IMessage<ChainInitializationData> {
     private static readonly pb::MessageParser<ChainInitializationData> _parser = new pb::MessageParser<ChainInitializationData>(() => new ChainInitializationData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ChainInitializationData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainInitializationData() {
       OnConstruction();
     }
@@ -2627,7 +1893,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainInitializationData(ChainInitializationData other) : this() {
       chainId_ = other.chainId_;
       creator_ = other.creator_ != null ? other.creator_.Clone() : null;
@@ -2643,7 +1908,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainInitializationData Clone() {
       return new ChainInitializationData(this);
     }
@@ -2652,7 +1916,6 @@ namespace AElf.Standards.ACS7 {
     public const int ChainIdFieldNumber = 1;
     private int chainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ChainId {
       get { return chainId_; }
       set {
@@ -2664,7 +1927,6 @@ namespace AElf.Standards.ACS7 {
     public const int CreatorFieldNumber = 2;
     private global::AElf.Types.Address creator_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Creator {
       get { return creator_; }
       set {
@@ -2676,7 +1938,6 @@ namespace AElf.Standards.ACS7 {
     public const int CreationTimestampFieldNumber = 3;
     private global::Google.Protobuf.WellKnownTypes.Timestamp creationTimestamp_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreationTimestamp {
       get { return creationTimestamp_; }
       set {
@@ -2688,7 +1949,6 @@ namespace AElf.Standards.ACS7 {
     public const int CreationHeightOnParentChainFieldNumber = 4;
     private long creationHeightOnParentChain_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long CreationHeightOnParentChain {
       get { return creationHeightOnParentChain_; }
       set {
@@ -2700,7 +1960,6 @@ namespace AElf.Standards.ACS7 {
     public const int ChainCreatorPrivilegePreservedFieldNumber = 5;
     private bool chainCreatorPrivilegePreserved_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ChainCreatorPrivilegePreserved {
       get { return chainCreatorPrivilegePreserved_; }
       set {
@@ -2712,7 +1971,6 @@ namespace AElf.Standards.ACS7 {
     public const int ParentChainTokenContractAddressFieldNumber = 6;
     private global::AElf.Types.Address parentChainTokenContractAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address ParentChainTokenContractAddress {
       get { return parentChainTokenContractAddress_; }
       set {
@@ -2724,7 +1982,6 @@ namespace AElf.Standards.ACS7 {
     public const int ChainInitializationConsensusInfoFieldNumber = 7;
     private global::AElf.Standards.ACS7.ChainInitializationConsensusInfo chainInitializationConsensusInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS7.ChainInitializationConsensusInfo ChainInitializationConsensusInfo {
       get { return chainInitializationConsensusInfo_; }
       set {
@@ -2736,7 +1993,6 @@ namespace AElf.Standards.ACS7 {
     public const int NativeTokenInfoDataFieldNumber = 8;
     private pb::ByteString nativeTokenInfoData_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString NativeTokenInfoData {
       get { return nativeTokenInfoData_; }
       set {
@@ -2748,7 +2004,6 @@ namespace AElf.Standards.ACS7 {
     public const int ResourceTokenInfoFieldNumber = 9;
     private global::AElf.Standards.ACS7.ResourceTokenInfo resourceTokenInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS7.ResourceTokenInfo ResourceTokenInfo {
       get { return resourceTokenInfo_; }
       set {
@@ -2760,7 +2015,6 @@ namespace AElf.Standards.ACS7 {
     public const int ChainPrimaryTokenInfoFieldNumber = 10;
     private global::AElf.Standards.ACS7.ChainPrimaryTokenInfo chainPrimaryTokenInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS7.ChainPrimaryTokenInfo ChainPrimaryTokenInfo {
       get { return chainPrimaryTokenInfo_; }
       set {
@@ -2769,13 +2023,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ChainInitializationData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ChainInitializationData other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2797,7 +2049,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ChainId != 0) hash ^= ChainId.GetHashCode();
@@ -2817,17 +2068,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (ChainId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(ChainId);
@@ -2871,61 +2117,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ChainId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ChainId);
-      }
-      if (creator_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Creator);
-      }
-      if (creationTimestamp_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(CreationTimestamp);
-      }
-      if (CreationHeightOnParentChain != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(CreationHeightOnParentChain);
-      }
-      if (ChainCreatorPrivilegePreserved != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(ChainCreatorPrivilegePreserved);
-      }
-      if (parentChainTokenContractAddress_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(ParentChainTokenContractAddress);
-      }
-      if (chainInitializationConsensusInfo_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(ChainInitializationConsensusInfo);
-      }
-      if (NativeTokenInfoData.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteBytes(NativeTokenInfoData);
-      }
-      if (resourceTokenInfo_ != null) {
-        output.WriteRawTag(74);
-        output.WriteMessage(ResourceTokenInfo);
-      }
-      if (chainPrimaryTokenInfo_ != null) {
-        output.WriteRawTag(82);
-        output.WriteMessage(ChainPrimaryTokenInfo);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ChainId != 0) {
@@ -2965,7 +2159,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ChainInitializationData other) {
       if (other == null) {
         return;
@@ -3022,11 +2215,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3093,109 +2282,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            ChainId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            if (creator_ == null) {
-              Creator = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Creator);
-            break;
-          }
-          case 26: {
-            if (creationTimestamp_ == null) {
-              CreationTimestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(CreationTimestamp);
-            break;
-          }
-          case 32: {
-            CreationHeightOnParentChain = input.ReadInt64();
-            break;
-          }
-          case 40: {
-            ChainCreatorPrivilegePreserved = input.ReadBool();
-            break;
-          }
-          case 50: {
-            if (parentChainTokenContractAddress_ == null) {
-              ParentChainTokenContractAddress = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(ParentChainTokenContractAddress);
-            break;
-          }
-          case 58: {
-            if (chainInitializationConsensusInfo_ == null) {
-              ChainInitializationConsensusInfo = new global::AElf.Standards.ACS7.ChainInitializationConsensusInfo();
-            }
-            input.ReadMessage(ChainInitializationConsensusInfo);
-            break;
-          }
-          case 66: {
-            NativeTokenInfoData = input.ReadBytes();
-            break;
-          }
-          case 74: {
-            if (resourceTokenInfo_ == null) {
-              ResourceTokenInfo = new global::AElf.Standards.ACS7.ResourceTokenInfo();
-            }
-            input.ReadMessage(ResourceTokenInfo);
-            break;
-          }
-          case 82: {
-            if (chainPrimaryTokenInfo_ == null) {
-              ChainPrimaryTokenInfo = new global::AElf.Standards.ACS7.ChainPrimaryTokenInfo();
-            }
-            input.ReadMessage(ChainPrimaryTokenInfo);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ChainInitializationToken : pb::IMessage<ChainInitializationToken>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ChainInitializationToken : pb::IMessage<ChainInitializationToken> {
     private static readonly pb::MessageParser<ChainInitializationToken> _parser = new pb::MessageParser<ChainInitializationToken>(() => new ChainInitializationToken());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ChainInitializationToken> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainInitializationToken() {
       OnConstruction();
     }
@@ -3203,14 +2310,12 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainInitializationToken(ChainInitializationToken other) : this() {
       nativeTokenInfoData_ = other.nativeTokenInfoData_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainInitializationToken Clone() {
       return new ChainInitializationToken(this);
     }
@@ -3219,7 +2324,6 @@ namespace AElf.Standards.ACS7 {
     public const int NativeTokenInfoDataFieldNumber = 1;
     private pb::ByteString nativeTokenInfoData_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString NativeTokenInfoData {
       get { return nativeTokenInfoData_; }
       set {
@@ -3228,13 +2332,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ChainInitializationToken);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ChainInitializationToken other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3247,7 +2349,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (NativeTokenInfoData.Length != 0) hash ^= NativeTokenInfoData.GetHashCode();
@@ -3258,17 +2359,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (NativeTokenInfoData.Length != 0) {
         output.WriteRawTag(10);
         output.WriteBytes(NativeTokenInfoData);
@@ -3276,25 +2372,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (NativeTokenInfoData.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteBytes(NativeTokenInfoData);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (NativeTokenInfoData.Length != 0) {
@@ -3307,7 +2387,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ChainInitializationToken other) {
       if (other == null) {
         return;
@@ -3319,11 +2398,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3336,55 +2411,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            NativeTokenInfoData = input.ReadBytes();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ResourceTokenInfo : pb::IMessage<ResourceTokenInfo>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ResourceTokenInfo : pb::IMessage<ResourceTokenInfo> {
     private static readonly pb::MessageParser<ResourceTokenInfo> _parser = new pb::MessageParser<ResourceTokenInfo>(() => new ResourceTokenInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ResourceTokenInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResourceTokenInfo() {
       OnConstruction();
     }
@@ -3392,7 +2439,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResourceTokenInfo(ResourceTokenInfo other) : this() {
       resourceTokenListData_ = other.resourceTokenListData_;
       initialResourceAmount_ = other.initialResourceAmount_.Clone();
@@ -3400,7 +2446,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResourceTokenInfo Clone() {
       return new ResourceTokenInfo(this);
     }
@@ -3409,7 +2454,6 @@ namespace AElf.Standards.ACS7 {
     public const int ResourceTokenListDataFieldNumber = 1;
     private pb::ByteString resourceTokenListData_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString ResourceTokenListData {
       get { return resourceTokenListData_; }
       set {
@@ -3423,19 +2467,16 @@ namespace AElf.Standards.ACS7 {
         = new pbc::MapField<string, int>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForInt32(16, 0), 18);
     private readonly pbc::MapField<string, int> initialResourceAmount_ = new pbc::MapField<string, int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, int> InitialResourceAmount {
       get { return initialResourceAmount_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ResourceTokenInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ResourceTokenInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3449,7 +2490,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceTokenListData.Length != 0) hash ^= ResourceTokenListData.GetHashCode();
@@ -3461,17 +2501,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (ResourceTokenListData.Length != 0) {
         output.WriteRawTag(10);
         output.WriteBytes(ResourceTokenListData);
@@ -3480,26 +2515,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ResourceTokenListData.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteBytes(ResourceTokenListData);
-      }
-      initialResourceAmount_.WriteTo(ref output, _map_initialResourceAmount_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ResourceTokenListData.Length != 0) {
@@ -3513,7 +2531,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ResourceTokenInfo other) {
       if (other == null) {
         return;
@@ -3526,11 +2543,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3547,59 +2560,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            ResourceTokenListData = input.ReadBytes();
-            break;
-          }
-          case 18: {
-            initialResourceAmount_.AddEntriesFrom(ref input, _map_initialResourceAmount_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ChainPrimaryTokenInfo : pb::IMessage<ChainPrimaryTokenInfo>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ChainPrimaryTokenInfo : pb::IMessage<ChainPrimaryTokenInfo> {
     private static readonly pb::MessageParser<ChainPrimaryTokenInfo> _parser = new pb::MessageParser<ChainPrimaryTokenInfo>(() => new ChainPrimaryTokenInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ChainPrimaryTokenInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainPrimaryTokenInfo() {
       OnConstruction();
     }
@@ -3607,7 +2588,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainPrimaryTokenInfo(ChainPrimaryTokenInfo other) : this() {
       chainPrimaryTokenData_ = other.chainPrimaryTokenData_;
       sideChainTokenInitialIssueList_ = other.sideChainTokenInitialIssueList_.Clone();
@@ -3615,7 +2595,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainPrimaryTokenInfo Clone() {
       return new ChainPrimaryTokenInfo(this);
     }
@@ -3624,7 +2603,6 @@ namespace AElf.Standards.ACS7 {
     public const int ChainPrimaryTokenDataFieldNumber = 1;
     private pb::ByteString chainPrimaryTokenData_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString ChainPrimaryTokenData {
       get { return chainPrimaryTokenData_; }
       set {
@@ -3638,19 +2616,16 @@ namespace AElf.Standards.ACS7 {
         = pb::FieldCodec.ForMessage(18, global::AElf.Standards.ACS7.SideChainTokenInitialIssue.Parser);
     private readonly pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainTokenInitialIssue> sideChainTokenInitialIssueList_ = new pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainTokenInitialIssue>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainTokenInitialIssue> SideChainTokenInitialIssueList {
       get { return sideChainTokenInitialIssueList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ChainPrimaryTokenInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ChainPrimaryTokenInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3664,7 +2639,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ChainPrimaryTokenData.Length != 0) hash ^= ChainPrimaryTokenData.GetHashCode();
@@ -3676,17 +2650,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (ChainPrimaryTokenData.Length != 0) {
         output.WriteRawTag(10);
         output.WriteBytes(ChainPrimaryTokenData);
@@ -3695,26 +2664,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ChainPrimaryTokenData.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteBytes(ChainPrimaryTokenData);
-      }
-      sideChainTokenInitialIssueList_.WriteTo(ref output, _repeated_sideChainTokenInitialIssueList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ChainPrimaryTokenData.Length != 0) {
@@ -3728,7 +2680,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ChainPrimaryTokenInfo other) {
       if (other == null) {
         return;
@@ -3741,11 +2692,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3762,59 +2709,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            ChainPrimaryTokenData = input.ReadBytes();
-            break;
-          }
-          case 18: {
-            sideChainTokenInitialIssueList_.AddEntriesFrom(ref input, _repeated_sideChainTokenInitialIssueList_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ChainInitializationConsensusInfo : pb::IMessage<ChainInitializationConsensusInfo>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ChainInitializationConsensusInfo : pb::IMessage<ChainInitializationConsensusInfo> {
     private static readonly pb::MessageParser<ChainInitializationConsensusInfo> _parser = new pb::MessageParser<ChainInitializationConsensusInfo>(() => new ChainInitializationConsensusInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ChainInitializationConsensusInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainInitializationConsensusInfo() {
       OnConstruction();
     }
@@ -3822,14 +2737,12 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainInitializationConsensusInfo(ChainInitializationConsensusInfo other) : this() {
       initialConsensusData_ = other.initialConsensusData_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainInitializationConsensusInfo Clone() {
       return new ChainInitializationConsensusInfo(this);
     }
@@ -3838,7 +2751,6 @@ namespace AElf.Standards.ACS7 {
     public const int InitialConsensusDataFieldNumber = 1;
     private pb::ByteString initialConsensusData_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString InitialConsensusData {
       get { return initialConsensusData_; }
       set {
@@ -3847,13 +2759,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ChainInitializationConsensusInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ChainInitializationConsensusInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3866,7 +2776,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (InitialConsensusData.Length != 0) hash ^= InitialConsensusData.GetHashCode();
@@ -3877,17 +2786,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (InitialConsensusData.Length != 0) {
         output.WriteRawTag(10);
         output.WriteBytes(InitialConsensusData);
@@ -3895,25 +2799,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (InitialConsensusData.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteBytes(InitialConsensusData);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (InitialConsensusData.Length != 0) {
@@ -3926,7 +2814,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ChainInitializationConsensusInfo other) {
       if (other == null) {
         return;
@@ -3938,11 +2825,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3955,55 +2838,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            InitialConsensusData = input.ReadBytes();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class SideChainCreationRequest : pb::IMessage<SideChainCreationRequest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class SideChainCreationRequest : pb::IMessage<SideChainCreationRequest> {
     private static readonly pb::MessageParser<SideChainCreationRequest> _parser = new pb::MessageParser<SideChainCreationRequest>(() => new SideChainCreationRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SideChainCreationRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainCreationRequest() {
       OnConstruction();
     }
@@ -4011,7 +2866,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainCreationRequest(SideChainCreationRequest other) : this() {
       indexingPrice_ = other.indexingPrice_;
       lockedTokenAmount_ = other.lockedTokenAmount_;
@@ -4023,7 +2877,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainCreationRequest Clone() {
       return new SideChainCreationRequest(this);
     }
@@ -4032,7 +2885,6 @@ namespace AElf.Standards.ACS7 {
     public const int IndexingPriceFieldNumber = 1;
     private long indexingPrice_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long IndexingPrice {
       get { return indexingPrice_; }
       set {
@@ -4044,7 +2896,6 @@ namespace AElf.Standards.ACS7 {
     public const int LockedTokenAmountFieldNumber = 2;
     private long lockedTokenAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long LockedTokenAmount {
       get { return lockedTokenAmount_; }
       set {
@@ -4056,7 +2907,6 @@ namespace AElf.Standards.ACS7 {
     public const int IsPrivilegePreservedFieldNumber = 3;
     private bool isPrivilegePreserved_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsPrivilegePreserved {
       get { return isPrivilegePreserved_; }
       set {
@@ -4068,7 +2918,6 @@ namespace AElf.Standards.ACS7 {
     public const int SideChainTokenCreationRequestFieldNumber = 4;
     private global::AElf.Standards.ACS7.SideChainTokenCreationRequest sideChainTokenCreationRequest_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS7.SideChainTokenCreationRequest SideChainTokenCreationRequest {
       get { return sideChainTokenCreationRequest_; }
       set {
@@ -4082,7 +2931,6 @@ namespace AElf.Standards.ACS7 {
         = pb::FieldCodec.ForMessage(42, global::AElf.Standards.ACS7.SideChainTokenInitialIssue.Parser);
     private readonly pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainTokenInitialIssue> sideChainTokenInitialIssueList_ = new pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainTokenInitialIssue>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainTokenInitialIssue> SideChainTokenInitialIssueList {
       get { return sideChainTokenInitialIssueList_; }
     }
@@ -4093,19 +2941,16 @@ namespace AElf.Standards.ACS7 {
         = new pbc::MapField<string, int>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForInt32(16, 0), 50);
     private readonly pbc::MapField<string, int> initialResourceAmount_ = new pbc::MapField<string, int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, int> InitialResourceAmount {
       get { return initialResourceAmount_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SideChainCreationRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SideChainCreationRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4123,7 +2968,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (IndexingPrice != 0L) hash ^= IndexingPrice.GetHashCode();
@@ -4139,17 +2983,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (IndexingPrice != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(IndexingPrice);
@@ -4171,39 +3010,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (IndexingPrice != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(IndexingPrice);
-      }
-      if (LockedTokenAmount != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(LockedTokenAmount);
-      }
-      if (IsPrivilegePreserved != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(IsPrivilegePreserved);
-      }
-      if (sideChainTokenCreationRequest_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(SideChainTokenCreationRequest);
-      }
-      sideChainTokenInitialIssueList_.WriteTo(ref output, _repeated_sideChainTokenInitialIssueList_codec);
-      initialResourceAmount_.WriteTo(ref output, _map_initialResourceAmount_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (IndexingPrice != 0L) {
@@ -4227,7 +3036,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SideChainCreationRequest other) {
       if (other == null) {
         return;
@@ -4253,11 +3061,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4293,78 +3097,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            IndexingPrice = input.ReadInt64();
-            break;
-          }
-          case 16: {
-            LockedTokenAmount = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            IsPrivilegePreserved = input.ReadBool();
-            break;
-          }
-          case 34: {
-            if (sideChainTokenCreationRequest_ == null) {
-              SideChainTokenCreationRequest = new global::AElf.Standards.ACS7.SideChainTokenCreationRequest();
-            }
-            input.ReadMessage(SideChainTokenCreationRequest);
-            break;
-          }
-          case 42: {
-            sideChainTokenInitialIssueList_.AddEntriesFrom(ref input, _repeated_sideChainTokenInitialIssueList_codec);
-            break;
-          }
-          case 50: {
-            initialResourceAmount_.AddEntriesFrom(ref input, _map_initialResourceAmount_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class SideChainTokenCreationRequest : pb::IMessage<SideChainTokenCreationRequest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class SideChainTokenCreationRequest : pb::IMessage<SideChainTokenCreationRequest> {
     private static readonly pb::MessageParser<SideChainTokenCreationRequest> _parser = new pb::MessageParser<SideChainTokenCreationRequest>(() => new SideChainTokenCreationRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SideChainTokenCreationRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainTokenCreationRequest() {
       OnConstruction();
     }
@@ -4372,7 +3125,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainTokenCreationRequest(SideChainTokenCreationRequest other) : this() {
       sideChainTokenSymbol_ = other.sideChainTokenSymbol_;
       sideChainTokenName_ = other.sideChainTokenName_;
@@ -4382,7 +3134,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainTokenCreationRequest Clone() {
       return new SideChainTokenCreationRequest(this);
     }
@@ -4391,7 +3142,6 @@ namespace AElf.Standards.ACS7 {
     public const int SideChainTokenSymbolFieldNumber = 1;
     private string sideChainTokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SideChainTokenSymbol {
       get { return sideChainTokenSymbol_; }
       set {
@@ -4403,7 +3153,6 @@ namespace AElf.Standards.ACS7 {
     public const int SideChainTokenNameFieldNumber = 2;
     private string sideChainTokenName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SideChainTokenName {
       get { return sideChainTokenName_; }
       set {
@@ -4415,7 +3164,6 @@ namespace AElf.Standards.ACS7 {
     public const int SideChainTokenTotalSupplyFieldNumber = 3;
     private long sideChainTokenTotalSupply_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long SideChainTokenTotalSupply {
       get { return sideChainTokenTotalSupply_; }
       set {
@@ -4427,7 +3175,6 @@ namespace AElf.Standards.ACS7 {
     public const int SideChainTokenDecimalsFieldNumber = 4;
     private int sideChainTokenDecimals_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int SideChainTokenDecimals {
       get { return sideChainTokenDecimals_; }
       set {
@@ -4436,13 +3183,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SideChainTokenCreationRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SideChainTokenCreationRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4458,7 +3203,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (SideChainTokenSymbol.Length != 0) hash ^= SideChainTokenSymbol.GetHashCode();
@@ -4472,17 +3216,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (SideChainTokenSymbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(SideChainTokenSymbol);
@@ -4502,37 +3241,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (SideChainTokenSymbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(SideChainTokenSymbol);
-      }
-      if (SideChainTokenName.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(SideChainTokenName);
-      }
-      if (SideChainTokenTotalSupply != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(SideChainTokenTotalSupply);
-      }
-      if (SideChainTokenDecimals != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(SideChainTokenDecimals);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (SideChainTokenSymbol.Length != 0) {
@@ -4554,7 +3265,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SideChainTokenCreationRequest other) {
       if (other == null) {
         return;
@@ -4575,11 +3285,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4604,67 +3310,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            SideChainTokenSymbol = input.ReadString();
-            break;
-          }
-          case 18: {
-            SideChainTokenName = input.ReadString();
-            break;
-          }
-          case 24: {
-            SideChainTokenTotalSupply = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            SideChainTokenDecimals = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class SideChainTokenInitialIssue : pb::IMessage<SideChainTokenInitialIssue>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class SideChainTokenInitialIssue : pb::IMessage<SideChainTokenInitialIssue> {
     private static readonly pb::MessageParser<SideChainTokenInitialIssue> _parser = new pb::MessageParser<SideChainTokenInitialIssue>(() => new SideChainTokenInitialIssue());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SideChainTokenInitialIssue> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainTokenInitialIssue() {
       OnConstruction();
     }
@@ -4672,7 +3338,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainTokenInitialIssue(SideChainTokenInitialIssue other) : this() {
       address_ = other.address_ != null ? other.address_.Clone() : null;
       amount_ = other.amount_;
@@ -4680,7 +3345,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainTokenInitialIssue Clone() {
       return new SideChainTokenInitialIssue(this);
     }
@@ -4689,7 +3353,6 @@ namespace AElf.Standards.ACS7 {
     public const int AddressFieldNumber = 1;
     private global::AElf.Types.Address address_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Address {
       get { return address_; }
       set {
@@ -4701,7 +3364,6 @@ namespace AElf.Standards.ACS7 {
     public const int AmountFieldNumber = 2;
     private long amount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Amount {
       get { return amount_; }
       set {
@@ -4710,13 +3372,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SideChainTokenInitialIssue);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SideChainTokenInitialIssue other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4730,7 +3390,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (address_ != null) hash ^= Address.GetHashCode();
@@ -4742,17 +3401,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (address_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Address);
@@ -4764,29 +3418,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (address_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Address);
-      }
-      if (Amount != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Amount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (address_ != null) {
@@ -4802,7 +3436,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SideChainTokenInitialIssue other) {
       if (other == null) {
         return;
@@ -4820,11 +3453,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4844,62 +3473,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (address_ == null) {
-              Address = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Address);
-            break;
-          }
-          case 16: {
-            Amount = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class SideChainTokenInfo : pb::IMessage<SideChainTokenInfo>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class SideChainTokenInfo : pb::IMessage<SideChainTokenInfo> {
     private static readonly pb::MessageParser<SideChainTokenInfo> _parser = new pb::MessageParser<SideChainTokenInfo>(() => new SideChainTokenInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SideChainTokenInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainTokenInfo() {
       OnConstruction();
     }
@@ -4907,7 +3501,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainTokenInfo(SideChainTokenInfo other) : this() {
       symbol_ = other.symbol_;
       tokenName_ = other.tokenName_;
@@ -4919,7 +3512,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainTokenInfo Clone() {
       return new SideChainTokenInfo(this);
     }
@@ -4928,7 +3520,6 @@ namespace AElf.Standards.ACS7 {
     public const int SymbolFieldNumber = 1;
     private string symbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Symbol {
       get { return symbol_; }
       set {
@@ -4940,7 +3531,6 @@ namespace AElf.Standards.ACS7 {
     public const int TokenNameFieldNumber = 2;
     private string tokenName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string TokenName {
       get { return tokenName_; }
       set {
@@ -4952,7 +3542,6 @@ namespace AElf.Standards.ACS7 {
     public const int TotalSupplyFieldNumber = 3;
     private long totalSupply_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long TotalSupply {
       get { return totalSupply_; }
       set {
@@ -4964,7 +3553,6 @@ namespace AElf.Standards.ACS7 {
     public const int DecimalsFieldNumber = 4;
     private int decimals_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Decimals {
       get { return decimals_; }
       set {
@@ -4976,7 +3564,6 @@ namespace AElf.Standards.ACS7 {
     public const int IssuerFieldNumber = 5;
     private global::AElf.Types.Address issuer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Issuer {
       get { return issuer_; }
       set {
@@ -4988,7 +3575,6 @@ namespace AElf.Standards.ACS7 {
     public const int IsBurnableFieldNumber = 6;
     private bool isBurnable_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsBurnable {
       get { return isBurnable_; }
       set {
@@ -4997,13 +3583,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SideChainTokenInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SideChainTokenInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5021,7 +3605,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Symbol.Length != 0) hash ^= Symbol.GetHashCode();
@@ -5037,17 +3620,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Symbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Symbol);
@@ -5075,45 +3653,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Symbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Symbol);
-      }
-      if (TokenName.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(TokenName);
-      }
-      if (TotalSupply != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(TotalSupply);
-      }
-      if (Decimals != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(Decimals);
-      }
-      if (issuer_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(Issuer);
-      }
-      if (IsBurnable != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(IsBurnable);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Symbol.Length != 0) {
@@ -5141,7 +3683,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SideChainTokenInfo other) {
       if (other == null) {
         return;
@@ -5171,11 +3712,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5211,78 +3748,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Symbol = input.ReadString();
-            break;
-          }
-          case 18: {
-            TokenName = input.ReadString();
-            break;
-          }
-          case 24: {
-            TotalSupply = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            Decimals = input.ReadInt32();
-            break;
-          }
-          case 42: {
-            if (issuer_ == null) {
-              Issuer = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Issuer);
-            break;
-          }
-          case 48: {
-            IsBurnable = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class RequestChainCreationOutput : pb::IMessage<RequestChainCreationOutput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class RequestChainCreationOutput : pb::IMessage<RequestChainCreationOutput> {
     private static readonly pb::MessageParser<RequestChainCreationOutput> _parser = new pb::MessageParser<RequestChainCreationOutput>(() => new RequestChainCreationOutput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RequestChainCreationOutput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RequestChainCreationOutput() {
       OnConstruction();
     }
@@ -5290,7 +3776,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RequestChainCreationOutput(RequestChainCreationOutput other) : this() {
       chainId_ = other.chainId_;
       proposalId_ = other.proposalId_ != null ? other.proposalId_.Clone() : null;
@@ -5298,7 +3783,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RequestChainCreationOutput Clone() {
       return new RequestChainCreationOutput(this);
     }
@@ -5307,7 +3791,6 @@ namespace AElf.Standards.ACS7 {
     public const int ChainIdFieldNumber = 1;
     private int chainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ChainId {
       get { return chainId_; }
       set {
@@ -5319,7 +3802,6 @@ namespace AElf.Standards.ACS7 {
     public const int ProposalIdFieldNumber = 2;
     private global::AElf.Types.Hash proposalId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash ProposalId {
       get { return proposalId_; }
       set {
@@ -5328,13 +3810,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RequestChainCreationOutput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RequestChainCreationOutput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5348,7 +3828,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ChainId != 0) hash ^= ChainId.GetHashCode();
@@ -5360,17 +3839,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (ChainId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(ChainId);
@@ -5382,29 +3856,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ChainId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ChainId);
-      }
-      if (proposalId_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ProposalId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ChainId != 0) {
@@ -5420,7 +3874,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RequestChainCreationOutput other) {
       if (other == null) {
         return;
@@ -5438,11 +3891,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5462,62 +3911,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            ChainId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            if (proposalId_ == null) {
-              ProposalId = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(ProposalId);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class IndexedParentChainBlockData : pb::IMessage<IndexedParentChainBlockData>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class IndexedParentChainBlockData : pb::IMessage<IndexedParentChainBlockData> {
     private static readonly pb::MessageParser<IndexedParentChainBlockData> _parser = new pb::MessageParser<IndexedParentChainBlockData>(() => new IndexedParentChainBlockData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<IndexedParentChainBlockData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IndexedParentChainBlockData() {
       OnConstruction();
     }
@@ -5525,7 +3939,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IndexedParentChainBlockData(IndexedParentChainBlockData other) : this() {
       localChainHeight_ = other.localChainHeight_;
       parentChainBlockDataList_ = other.parentChainBlockDataList_.Clone();
@@ -5533,7 +3946,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IndexedParentChainBlockData Clone() {
       return new IndexedParentChainBlockData(this);
     }
@@ -5542,7 +3954,6 @@ namespace AElf.Standards.ACS7 {
     public const int LocalChainHeightFieldNumber = 1;
     private long localChainHeight_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long LocalChainHeight {
       get { return localChainHeight_; }
       set {
@@ -5556,19 +3967,16 @@ namespace AElf.Standards.ACS7 {
         = pb::FieldCodec.ForMessage(18, global::AElf.Standards.ACS7.ParentChainBlockData.Parser);
     private readonly pbc::RepeatedField<global::AElf.Standards.ACS7.ParentChainBlockData> parentChainBlockDataList_ = new pbc::RepeatedField<global::AElf.Standards.ACS7.ParentChainBlockData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::AElf.Standards.ACS7.ParentChainBlockData> ParentChainBlockDataList {
       get { return parentChainBlockDataList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as IndexedParentChainBlockData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(IndexedParentChainBlockData other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5582,7 +3990,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (LocalChainHeight != 0L) hash ^= LocalChainHeight.GetHashCode();
@@ -5594,17 +4001,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (LocalChainHeight != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(LocalChainHeight);
@@ -5613,26 +4015,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (LocalChainHeight != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(LocalChainHeight);
-      }
-      parentChainBlockDataList_.WriteTo(ref output, _repeated_parentChainBlockDataList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (LocalChainHeight != 0L) {
@@ -5646,7 +4031,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(IndexedParentChainBlockData other) {
       if (other == null) {
         return;
@@ -5659,11 +4043,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5680,59 +4060,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            LocalChainHeight = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            parentChainBlockDataList_.AddEntriesFrom(ref input, _repeated_parentChainBlockDataList_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class IndexedSideChainBlockData : pb::IMessage<IndexedSideChainBlockData>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class IndexedSideChainBlockData : pb::IMessage<IndexedSideChainBlockData> {
     private static readonly pb::MessageParser<IndexedSideChainBlockData> _parser = new pb::MessageParser<IndexedSideChainBlockData>(() => new IndexedSideChainBlockData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<IndexedSideChainBlockData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IndexedSideChainBlockData() {
       OnConstruction();
     }
@@ -5740,14 +4088,12 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IndexedSideChainBlockData(IndexedSideChainBlockData other) : this() {
       sideChainBlockDataList_ = other.sideChainBlockDataList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IndexedSideChainBlockData Clone() {
       return new IndexedSideChainBlockData(this);
     }
@@ -5758,19 +4104,16 @@ namespace AElf.Standards.ACS7 {
         = pb::FieldCodec.ForMessage(10, global::AElf.Standards.ACS7.SideChainBlockData.Parser);
     private readonly pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainBlockData> sideChainBlockDataList_ = new pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainBlockData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::AElf.Standards.ACS7.SideChainBlockData> SideChainBlockDataList {
       get { return sideChainBlockDataList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as IndexedSideChainBlockData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(IndexedSideChainBlockData other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5783,7 +4126,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= sideChainBlockDataList_.GetHashCode();
@@ -5794,37 +4136,19 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       sideChainBlockDataList_.WriteTo(output, _repeated_sideChainBlockDataList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      sideChainBlockDataList_.WriteTo(ref output, _repeated_sideChainBlockDataList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += sideChainBlockDataList_.CalculateSize(_repeated_sideChainBlockDataList_codec);
@@ -5835,7 +4159,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(IndexedSideChainBlockData other) {
       if (other == null) {
         return;
@@ -5845,11 +4168,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5862,55 +4181,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            sideChainBlockDataList_.AddEntriesFrom(ref input, _repeated_sideChainBlockDataList_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ReleaseCrossChainIndexingProposalInput : pb::IMessage<ReleaseCrossChainIndexingProposalInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ReleaseCrossChainIndexingProposalInput : pb::IMessage<ReleaseCrossChainIndexingProposalInput> {
     private static readonly pb::MessageParser<ReleaseCrossChainIndexingProposalInput> _parser = new pb::MessageParser<ReleaseCrossChainIndexingProposalInput>(() => new ReleaseCrossChainIndexingProposalInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ReleaseCrossChainIndexingProposalInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReleaseCrossChainIndexingProposalInput() {
       OnConstruction();
     }
@@ -5918,14 +4209,12 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReleaseCrossChainIndexingProposalInput(ReleaseCrossChainIndexingProposalInput other) : this() {
       chainIdList_ = other.chainIdList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReleaseCrossChainIndexingProposalInput Clone() {
       return new ReleaseCrossChainIndexingProposalInput(this);
     }
@@ -5936,19 +4225,16 @@ namespace AElf.Standards.ACS7 {
         = pb::FieldCodec.ForInt32(10);
     private readonly pbc::RepeatedField<int> chainIdList_ = new pbc::RepeatedField<int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> ChainIdList {
       get { return chainIdList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ReleaseCrossChainIndexingProposalInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ReleaseCrossChainIndexingProposalInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5961,7 +4247,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= chainIdList_.GetHashCode();
@@ -5972,37 +4257,19 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       chainIdList_.WriteTo(output, _repeated_chainIdList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      chainIdList_.WriteTo(ref output, _repeated_chainIdList_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += chainIdList_.CalculateSize(_repeated_chainIdList_codec);
@@ -6013,7 +4280,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ReleaseCrossChainIndexingProposalInput other) {
       if (other == null) {
         return;
@@ -6023,11 +4289,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6041,56 +4303,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10:
-          case 8: {
-            chainIdList_.AddEntriesFrom(ref input, _repeated_chainIdList_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class RecordCrossChainDataInput : pb::IMessage<RecordCrossChainDataInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class RecordCrossChainDataInput : pb::IMessage<RecordCrossChainDataInput> {
     private static readonly pb::MessageParser<RecordCrossChainDataInput> _parser = new pb::MessageParser<RecordCrossChainDataInput>(() => new RecordCrossChainDataInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RecordCrossChainDataInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RecordCrossChainDataInput() {
       OnConstruction();
     }
@@ -6098,7 +4331,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RecordCrossChainDataInput(RecordCrossChainDataInput other) : this() {
       proposedCrossChainData_ = other.proposedCrossChainData_ != null ? other.proposedCrossChainData_.Clone() : null;
       proposer_ = other.proposer_ != null ? other.proposer_.Clone() : null;
@@ -6106,7 +4338,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RecordCrossChainDataInput Clone() {
       return new RecordCrossChainDataInput(this);
     }
@@ -6115,7 +4346,6 @@ namespace AElf.Standards.ACS7 {
     public const int ProposedCrossChainDataFieldNumber = 1;
     private global::AElf.Standards.ACS7.CrossChainBlockData proposedCrossChainData_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS7.CrossChainBlockData ProposedCrossChainData {
       get { return proposedCrossChainData_; }
       set {
@@ -6127,7 +4357,6 @@ namespace AElf.Standards.ACS7 {
     public const int ProposerFieldNumber = 2;
     private global::AElf.Types.Address proposer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Proposer {
       get { return proposer_; }
       set {
@@ -6136,13 +4365,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RecordCrossChainDataInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RecordCrossChainDataInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6156,7 +4383,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (proposedCrossChainData_ != null) hash ^= ProposedCrossChainData.GetHashCode();
@@ -6168,17 +4394,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (proposedCrossChainData_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(ProposedCrossChainData);
@@ -6190,29 +4411,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (proposedCrossChainData_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ProposedCrossChainData);
-      }
-      if (proposer_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Proposer);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (proposedCrossChainData_ != null) {
@@ -6228,7 +4429,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RecordCrossChainDataInput other) {
       if (other == null) {
         return;
@@ -6249,11 +4449,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6276,65 +4472,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (proposedCrossChainData_ == null) {
-              ProposedCrossChainData = new global::AElf.Standards.ACS7.CrossChainBlockData();
-            }
-            input.ReadMessage(ProposedCrossChainData);
-            break;
-          }
-          case 18: {
-            if (proposer_ == null) {
-              Proposer = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Proposer);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class CreateSideChainInput : pb::IMessage<CreateSideChainInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class CreateSideChainInput : pb::IMessage<CreateSideChainInput> {
     private static readonly pb::MessageParser<CreateSideChainInput> _parser = new pb::MessageParser<CreateSideChainInput>(() => new CreateSideChainInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CreateSideChainInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateSideChainInput() {
       OnConstruction();
     }
@@ -6342,7 +4500,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateSideChainInput(CreateSideChainInput other) : this() {
       sideChainCreationRequest_ = other.sideChainCreationRequest_ != null ? other.sideChainCreationRequest_.Clone() : null;
       proposer_ = other.proposer_ != null ? other.proposer_.Clone() : null;
@@ -6350,7 +4507,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateSideChainInput Clone() {
       return new CreateSideChainInput(this);
     }
@@ -6359,7 +4515,6 @@ namespace AElf.Standards.ACS7 {
     public const int SideChainCreationRequestFieldNumber = 1;
     private global::AElf.Standards.ACS7.SideChainCreationRequest sideChainCreationRequest_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS7.SideChainCreationRequest SideChainCreationRequest {
       get { return sideChainCreationRequest_; }
       set {
@@ -6371,7 +4526,6 @@ namespace AElf.Standards.ACS7 {
     public const int ProposerFieldNumber = 2;
     private global::AElf.Types.Address proposer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Proposer {
       get { return proposer_; }
       set {
@@ -6380,13 +4534,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CreateSideChainInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CreateSideChainInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6400,7 +4552,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (sideChainCreationRequest_ != null) hash ^= SideChainCreationRequest.GetHashCode();
@@ -6412,17 +4563,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (sideChainCreationRequest_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(SideChainCreationRequest);
@@ -6434,29 +4580,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (sideChainCreationRequest_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(SideChainCreationRequest);
-      }
-      if (proposer_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Proposer);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (sideChainCreationRequest_ != null) {
@@ -6472,7 +4598,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CreateSideChainInput other) {
       if (other == null) {
         return;
@@ -6493,11 +4618,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6520,65 +4641,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (sideChainCreationRequest_ == null) {
-              SideChainCreationRequest = new global::AElf.Standards.ACS7.SideChainCreationRequest();
-            }
-            input.ReadMessage(SideChainCreationRequest);
-            break;
-          }
-          case 18: {
-            if (proposer_ == null) {
-              Proposer = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(Proposer);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ReleaseSideChainCreationInput : pb::IMessage<ReleaseSideChainCreationInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ReleaseSideChainCreationInput : pb::IMessage<ReleaseSideChainCreationInput> {
     private static readonly pb::MessageParser<ReleaseSideChainCreationInput> _parser = new pb::MessageParser<ReleaseSideChainCreationInput>(() => new ReleaseSideChainCreationInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ReleaseSideChainCreationInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReleaseSideChainCreationInput() {
       OnConstruction();
     }
@@ -6586,14 +4669,12 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReleaseSideChainCreationInput(ReleaseSideChainCreationInput other) : this() {
       proposalId_ = other.proposalId_ != null ? other.proposalId_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReleaseSideChainCreationInput Clone() {
       return new ReleaseSideChainCreationInput(this);
     }
@@ -6602,7 +4683,6 @@ namespace AElf.Standards.ACS7 {
     public const int ProposalIdFieldNumber = 1;
     private global::AElf.Types.Hash proposalId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash ProposalId {
       get { return proposalId_; }
       set {
@@ -6611,13 +4691,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ReleaseSideChainCreationInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ReleaseSideChainCreationInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6630,7 +4708,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (proposalId_ != null) hash ^= ProposalId.GetHashCode();
@@ -6641,17 +4718,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (proposalId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(ProposalId);
@@ -6659,25 +4731,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (proposalId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ProposalId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (proposalId_ != null) {
@@ -6690,7 +4746,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ReleaseSideChainCreationInput other) {
       if (other == null) {
         return;
@@ -6705,11 +4760,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6725,58 +4776,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (proposalId_ == null) {
-              ProposalId = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(ProposalId);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class AdjustIndexingFeeInput : pb::IMessage<AdjustIndexingFeeInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class AdjustIndexingFeeInput : pb::IMessage<AdjustIndexingFeeInput> {
     private static readonly pb::MessageParser<AdjustIndexingFeeInput> _parser = new pb::MessageParser<AdjustIndexingFeeInput>(() => new AdjustIndexingFeeInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AdjustIndexingFeeInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AdjustIndexingFeeInput() {
       OnConstruction();
     }
@@ -6784,7 +4804,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AdjustIndexingFeeInput(AdjustIndexingFeeInput other) : this() {
       sideChainId_ = other.sideChainId_;
       indexingFee_ = other.indexingFee_;
@@ -6792,7 +4811,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AdjustIndexingFeeInput Clone() {
       return new AdjustIndexingFeeInput(this);
     }
@@ -6801,7 +4819,6 @@ namespace AElf.Standards.ACS7 {
     public const int SideChainIdFieldNumber = 1;
     private int sideChainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int SideChainId {
       get { return sideChainId_; }
       set {
@@ -6813,7 +4830,6 @@ namespace AElf.Standards.ACS7 {
     public const int IndexingFeeFieldNumber = 2;
     private long indexingFee_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long IndexingFee {
       get { return indexingFee_; }
       set {
@@ -6822,13 +4838,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AdjustIndexingFeeInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AdjustIndexingFeeInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6842,7 +4856,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (SideChainId != 0) hash ^= SideChainId.GetHashCode();
@@ -6854,17 +4867,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (SideChainId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(SideChainId);
@@ -6876,29 +4884,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (SideChainId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(SideChainId);
-      }
-      if (IndexingFee != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(IndexingFee);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (SideChainId != 0) {
@@ -6914,7 +4902,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AdjustIndexingFeeInput other) {
       if (other == null) {
         return;
@@ -6929,11 +4916,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6950,59 +4933,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            SideChainId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            IndexingFee = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class SideChainBlockDataIndexed : pb::IMessage<SideChainBlockDataIndexed>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class SideChainBlockDataIndexed : pb::IMessage<SideChainBlockDataIndexed> {
     private static readonly pb::MessageParser<SideChainBlockDataIndexed> _parser = new pb::MessageParser<SideChainBlockDataIndexed>(() => new SideChainBlockDataIndexed());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SideChainBlockDataIndexed> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainBlockDataIndexed() {
       OnConstruction();
     }
@@ -7010,25 +4961,21 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainBlockDataIndexed(SideChainBlockDataIndexed other) : this() {
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainBlockDataIndexed Clone() {
       return new SideChainBlockDataIndexed(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SideChainBlockDataIndexed);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SideChainBlockDataIndexed other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7040,7 +4987,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (_unknownFields != null) {
@@ -7050,35 +4996,18 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (_unknownFields != null) {
@@ -7088,7 +5017,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SideChainBlockDataIndexed other) {
       if (other == null) {
         return;
@@ -7097,11 +5025,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7110,51 +5034,27 @@ namespace AElf.Standards.ACS7 {
             break;
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class CrossChainIndexingDataProposedEvent : pb::IMessage<CrossChainIndexingDataProposedEvent>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class CrossChainIndexingDataProposedEvent : pb::IMessage<CrossChainIndexingDataProposedEvent> {
     private static readonly pb::MessageParser<CrossChainIndexingDataProposedEvent> _parser = new pb::MessageParser<CrossChainIndexingDataProposedEvent>(() => new CrossChainIndexingDataProposedEvent());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CrossChainIndexingDataProposedEvent> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainIndexingDataProposedEvent() {
       OnConstruction();
     }
@@ -7162,7 +5062,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainIndexingDataProposedEvent(CrossChainIndexingDataProposedEvent other) : this() {
       proposedCrossChainData_ = other.proposedCrossChainData_ != null ? other.proposedCrossChainData_.Clone() : null;
       proposalId_ = other.proposalId_ != null ? other.proposalId_.Clone() : null;
@@ -7170,7 +5069,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainIndexingDataProposedEvent Clone() {
       return new CrossChainIndexingDataProposedEvent(this);
     }
@@ -7179,7 +5077,6 @@ namespace AElf.Standards.ACS7 {
     public const int ProposedCrossChainDataFieldNumber = 1;
     private global::AElf.Standards.ACS7.CrossChainBlockData proposedCrossChainData_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS7.CrossChainBlockData ProposedCrossChainData {
       get { return proposedCrossChainData_; }
       set {
@@ -7191,7 +5088,6 @@ namespace AElf.Standards.ACS7 {
     public const int ProposalIdFieldNumber = 2;
     private global::AElf.Types.Hash proposalId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash ProposalId {
       get { return proposalId_; }
       set {
@@ -7200,13 +5096,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CrossChainIndexingDataProposedEvent);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CrossChainIndexingDataProposedEvent other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7220,7 +5114,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (proposedCrossChainData_ != null) hash ^= ProposedCrossChainData.GetHashCode();
@@ -7232,17 +5125,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (proposedCrossChainData_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(ProposedCrossChainData);
@@ -7254,29 +5142,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (proposedCrossChainData_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ProposedCrossChainData);
-      }
-      if (proposalId_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ProposalId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (proposedCrossChainData_ != null) {
@@ -7292,7 +5160,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CrossChainIndexingDataProposedEvent other) {
       if (other == null) {
         return;
@@ -7313,11 +5180,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7340,65 +5203,27 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (proposedCrossChainData_ == null) {
-              ProposedCrossChainData = new global::AElf.Standards.ACS7.CrossChainBlockData();
-            }
-            input.ReadMessage(ProposedCrossChainData);
-            break;
-          }
-          case 18: {
-            if (proposalId_ == null) {
-              ProposalId = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(ProposalId);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class VerifyTransactionInput : pb::IMessage<VerifyTransactionInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class VerifyTransactionInput : pb::IMessage<VerifyTransactionInput> {
     private static readonly pb::MessageParser<VerifyTransactionInput> _parser = new pb::MessageParser<VerifyTransactionInput>(() => new VerifyTransactionInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<VerifyTransactionInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS7.Acs7Reflection.Descriptor.MessageTypes[29]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VerifyTransactionInput() {
       OnConstruction();
     }
@@ -7406,7 +5231,6 @@ namespace AElf.Standards.ACS7 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VerifyTransactionInput(VerifyTransactionInput other) : this() {
       transactionId_ = other.transactionId_ != null ? other.transactionId_.Clone() : null;
       path_ = other.path_ != null ? other.path_.Clone() : null;
@@ -7416,7 +5240,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VerifyTransactionInput Clone() {
       return new VerifyTransactionInput(this);
     }
@@ -7425,7 +5248,6 @@ namespace AElf.Standards.ACS7 {
     public const int TransactionIdFieldNumber = 1;
     private global::AElf.Types.Hash transactionId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash TransactionId {
       get { return transactionId_; }
       set {
@@ -7437,7 +5259,6 @@ namespace AElf.Standards.ACS7 {
     public const int PathFieldNumber = 2;
     private global::AElf.Types.MerklePath path_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.MerklePath Path {
       get { return path_; }
       set {
@@ -7449,7 +5270,6 @@ namespace AElf.Standards.ACS7 {
     public const int ParentChainHeightFieldNumber = 3;
     private long parentChainHeight_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ParentChainHeight {
       get { return parentChainHeight_; }
       set {
@@ -7461,7 +5281,6 @@ namespace AElf.Standards.ACS7 {
     public const int VerifiedChainIdFieldNumber = 4;
     private int verifiedChainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int VerifiedChainId {
       get { return verifiedChainId_; }
       set {
@@ -7470,13 +5289,11 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as VerifyTransactionInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(VerifyTransactionInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7492,7 +5309,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (transactionId_ != null) hash ^= TransactionId.GetHashCode();
@@ -7506,17 +5322,12 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (transactionId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(TransactionId);
@@ -7536,37 +5347,9 @@ namespace AElf.Standards.ACS7 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (transactionId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(TransactionId);
-      }
-      if (path_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Path);
-      }
-      if (ParentChainHeight != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(ParentChainHeight);
-      }
-      if (VerifiedChainId != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(VerifiedChainId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (transactionId_ != null) {
@@ -7588,7 +5371,6 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(VerifyTransactionInput other) {
       if (other == null) {
         return;
@@ -7615,11 +5397,7 @@ namespace AElf.Standards.ACS7 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7650,45 +5428,7 @@ namespace AElf.Standards.ACS7 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (transactionId_ == null) {
-              TransactionId = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(TransactionId);
-            break;
-          }
-          case 18: {
-            if (path_ == null) {
-              Path = new global::AElf.Types.MerklePath();
-            }
-            input.ReadMessage(Path);
-            break;
-          }
-          case 24: {
-            ParentChainHeight = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            VerifiedChainId = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

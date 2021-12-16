@@ -132,23 +132,13 @@ namespace Gandalf.Contracts.Shadowfax {
     static readonly aelf::Marshaller<global::Google.Protobuf.WellKnownTypes.Int64Value> __Marshaller_google_protobuf_Int64Value = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Int64Value.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.ChangeAscriptionInput> __Marshaller_ChangeAscriptionInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.ChangeAscriptionInput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Google.Protobuf.WellKnownTypes.Int32Value> __Marshaller_google_protobuf_Int32Value = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Int32Value.Parser.ParseFrom);
-<<<<<<< HEAD:contract/Gandalf.Contracts.IdoContract/Protobuf/Generated/IdoContract.c.cs
-    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.InvestInput> __Marshaller_InvestInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.InvestInput.Parser.ParseFrom);
-    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput> __Marshaller_ResetTimeSpanInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.ResetTimeSpanInput.Parser.ParseFrom);
-    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput> __Marshaller_ResetTimeSpanOutput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput.Parser.ParseFrom);
-    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.PublicOfferingOutput> __Marshaller_PublicOfferingOutput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.PublicOfferingOutput.Parser.ParseFrom);
-    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.UserInfoInput> __Marshaller_UserInfoInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.UserInfoInput.Parser.ParseFrom);
-    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.UserInfoStruct> __Marshaller_UserInfoStruct = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.UserInfoStruct.Parser.ParseFrom);
-    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.Token> __Marshaller_Token = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.Token.Parser.ParseFrom);
-=======
     static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.InvestInput> __Marshaller_InvestInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.InvestInput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.ResetTimeSpanInput> __Marshaller_ResetTimeSpanInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.ResetTimeSpanInput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.ResetTimeSpanOutput> __Marshaller_ResetTimeSpanOutput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.ResetTimeSpanOutput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput> __Marshaller_PublicOfferingOutput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.UserInfoInput> __Marshaller_UserInfoInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.UserInfoInput.Parser.ParseFrom);
-    static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.UserInfo> __Marshaller_UserInfo = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.UserInfo.Parser.ParseFrom);
+    static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.UserInfoStruct> __Marshaller_UserInfoStruct = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.UserInfoStruct.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.Token> __Marshaller_Token = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.Token.Parser.ParseFrom);
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:contract/Gandalf.Contracts.Shadowfax/Protobuf/Generated/GandalfShadowfaxContract.c.cs
     #endregion
 
     #region Methods
@@ -215,22 +205,14 @@ namespace Gandalf.Contracts.Shadowfax {
         __Marshaller_google_protobuf_Empty,
         __Marshaller_ResetTimeSpanOutput);
 
-<<<<<<< HEAD:contract/Gandalf.Contracts.IdoContract/Protobuf/Generated/IdoContract.c.cs
-    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.IdoContract.PublicOfferingOutput> __Method_PublicOfferings = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.IdoContract.PublicOfferingOutput>(
-=======
-    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput> __Method_GetPublicOffering = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput>(
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:contract/Gandalf.Contracts.Shadowfax/Protobuf/Generated/GandalfShadowfaxContract.c.cs
+    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput> __Method_PublicOfferings = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput>(
         aelf::MethodType.View,
         __ServiceName,
         "PublicOfferings",
         __Marshaller_google_protobuf_Int32Value,
         __Marshaller_PublicOfferingOutput);
 
-<<<<<<< HEAD:contract/Gandalf.Contracts.IdoContract/Protobuf/Generated/IdoContract.c.cs
-    static readonly aelf::Method<global::Gandalf.Contracts.IdoContract.UserInfoInput, global::Gandalf.Contracts.IdoContract.UserInfoStruct> __Method_UserInfo = new aelf::Method<global::Gandalf.Contracts.IdoContract.UserInfoInput, global::Gandalf.Contracts.IdoContract.UserInfoStruct>(
-=======
-    static readonly aelf::Method<global::Gandalf.Contracts.Shadowfax.UserInfoInput, global::Gandalf.Contracts.Shadowfax.UserInfo> __Method_GetUserInfo = new aelf::Method<global::Gandalf.Contracts.Shadowfax.UserInfoInput, global::Gandalf.Contracts.Shadowfax.UserInfo>(
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:contract/Gandalf.Contracts.Shadowfax/Protobuf/Generated/GandalfShadowfaxContract.c.cs
+    static readonly aelf::Method<global::Gandalf.Contracts.Shadowfax.UserInfoInput, global::Gandalf.Contracts.Shadowfax.UserInfoStruct> __Method_UserInfo = new aelf::Method<global::Gandalf.Contracts.Shadowfax.UserInfoInput, global::Gandalf.Contracts.Shadowfax.UserInfoStruct>(
         aelf::MethodType.View,
         __ServiceName,
         "UserInfo",
@@ -319,20 +301,12 @@ namespace Gandalf.Contracts.Shadowfax {
         throw new global::System.NotImplementedException();
       }
 
-<<<<<<< HEAD:contract/Gandalf.Contracts.IdoContract/Protobuf/Generated/IdoContract.c.cs
-      public virtual global::Gandalf.Contracts.IdoContract.PublicOfferingOutput PublicOfferings(global::Google.Protobuf.WellKnownTypes.Int32Value input)
-=======
-      public virtual global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput GetPublicOffering(global::Google.Protobuf.WellKnownTypes.Int32Value input)
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:contract/Gandalf.Contracts.Shadowfax/Protobuf/Generated/GandalfShadowfaxContract.c.cs
+      public virtual global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput PublicOfferings(global::Google.Protobuf.WellKnownTypes.Int32Value input)
       {
         throw new global::System.NotImplementedException();
       }
 
-<<<<<<< HEAD:contract/Gandalf.Contracts.IdoContract/Protobuf/Generated/IdoContract.c.cs
-      public virtual global::Gandalf.Contracts.IdoContract.UserInfoStruct UserInfo(global::Gandalf.Contracts.IdoContract.UserInfoInput input)
-=======
-      public virtual global::Gandalf.Contracts.Shadowfax.UserInfo GetUserInfo(global::Gandalf.Contracts.Shadowfax.UserInfoInput input)
->>>>>>> 182e58142b41bd90aacb476b490f53c9bf17a867:contract/Gandalf.Contracts.Shadowfax/Protobuf/Generated/GandalfShadowfaxContract.c.cs
+      public virtual global::Gandalf.Contracts.Shadowfax.UserInfoStruct UserInfo(global::Gandalf.Contracts.Shadowfax.UserInfoInput input)
       {
         throw new global::System.NotImplementedException();
       }
