@@ -1,5 +1,0 @@
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.BingoGameContract.Tests/obj/Debug/netcoreapp3.1/AElf.Contracts.BingoGameContract.Tests.csproj.AssemblyReference.cache
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.BingoGameContract.Tests/obj/Debug/netcoreapp3.1/AElf.Contracts.BingoGameContract.Tests.GeneratedMSBuildEditorConfig.editorconfig
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.BingoGameContract.Tests/obj/Debug/netcoreapp3.1/AElf.Contracts.BingoGameContract.Tests.AssemblyInfoInputs.cache
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.BingoGameContract.Tests/obj/Debug/netcoreapp3.1/AElf.Contracts.BingoGameContract.Tests.AssemblyInfo.cs
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.BingoGameContract.Tests/obj/Debug/netcoreapp3.1/AElf.Contracts.BingoGameContract.Tests.csproj.CoreCompileInputs.cache

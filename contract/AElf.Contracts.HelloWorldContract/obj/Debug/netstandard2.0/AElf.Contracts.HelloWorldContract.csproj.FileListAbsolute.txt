@@ -1,9 +1,0 @@
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.HelloWorldContract/bin/Debug/netstandard2.0/AElf.Contracts.HelloWorldContract.deps.json
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.HelloWorldContract/bin/Debug/netstandard2.0/AElf.Contracts.HelloWorldContract.dll
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.HelloWorldContract/bin/Debug/netstandard2.0/AElf.Contracts.HelloWorldContract.pdb
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.HelloWorldContract/obj/Debug/netstandard2.0/AElf.Contracts.HelloWorldContract.GeneratedMSBuildEditorConfig.editorconfig
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.HelloWorldContract/obj/Debug/netstandard2.0/AElf.Contracts.HelloWorldContract.AssemblyInfoInputs.cache
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.HelloWorldContract/obj/Debug/netstandard2.0/AElf.Contracts.HelloWorldContract.AssemblyInfo.cs
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.HelloWorldContract/obj/Debug/netstandard2.0/AElf.Contracts.HelloWorldContract.csproj.CoreCompileInputs.cache
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.HelloWorldContract/obj/Debug/netstandard2.0/AElf.Contracts.HelloWorldContract.dll
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.HelloWorldContract/obj/Debug/netstandard2.0/AElf.Contracts.HelloWorldContract.pdb

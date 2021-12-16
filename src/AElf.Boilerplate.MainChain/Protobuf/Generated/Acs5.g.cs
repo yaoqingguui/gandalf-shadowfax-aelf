@@ -63,23 +63,31 @@ namespace AElf.Standards.ACS5 {
   #endregion
 
   #region Messages
-  internal sealed partial class MethodCallingThreshold : pb::IMessage<MethodCallingThreshold> {
+  internal sealed partial class MethodCallingThreshold : pb::IMessage<MethodCallingThreshold>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<MethodCallingThreshold> _parser = new pb::MessageParser<MethodCallingThreshold>(() => new MethodCallingThreshold());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MethodCallingThreshold> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS5.Acs5Reflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MethodCallingThreshold() {
       OnConstruction();
     }
@@ -87,6 +95,7 @@ namespace AElf.Standards.ACS5 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MethodCallingThreshold(MethodCallingThreshold other) : this() {
       symbolToAmount_ = other.symbolToAmount_.Clone();
       thresholdCheckType_ = other.thresholdCheckType_;
@@ -94,6 +103,7 @@ namespace AElf.Standards.ACS5 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MethodCallingThreshold Clone() {
       return new MethodCallingThreshold(this);
     }
@@ -107,6 +117,7 @@ namespace AElf.Standards.ACS5 {
     /// The order matters.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, long> SymbolToAmount {
       get { return symbolToAmount_; }
     }
@@ -115,6 +126,7 @@ namespace AElf.Standards.ACS5 {
     public const int ThresholdCheckTypeFieldNumber = 2;
     private global::AElf.Standards.ACS5.ThresholdCheckType thresholdCheckType_ = global::AElf.Standards.ACS5.ThresholdCheckType.Balance;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS5.ThresholdCheckType ThresholdCheckType {
       get { return thresholdCheckType_; }
       set {
@@ -123,11 +135,13 @@ namespace AElf.Standards.ACS5 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MethodCallingThreshold);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MethodCallingThreshold other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -141,6 +155,7 @@ namespace AElf.Standards.ACS5 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= SymbolToAmount.GetHashCode();
@@ -152,12 +167,17 @@ namespace AElf.Standards.ACS5 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       symbolToAmount_.WriteTo(output, _map_symbolToAmount_codec);
       if (ThresholdCheckType != global::AElf.Standards.ACS5.ThresholdCheckType.Balance) {
         output.WriteRawTag(16);
@@ -166,9 +186,26 @@ namespace AElf.Standards.ACS5 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      symbolToAmount_.WriteTo(ref output, _map_symbolToAmount_codec);
+      if (ThresholdCheckType != global::AElf.Standards.ACS5.ThresholdCheckType.Balance) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) ThresholdCheckType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += symbolToAmount_.CalculateSize(_map_symbolToAmount_codec);
@@ -182,6 +219,7 @@ namespace AElf.Standards.ACS5 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MethodCallingThreshold other) {
       if (other == null) {
         return;
@@ -194,7 +232,11 @@ namespace AElf.Standards.ACS5 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -211,27 +253,59 @@ namespace AElf.Standards.ACS5 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            symbolToAmount_.AddEntriesFrom(ref input, _map_symbolToAmount_codec);
+            break;
+          }
+          case 16: {
+            ThresholdCheckType = (global::AElf.Standards.ACS5.ThresholdCheckType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class SetMethodCallingThresholdInput : pb::IMessage<SetMethodCallingThresholdInput> {
+  internal sealed partial class SetMethodCallingThresholdInput : pb::IMessage<SetMethodCallingThresholdInput>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SetMethodCallingThresholdInput> _parser = new pb::MessageParser<SetMethodCallingThresholdInput>(() => new SetMethodCallingThresholdInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SetMethodCallingThresholdInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS5.Acs5Reflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SetMethodCallingThresholdInput() {
       OnConstruction();
     }
@@ -239,6 +313,7 @@ namespace AElf.Standards.ACS5 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SetMethodCallingThresholdInput(SetMethodCallingThresholdInput other) : this() {
       method_ = other.method_;
       symbolToAmount_ = other.symbolToAmount_.Clone();
@@ -247,6 +322,7 @@ namespace AElf.Standards.ACS5 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SetMethodCallingThresholdInput Clone() {
       return new SetMethodCallingThresholdInput(this);
     }
@@ -255,6 +331,7 @@ namespace AElf.Standards.ACS5 {
     public const int MethodFieldNumber = 1;
     private string method_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Method {
       get { return method_; }
       set {
@@ -271,6 +348,7 @@ namespace AElf.Standards.ACS5 {
     /// The order matters.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, long> SymbolToAmount {
       get { return symbolToAmount_; }
     }
@@ -279,6 +357,7 @@ namespace AElf.Standards.ACS5 {
     public const int ThresholdCheckTypeFieldNumber = 3;
     private global::AElf.Standards.ACS5.ThresholdCheckType thresholdCheckType_ = global::AElf.Standards.ACS5.ThresholdCheckType.Balance;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS5.ThresholdCheckType ThresholdCheckType {
       get { return thresholdCheckType_; }
       set {
@@ -287,11 +366,13 @@ namespace AElf.Standards.ACS5 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SetMethodCallingThresholdInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SetMethodCallingThresholdInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -306,6 +387,7 @@ namespace AElf.Standards.ACS5 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Method.Length != 0) hash ^= Method.GetHashCode();
@@ -318,12 +400,17 @@ namespace AElf.Standards.ACS5 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Method.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Method);
@@ -336,9 +423,30 @@ namespace AElf.Standards.ACS5 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Method.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Method);
+      }
+      symbolToAmount_.WriteTo(ref output, _map_symbolToAmount_codec);
+      if (ThresholdCheckType != global::AElf.Standards.ACS5.ThresholdCheckType.Balance) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) ThresholdCheckType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Method.Length != 0) {
@@ -355,6 +463,7 @@ namespace AElf.Standards.ACS5 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SetMethodCallingThresholdInput other) {
       if (other == null) {
         return;
@@ -370,7 +479,11 @@ namespace AElf.Standards.ACS5 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -391,7 +504,35 @@ namespace AElf.Standards.ACS5 {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Method = input.ReadString();
+            break;
+          }
+          case 18: {
+            symbolToAmount_.AddEntriesFrom(ref input, _map_symbolToAmount_codec);
+            break;
+          }
+          case 24: {
+            ThresholdCheckType = (global::AElf.Standards.ACS5.ThresholdCheckType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

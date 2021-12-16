@@ -180,23 +180,31 @@ namespace AElf.Contracts.CrossChain {
   #endregion
 
   #region Messages
-  internal sealed partial class InitializeInput : pb::IMessage<InitializeInput> {
+  internal sealed partial class InitializeInput : pb::IMessage<InitializeInput>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<InitializeInput> _parser = new pb::MessageParser<InitializeInput>(() => new InitializeInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<InitializeInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InitializeInput() {
       OnConstruction();
     }
@@ -204,6 +212,7 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InitializeInput(InitializeInput other) : this() {
       parentChainId_ = other.parentChainId_;
       creationHeightOnParentChain_ = other.creationHeightOnParentChain_;
@@ -212,6 +221,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InitializeInput Clone() {
       return new InitializeInput(this);
     }
@@ -220,6 +230,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ParentChainIdFieldNumber = 1;
     private int parentChainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ParentChainId {
       get { return parentChainId_; }
       set {
@@ -231,6 +242,7 @@ namespace AElf.Contracts.CrossChain {
     public const int CreationHeightOnParentChainFieldNumber = 2;
     private long creationHeightOnParentChain_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long CreationHeightOnParentChain {
       get { return creationHeightOnParentChain_; }
       set {
@@ -242,6 +254,7 @@ namespace AElf.Contracts.CrossChain {
     public const int IsPrivilegePreservedFieldNumber = 3;
     private bool isPrivilegePreserved_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsPrivilegePreserved {
       get { return isPrivilegePreserved_; }
       set {
@@ -250,11 +263,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as InitializeInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(InitializeInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -269,6 +284,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ParentChainId != 0) hash ^= ParentChainId.GetHashCode();
@@ -281,12 +297,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ParentChainId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(ParentChainId);
@@ -302,9 +323,33 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ParentChainId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ParentChainId);
+      }
+      if (CreationHeightOnParentChain != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(CreationHeightOnParentChain);
+      }
+      if (IsPrivilegePreserved != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsPrivilegePreserved);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ParentChainId != 0) {
@@ -323,6 +368,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(InitializeInput other) {
       if (other == null) {
         return;
@@ -340,7 +386,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -361,27 +411,63 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ParentChainId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            CreationHeightOnParentChain = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            IsPrivilegePreserved = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class IndexedChainHeightDict : pb::IMessage<IndexedChainHeightDict> {
+  internal sealed partial class IndexedChainHeightDict : pb::IMessage<IndexedChainHeightDict>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<IndexedChainHeightDict> _parser = new pb::MessageParser<IndexedChainHeightDict>(() => new IndexedChainHeightDict());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<IndexedChainHeightDict> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IndexedChainHeightDict() {
       OnConstruction();
     }
@@ -389,12 +475,14 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IndexedChainHeightDict(IndexedChainHeightDict other) : this() {
       indexedChainHeights_ = other.indexedChainHeights_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IndexedChainHeightDict Clone() {
       return new IndexedChainHeightDict(this);
     }
@@ -405,16 +493,19 @@ namespace AElf.Contracts.CrossChain {
         = new pbc::MapField<int, long>.Codec(pb::FieldCodec.ForInt32(8, 0), pb::FieldCodec.ForInt64(16, 0L), 10);
     private readonly pbc::MapField<int, long> indexedChainHeights_ = new pbc::MapField<int, long>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<int, long> IndexedChainHeights {
       get { return indexedChainHeights_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as IndexedChainHeightDict);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(IndexedChainHeightDict other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -427,6 +518,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= IndexedChainHeights.GetHashCode();
@@ -437,19 +529,37 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       indexedChainHeights_.WriteTo(output, _map_indexedChainHeights_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      indexedChainHeights_.WriteTo(ref output, _map_indexedChainHeights_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += indexedChainHeights_.CalculateSize(_map_indexedChainHeights_codec);
@@ -460,6 +570,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(IndexedChainHeightDict other) {
       if (other == null) {
         return;
@@ -469,7 +580,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -482,30 +597,58 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            indexedChainHeights_.AddEntriesFrom(ref input, _map_indexedChainHeights_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
   /// <summary>
   /// Events
   /// </summary>
-  internal sealed partial class SideChainCreatedEvent : pb::IMessage<SideChainCreatedEvent> {
+  internal sealed partial class SideChainCreatedEvent : pb::IMessage<SideChainCreatedEvent>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SideChainCreatedEvent> _parser = new pb::MessageParser<SideChainCreatedEvent>(() => new SideChainCreatedEvent());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SideChainCreatedEvent> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainCreatedEvent() {
       OnConstruction();
     }
@@ -513,6 +656,7 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainCreatedEvent(SideChainCreatedEvent other) : this() {
       creator_ = other.creator_ != null ? other.creator_.Clone() : null;
       chainId_ = other.chainId_;
@@ -520,6 +664,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainCreatedEvent Clone() {
       return new SideChainCreatedEvent(this);
     }
@@ -528,6 +673,7 @@ namespace AElf.Contracts.CrossChain {
     public const int CreatorFieldNumber = 1;
     private global::AElf.Types.Address creator_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Creator {
       get { return creator_; }
       set {
@@ -539,6 +685,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ChainIdFieldNumber = 2;
     private int chainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ChainId {
       get { return chainId_; }
       set {
@@ -547,11 +694,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SideChainCreatedEvent);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SideChainCreatedEvent other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -565,6 +714,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (creator_ != null) hash ^= Creator.GetHashCode();
@@ -576,12 +726,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (creator_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Creator);
@@ -593,9 +748,29 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (creator_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Creator);
+      }
+      if (ChainId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ChainId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (creator_ != null) {
@@ -611,6 +786,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SideChainCreatedEvent other) {
       if (other == null) {
         return;
@@ -628,7 +804,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -648,27 +828,62 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (creator_ == null) {
+              Creator = new global::AElf.Types.Address();
+            }
+            input.ReadMessage(Creator);
+            break;
+          }
+          case 16: {
+            ChainId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class Disposed : pb::IMessage<Disposed> {
+  internal sealed partial class Disposed : pb::IMessage<Disposed>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<Disposed> _parser = new pb::MessageParser<Disposed>(() => new Disposed());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Disposed> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Disposed() {
       OnConstruction();
     }
@@ -676,12 +891,14 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Disposed(Disposed other) : this() {
       chainId_ = other.chainId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Disposed Clone() {
       return new Disposed(this);
     }
@@ -690,6 +907,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ChainIdFieldNumber = 1;
     private int chainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ChainId {
       get { return chainId_; }
       set {
@@ -698,11 +916,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Disposed);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Disposed other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -715,6 +935,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ChainId != 0) hash ^= ChainId.GetHashCode();
@@ -725,12 +946,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ChainId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(ChainId);
@@ -738,9 +964,25 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ChainId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChainId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ChainId != 0) {
@@ -753,6 +995,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Disposed other) {
       if (other == null) {
         return;
@@ -764,7 +1007,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -777,27 +1024,55 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ChainId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class ProposedCrossChainIndexing : pb::IMessage<ProposedCrossChainIndexing> {
+  internal sealed partial class ProposedCrossChainIndexing : pb::IMessage<ProposedCrossChainIndexing>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ProposedCrossChainIndexing> _parser = new pb::MessageParser<ProposedCrossChainIndexing>(() => new ProposedCrossChainIndexing());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ProposedCrossChainIndexing> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposedCrossChainIndexing() {
       OnConstruction();
     }
@@ -805,12 +1080,14 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposedCrossChainIndexing(ProposedCrossChainIndexing other) : this() {
       chainIndexingProposalCollections_ = other.chainIndexingProposalCollections_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposedCrossChainIndexing Clone() {
       return new ProposedCrossChainIndexing(this);
     }
@@ -821,16 +1098,19 @@ namespace AElf.Contracts.CrossChain {
         = new pbc::MapField<int, global::AElf.Contracts.CrossChain.ChainIndexingProposal>.Codec(pb::FieldCodec.ForInt32(8, 0), pb::FieldCodec.ForMessage(18, global::AElf.Contracts.CrossChain.ChainIndexingProposal.Parser), 10);
     private readonly pbc::MapField<int, global::AElf.Contracts.CrossChain.ChainIndexingProposal> chainIndexingProposalCollections_ = new pbc::MapField<int, global::AElf.Contracts.CrossChain.ChainIndexingProposal>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<int, global::AElf.Contracts.CrossChain.ChainIndexingProposal> ChainIndexingProposalCollections {
       get { return chainIndexingProposalCollections_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ProposedCrossChainIndexing);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ProposedCrossChainIndexing other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -843,6 +1123,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= ChainIndexingProposalCollections.GetHashCode();
@@ -853,19 +1134,37 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       chainIndexingProposalCollections_.WriteTo(output, _map_chainIndexingProposalCollections_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      chainIndexingProposalCollections_.WriteTo(ref output, _map_chainIndexingProposalCollections_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += chainIndexingProposalCollections_.CalculateSize(_map_chainIndexingProposalCollections_codec);
@@ -876,6 +1175,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ProposedCrossChainIndexing other) {
       if (other == null) {
         return;
@@ -885,7 +1185,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -898,27 +1202,55 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            chainIndexingProposalCollections_.AddEntriesFrom(ref input, _map_chainIndexingProposalCollections_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class ChainIndexingProposal : pb::IMessage<ChainIndexingProposal> {
+  internal sealed partial class ChainIndexingProposal : pb::IMessage<ChainIndexingProposal>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ChainIndexingProposal> _parser = new pb::MessageParser<ChainIndexingProposal>(() => new ChainIndexingProposal());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ChainIndexingProposal> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainIndexingProposal() {
       OnConstruction();
     }
@@ -926,6 +1258,7 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainIndexingProposal(ChainIndexingProposal other) : this() {
       proposalId_ = other.proposalId_ != null ? other.proposalId_.Clone() : null;
       proposer_ = other.proposer_ != null ? other.proposer_.Clone() : null;
@@ -936,6 +1269,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChainIndexingProposal Clone() {
       return new ChainIndexingProposal(this);
     }
@@ -944,6 +1278,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ProposalIdFieldNumber = 1;
     private global::AElf.Types.Hash proposalId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash ProposalId {
       get { return proposalId_; }
       set {
@@ -955,6 +1290,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ProposerFieldNumber = 2;
     private global::AElf.Types.Address proposer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Proposer {
       get { return proposer_; }
       set {
@@ -966,6 +1302,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ProposedCrossChainBlockDataFieldNumber = 3;
     private global::AElf.Standards.ACS7.CrossChainBlockData proposedCrossChainBlockData_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS7.CrossChainBlockData ProposedCrossChainBlockData {
       get { return proposedCrossChainBlockData_; }
       set {
@@ -977,6 +1314,7 @@ namespace AElf.Contracts.CrossChain {
     public const int StatusFieldNumber = 4;
     private global::AElf.Contracts.CrossChain.CrossChainIndexingProposalStatus status_ = global::AElf.Contracts.CrossChain.CrossChainIndexingProposalStatus.NonProposed;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Contracts.CrossChain.CrossChainIndexingProposalStatus Status {
       get { return status_; }
       set {
@@ -988,6 +1326,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ChainIdFieldNumber = 5;
     private int chainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ChainId {
       get { return chainId_; }
       set {
@@ -996,11 +1335,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ChainIndexingProposal);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ChainIndexingProposal other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1017,6 +1358,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (proposalId_ != null) hash ^= ProposalId.GetHashCode();
@@ -1031,12 +1373,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (proposalId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(ProposalId);
@@ -1060,9 +1407,41 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (proposalId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ProposalId);
+      }
+      if (proposer_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Proposer);
+      }
+      if (proposedCrossChainBlockData_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ProposedCrossChainBlockData);
+      }
+      if (Status != global::AElf.Contracts.CrossChain.CrossChainIndexingProposalStatus.NonProposed) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) Status);
+      }
+      if (ChainId != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(ChainId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (proposalId_ != null) {
@@ -1087,6 +1466,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ChainIndexingProposal other) {
       if (other == null) {
         return;
@@ -1119,7 +1499,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1157,27 +1541,80 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (proposalId_ == null) {
+              ProposalId = new global::AElf.Types.Hash();
+            }
+            input.ReadMessage(ProposalId);
+            break;
+          }
+          case 18: {
+            if (proposer_ == null) {
+              Proposer = new global::AElf.Types.Address();
+            }
+            input.ReadMessage(Proposer);
+            break;
+          }
+          case 26: {
+            if (proposedCrossChainBlockData_ == null) {
+              ProposedCrossChainBlockData = new global::AElf.Standards.ACS7.CrossChainBlockData();
+            }
+            input.ReadMessage(ProposedCrossChainBlockData);
+            break;
+          }
+          case 32: {
+            Status = (global::AElf.Contracts.CrossChain.CrossChainIndexingProposalStatus) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            ChainId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class GetIndexingProposalStatusOutput : pb::IMessage<GetIndexingProposalStatusOutput> {
+  internal sealed partial class GetIndexingProposalStatusOutput : pb::IMessage<GetIndexingProposalStatusOutput>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetIndexingProposalStatusOutput> _parser = new pb::MessageParser<GetIndexingProposalStatusOutput>(() => new GetIndexingProposalStatusOutput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GetIndexingProposalStatusOutput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetIndexingProposalStatusOutput() {
       OnConstruction();
     }
@@ -1185,12 +1622,14 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetIndexingProposalStatusOutput(GetIndexingProposalStatusOutput other) : this() {
       chainIndexingProposalStatus_ = other.chainIndexingProposalStatus_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetIndexingProposalStatusOutput Clone() {
       return new GetIndexingProposalStatusOutput(this);
     }
@@ -1201,16 +1640,19 @@ namespace AElf.Contracts.CrossChain {
         = new pbc::MapField<int, global::AElf.Contracts.CrossChain.PendingChainIndexingProposalStatus>.Codec(pb::FieldCodec.ForInt32(8, 0), pb::FieldCodec.ForMessage(18, global::AElf.Contracts.CrossChain.PendingChainIndexingProposalStatus.Parser), 10);
     private readonly pbc::MapField<int, global::AElf.Contracts.CrossChain.PendingChainIndexingProposalStatus> chainIndexingProposalStatus_ = new pbc::MapField<int, global::AElf.Contracts.CrossChain.PendingChainIndexingProposalStatus>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<int, global::AElf.Contracts.CrossChain.PendingChainIndexingProposalStatus> ChainIndexingProposalStatus {
       get { return chainIndexingProposalStatus_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GetIndexingProposalStatusOutput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GetIndexingProposalStatusOutput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1223,6 +1665,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= ChainIndexingProposalStatus.GetHashCode();
@@ -1233,19 +1676,37 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       chainIndexingProposalStatus_.WriteTo(output, _map_chainIndexingProposalStatus_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      chainIndexingProposalStatus_.WriteTo(ref output, _map_chainIndexingProposalStatus_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += chainIndexingProposalStatus_.CalculateSize(_map_chainIndexingProposalStatus_codec);
@@ -1256,6 +1717,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GetIndexingProposalStatusOutput other) {
       if (other == null) {
         return;
@@ -1265,7 +1727,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1278,27 +1744,55 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            chainIndexingProposalStatus_.AddEntriesFrom(ref input, _map_chainIndexingProposalStatus_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class PendingChainIndexingProposalStatus : pb::IMessage<PendingChainIndexingProposalStatus> {
+  internal sealed partial class PendingChainIndexingProposalStatus : pb::IMessage<PendingChainIndexingProposalStatus>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<PendingChainIndexingProposalStatus> _parser = new pb::MessageParser<PendingChainIndexingProposalStatus>(() => new PendingChainIndexingProposalStatus());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PendingChainIndexingProposalStatus> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PendingChainIndexingProposalStatus() {
       OnConstruction();
     }
@@ -1306,6 +1800,7 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PendingChainIndexingProposalStatus(PendingChainIndexingProposalStatus other) : this() {
       proposalId_ = other.proposalId_ != null ? other.proposalId_.Clone() : null;
       proposer_ = other.proposer_ != null ? other.proposer_.Clone() : null;
@@ -1316,6 +1811,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PendingChainIndexingProposalStatus Clone() {
       return new PendingChainIndexingProposalStatus(this);
     }
@@ -1324,6 +1820,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ProposalIdFieldNumber = 1;
     private global::AElf.Types.Hash proposalId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash ProposalId {
       get { return proposalId_; }
       set {
@@ -1335,6 +1832,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ProposerFieldNumber = 2;
     private global::AElf.Types.Address proposer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Proposer {
       get { return proposer_; }
       set {
@@ -1346,6 +1844,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ToBeReleasedFieldNumber = 3;
     private bool toBeReleased_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ToBeReleased {
       get { return toBeReleased_; }
       set {
@@ -1357,6 +1856,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ProposedCrossChainBlockDataFieldNumber = 4;
     private global::AElf.Standards.ACS7.CrossChainBlockData proposedCrossChainBlockData_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS7.CrossChainBlockData ProposedCrossChainBlockData {
       get { return proposedCrossChainBlockData_; }
       set {
@@ -1368,6 +1868,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ExpiredTimeFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp expiredTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ExpiredTime {
       get { return expiredTime_; }
       set {
@@ -1376,11 +1877,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PendingChainIndexingProposalStatus);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PendingChainIndexingProposalStatus other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1397,6 +1900,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (proposalId_ != null) hash ^= ProposalId.GetHashCode();
@@ -1411,12 +1915,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (proposalId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(ProposalId);
@@ -1440,9 +1949,41 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (proposalId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ProposalId);
+      }
+      if (proposer_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Proposer);
+      }
+      if (ToBeReleased != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(ToBeReleased);
+      }
+      if (proposedCrossChainBlockData_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ProposedCrossChainBlockData);
+      }
+      if (expiredTime_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ExpiredTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (proposalId_ != null) {
@@ -1467,6 +2008,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PendingChainIndexingProposalStatus other) {
       if (other == null) {
         return;
@@ -1502,7 +2044,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1543,27 +2089,83 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (proposalId_ == null) {
+              ProposalId = new global::AElf.Types.Hash();
+            }
+            input.ReadMessage(ProposalId);
+            break;
+          }
+          case 18: {
+            if (proposer_ == null) {
+              Proposer = new global::AElf.Types.Address();
+            }
+            input.ReadMessage(Proposer);
+            break;
+          }
+          case 24: {
+            ToBeReleased = input.ReadBool();
+            break;
+          }
+          case 34: {
+            if (proposedCrossChainBlockData_ == null) {
+              ProposedCrossChainBlockData = new global::AElf.Standards.ACS7.CrossChainBlockData();
+            }
+            input.ReadMessage(ProposedCrossChainBlockData);
+            break;
+          }
+          case 42: {
+            if (expiredTime_ == null) {
+              ExpiredTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ExpiredTime);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class GetPendingCrossChainIndexingProposalOutput : pb::IMessage<GetPendingCrossChainIndexingProposalOutput> {
+  internal sealed partial class GetPendingCrossChainIndexingProposalOutput : pb::IMessage<GetPendingCrossChainIndexingProposalOutput>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetPendingCrossChainIndexingProposalOutput> _parser = new pb::MessageParser<GetPendingCrossChainIndexingProposalOutput>(() => new GetPendingCrossChainIndexingProposalOutput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GetPendingCrossChainIndexingProposalOutput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetPendingCrossChainIndexingProposalOutput() {
       OnConstruction();
     }
@@ -1571,6 +2173,7 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetPendingCrossChainIndexingProposalOutput(GetPendingCrossChainIndexingProposalOutput other) : this() {
       proposalId_ = other.proposalId_ != null ? other.proposalId_.Clone() : null;
       proposer_ = other.proposer_ != null ? other.proposer_.Clone() : null;
@@ -1581,6 +2184,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetPendingCrossChainIndexingProposalOutput Clone() {
       return new GetPendingCrossChainIndexingProposalOutput(this);
     }
@@ -1589,6 +2193,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ProposalIdFieldNumber = 1;
     private global::AElf.Types.Hash proposalId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash ProposalId {
       get { return proposalId_; }
       set {
@@ -1600,6 +2205,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ProposerFieldNumber = 2;
     private global::AElf.Types.Address proposer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Proposer {
       get { return proposer_; }
       set {
@@ -1611,6 +2217,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ToBeReleasedFieldNumber = 3;
     private bool toBeReleased_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ToBeReleased {
       get { return toBeReleased_; }
       set {
@@ -1622,6 +2229,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ProposedCrossChainBlockDataFieldNumber = 4;
     private global::AElf.Standards.ACS7.CrossChainBlockData proposedCrossChainBlockData_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS7.CrossChainBlockData ProposedCrossChainBlockData {
       get { return proposedCrossChainBlockData_; }
       set {
@@ -1633,6 +2241,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ExpiredTimeFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp expiredTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ExpiredTime {
       get { return expiredTime_; }
       set {
@@ -1641,11 +2250,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GetPendingCrossChainIndexingProposalOutput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GetPendingCrossChainIndexingProposalOutput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1662,6 +2273,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (proposalId_ != null) hash ^= ProposalId.GetHashCode();
@@ -1676,12 +2288,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (proposalId_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(ProposalId);
@@ -1705,9 +2322,41 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (proposalId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ProposalId);
+      }
+      if (proposer_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Proposer);
+      }
+      if (ToBeReleased != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(ToBeReleased);
+      }
+      if (proposedCrossChainBlockData_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ProposedCrossChainBlockData);
+      }
+      if (expiredTime_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ExpiredTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (proposalId_ != null) {
@@ -1732,6 +2381,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GetPendingCrossChainIndexingProposalOutput other) {
       if (other == null) {
         return;
@@ -1767,7 +2417,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1808,27 +2462,83 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (proposalId_ == null) {
+              ProposalId = new global::AElf.Types.Hash();
+            }
+            input.ReadMessage(ProposalId);
+            break;
+          }
+          case 18: {
+            if (proposer_ == null) {
+              Proposer = new global::AElf.Types.Address();
+            }
+            input.ReadMessage(Proposer);
+            break;
+          }
+          case 24: {
+            ToBeReleased = input.ReadBool();
+            break;
+          }
+          case 34: {
+            if (proposedCrossChainBlockData_ == null) {
+              ProposedCrossChainBlockData = new global::AElf.Standards.ACS7.CrossChainBlockData();
+            }
+            input.ReadMessage(ProposedCrossChainBlockData);
+            break;
+          }
+          case 42: {
+            if (expiredTime_ == null) {
+              ExpiredTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ExpiredTime);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class GetSideChainIndexingFeeControllerOutput : pb::IMessage<GetSideChainIndexingFeeControllerOutput> {
+  internal sealed partial class GetSideChainIndexingFeeControllerOutput : pb::IMessage<GetSideChainIndexingFeeControllerOutput>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetSideChainIndexingFeeControllerOutput> _parser = new pb::MessageParser<GetSideChainIndexingFeeControllerOutput>(() => new GetSideChainIndexingFeeControllerOutput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GetSideChainIndexingFeeControllerOutput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetSideChainIndexingFeeControllerOutput() {
       OnConstruction();
     }
@@ -1836,6 +2546,7 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetSideChainIndexingFeeControllerOutput(GetSideChainIndexingFeeControllerOutput other) : this() {
       authorityInfo_ = other.authorityInfo_ != null ? other.authorityInfo_.Clone() : null;
       organizationCreationInputBytes_ = other.organizationCreationInputBytes_;
@@ -1843,6 +2554,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetSideChainIndexingFeeControllerOutput Clone() {
       return new GetSideChainIndexingFeeControllerOutput(this);
     }
@@ -1851,6 +2563,7 @@ namespace AElf.Contracts.CrossChain {
     public const int AuthorityInfoFieldNumber = 1;
     private global::AuthorityInfo authorityInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AuthorityInfo AuthorityInfo {
       get { return authorityInfo_; }
       set {
@@ -1862,6 +2575,7 @@ namespace AElf.Contracts.CrossChain {
     public const int OrganizationCreationInputBytesFieldNumber = 2;
     private pb::ByteString organizationCreationInputBytes_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString OrganizationCreationInputBytes {
       get { return organizationCreationInputBytes_; }
       set {
@@ -1870,11 +2584,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GetSideChainIndexingFeeControllerOutput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GetSideChainIndexingFeeControllerOutput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1888,6 +2604,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (authorityInfo_ != null) hash ^= AuthorityInfo.GetHashCode();
@@ -1899,12 +2616,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (authorityInfo_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(AuthorityInfo);
@@ -1916,9 +2638,29 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (authorityInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(AuthorityInfo);
+      }
+      if (OrganizationCreationInputBytes.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(OrganizationCreationInputBytes);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (authorityInfo_ != null) {
@@ -1934,6 +2676,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GetSideChainIndexingFeeControllerOutput other) {
       if (other == null) {
         return;
@@ -1951,7 +2694,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1971,27 +2718,62 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (authorityInfo_ == null) {
+              AuthorityInfo = new global::AuthorityInfo();
+            }
+            input.ReadMessage(AuthorityInfo);
+            break;
+          }
+          case 18: {
+            OrganizationCreationInputBytes = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class SideChainInfo : pb::IMessage<SideChainInfo> {
+  internal sealed partial class SideChainInfo : pb::IMessage<SideChainInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SideChainInfo> _parser = new pb::MessageParser<SideChainInfo>(() => new SideChainInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SideChainInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainInfo() {
       OnConstruction();
     }
@@ -1999,6 +2781,7 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainInfo(SideChainInfo other) : this() {
       proposer_ = other.proposer_ != null ? other.proposer_.Clone() : null;
       sideChainStatus_ = other.sideChainStatus_;
@@ -2013,6 +2796,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainInfo Clone() {
       return new SideChainInfo(this);
     }
@@ -2021,6 +2805,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ProposerFieldNumber = 1;
     private global::AElf.Types.Address proposer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Proposer {
       get { return proposer_; }
       set {
@@ -2032,6 +2817,7 @@ namespace AElf.Contracts.CrossChain {
     public const int SideChainStatusFieldNumber = 2;
     private global::AElf.Contracts.CrossChain.SideChainStatus sideChainStatus_ = global::AElf.Contracts.CrossChain.SideChainStatus.Fatal;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Contracts.CrossChain.SideChainStatus SideChainStatus {
       get { return sideChainStatus_; }
       set {
@@ -2043,6 +2829,7 @@ namespace AElf.Contracts.CrossChain {
     public const int SideChainIdFieldNumber = 3;
     private int sideChainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int SideChainId {
       get { return sideChainId_; }
       set {
@@ -2054,6 +2841,7 @@ namespace AElf.Contracts.CrossChain {
     public const int CreationTimestampFieldNumber = 4;
     private global::Google.Protobuf.WellKnownTypes.Timestamp creationTimestamp_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreationTimestamp {
       get { return creationTimestamp_; }
       set {
@@ -2065,6 +2853,7 @@ namespace AElf.Contracts.CrossChain {
     public const int CreationHeightOnParentChainFieldNumber = 5;
     private long creationHeightOnParentChain_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long CreationHeightOnParentChain {
       get { return creationHeightOnParentChain_; }
       set {
@@ -2076,6 +2865,7 @@ namespace AElf.Contracts.CrossChain {
     public const int IndexingPriceFieldNumber = 6;
     private long indexingPrice_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long IndexingPrice {
       get { return indexingPrice_; }
       set {
@@ -2087,6 +2877,7 @@ namespace AElf.Contracts.CrossChain {
     public const int IsPrivilegePreservedFieldNumber = 7;
     private bool isPrivilegePreserved_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsPrivilegePreserved {
       get { return isPrivilegePreserved_; }
       set {
@@ -2100,6 +2891,7 @@ namespace AElf.Contracts.CrossChain {
         = new pbc::MapField<string, long>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForInt64(16, 0L), 66);
     private readonly pbc::MapField<string, long> arrearsInfo_ = new pbc::MapField<string, long>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, long> ArrearsInfo {
       get { return arrearsInfo_; }
     }
@@ -2108,6 +2900,7 @@ namespace AElf.Contracts.CrossChain {
     public const int IndexingFeeControllerFieldNumber = 9;
     private global::AuthorityInfo indexingFeeController_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AuthorityInfo IndexingFeeController {
       get { return indexingFeeController_; }
       set {
@@ -2116,11 +2909,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SideChainInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SideChainInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2141,6 +2936,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (proposer_ != null) hash ^= Proposer.GetHashCode();
@@ -2159,12 +2955,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (proposer_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Proposer);
@@ -2201,9 +3002,54 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (proposer_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Proposer);
+      }
+      if (SideChainStatus != global::AElf.Contracts.CrossChain.SideChainStatus.Fatal) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) SideChainStatus);
+      }
+      if (SideChainId != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(SideChainId);
+      }
+      if (creationTimestamp_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(CreationTimestamp);
+      }
+      if (CreationHeightOnParentChain != 0L) {
+        output.WriteRawTag(40);
+        output.WriteInt64(CreationHeightOnParentChain);
+      }
+      if (IndexingPrice != 0L) {
+        output.WriteRawTag(48);
+        output.WriteInt64(IndexingPrice);
+      }
+      if (IsPrivilegePreserved != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(IsPrivilegePreserved);
+      }
+      arrearsInfo_.WriteTo(ref output, _map_arrearsInfo_codec);
+      if (indexingFeeController_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(IndexingFeeController);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (proposer_ != null) {
@@ -2238,6 +3084,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SideChainInfo other) {
       if (other == null) {
         return;
@@ -2280,7 +3127,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2334,27 +3185,96 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (proposer_ == null) {
+              Proposer = new global::AElf.Types.Address();
+            }
+            input.ReadMessage(Proposer);
+            break;
+          }
+          case 16: {
+            SideChainStatus = (global::AElf.Contracts.CrossChain.SideChainStatus) input.ReadEnum();
+            break;
+          }
+          case 24: {
+            SideChainId = input.ReadInt32();
+            break;
+          }
+          case 34: {
+            if (creationTimestamp_ == null) {
+              CreationTimestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreationTimestamp);
+            break;
+          }
+          case 40: {
+            CreationHeightOnParentChain = input.ReadInt64();
+            break;
+          }
+          case 48: {
+            IndexingPrice = input.ReadInt64();
+            break;
+          }
+          case 56: {
+            IsPrivilegePreserved = input.ReadBool();
+            break;
+          }
+          case 66: {
+            arrearsInfo_.AddEntriesFrom(ref input, _map_arrearsInfo_codec);
+            break;
+          }
+          case 74: {
+            if (indexingFeeController_ == null) {
+              IndexingFeeController = new global::AuthorityInfo();
+            }
+            input.ReadMessage(IndexingFeeController);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class GetChainStatusOutput : pb::IMessage<GetChainStatusOutput> {
+  internal sealed partial class GetChainStatusOutput : pb::IMessage<GetChainStatusOutput>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<GetChainStatusOutput> _parser = new pb::MessageParser<GetChainStatusOutput>(() => new GetChainStatusOutput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GetChainStatusOutput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetChainStatusOutput() {
       OnConstruction();
     }
@@ -2362,12 +3282,14 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetChainStatusOutput(GetChainStatusOutput other) : this() {
       status_ = other.status_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetChainStatusOutput Clone() {
       return new GetChainStatusOutput(this);
     }
@@ -2376,6 +3298,7 @@ namespace AElf.Contracts.CrossChain {
     public const int StatusFieldNumber = 1;
     private global::AElf.Contracts.CrossChain.SideChainStatus status_ = global::AElf.Contracts.CrossChain.SideChainStatus.Fatal;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Contracts.CrossChain.SideChainStatus Status {
       get { return status_; }
       set {
@@ -2384,11 +3307,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GetChainStatusOutput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GetChainStatusOutput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2401,6 +3326,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Status != global::AElf.Contracts.CrossChain.SideChainStatus.Fatal) hash ^= Status.GetHashCode();
@@ -2411,12 +3337,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (Status != global::AElf.Contracts.CrossChain.SideChainStatus.Fatal) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Status);
@@ -2424,9 +3355,25 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Status != global::AElf.Contracts.CrossChain.SideChainStatus.Fatal) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Status);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Status != global::AElf.Contracts.CrossChain.SideChainStatus.Fatal) {
@@ -2439,6 +3386,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GetChainStatusOutput other) {
       if (other == null) {
         return;
@@ -2450,7 +3398,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2463,27 +3415,55 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Status = (global::AElf.Contracts.CrossChain.SideChainStatus) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class SideChainCreationRequestState : pb::IMessage<SideChainCreationRequestState> {
+  internal sealed partial class SideChainCreationRequestState : pb::IMessage<SideChainCreationRequestState>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SideChainCreationRequestState> _parser = new pb::MessageParser<SideChainCreationRequestState>(() => new SideChainCreationRequestState());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SideChainCreationRequestState> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainCreationRequestState() {
       OnConstruction();
     }
@@ -2491,6 +3471,7 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainCreationRequestState(SideChainCreationRequestState other) : this() {
       sideChainCreationRequest_ = other.sideChainCreationRequest_ != null ? other.sideChainCreationRequest_.Clone() : null;
       expiredTime_ = other.expiredTime_ != null ? other.expiredTime_.Clone() : null;
@@ -2499,6 +3480,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainCreationRequestState Clone() {
       return new SideChainCreationRequestState(this);
     }
@@ -2507,6 +3489,7 @@ namespace AElf.Contracts.CrossChain {
     public const int SideChainCreationRequestFieldNumber = 1;
     private global::AElf.Standards.ACS7.SideChainCreationRequest sideChainCreationRequest_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Standards.ACS7.SideChainCreationRequest SideChainCreationRequest {
       get { return sideChainCreationRequest_; }
       set {
@@ -2518,6 +3501,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ExpiredTimeFieldNumber = 2;
     private global::Google.Protobuf.WellKnownTypes.Timestamp expiredTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ExpiredTime {
       get { return expiredTime_; }
       set {
@@ -2529,6 +3513,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ProposerFieldNumber = 3;
     private global::AElf.Types.Address proposer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address Proposer {
       get { return proposer_; }
       set {
@@ -2537,11 +3522,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SideChainCreationRequestState);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SideChainCreationRequestState other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2556,6 +3543,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (sideChainCreationRequest_ != null) hash ^= SideChainCreationRequest.GetHashCode();
@@ -2568,12 +3556,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (sideChainCreationRequest_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(SideChainCreationRequest);
@@ -2589,9 +3582,33 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (sideChainCreationRequest_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(SideChainCreationRequest);
+      }
+      if (expiredTime_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ExpiredTime);
+      }
+      if (proposer_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Proposer);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (sideChainCreationRequest_ != null) {
@@ -2610,6 +3627,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SideChainCreationRequestState other) {
       if (other == null) {
         return;
@@ -2636,7 +3654,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2666,27 +3688,72 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (sideChainCreationRequest_ == null) {
+              SideChainCreationRequest = new global::AElf.Standards.ACS7.SideChainCreationRequest();
+            }
+            input.ReadMessage(SideChainCreationRequest);
+            break;
+          }
+          case 18: {
+            if (expiredTime_ == null) {
+              ExpiredTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ExpiredTime);
+            break;
+          }
+          case 26: {
+            if (proposer_ == null) {
+              Proposer = new global::AElf.Types.Address();
+            }
+            input.ReadMessage(Proposer);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class ChangeSideChainIndexingFeeControllerInput : pb::IMessage<ChangeSideChainIndexingFeeControllerInput> {
+  internal sealed partial class ChangeSideChainIndexingFeeControllerInput : pb::IMessage<ChangeSideChainIndexingFeeControllerInput>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<ChangeSideChainIndexingFeeControllerInput> _parser = new pb::MessageParser<ChangeSideChainIndexingFeeControllerInput>(() => new ChangeSideChainIndexingFeeControllerInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ChangeSideChainIndexingFeeControllerInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChangeSideChainIndexingFeeControllerInput() {
       OnConstruction();
     }
@@ -2694,6 +3761,7 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChangeSideChainIndexingFeeControllerInput(ChangeSideChainIndexingFeeControllerInput other) : this() {
       chainId_ = other.chainId_;
       authorityInfo_ = other.authorityInfo_ != null ? other.authorityInfo_.Clone() : null;
@@ -2701,6 +3769,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChangeSideChainIndexingFeeControllerInput Clone() {
       return new ChangeSideChainIndexingFeeControllerInput(this);
     }
@@ -2709,6 +3778,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ChainIdFieldNumber = 1;
     private int chainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ChainId {
       get { return chainId_; }
       set {
@@ -2720,6 +3790,7 @@ namespace AElf.Contracts.CrossChain {
     public const int AuthorityInfoFieldNumber = 2;
     private global::AuthorityInfo authorityInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AuthorityInfo AuthorityInfo {
       get { return authorityInfo_; }
       set {
@@ -2728,11 +3799,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ChangeSideChainIndexingFeeControllerInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ChangeSideChainIndexingFeeControllerInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2746,6 +3819,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ChainId != 0) hash ^= ChainId.GetHashCode();
@@ -2757,12 +3831,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ChainId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(ChainId);
@@ -2774,9 +3853,29 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ChainId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChainId);
+      }
+      if (authorityInfo_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(AuthorityInfo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ChainId != 0) {
@@ -2792,6 +3891,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ChangeSideChainIndexingFeeControllerInput other) {
       if (other == null) {
         return;
@@ -2809,7 +3909,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2829,27 +3933,62 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ChainId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            if (authorityInfo_ == null) {
+              AuthorityInfo = new global::AuthorityInfo();
+            }
+            input.ReadMessage(AuthorityInfo);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class SideChainLifetimeControllerChanged : pb::IMessage<SideChainLifetimeControllerChanged> {
+  internal sealed partial class SideChainLifetimeControllerChanged : pb::IMessage<SideChainLifetimeControllerChanged>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SideChainLifetimeControllerChanged> _parser = new pb::MessageParser<SideChainLifetimeControllerChanged>(() => new SideChainLifetimeControllerChanged());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SideChainLifetimeControllerChanged> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainLifetimeControllerChanged() {
       OnConstruction();
     }
@@ -2857,12 +3996,14 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainLifetimeControllerChanged(SideChainLifetimeControllerChanged other) : this() {
       authorityInfo_ = other.authorityInfo_ != null ? other.authorityInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainLifetimeControllerChanged Clone() {
       return new SideChainLifetimeControllerChanged(this);
     }
@@ -2871,6 +4012,7 @@ namespace AElf.Contracts.CrossChain {
     public const int AuthorityInfoFieldNumber = 1;
     private global::AuthorityInfo authorityInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AuthorityInfo AuthorityInfo {
       get { return authorityInfo_; }
       set {
@@ -2879,11 +4021,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SideChainLifetimeControllerChanged);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SideChainLifetimeControllerChanged other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2896,6 +4040,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (authorityInfo_ != null) hash ^= AuthorityInfo.GetHashCode();
@@ -2906,12 +4051,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (authorityInfo_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(AuthorityInfo);
@@ -2919,9 +4069,25 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (authorityInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(AuthorityInfo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (authorityInfo_ != null) {
@@ -2934,6 +4100,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SideChainLifetimeControllerChanged other) {
       if (other == null) {
         return;
@@ -2948,7 +4115,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2964,27 +4135,58 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (authorityInfo_ == null) {
+              AuthorityInfo = new global::AuthorityInfo();
+            }
+            input.ReadMessage(AuthorityInfo);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class CrossChainIndexingControllerChanged : pb::IMessage<CrossChainIndexingControllerChanged> {
+  internal sealed partial class CrossChainIndexingControllerChanged : pb::IMessage<CrossChainIndexingControllerChanged>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<CrossChainIndexingControllerChanged> _parser = new pb::MessageParser<CrossChainIndexingControllerChanged>(() => new CrossChainIndexingControllerChanged());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CrossChainIndexingControllerChanged> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainIndexingControllerChanged() {
       OnConstruction();
     }
@@ -2992,12 +4194,14 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainIndexingControllerChanged(CrossChainIndexingControllerChanged other) : this() {
       authorityInfo_ = other.authorityInfo_ != null ? other.authorityInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CrossChainIndexingControllerChanged Clone() {
       return new CrossChainIndexingControllerChanged(this);
     }
@@ -3006,6 +4210,7 @@ namespace AElf.Contracts.CrossChain {
     public const int AuthorityInfoFieldNumber = 1;
     private global::AuthorityInfo authorityInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AuthorityInfo AuthorityInfo {
       get { return authorityInfo_; }
       set {
@@ -3014,11 +4219,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CrossChainIndexingControllerChanged);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CrossChainIndexingControllerChanged other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3031,6 +4238,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (authorityInfo_ != null) hash ^= AuthorityInfo.GetHashCode();
@@ -3041,12 +4249,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (authorityInfo_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(AuthorityInfo);
@@ -3054,9 +4267,25 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (authorityInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(AuthorityInfo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (authorityInfo_ != null) {
@@ -3069,6 +4298,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CrossChainIndexingControllerChanged other) {
       if (other == null) {
         return;
@@ -3083,7 +4313,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3099,27 +4333,58 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (authorityInfo_ == null) {
+              AuthorityInfo = new global::AuthorityInfo();
+            }
+            input.ReadMessage(AuthorityInfo);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class SideChainIndexingFeeControllerChanged : pb::IMessage<SideChainIndexingFeeControllerChanged> {
+  internal sealed partial class SideChainIndexingFeeControllerChanged : pb::IMessage<SideChainIndexingFeeControllerChanged>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<SideChainIndexingFeeControllerChanged> _parser = new pb::MessageParser<SideChainIndexingFeeControllerChanged>(() => new SideChainIndexingFeeControllerChanged());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SideChainIndexingFeeControllerChanged> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainIndexingFeeControllerChanged() {
       OnConstruction();
     }
@@ -3127,6 +4392,7 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainIndexingFeeControllerChanged(SideChainIndexingFeeControllerChanged other) : this() {
       chainId_ = other.chainId_;
       authorityInfo_ = other.authorityInfo_ != null ? other.authorityInfo_.Clone() : null;
@@ -3134,6 +4400,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SideChainIndexingFeeControllerChanged Clone() {
       return new SideChainIndexingFeeControllerChanged(this);
     }
@@ -3142,6 +4409,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ChainIdFieldNumber = 1;
     private int chainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ChainId {
       get { return chainId_; }
       set {
@@ -3153,6 +4421,7 @@ namespace AElf.Contracts.CrossChain {
     public const int AuthorityInfoFieldNumber = 2;
     private global::AuthorityInfo authorityInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AuthorityInfo AuthorityInfo {
       get { return authorityInfo_; }
       set {
@@ -3161,11 +4430,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SideChainIndexingFeeControllerChanged);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SideChainIndexingFeeControllerChanged other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3179,6 +4450,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ChainId != 0) hash ^= ChainId.GetHashCode();
@@ -3190,12 +4462,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ChainId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(ChainId);
@@ -3207,9 +4484,29 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ChainId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChainId);
+      }
+      if (authorityInfo_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(AuthorityInfo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ChainId != 0) {
@@ -3225,6 +4522,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SideChainIndexingFeeControllerChanged other) {
       if (other == null) {
         return;
@@ -3242,7 +4540,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3262,27 +4564,62 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ChainId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            if (authorityInfo_ == null) {
+              AuthorityInfo = new global::AuthorityInfo();
+            }
+            input.ReadMessage(AuthorityInfo);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
-  internal sealed partial class AcceptCrossChainIndexingProposalInput : pb::IMessage<AcceptCrossChainIndexingProposalInput> {
+  internal sealed partial class AcceptCrossChainIndexingProposalInput : pb::IMessage<AcceptCrossChainIndexingProposalInput>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
     private static readonly pb::MessageParser<AcceptCrossChainIndexingProposalInput> _parser = new pb::MessageParser<AcceptCrossChainIndexingProposalInput>(() => new AcceptCrossChainIndexingProposalInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AcceptCrossChainIndexingProposalInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.CrossChain.CrossChainContractReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AcceptCrossChainIndexingProposalInput() {
       OnConstruction();
     }
@@ -3290,12 +4627,14 @@ namespace AElf.Contracts.CrossChain {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AcceptCrossChainIndexingProposalInput(AcceptCrossChainIndexingProposalInput other) : this() {
       chainId_ = other.chainId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AcceptCrossChainIndexingProposalInput Clone() {
       return new AcceptCrossChainIndexingProposalInput(this);
     }
@@ -3304,6 +4643,7 @@ namespace AElf.Contracts.CrossChain {
     public const int ChainIdFieldNumber = 1;
     private int chainId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ChainId {
       get { return chainId_; }
       set {
@@ -3312,11 +4652,13 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AcceptCrossChainIndexingProposalInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AcceptCrossChainIndexingProposalInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3329,6 +4671,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ChainId != 0) hash ^= ChainId.GetHashCode();
@@ -3339,12 +4682,17 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
       if (ChainId != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(ChainId);
@@ -3352,9 +4700,25 @@ namespace AElf.Contracts.CrossChain {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
+    #endif
     }
 
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ChainId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChainId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ChainId != 0) {
@@ -3367,6 +4731,7 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AcceptCrossChainIndexingProposalInput other) {
       if (other == null) {
         return;
@@ -3378,7 +4743,11 @@ namespace AElf.Contracts.CrossChain {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3391,7 +4760,27 @@ namespace AElf.Contracts.CrossChain {
           }
         }
       }
+    #endif
     }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ChainId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

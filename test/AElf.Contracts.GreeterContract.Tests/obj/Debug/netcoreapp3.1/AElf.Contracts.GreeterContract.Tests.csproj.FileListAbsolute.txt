@@ -1,5 +1,0 @@
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.GreeterContract.Tests/obj/Debug/netcoreapp3.1/AElf.Contracts.GreeterContract.Tests.csproj.AssemblyReference.cache
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.GreeterContract.Tests/obj/Debug/netcoreapp3.1/AElf.Contracts.GreeterContract.Tests.GeneratedMSBuildEditorConfig.editorconfig
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.GreeterContract.Tests/obj/Debug/netcoreapp3.1/AElf.Contracts.GreeterContract.Tests.AssemblyInfoInputs.cache
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.GreeterContract.Tests/obj/Debug/netcoreapp3.1/AElf.Contracts.GreeterContract.Tests.AssemblyInfo.cs
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/test/AElf.Contracts.GreeterContract.Tests/obj/Debug/netcoreapp3.1/AElf.Contracts.GreeterContract.Tests.csproj.CoreCompileInputs.cache

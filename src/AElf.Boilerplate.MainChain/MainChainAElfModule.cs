@@ -1,4 +1,4 @@
-﻿using AElf.Blockchains.BasicBaseChain;
+using AElf.Blockchains.BasicBaseChain;
 using AElf.Boilerplate.SystemTransactionGenerator;
 using AElf.Database;
 using AElf.Kernel.Infrastructure;

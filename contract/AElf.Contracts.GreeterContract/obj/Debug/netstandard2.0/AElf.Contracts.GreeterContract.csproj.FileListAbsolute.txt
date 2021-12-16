@@ -1,9 +1,0 @@
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.GreeterContract/bin/Debug/netstandard2.0/AElf.Contracts.GreeterContract.deps.json
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.GreeterContract/bin/Debug/netstandard2.0/AElf.Contracts.GreeterContract.dll
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.GreeterContract/bin/Debug/netstandard2.0/AElf.Contracts.GreeterContract.pdb
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.GreeterContract/obj/Debug/netstandard2.0/AElf.Contracts.GreeterContract.GeneratedMSBuildEditorConfig.editorconfig
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.GreeterContract/obj/Debug/netstandard2.0/AElf.Contracts.GreeterContract.AssemblyInfoInputs.cache
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.GreeterContract/obj/Debug/netstandard2.0/AElf.Contracts.GreeterContract.AssemblyInfo.cs
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.GreeterContract/obj/Debug/netstandard2.0/AElf.Contracts.GreeterContract.csproj.CoreCompileInputs.cache
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.GreeterContract/obj/Debug/netstandard2.0/AElf.Contracts.GreeterContract.dll
-/Users/chenghaiming/work/codes/code-genertor/aelf-boilerplate/chain/contract/AElf.Contracts.GreeterContract/obj/Debug/netstandard2.0/AElf.Contracts.GreeterContract.pdb
