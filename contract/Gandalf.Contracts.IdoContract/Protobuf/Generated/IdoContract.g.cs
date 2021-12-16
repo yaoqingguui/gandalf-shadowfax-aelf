@@ -36,79 +36,80 @@ namespace Gandalf.Contracts.IdoContract {
             "YnVmLlRpbWVzdGFtcBIgCglwdWJsaXNoZXIYByABKAsyDS5hZWxmLkFkZHJl",
             "c3MSDwoHY2xhaW1lZBgIIAEoCBItChJ3YW50X3Rva2VuX2JhbGFuY2UYCSAB",
             "KAsyES5hZWxmLkJpZ0ludFZhbHVlEjUKGnN1YnNjcmliZWRfb2ZmZXJpbmdf",
-            "YW1vdW50GAogASgLMhEuYWVsZi5CaWdJbnRWYWx1ZSJFCghVc2VySW5mbxIP",
-            "CgdjbGFpbWVkGAEgASgIEigKDW9idGFpbl9hbW91bnQYAiABKAsyES5hZWxm",
-            "LkJpZ0ludFZhbHVlIjEKD1B1YmxpY09mZmVyTGlzdBIeCgV2YWx1ZRgBIAMo",
-            "CzIPLlB1YmxpY09mZmVyaW5nIh0KBVRva2VuEhQKDHRva2VuX3N5bWJvbBgB",
-            "IAEoCSKQAgoWQWRkUHVibGljT2ZmZXJpbmdJbnB1dBIdChVvZmZlcmluZ190",
-            "b2tlbl9zeW1ib2wYASABKAkSMAoVb2ZmZXJpbmdfdG9rZW5fYW1vdW50GAIg",
-            "ASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIZChF3YW50X3Rva2VuX3N5bWJvbBgD",
-            "IAEoCRIsChF3YW50X3Rva2VuX2Ftb3VudBgEIAEoCzIRLmFlbGYuQmlnSW50",
-            "VmFsdWUSLgoKc3RhcnRfdGltZRgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U",
-            "aW1lc3RhbXASLAoIZW5kX3RpbWUYBiABKAsyGi5nb29nbGUucHJvdG9idWYu",
-            "VGltZXN0YW1wIk4KFUNoYW5nZUFzY3JpcHRpb25JbnB1dBIUCgx0b2tlbl9z",
-            "eW1ib2wYASABKAkSHwoIcmVjZWl2ZXIYAiABKAsyDS5hZWxmLkFkZHJlc3Mi",
-            "VAoLSW52ZXN0SW5wdXQSEQoJcHVibGljX2lkGAEgASgFEiEKBmFtb3VudBgC",
-            "IAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSDwoHY2hhbm5lbBgDIAEoCSI/Cg1V",
-            "c2VySW5mb0lucHV0EhEKCXB1YmxpY19pZBgBIAEoBRIbCgR1c2VyGAIgASgL",
-            "Mg0uYWVsZi5BZGRyZXNzIkAKElJlc2V0VGltZVNwYW5JbnB1dBIUCgxtYXhf",
-            "dGltZXNwYW4YASABKAMSFAoMbWluX3RpbWVzcGFuGAIgASgDIkEKE1Jlc2V0",
-            "VGltZVNwYW5PdXRwdXQSFAoMbWF4X3RpbWVzcGFuGAEgASgDEhQKDG1pbl90",
-            "aW1lc3BhbhgCIAEoAyK6AwoUUHVibGljT2ZmZXJpbmdPdXRwdXQSHQoVb2Zm",
-            "ZXJpbmdfdG9rZW5fc3ltYm9sGAEgASgJEjAKFW9mZmVyaW5nX3Rva2VuX2Ft",
-            "b3VudBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSGQoRd2FudF90b2tlbl9z",
-            "eW1ib2wYAyABKAkSLAoRd2FudF90b2tlbl9hbW91bnQYBCABKAsyES5hZWxm",
-            "LkJpZ0ludFZhbHVlEi4KCnN0YXJ0X3RpbWUYBSABKAsyGi5nb29nbGUucHJv",
-            "dG9idWYuVGltZXN0YW1wEiwKCGVuZF90aW1lGAYgASgLMhouZ29vZ2xlLnBy",
-            "b3RvYnVmLlRpbWVzdGFtcBIRCglwdWJsaWNfaWQYByABKAMSIAoJcHVibGlz",
-            "aGVyGAggASgLMg0uYWVsZi5BZGRyZXNzEg8KB2NsYWltZWQYCSABKAgSLQoS",
-            "V2FudF9Ub2tlbl9CYWxhbmNlGAogASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRI1",
-            "ChpTdWJzY3JpYmVkX09mZmVyaW5nX0Ftb3VudBgLIAEoCzIRLmFlbGYuQmln",
-            "SW50VmFsdWUixgIKEUFkZFB1YmxpY09mZmVyaW5nEh0KFW9mZmVyaW5nX3Rv",
-            "a2VuX3N5bWJvbBgBIAEoCRIwChVvZmZlcmluZ190b2tlbl9hbW91bnQYAiAB",
-            "KAsyES5hZWxmLkJpZ0ludFZhbHVlEhkKEXdhbnRfdG9rZW5fc3ltYm9sGAMg",
-            "ASgJEiwKEXdhbnRfdG9rZW5fYW1vdW50GAQgASgLMhEuYWVsZi5CaWdJbnRW",
-            "YWx1ZRIgCglwdWJsaXNoZXIYBSABKAsyDS5hZWxmLkFkZHJlc3MSLgoKc3Rh",
-            "cnRfdGltZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLAoI",
-            "ZW5kX3RpbWUYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhEK",
-            "CXB1YmxpY19pZBgIIAEoAzoEoLsYASJ6ChBDaGFuZ2VBc2NyaXB0aW9uEhQK",
-            "DHRva2VuX3N5bWJvbBgBIAEoCRIkCg1vbGRfcHVibGlzaGVyGAIgASgLMg0u",
-            "YWVsZi5BZGRyZXNzEiQKDW5ld19wdWJsaXNoZXIYAyABKAsyDS5hZWxmLkFk",
-            "ZHJlc3M6BKC7GAEiawoIV2l0aGRyYXcSEgoKcHViaWxpY19pZBgBIAEoAxIZ",
-            "CgJ0bxgCIAEoCzINLmFlbGYuQWRkcmVzcxISCgp3YW50X3Rva2VuGAMgASgD",
-            "EhYKDm9mZmVyaW5nX3Rva2VuGAQgASgDOgSguxgBIq4BCgZJbnZlc3QSEQoJ",
-            "cHVibGljX2lkGAEgASgDEh8KCGludmVzdG9yGAIgASgLMg0uYWVsZi5BZGRy",
-            "ZXNzEhQKDHRva2VuX3N5bWJvbBgDIAEoCRIhCgZpbmNvbWUYBCABKAsyES5h",
-            "ZWxmLkJpZ0ludFZhbHVlEiAKBXNwZW5kGAUgASgLMhEuYWVsZi5CaWdJbnRW",
-            "YWx1ZRIPCgdjaGFubmVsGAYgASgJOgSguxgBImAKB0hhcnZlc3QSEQoJcHVi",
-            "bGljX2lkGAEgASgDEhkKAnRvGAIgASgLMg0uYWVsZi5BZGRyZXNzEiEKBmFt",
-            "b3VudBgDIAEoCzIRLmFlbGYuQmlnSW50VmFsdWU6BKC7GAEyjAcKC0lkb0Nv",
-            "bnRyYWN0EjUKCkluaXRpYWxpemUSDS5hZWxmLkFkZHJlc3MaFi5nb29nbGUu",
-            "cHJvdG9idWYuRW1wdHkiABJLChFBZGRQdWJsaWNPZmZlcmluZxIXLkFkZFB1",
-            "YmxpY09mZmVyaW5nSW5wdXQaGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1",
-            "ZSIAEkQKEENoYW5nZUFzY3JpcHRpb24SFi5DaGFuZ2VBc2NyaXB0aW9uSW5w",
-            "dXQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiABJBCghXaXRoZHJhdxIbLmdv",
-            "b2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlGhYuZ29vZ2xlLnByb3RvYnVmLkVt",
-            "cHR5IgASMAoGSW52ZXN0EgwuSW52ZXN0SW5wdXQaFi5nb29nbGUucHJvdG9i",
-            "dWYuRW1wdHkiABJACgdIYXJ2ZXN0EhsuZ29vZ2xlLnByb3RvYnVmLkludDMy",
-            "VmFsdWUaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiABI+Cg1SZXNldFRpbWVT",
-            "cGFuEhMuUmVzZXRUaW1lU3BhbklucHV0GhYuZ29vZ2xlLnByb3RvYnVmLkVt",
-            "cHR5IgASOAoIR2V0T3duZXISFi5nb29nbGUucHJvdG9idWYuRW1wdHkaDS5h",
-            "ZWxmLkFkZHJlc3MiBYiJ9wEBEkIKC0dldFRpbWVzcGFuEhYuZ29vZ2xlLnBy",
-            "b3RvYnVmLkVtcHR5GhQuUmVzZXRUaW1lU3Bhbk91dHB1dCIFiIn3AQESTgoR",
-            "R2V0UHVibGljT2ZmZXJpbmcSGy5nb29nbGUucHJvdG9idWYuSW50MzJWYWx1",
-            "ZRoVLlB1YmxpY09mZmVyaW5nT3V0cHV0IgWIifcBARIvCgtHZXRVc2VySW5m",
-            "bxIOLlVzZXJJbmZvSW5wdXQaCS5Vc2VySW5mbyIFiIn3AQESVQoXR2V0UHVi",
-            "bGljT2ZmZXJpbmdMZW5ndGgSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaGy5n",
-            "b29nbGUucHJvdG9idWYuSW50MzJWYWx1ZSIFiIn3AQESMQoRR2V0VG9rZW5P",
-            "d25lcnNoaXASBi5Ub2tlbhoNLmFlbGYuQWRkcmVzcyIFiIn3AQEaM7LM9gEu",
-            "R2FuZGFsZi5Db250cmFjdHMuSWRvQ29udHJhY3QuSWRvQ29udHJhY3RTdGF0",
-            "ZUIgqgIdR2FuZGFsZi5Db250cmFjdHMuSWRvQ29udHJhY3RiBnByb3RvMw=="));
+            "YW1vdW50GAogASgLMhEuYWVsZi5CaWdJbnRWYWx1ZSJLCg5Vc2VySW5mb1N0",
+            "cnVjdBIPCgdjbGFpbWVkGAEgASgIEigKDW9idGFpbl9hbW91bnQYAiABKAsy",
+            "ES5hZWxmLkJpZ0ludFZhbHVlIjEKD1B1YmxpY09mZmVyTGlzdBIeCgV2YWx1",
+            "ZRgBIAMoCzIPLlB1YmxpY09mZmVyaW5nIh0KBVRva2VuEhQKDHRva2VuX3N5",
+            "bWJvbBgBIAEoCSKQAgoWQWRkUHVibGljT2ZmZXJpbmdJbnB1dBIdChVvZmZl",
+            "cmluZ190b2tlbl9zeW1ib2wYASABKAkSMAoVb2ZmZXJpbmdfdG9rZW5fYW1v",
+            "dW50GAIgASgLMhEuYWVsZi5CaWdJbnRWYWx1ZRIZChF3YW50X3Rva2VuX3N5",
+            "bWJvbBgDIAEoCRIsChF3YW50X3Rva2VuX2Ftb3VudBgEIAEoCzIRLmFlbGYu",
+            "QmlnSW50VmFsdWUSLgoKc3RhcnRfdGltZRgFIAEoCzIaLmdvb2dsZS5wcm90",
+            "b2J1Zi5UaW1lc3RhbXASLAoIZW5kX3RpbWUYBiABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuVGltZXN0YW1wIk4KFUNoYW5nZUFzY3JpcHRpb25JbnB1dBIUCgx0",
+            "b2tlbl9zeW1ib2wYASABKAkSHwoIcmVjZWl2ZXIYAiABKAsyDS5hZWxmLkFk",
+            "ZHJlc3MiVAoLSW52ZXN0SW5wdXQSEQoJcHVibGljX2lkGAEgASgFEiEKBmFt",
+            "b3VudBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSDwoHY2hhbm5lbBgDIAEo",
+            "CSI/Cg1Vc2VySW5mb0lucHV0EhEKCXB1YmxpY19pZBgBIAEoBRIbCgR1c2Vy",
+            "GAIgASgLMg0uYWVsZi5BZGRyZXNzIkAKElJlc2V0VGltZVNwYW5JbnB1dBIU",
+            "CgxtYXhfdGltZXNwYW4YASABKAMSFAoMbWluX3RpbWVzcGFuGAIgASgDIkEK",
+            "E1Jlc2V0VGltZVNwYW5PdXRwdXQSFAoMbWF4X3RpbWVzcGFuGAEgASgDEhQK",
+            "DG1pbl90aW1lc3BhbhgCIAEoAyK6AwoUUHVibGljT2ZmZXJpbmdPdXRwdXQS",
+            "HQoVb2ZmZXJpbmdfdG9rZW5fc3ltYm9sGAEgASgJEjAKFW9mZmVyaW5nX3Rv",
+            "a2VuX2Ftb3VudBgCIAEoCzIRLmFlbGYuQmlnSW50VmFsdWUSGQoRd2FudF90",
+            "b2tlbl9zeW1ib2wYAyABKAkSLAoRd2FudF90b2tlbl9hbW91bnQYBCABKAsy",
+            "ES5hZWxmLkJpZ0ludFZhbHVlEi4KCnN0YXJ0X3RpbWUYBSABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wEiwKCGVuZF90aW1lGAYgASgLMhouZ29v",
+            "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcBIRCglwdWJsaWNfaWQYByABKAMSIAoJ",
+            "cHVibGlzaGVyGAggASgLMg0uYWVsZi5BZGRyZXNzEg8KB2NsYWltZWQYCSAB",
+            "KAgSLQoSd2FudF90b2tlbl9iYWxhbmNlGAogASgLMhEuYWVsZi5CaWdJbnRW",
+            "YWx1ZRI1ChpzdWJzY3JpYmVkX29mZmVyaW5nX2Ftb3VudBgLIAEoCzIRLmFl",
+            "bGYuQmlnSW50VmFsdWUixgIKEUFkZFB1YmxpY09mZmVyaW5nEh0KFW9mZmVy",
+            "aW5nX3Rva2VuX3N5bWJvbBgBIAEoCRIwChVvZmZlcmluZ190b2tlbl9hbW91",
+            "bnQYAiABKAsyES5hZWxmLkJpZ0ludFZhbHVlEhkKEXdhbnRfdG9rZW5fc3lt",
+            "Ym9sGAMgASgJEiwKEXdhbnRfdG9rZW5fYW1vdW50GAQgASgLMhEuYWVsZi5C",
+            "aWdJbnRWYWx1ZRIgCglwdWJsaXNoZXIYBSABKAsyDS5hZWxmLkFkZHJlc3MS",
+            "LgoKc3RhcnRfdGltZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXASLAoIZW5kX3RpbWUYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
+            "YW1wEhEKCXB1YmxpY19pZBgIIAEoAzoEoLsYASJ6ChBDaGFuZ2VBc2NyaXB0",
+            "aW9uEhQKDHRva2VuX3N5bWJvbBgBIAEoCRIkCg1vbGRfcHVibGlzaGVyGAIg",
+            "ASgLMg0uYWVsZi5BZGRyZXNzEiQKDW5ld19wdWJsaXNoZXIYAyABKAsyDS5h",
+            "ZWxmLkFkZHJlc3M6BKC7GAEiawoIV2l0aGRyYXcSEgoKcHViaWxpY19pZBgB",
+            "IAEoAxIZCgJ0bxgCIAEoCzINLmFlbGYuQWRkcmVzcxISCgp3YW50X3Rva2Vu",
+            "GAMgASgDEhYKDm9mZmVyaW5nX3Rva2VuGAQgASgDOgSguxgBIq4BCgZJbnZl",
+            "c3QSEQoJcHVibGljX2lkGAEgASgDEh8KCGludmVzdG9yGAIgASgLMg0uYWVs",
+            "Zi5BZGRyZXNzEhQKDHRva2VuX3N5bWJvbBgDIAEoCRIhCgZpbmNvbWUYBCAB",
+            "KAsyES5hZWxmLkJpZ0ludFZhbHVlEiAKBXNwZW5kGAUgASgLMhEuYWVsZi5C",
+            "aWdJbnRWYWx1ZRIPCgdjaGFubmVsGAYgASgJOgSguxgBImAKB0hhcnZlc3QS",
+            "EQoJcHVibGljX2lkGAEgASgDEhkKAnRvGAIgASgLMg0uYWVsZi5BZGRyZXNz",
+            "EiEKBmFtb3VudBgDIAEoCzIRLmFlbGYuQmlnSW50VmFsdWU6BKC7GAEyjQcK",
+            "C0lkb0NvbnRyYWN0EjUKCkluaXRpYWxpemUSDS5hZWxmLkFkZHJlc3MaFi5n",
+            "b29nbGUucHJvdG9idWYuRW1wdHkiABJLChFBZGRQdWJsaWNPZmZlcmluZxIX",
+            "LkFkZFB1YmxpY09mZmVyaW5nSW5wdXQaGy5nb29nbGUucHJvdG9idWYuSW50",
+            "NjRWYWx1ZSIAEkQKEENoYW5nZUFzY3JpcHRpb24SFi5DaGFuZ2VBc2NyaXB0",
+            "aW9uSW5wdXQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiABJBCghXaXRoZHJh",
+            "dxIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlGhYuZ29vZ2xlLnByb3Rv",
+            "YnVmLkVtcHR5IgASMAoGSW52ZXN0EgwuSW52ZXN0SW5wdXQaFi5nb29nbGUu",
+            "cHJvdG9idWYuRW1wdHkiABJACgdIYXJ2ZXN0EhsuZ29vZ2xlLnByb3RvYnVm",
+            "LkludDMyVmFsdWUaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiABI+Cg1SZXNl",
+            "dFRpbWVTcGFuEhMuUmVzZXRUaW1lU3BhbklucHV0GhYuZ29vZ2xlLnByb3Rv",
+            "YnVmLkVtcHR5IgASOAoIR2V0T3duZXISFi5nb29nbGUucHJvdG9idWYuRW1w",
+            "dHkaDS5hZWxmLkFkZHJlc3MiBYiJ9wEBEkIKC0dldFRpbWVzcGFuEhYuZ29v",
+            "Z2xlLnByb3RvYnVmLkVtcHR5GhQuUmVzZXRUaW1lU3Bhbk91dHB1dCIFiIn3",
+            "AQESTAoPUHVibGljT2ZmZXJpbmdzEhsuZ29vZ2xlLnByb3RvYnVmLkludDMy",
+            "VmFsdWUaFS5QdWJsaWNPZmZlcmluZ091dHB1dCIFiIn3AQESMgoIVXNlcklu",
+            "Zm8SDi5Vc2VySW5mb0lucHV0Gg8uVXNlckluZm9TdHJ1Y3QiBYiJ9wEBElUK",
+            "F0dldFB1YmxpY09mZmVyaW5nTGVuZ3RoEhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5GhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUiBYiJ9wEBEjEKEUdl",
+            "dFRva2VuT3duZXJzaGlwEgYuVG9rZW4aDS5hZWxmLkFkZHJlc3MiBYiJ9wEB",
+            "GjOyzPYBLkdhbmRhbGYuQ29udHJhY3RzLklkb0NvbnRyYWN0Lklkb0NvbnRy",
+            "YWN0U3RhdGVCIKoCHUdhbmRhbGYuQ29udHJhY3RzLklkb0NvbnRyYWN0YgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::AElf.Types.CoreReflection.Descriptor, global::AElf.OptionsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.PublicOffering), global::Gandalf.Contracts.IdoContract.PublicOffering.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "StartTime", "EndTime", "Publisher", "Claimed", "WantTokenBalance", "SubscribedOfferingAmount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.UserInfo), global::Gandalf.Contracts.IdoContract.UserInfo.Parser, new[]{ "Claimed", "ObtainAmount" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.UserInfoStruct), global::Gandalf.Contracts.IdoContract.UserInfoStruct.Parser, new[]{ "Claimed", "ObtainAmount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.PublicOfferList), global::Gandalf.Contracts.IdoContract.PublicOfferList.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.Token), global::Gandalf.Contracts.IdoContract.Token.Parser, new[]{ "TokenSymbol" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Gandalf.Contracts.IdoContract.AddPublicOfferingInput), global::Gandalf.Contracts.IdoContract.AddPublicOfferingInput.Parser, new[]{ "OfferingTokenSymbol", "OfferingTokenAmount", "WantTokenSymbol", "WantTokenAmount", "StartTime", "EndTime" }, null, null, null, null),
@@ -130,7 +131,7 @@ namespace Gandalf.Contracts.IdoContract {
   }
   #region Messages
   /// <summary>
-  /// stuct
+  /// struct
   /// </summary>
   public sealed partial class PublicOffering : pb::IMessage<PublicOffering> {
     private static readonly pb::MessageParser<PublicOffering> _parser = new pb::MessageParser<PublicOffering>(() => new PublicOffering());
@@ -555,11 +556,11 @@ namespace Gandalf.Contracts.IdoContract {
 
   }
 
-  public sealed partial class UserInfo : pb::IMessage<UserInfo> {
-    private static readonly pb::MessageParser<UserInfo> _parser = new pb::MessageParser<UserInfo>(() => new UserInfo());
+  public sealed partial class UserInfoStruct : pb::IMessage<UserInfoStruct> {
+    private static readonly pb::MessageParser<UserInfoStruct> _parser = new pb::MessageParser<UserInfoStruct>(() => new UserInfoStruct());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<UserInfo> Parser { get { return _parser; } }
+    public static pb::MessageParser<UserInfoStruct> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -572,22 +573,22 @@ namespace Gandalf.Contracts.IdoContract {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UserInfo() {
+    public UserInfoStruct() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UserInfo(UserInfo other) : this() {
+    public UserInfoStruct(UserInfoStruct other) : this() {
       claimed_ = other.claimed_;
       obtainAmount_ = other.obtainAmount_ != null ? other.obtainAmount_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UserInfo Clone() {
-      return new UserInfo(this);
+    public UserInfoStruct Clone() {
+      return new UserInfoStruct(this);
     }
 
     /// <summary>Field number for the "claimed" field.</summary>
@@ -614,11 +615,11 @@ namespace Gandalf.Contracts.IdoContract {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as UserInfo);
+      return Equals(other as UserInfoStruct);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(UserInfo other) {
+    public bool Equals(UserInfoStruct other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -677,7 +678,7 @@ namespace Gandalf.Contracts.IdoContract {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(UserInfo other) {
+    public void MergeFrom(UserInfoStruct other) {
       if (other == null) {
         return;
       }
@@ -2244,7 +2245,7 @@ namespace Gandalf.Contracts.IdoContract {
       }
     }
 
-    /// <summary>Field number for the "Want_Token_Balance" field.</summary>
+    /// <summary>Field number for the "want_token_balance" field.</summary>
     public const int WantTokenBalanceFieldNumber = 10;
     private global::AElf.Types.BigIntValue wantTokenBalance_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2255,7 +2256,7 @@ namespace Gandalf.Contracts.IdoContract {
       }
     }
 
-    /// <summary>Field number for the "Subscribed_Offering_Amount" field.</summary>
+    /// <summary>Field number for the "subscribed_offering_amount" field.</summary>
     public const int SubscribedOfferingAmountFieldNumber = 11;
     private global::AElf.Types.BigIntValue subscribedOfferingAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

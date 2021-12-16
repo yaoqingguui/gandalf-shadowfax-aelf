@@ -1,4 +1,3 @@
-using System.Numerics;
 using AElf.Contracts.MultiToken;
 using AElf.CSharp.Core;
 using AElf.Sdk.CSharp;
@@ -29,7 +28,7 @@ namespace Gandalf.Contracts.IdoContract
 
             var obtainAmount = offering.OfferingTokenAmount.Mul(actualUsed).Div(offering.WantTokenAmount);
 
-            var userInfo = State.UserInfo[input.PublicId][Context.Sender] ?? new UserInfo
+            var userInfo = State.UserInfo[input.PublicId][Context.Sender] ?? new UserInfoStruct
             {
                 Claimed = false,
                 ObtainAmount = new BigIntValue

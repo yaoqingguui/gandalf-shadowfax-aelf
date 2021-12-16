@@ -20,8 +20,7 @@ namespace Gandalf.Contracts.IdoContract
             };
         }
 
-
-        public override PublicOfferingOutput GetPublicOffering(Int32Value input)
+        public override PublicOfferingOutput PublicOfferings(Int32Value input)
         {
             var offering = State.PublicOfferList.Value.Value[input.Value];
             return new PublicOfferingOutput
@@ -40,14 +39,14 @@ namespace Gandalf.Contracts.IdoContract
             };
         }
 
-        public override UserInfo GetUserInfo(UserInfoInput input)
+        public override UserInfoStruct UserInfo(UserInfoInput input)
         {
             var userInfo = State.UserInfo[input.PublicId][input.User];
             if (userInfo!=null)
             {
                 return userInfo;
             }
-            return new UserInfo
+            return new UserInfoStruct
             {
                 Claimed = false,
                 ObtainAmount = 0
@@ -66,6 +65,7 @@ namespace Gandalf.Contracts.IdoContract
         {
             return State.Ascription[input.TokenSymbol];
         }
+       
     }
     
 }

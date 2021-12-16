@@ -152,7 +152,7 @@ namespace Gandalf.Contracts.IdoContract {
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput> __Marshaller_ResetTimeSpanOutput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.ResetTimeSpanOutput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.PublicOfferingOutput> __Marshaller_PublicOfferingOutput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.PublicOfferingOutput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.UserInfoInput> __Marshaller_UserInfoInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.UserInfoInput.Parser.ParseFrom);
-    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.UserInfo> __Marshaller_UserInfo = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.UserInfo.Parser.ParseFrom);
+    static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.UserInfoStruct> __Marshaller_UserInfoStruct = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.UserInfoStruct.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.IdoContract.Token> __Marshaller_Token = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.IdoContract.Token.Parser.ParseFrom);
     #endregion
 
@@ -220,19 +220,19 @@ namespace Gandalf.Contracts.IdoContract {
         __Marshaller_google_protobuf_Empty,
         __Marshaller_ResetTimeSpanOutput);
 
-    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.IdoContract.PublicOfferingOutput> __Method_GetPublicOffering = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.IdoContract.PublicOfferingOutput>(
+    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.IdoContract.PublicOfferingOutput> __Method_PublicOfferings = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.IdoContract.PublicOfferingOutput>(
         aelf::MethodType.View,
         __ServiceName,
-        "GetPublicOffering",
+        "PublicOfferings",
         __Marshaller_google_protobuf_Int32Value,
         __Marshaller_PublicOfferingOutput);
 
-    static readonly aelf::Method<global::Gandalf.Contracts.IdoContract.UserInfoInput, global::Gandalf.Contracts.IdoContract.UserInfo> __Method_GetUserInfo = new aelf::Method<global::Gandalf.Contracts.IdoContract.UserInfoInput, global::Gandalf.Contracts.IdoContract.UserInfo>(
+    static readonly aelf::Method<global::Gandalf.Contracts.IdoContract.UserInfoInput, global::Gandalf.Contracts.IdoContract.UserInfoStruct> __Method_UserInfo = new aelf::Method<global::Gandalf.Contracts.IdoContract.UserInfoInput, global::Gandalf.Contracts.IdoContract.UserInfoStruct>(
         aelf::MethodType.View,
         __ServiceName,
-        "GetUserInfo",
+        "UserInfo",
         __Marshaller_UserInfoInput,
-        __Marshaller_UserInfo);
+        __Marshaller_UserInfoStruct);
 
     static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int32Value> __Method_GetPublicOfferingLength = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int32Value>(
         aelf::MethodType.View,
@@ -315,14 +315,14 @@ namespace Gandalf.Contracts.IdoContract {
         get { return __factory.Create(__Method_GetTimespan); }
       }
 
-      public aelf::IMethodStub<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.IdoContract.PublicOfferingOutput> GetPublicOffering
+      public aelf::IMethodStub<global::Google.Protobuf.WellKnownTypes.Int32Value, global::Gandalf.Contracts.IdoContract.PublicOfferingOutput> PublicOfferings
       {
-        get { return __factory.Create(__Method_GetPublicOffering); }
+        get { return __factory.Create(__Method_PublicOfferings); }
       }
 
-      public aelf::IMethodStub<global::Gandalf.Contracts.IdoContract.UserInfoInput, global::Gandalf.Contracts.IdoContract.UserInfo> GetUserInfo
+      public aelf::IMethodStub<global::Gandalf.Contracts.IdoContract.UserInfoInput, global::Gandalf.Contracts.IdoContract.UserInfoStruct> UserInfo
       {
-        get { return __factory.Create(__Method_GetUserInfo); }
+        get { return __factory.Create(__Method_UserInfo); }
       }
 
       public aelf::IMethodStub<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int32Value> GetPublicOfferingLength

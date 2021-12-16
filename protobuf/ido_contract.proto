@@ -65,11 +65,11 @@ service IdoContract {
     option (aelf.is_view) = true;
   }
 
-  rpc GetPublicOffering(google.protobuf.Int32Value) returns (PublicOfferingOutput){
+  rpc PublicOfferings(google.protobuf.Int32Value) returns (PublicOfferingOutput){
     option (aelf.is_view) = true;
   }
 
-  rpc GetUserInfo(UserInfoInput) returns (UserInfo){
+  rpc UserInfo(UserInfoInput) returns (UserInfoStruct){
     option (aelf.is_view) = true;
   }
   
@@ -80,10 +80,10 @@ service IdoContract {
   rpc GetTokenOwnership(Token) returns (aelf.Address){
     option (aelf.is_view) = true;
   }
-  
+
 }
 
-// stuct
+// struct
 message PublicOffering {
   string offering_token_symbol = 1;
   aelf.BigIntValue offering_token_amount = 2;
@@ -97,7 +97,7 @@ message PublicOffering {
   aelf.BigIntValue subscribed_offering_amount = 10;
 }
 
-message UserInfo{
+message UserInfoStruct{
   bool claimed = 1;
   aelf.BigIntValue obtain_amount = 2;
 }
@@ -158,8 +158,8 @@ message PublicOfferingOutput{
   int64 public_id = 7;
   aelf.Address publisher = 8;
   bool claimed = 9;
-  aelf.BigIntValue Want_Token_Balance = 10;
-  aelf.BigIntValue Subscribed_Offering_Amount = 11;
+  aelf.BigIntValue want_token_balance = 10;
+  aelf.BigIntValue subscribed_offering_amount = 11;
 }
 
 

@@ -11,9 +11,9 @@ namespace Gandalf.Contracts.IdoContract
         public override Int64Value AddPublicOffering(AddPublicOfferingInput input)
         {
             Assert((BigInteger) input.OfferingTokenAmount > 0, "Need deposit some offering token.");
-            Assert(input.StartTime >= Context.CurrentBlockTime, "Invaild start time.");
+            Assert(input.StartTime >= Context.CurrentBlockTime, "Invalid start time.");
             Assert(input.EndTime.Seconds <= input.StartTime.Seconds + State.MaximalTimeSpan.Value &&
-                   input.EndTime.Seconds >= input.StartTime.Seconds + State.MinimalTimespan.Value, "Invaild end time.");
+                   input.EndTime.Seconds >= input.StartTime.Seconds + State.MinimalTimespan.Value, "Invalid end time.");
             var owner = State.Ascription[input.OfferingTokenSymbol];
             if (owner != null)
             {

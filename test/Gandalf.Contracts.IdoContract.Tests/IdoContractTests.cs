@@ -67,7 +67,7 @@ namespace Gandalf.Contracts.IdoContract
             var endTime = DateTime.UtcNow.AddSeconds(1000).ToTimestamp();
             await AddPublicOffering(startTime, endTime);
 
-            var offering = await tomStub.GetPublicOffering.CallAsync(new Int32Value
+            var offering = await tomStub.PublicOfferings.CallAsync(new Int32Value
             {
                 Value = 0
             });
@@ -118,7 +118,7 @@ namespace Gandalf.Contracts.IdoContract
             var startTime = DateTime.UtcNow.AddSeconds(1).ToTimestamp();
             var endTime = DateTime.UtcNow.AddSeconds(60).ToTimestamp();
             await AddPublicOffering(startTime, endTime);
-            var offering = await tomStub.GetPublicOffering.CallAsync(new Int32Value
+            var offering = await tomStub.PublicOfferings.CallAsync(new Int32Value
             {
                 Value = 0
             });
@@ -153,7 +153,7 @@ namespace Gandalf.Contracts.IdoContract
                 Symbol = TokenWantSymbol
             });
             wantTokenBalanceOfKitty.Balance.ShouldBe(1000000 - 2000);
-            offering = await tomStub.GetPublicOffering.CallAsync(new Int32Value
+            offering = await tomStub.PublicOfferings.CallAsync(new Int32Value
             {
                 Value = 0
             });
@@ -161,7 +161,7 @@ namespace Gandalf.Contracts.IdoContract
             var obtainAmount = offering.OfferingTokenAmount.Mul(2000).Div(offering.WantTokenAmount);
 
             offering.SubscribedOfferingAmount.ShouldBe(obtainAmount);
-            var userInfo = await kittyStub.GetUserInfo.CallAsync(new UserInfoInput
+            var userInfo = await kittyStub.UserInfo.CallAsync(new UserInfoInput
             {
                 User = Kitty,
                 PublicId = 0
@@ -182,13 +182,13 @@ namespace Gandalf.Contracts.IdoContract
             });
 
             wantTokenBalanceOfKitty.Balance.ShouldBe(1000000 - 2000 - 18000);
-            offering = await tomStub.GetPublicOffering.CallAsync(new Int32Value
+            offering = await tomStub.PublicOfferings.CallAsync(new Int32Value
             {
                 Value = 0
             });
             offering.WantTokenBalance.ShouldBe(20000);
 
-            userInfo = await kittyStub.GetUserInfo.CallAsync(new UserInfoInput
+            userInfo = await kittyStub.UserInfo.CallAsync(new UserInfoInput
             {
                 User = Kitty,
                 PublicId = 0
@@ -210,7 +210,7 @@ namespace Gandalf.Contracts.IdoContract
                 Value = 0
             });
 
-            userInfo = await kittyStub.GetUserInfo.CallAsync(new UserInfoInput
+            userInfo = await kittyStub.UserInfo.CallAsync(new UserInfoInput
             {
                 User = Kitty,
                 PublicId = 0
@@ -297,7 +297,7 @@ namespace Gandalf.Contracts.IdoContract
                 PublicId = 0
             });
             
-            var offering = await kittyStub.GetPublicOffering.CallAsync(new Int32Value
+            var offering = await kittyStub.PublicOfferings.CallAsync(new Int32Value
             {
                 Value = 0
             });
@@ -406,7 +406,7 @@ namespace Gandalf.Contracts.IdoContract
                 WantTokenSymbol = TokenWantSymbol
             });
 
-            var kittyOffering = await kittyStub.Result.GetPublicOffering.CallAsync(new Int32Value
+            var kittyOffering = await kittyStub.Result.PublicOfferings.CallAsync(new Int32Value
             {
                 Value = 1
             });
