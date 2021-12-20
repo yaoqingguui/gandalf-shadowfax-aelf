@@ -5,9 +5,23 @@
     <projectFile>src/AElf.Boilerplate.ShadowfaxContract.Launcher/AElf.Boilerplate.ShadowfaxContract.Launcher.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4420c455-db40-4589-8194-b2628d87c638" name="Default Changelist" comment="Reorg files">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="4420c455-db40-4589-8194-b2628d87c638" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gandalf.Contracts.Shadowfax/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gandalf.Contracts.Shadowfax/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/Protobuf/Generated/GandalfShadowfaxContract.c.cs" beforeDir="false" afterPath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/Protobuf/Generated/GandalfShadowfaxContract.c.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/Protobuf/Generated/GandalfShadowfaxContract.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/Protobuf/Generated/GandalfShadowfaxContract.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract.cs" beforeDir="false" afterPath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContractState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContractState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_Admin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_Admin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_Investor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_Investor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_Publisher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_Publisher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_View.cs" beforeDir="false" afterPath="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_View.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protobuf/gandalf_shadowfax_contract.proto" beforeDir="false" afterPath="$PROJECT_DIR$/protobuf/gandalf_shadowfax_contract.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/patcher/AElf.Boilerplate.ContractPatcher.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/patcher/AElf.Boilerplate.ContractPatcher.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/patcher/AElf.Boilerplate.ContractPatcher.dll" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/patcher/AElf.Boilerplate.ContractPatcher.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/patcher/AElf.Boilerplate.ContractPatcher.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/patcher/AElf.Boilerplate.ContractPatcher.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/patcher/AElf.Boilerplate.ContractPatcher.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/patcher/AElf.Boilerplate.ContractPatcher.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/patcher/AElf.Boilerplate.ContractPatcher.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/patcher/AElf.Boilerplate.ContractPatcher.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/patched/Gandalf.Contracts.Shadowfax.dll.patched" beforeDir="false" afterPath="$PROJECT_DIR$/test/patched/Gandalf.Contracts.Shadowfax.dll.patched" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,24 +31,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/eanzhao/Gandalf/gandalf-shadowfax-aelf/src/AElf.Boilerplate.MainChain/Protobuf/Generated/Acs5.g.cs" root0="SKIP_HIGHLIGHTING" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_Admin.cs" />
-      <option value="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_Publisher.cs" />
-      <option value="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_View.cs" />
-      <option value="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract.cs" />
       <option value="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/Gandalf.Contracts.Shadowfax.csproj" />
       <option value="$PROJECT_DIR$/src/AElf.Boilerplate.ContractPatcher/AElf.Boilerplate.ContractPatcher.csproj" />
       <option value="$PROJECT_DIR$/test/Gandalf.Contracts.Shadowfax.Tests/Gandalf.Contracts.Shadowfax.Tests.csproj" />
       <option value="$PROJECT_DIR$/test/Gandalf.Contracts.Shadowfax.Tests/ShadowfaxContractInitializationProvider.cs" />
-      <option value="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_Investor.cs" />
       <option value="$PROJECT_DIR$/test/Gandalf.Contracts.Shadowfax.Tests/ShadowfaxContractTestModule.cs" />
       <option value="$PROJECT_DIR$/test/Gandalf.Contracts.Shadowfax.Tests/ShadowfaxContractTests.cs" />
       <option value="$PROJECT_DIR$/test/Gandalf.Contracts.Shadowfax.Tests/ShadowfaxContractTestBase.cs" />
       <option value="$PROJECT_DIR$/README.md" />
+      <option value="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_Admin.cs" />
+      <option value="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract.cs" />
+      <option value="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContractState.cs" />
+      <option value="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_Publisher.cs" />
+      <option value="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_Investor.cs" />
+      <option value="$PROJECT_DIR$/contract/Gandalf.Contracts.Shadowfax/ShadowfaxContract_View.cs" />
+      <option value="$PROJECT_DIR$/protobuf/gandalf_shadowfax_contract.proto" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22JQCRsuALmECNMLyUBk3S1O9Ib" />
@@ -98,7 +119,8 @@
       <updated>1639553082577</updated>
       <workItem from="1639553094198" duration="1729000" />
       <workItem from="1639555729376" duration="194000" />
-      <workItem from="1639556787990" duration="1633000" />
+      <workItem from="1639556787990" duration="1738000" />
+      <workItem from="1639811583803" duration="8464000" />
     </task>
     <task id="LOCAL-00001" summary="Reorg files.">
       <created>1639554867345</created>
@@ -114,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639564054606</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add readme.">
+      <created>1639564532522</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639564532522</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +167,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Reorg files." />
     <MESSAGE value="Reorg files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reorg files" />
+    <MESSAGE value="Add readme." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add readme." />
   </component>
 </project>

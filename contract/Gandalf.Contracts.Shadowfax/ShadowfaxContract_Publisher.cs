@@ -10,10 +10,10 @@ namespace Gandalf.Contracts.Shadowfax
     {
         public override Int64Value AddPublicOffering(AddPublicOfferingInput input)
         {
-            Assert((BigInteger) input.OfferingTokenAmount > 0, "Need deposit some offering token.");
-            Assert(input.StartTime >= Context.CurrentBlockTime, "Invaild start time.");
+            Assert(input.OfferingTokenAmount > 0, "Need deposit some offering token.");
+            Assert(input.StartTime >= Context.CurrentBlockTime, "Invalid start time.");
             Assert(input.EndTime.Seconds <= input.StartTime.Seconds + State.MaximalTimeSpan.Value &&
-                   input.EndTime.Seconds >= input.StartTime.Seconds + State.MinimalTimespan.Value, "Invaild end time.");
+                   input.EndTime.Seconds >= input.StartTime.Seconds + State.MinimalTimespan.Value, "Invalid end time.");
             var owner = State.Ascription[input.OfferingTokenSymbol];
             if (owner != null)
             {
@@ -28,12 +28,12 @@ namespace Gandalf.Contracts.Shadowfax
             {
                 From = Context.Sender,
                 To = Context.Self,
-                Amount = long.Parse(input.OfferingTokenAmount.Value),
+                Amount = input.OfferingTokenAmount,
                 Symbol = input.OfferingTokenSymbol
             });
 
-            var publicOfferList = State.PublicOfferList.Value ?? new PublicOfferList();
-            publicOfferList.Value.Add(new PublicOffering
+            var publicId = State.CurrentPublicOfferingId.Value;
+            var offering = new PublicOffering
             {
                 OfferingTokenSymbol = input.OfferingTokenSymbol,
                 OfferingTokenAmount = input.OfferingTokenAmount,
@@ -45,10 +45,10 @@ namespace Gandalf.Contracts.Shadowfax
                 Claimed = false,
                 WantTokenBalance = 0,
                 SubscribedOfferingAmount = 0
-            });
+            };
+            State.PublicOfferingMap[publicId] = offering;
 
-            State.PublicOfferList.Value = publicOfferList;
-            var publicId = publicOfferList.Value.Count - 1;
+            State.CurrentPublicOfferingId.Value = publicId.Add(1);
             Context.Fire(new AddPublicOffering
             {
                 OfferingTokenSymbol = input.OfferingTokenSymbol,
@@ -66,7 +66,6 @@ namespace Gandalf.Contracts.Shadowfax
             };
         }
 
-
         public override Empty ChangeAscription(ChangeAscriptionInput input)
         {
             Assert(State.Ascription[input.TokenSymbol] == Context.Sender, "No right to assign.");
@@ -80,8 +79,7 @@ namespace Gandalf.Contracts.Shadowfax
             return new Empty();
         }
 
-
-        public override Empty Withdraw(Int32Value input)
+        public override Empty Withdraw(Int64Value input)
         {
             Assert(input.Value >= 0, "Invalid number.");
             var offering = GetOffering(input.Value);

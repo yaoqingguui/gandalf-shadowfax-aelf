@@ -1,4 +1,5 @@
 using Google.Protobuf.WellKnownTypes;
+
 namespace Gandalf.Contracts.Shadowfax
 {
     public partial class ShadowfaxContract

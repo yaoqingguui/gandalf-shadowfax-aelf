@@ -9,8 +9,7 @@ namespace Gandalf.Contracts.Shadowfax
         {
             return State.Owner.Value;
         }
-        
-        
+
         public override ResetTimeSpanOutput GetTimespan(Empty input)
         {
             return new ResetTimeSpanOutput
@@ -20,10 +19,14 @@ namespace Gandalf.Contracts.Shadowfax
             };
         }
 
-
-        public override PublicOfferingOutput GetPublicOffering(Int32Value input)
+        public override PublicOfferingOutput GetPublicOffering(Int64Value input)
         {
-            var offering = State.PublicOfferList.Value.Value[input.Value];
+            var offering = State.PublicOfferingMap[input.Value];
+            if (offering == null)
+            {
+                return new PublicOfferingOutput();
+            }
+
             return new PublicOfferingOutput
             {
                 Claimed = offering.Claimed,
@@ -43,29 +46,29 @@ namespace Gandalf.Contracts.Shadowfax
         public override UserInfo GetUserInfo(UserInfoInput input)
         {
             var userInfo = State.UserInfo[input.PublicId][input.User];
-            if (userInfo!=null)
+            if (userInfo != null)
             {
                 return userInfo;
             }
+
             return new UserInfo
             {
                 Claimed = false,
                 ObtainAmount = 0
             };
         }
-        
-        public override Int32Value GetPublicOfferingLength(Empty input)
+
+        public override Int64Value GetPublicOfferingLength(Empty input)
         {
-            return new Int32Value
+            return new Int64Value
             {
-                Value = State.PublicOfferList.Value.Value.Count
+                Value = State.CurrentPublicOfferingId.Value
             };
         }
-        
-        public override Address GetTokenOwnership(Token input)
+
+        public override Address GetTokenOwnership(StringValue input)
         {
-            return State.Ascription[input.TokenSymbol];
+            return State.Ascription[input.Value];
         }
     }
-    
 }

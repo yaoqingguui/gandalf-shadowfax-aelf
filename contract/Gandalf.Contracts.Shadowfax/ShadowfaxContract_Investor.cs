@@ -21,7 +21,7 @@ namespace Gandalf.Contracts.Shadowfax
             var actualUsed = input.Amount > stock ? stock : input.Amount;
             State.TokenContract.TransferFrom.Send(new TransferFromInput
             {
-                Amount = long.Parse(actualUsed.Value),
+                Amount = actualUsed,
                 From = Context.Sender,
                 Symbol = offering.WantTokenSymbol,
                 To = Context.Self
@@ -31,17 +31,13 @@ namespace Gandalf.Contracts.Shadowfax
 
             var userInfo = State.UserInfo[input.PublicId][Context.Sender] ?? new UserInfo
             {
-                Claimed = false,
-                ObtainAmount = new BigIntValue
-                {
-                    Value = "0"
-                }
+                Claimed = false
             };
             userInfo.ObtainAmount = userInfo.ObtainAmount.Add(obtainAmount);
             State.UserInfo[input.PublicId][Context.Sender] = userInfo;
             offering.WantTokenBalance = offering.WantTokenBalance.Add(actualUsed);
             offering.SubscribedOfferingAmount = offering.SubscribedOfferingAmount.Add(obtainAmount);
-            State.PublicOfferList.Value.Value[input.PublicId] = offering;
+            State.PublicOfferingMap[input.PublicId] = offering;
 
             Context.Fire(new Invest
             {
@@ -55,7 +51,7 @@ namespace Gandalf.Contracts.Shadowfax
             return new Empty();
         }
 
-        public override Empty Harvest(Int32Value input)
+        public override Empty Harvest(Int64Value input)
         {
             var offering = GetOffering(input.Value);
             Assert(Context.CurrentBlockTime > offering.EndTime, "The activity is not over.");
@@ -67,7 +63,7 @@ namespace Gandalf.Contracts.Shadowfax
             State.UserInfo[input.Value][Context.Sender] = userInfo;
             State.TokenContract.Transfer.Send(new TransferInput
             {
-                Amount = long.Parse(userInfo.ObtainAmount.Value),
+                Amount = userInfo.ObtainAmount,
                 Symbol = offering.OfferingTokenSymbol,
                 To = Context.Sender
             });
@@ -81,10 +77,10 @@ namespace Gandalf.Contracts.Shadowfax
             return new Empty();
         }
 
-        private PublicOffering GetOffering(int index)
+        private PublicOffering GetOffering(long index)
         {
-            Assert(State.PublicOfferList.Value.Value.Count >= index + 1, "Activity id not exist.");
-            var offering = State.PublicOfferList.Value.Value[index];
+            Assert(State.CurrentPublicOfferingId.Value > index, "Activity id not exist.");
+            var offering = State.PublicOfferingMap[index];
             Assert(offering != null, "Activity not exist.");
             return offering;
         }
