@@ -41,31 +41,23 @@ namespace AElf.Standards.ACS6 {
 
   }
   #region Messages
-  internal sealed partial class RandomBytesGenerated : pb::IMessage<RandomBytesGenerated>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class RandomBytesGenerated : pb::IMessage<RandomBytesGenerated> {
     private static readonly pb::MessageParser<RandomBytesGenerated> _parser = new pb::MessageParser<RandomBytesGenerated>(() => new RandomBytesGenerated());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RandomBytesGenerated> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Standards.ACS6.Acs6Reflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RandomBytesGenerated() {
       OnConstruction();
     }
@@ -73,7 +65,6 @@ namespace AElf.Standards.ACS6 {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RandomBytesGenerated(RandomBytesGenerated other) : this() {
       argument_ = other.argument_;
       randomBytes_ = other.randomBytes_;
@@ -81,7 +72,6 @@ namespace AElf.Standards.ACS6 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RandomBytesGenerated Clone() {
       return new RandomBytesGenerated(this);
     }
@@ -90,7 +80,6 @@ namespace AElf.Standards.ACS6 {
     public const int ArgumentFieldNumber = 1;
     private pb::ByteString argument_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Argument {
       get { return argument_; }
       set {
@@ -102,7 +91,6 @@ namespace AElf.Standards.ACS6 {
     public const int RandomBytesFieldNumber = 2;
     private pb::ByteString randomBytes_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString RandomBytes {
       get { return randomBytes_; }
       set {
@@ -111,13 +99,11 @@ namespace AElf.Standards.ACS6 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RandomBytesGenerated);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RandomBytesGenerated other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -131,7 +117,6 @@ namespace AElf.Standards.ACS6 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Argument.Length != 0) hash ^= Argument.GetHashCode();
@@ -143,17 +128,12 @@ namespace AElf.Standards.ACS6 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Argument.Length != 0) {
         output.WriteRawTag(10);
         output.WriteBytes(Argument);
@@ -165,29 +145,9 @@ namespace AElf.Standards.ACS6 {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Argument.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteBytes(Argument);
-      }
-      if (RandomBytes.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteBytes(RandomBytes);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Argument.Length != 0) {
@@ -203,7 +163,6 @@ namespace AElf.Standards.ACS6 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RandomBytesGenerated other) {
       if (other == null) {
         return;
@@ -218,11 +177,7 @@ namespace AElf.Standards.ACS6 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -239,31 +194,7 @@ namespace AElf.Standards.ACS6 {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Argument = input.ReadBytes();
-            break;
-          }
-          case 18: {
-            RandomBytes = input.ReadBytes();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

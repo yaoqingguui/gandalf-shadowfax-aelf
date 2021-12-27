@@ -55,31 +55,23 @@ namespace AElf.Contracts.Economic {
 
   }
   #region Messages
-  internal sealed partial class InitialEconomicSystemInput : pb::IMessage<InitialEconomicSystemInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class InitialEconomicSystemInput : pb::IMessage<InitialEconomicSystemInput> {
     private static readonly pb::MessageParser<InitialEconomicSystemInput> _parser = new pb::MessageParser<InitialEconomicSystemInput>(() => new InitialEconomicSystemInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<InitialEconomicSystemInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Economic.EconomicContractReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InitialEconomicSystemInput() {
       OnConstruction();
     }
@@ -87,7 +79,6 @@ namespace AElf.Contracts.Economic {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InitialEconomicSystemInput(InitialEconomicSystemInput other) : this() {
       nativeTokenSymbol_ = other.nativeTokenSymbol_;
       nativeTokenName_ = other.nativeTokenName_;
@@ -100,7 +91,6 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InitialEconomicSystemInput Clone() {
       return new InitialEconomicSystemInput(this);
     }
@@ -109,7 +99,6 @@ namespace AElf.Contracts.Economic {
     public const int NativeTokenSymbolFieldNumber = 1;
     private string nativeTokenSymbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string NativeTokenSymbol {
       get { return nativeTokenSymbol_; }
       set {
@@ -121,7 +110,6 @@ namespace AElf.Contracts.Economic {
     public const int NativeTokenNameFieldNumber = 2;
     private string nativeTokenName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string NativeTokenName {
       get { return nativeTokenName_; }
       set {
@@ -133,7 +121,6 @@ namespace AElf.Contracts.Economic {
     public const int NativeTokenTotalSupplyFieldNumber = 3;
     private long nativeTokenTotalSupply_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long NativeTokenTotalSupply {
       get { return nativeTokenTotalSupply_; }
       set {
@@ -145,7 +132,6 @@ namespace AElf.Contracts.Economic {
     public const int NativeTokenDecimalsFieldNumber = 4;
     private int nativeTokenDecimals_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int NativeTokenDecimals {
       get { return nativeTokenDecimals_; }
       set {
@@ -157,7 +143,6 @@ namespace AElf.Contracts.Economic {
     public const int IsNativeTokenBurnableFieldNumber = 5;
     private bool isNativeTokenBurnable_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsNativeTokenBurnable {
       get { return isNativeTokenBurnable_; }
       set {
@@ -169,7 +154,6 @@ namespace AElf.Contracts.Economic {
     public const int MiningRewardTotalAmountFieldNumber = 6;
     private long miningRewardTotalAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long MiningRewardTotalAmount {
       get { return miningRewardTotalAmount_; }
       set {
@@ -181,7 +165,6 @@ namespace AElf.Contracts.Economic {
     public const int TransactionSizeFeeUnitPriceFieldNumber = 7;
     private long transactionSizeFeeUnitPrice_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long TransactionSizeFeeUnitPrice {
       get { return transactionSizeFeeUnitPrice_; }
       set {
@@ -190,13 +173,11 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as InitialEconomicSystemInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(InitialEconomicSystemInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -215,7 +196,6 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (NativeTokenSymbol.Length != 0) hash ^= NativeTokenSymbol.GetHashCode();
@@ -232,17 +212,12 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (NativeTokenSymbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(NativeTokenSymbol);
@@ -274,49 +249,9 @@ namespace AElf.Contracts.Economic {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (NativeTokenSymbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(NativeTokenSymbol);
-      }
-      if (NativeTokenName.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(NativeTokenName);
-      }
-      if (NativeTokenTotalSupply != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(NativeTokenTotalSupply);
-      }
-      if (NativeTokenDecimals != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(NativeTokenDecimals);
-      }
-      if (IsNativeTokenBurnable != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(IsNativeTokenBurnable);
-      }
-      if (MiningRewardTotalAmount != 0L) {
-        output.WriteRawTag(48);
-        output.WriteInt64(MiningRewardTotalAmount);
-      }
-      if (TransactionSizeFeeUnitPrice != 0L) {
-        output.WriteRawTag(56);
-        output.WriteInt64(TransactionSizeFeeUnitPrice);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (NativeTokenSymbol.Length != 0) {
@@ -347,7 +282,6 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(InitialEconomicSystemInput other) {
       if (other == null) {
         return;
@@ -377,11 +311,7 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -418,79 +348,27 @@ namespace AElf.Contracts.Economic {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            NativeTokenSymbol = input.ReadString();
-            break;
-          }
-          case 18: {
-            NativeTokenName = input.ReadString();
-            break;
-          }
-          case 24: {
-            NativeTokenTotalSupply = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            NativeTokenDecimals = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            IsNativeTokenBurnable = input.ReadBool();
-            break;
-          }
-          case 48: {
-            MiningRewardTotalAmount = input.ReadInt64();
-            break;
-          }
-          case 56: {
-            TransactionSizeFeeUnitPrice = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class IssueNativeTokenInput : pb::IMessage<IssueNativeTokenInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class IssueNativeTokenInput : pb::IMessage<IssueNativeTokenInput> {
     private static readonly pb::MessageParser<IssueNativeTokenInput> _parser = new pb::MessageParser<IssueNativeTokenInput>(() => new IssueNativeTokenInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<IssueNativeTokenInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Economic.EconomicContractReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IssueNativeTokenInput() {
       OnConstruction();
     }
@@ -498,7 +376,6 @@ namespace AElf.Contracts.Economic {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IssueNativeTokenInput(IssueNativeTokenInput other) : this() {
       amount_ = other.amount_;
       memo_ = other.memo_;
@@ -507,7 +384,6 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IssueNativeTokenInput Clone() {
       return new IssueNativeTokenInput(this);
     }
@@ -516,7 +392,6 @@ namespace AElf.Contracts.Economic {
     public const int AmountFieldNumber = 1;
     private long amount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Amount {
       get { return amount_; }
       set {
@@ -528,7 +403,6 @@ namespace AElf.Contracts.Economic {
     public const int MemoFieldNumber = 2;
     private string memo_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Memo {
       get { return memo_; }
       set {
@@ -540,7 +414,6 @@ namespace AElf.Contracts.Economic {
     public const int ToFieldNumber = 3;
     private global::AElf.Types.Address to_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address To {
       get { return to_; }
       set {
@@ -549,13 +422,11 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as IssueNativeTokenInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(IssueNativeTokenInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -570,7 +441,6 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Amount != 0L) hash ^= Amount.GetHashCode();
@@ -583,17 +453,12 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Amount != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(Amount);
@@ -609,33 +474,9 @@ namespace AElf.Contracts.Economic {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Amount != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(Amount);
-      }
-      if (Memo.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Memo);
-      }
-      if (to_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(To);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Amount != 0L) {
@@ -654,7 +495,6 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(IssueNativeTokenInput other) {
       if (other == null) {
         return;
@@ -675,11 +515,7 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -703,66 +539,27 @@ namespace AElf.Contracts.Economic {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Amount = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            Memo = input.ReadString();
-            break;
-          }
-          case 26: {
-            if (to_ == null) {
-              To = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(To);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class IssueResourceTokenInput : pb::IMessage<IssueResourceTokenInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class IssueResourceTokenInput : pb::IMessage<IssueResourceTokenInput> {
     private static readonly pb::MessageParser<IssueResourceTokenInput> _parser = new pb::MessageParser<IssueResourceTokenInput>(() => new IssueResourceTokenInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<IssueResourceTokenInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Economic.EconomicContractReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IssueResourceTokenInput() {
       OnConstruction();
     }
@@ -770,7 +567,6 @@ namespace AElf.Contracts.Economic {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IssueResourceTokenInput(IssueResourceTokenInput other) : this() {
       symbol_ = other.symbol_;
       amount_ = other.amount_;
@@ -780,7 +576,6 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IssueResourceTokenInput Clone() {
       return new IssueResourceTokenInput(this);
     }
@@ -789,7 +584,6 @@ namespace AElf.Contracts.Economic {
     public const int SymbolFieldNumber = 1;
     private string symbol_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Symbol {
       get { return symbol_; }
       set {
@@ -801,7 +595,6 @@ namespace AElf.Contracts.Economic {
     public const int AmountFieldNumber = 2;
     private long amount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Amount {
       get { return amount_; }
       set {
@@ -813,7 +606,6 @@ namespace AElf.Contracts.Economic {
     public const int MemoFieldNumber = 3;
     private string memo_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Memo {
       get { return memo_; }
       set {
@@ -825,7 +617,6 @@ namespace AElf.Contracts.Economic {
     public const int ToFieldNumber = 4;
     private global::AElf.Types.Address to_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Address To {
       get { return to_; }
       set {
@@ -834,13 +625,11 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as IssueResourceTokenInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(IssueResourceTokenInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -856,7 +645,6 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Symbol.Length != 0) hash ^= Symbol.GetHashCode();
@@ -870,17 +658,12 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Symbol.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Symbol);
@@ -900,37 +683,9 @@ namespace AElf.Contracts.Economic {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Symbol.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Symbol);
-      }
-      if (Amount != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Amount);
-      }
-      if (Memo.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Memo);
-      }
-      if (to_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(To);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Symbol.Length != 0) {
@@ -952,7 +707,6 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(IssueResourceTokenInput other) {
       if (other == null) {
         return;
@@ -976,11 +730,7 @@ namespace AElf.Contracts.Economic {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1008,42 +758,7 @@ namespace AElf.Contracts.Economic {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Symbol = input.ReadString();
-            break;
-          }
-          case 16: {
-            Amount = input.ReadInt64();
-            break;
-          }
-          case 26: {
-            Memo = input.ReadString();
-            break;
-          }
-          case 34: {
-            if (to_ == null) {
-              To = new global::AElf.Types.Address();
-            }
-            input.ReadMessage(To);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

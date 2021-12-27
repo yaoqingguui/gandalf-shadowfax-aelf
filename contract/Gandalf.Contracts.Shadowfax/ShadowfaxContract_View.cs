@@ -5,21 +5,28 @@ namespace Gandalf.Contracts.Shadowfax
 {
     public partial class ShadowfaxContract
     {
-        public override Address GetOwner(Empty input)
+        public override Address Owner(Empty input)
         {
             return State.Owner.Value;
         }
 
-        public override ResetTimeSpanOutput GetTimespan(Empty input)
+        public override Int64Value MaximalTimeSpan(Empty input)
         {
-            return new ResetTimeSpanOutput
+            return new Int64Value
             {
-                MaxTimespan = State.MaximalTimeSpan.Value,
-                MinTimespan = State.MinimalTimespan.Value
+                Value = State.MaximalTimeSpan.Value
+            };
+        }
+    
+        public override Int64Value MinimalTimespan(Empty input)
+        {
+            return new Int64Value
+            {
+                Value = State.MinimalTimespan.Value
             };
         }
 
-        public override PublicOfferingOutput GetPublicOffering(Int64Value input)
+        public override PublicOfferingOutput PublicOfferings(Int64Value input)
         {
             var offering = State.PublicOfferingMap[input.Value];
             if (offering == null)
@@ -43,7 +50,7 @@ namespace Gandalf.Contracts.Shadowfax
             };
         }
 
-        public override UserInfo GetUserInfo(UserInfoInput input)
+        public override UserInfoStruct UserInfo(UserInfoInput input)
         {
             var userInfo = State.UserInfo[input.PublicId][input.User];
             if (userInfo != null)
@@ -51,7 +58,7 @@ namespace Gandalf.Contracts.Shadowfax
                 return userInfo;
             }
 
-            return new UserInfo
+            return new UserInfoStruct
             {
                 Claimed = false,
                 ObtainAmount = 0
@@ -66,7 +73,8 @@ namespace Gandalf.Contracts.Shadowfax
             };
         }
 
-        public override Address GetTokenOwnership(StringValue input)
+
+        public override Address Ascription(StringValue input)
         {
             return State.Ascription[input.Value];
         }

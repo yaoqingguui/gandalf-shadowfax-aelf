@@ -28,24 +28,31 @@ service ShadowfaxContract {
     }
 
     //  View
-    rpc GetOwner (google.protobuf.Empty) returns (aelf.Address) {
+    rpc Owner (google.protobuf.Empty) returns (aelf.Address) {
         option (aelf.is_view) = true;
     }
-    rpc GetTimespan (google.protobuf.Empty) returns (ResetTimeSpanOutput) {
+    rpc MaximalTimeSpan (google.protobuf.Empty) returns (google.protobuf.Int64Value) {
         option (aelf.is_view) = true;
     }
-    rpc GetPublicOffering (google.protobuf.Int64Value) returns (PublicOfferingOutput){
+    
+    rpc MinimalTimespan(google.protobuf.Empty) returns (google.protobuf.Int64Value){
         option (aelf.is_view) = true;
     }
-    rpc GetUserInfo (UserInfoInput) returns (UserInfo){
+    
+    rpc PublicOfferings (google.protobuf.Int64Value) returns (PublicOfferingOutput){
+        option (aelf.is_view) = true;
+    }
+    rpc UserInfo (UserInfoInput) returns (UserInfoStruct){
         option (aelf.is_view) = true;
     }
     rpc GetPublicOfferingLength (google.protobuf.Empty) returns (google.protobuf.Int64Value){
         option (aelf.is_view) = true;
     }
-    rpc GetTokenOwnership (google.protobuf.StringValue) returns (aelf.Address){
+    rpc Ascription (google.protobuf.StringValue) returns (aelf.Address){
         option (aelf.is_view) = true;
     }
+    
+    
 }
 
 // Stucts
@@ -62,7 +69,7 @@ message PublicOffering {
     int64 subscribed_offering_amount = 10;
 }
 
-message UserInfo {
+message UserInfoStruct {
     bool claimed = 1;
     int64 obtain_amount = 2;
 }
@@ -104,10 +111,6 @@ message ResetTimeSpanInput {
 }
 
 // Outputs
-message ResetTimeSpanOutput {
-    int64 max_timespan = 1;
-    int64 min_timespan = 2;
-}
 
 message PublicOfferingOutput{
     string offering_token_symbol = 1;

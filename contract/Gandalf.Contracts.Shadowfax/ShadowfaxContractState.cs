@@ -12,7 +12,7 @@ namespace Gandalf.Contracts.Shadowfax
 
         public Int64State MaximalTimeSpan { get; set; }
         public Int64State MinimalTimespan { get; set; }
-        public MappedState<long, Address, UserInfo> UserInfo { get; set; }
+        public MappedState<long, Address, UserInfoStruct> UserInfo { get; set; }
         public MappedState<long, PublicOffering> PublicOfferingMap { get; set; }
         public Int64State CurrentPublicOfferingId { get; set; }
         public MappedState<string, Address> Ascription { get; set; }

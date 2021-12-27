@@ -28,25 +28,28 @@ namespace Gandalf.Contracts.Shadowfax
         public async Task init_Success_Test()
         {
             var stub = await InitializeGame();
-            var addr = await stub.GetOwner.SendAsync(new Empty());
+            var addr = await stub.Owner.SendAsync(new Empty());
             addr.Output.ShouldBe(Kitty);
         }
 
         [Fact]
         public async Task init_Fail_Test()
-        {   
+        {
             OwnerKeyPair = SampleAccount.Accounts.First().KeyPair;
             var stub = GetShadowfaxContractStub(OwnerKeyPair);
-            await stub.Initialize.SendAsync(new Address());
-            var owenr = await stub.GetOwner.CallAsync(new Empty());
+            await stub.Initialize.SendAsync(new InitializeInput());
+            var owenr = await stub.Owner.CallAsync(new Empty());
             owenr.ShouldBe(Address.FromPublicKey(OwnerKeyPair.PublicKey));
 
             // await stub.Initialize.SendAsync(SampleAccount.Accounts[1].Address);
             (await Assert.ThrowsAsync<Exception>(() =>
-                    stub.Initialize.SendAsync(SampleAccount.Accounts[1].Address))).Message
+                    stub.Initialize.SendAsync(new InitializeInput
+                    {
+                        Owner = SampleAccount.Accounts[1].Address
+                    }))).Message
                 .ShouldContain("Already initialized.");
         }
-        
+
 
         [Fact]
         public async Task ResetTimeSpan_Test()
@@ -67,7 +70,7 @@ namespace Gandalf.Contracts.Shadowfax
             var endTime = DateTime.UtcNow.AddSeconds(1000).ToTimestamp();
             await AddPublicOffering(startTime, endTime);
 
-            var offering = await tomStub.GetPublicOffering.CallAsync(new Int32Value
+            var offering = await tomStub.PublicOfferings.CallAsync(new Int64Value
             {
                 Value = 0
             });
@@ -87,9 +90,9 @@ namespace Gandalf.Contracts.Shadowfax
             var int32Value = await tomStub.GetPublicOfferingLength.CallAsync(new Empty());
             int32Value.Value.ShouldBe(1);
         }
-        
+
         [Fact]
-        public async  Task Invest_Should_Fail_Withdrawout_Add_Offering_Test()
+        public async Task Invest_Should_Fail_Withdrawout_Add_Offering_Test()
         {
             await InitializeGame();
             await ResetTimeSpan();
@@ -102,7 +105,7 @@ namespace Gandalf.Contracts.Shadowfax
                 Symbol = TokenWantSymbol
             });
 
-            (await Assert.ThrowsAsync<Exception>(() =>  kittyStub.Invest.SendAsync(new InvestInput
+            (await Assert.ThrowsAsync<Exception>(() => kittyStub.Invest.SendAsync(new InvestInput
             {
                 PublicId = 0,
                 Amount = 2000
@@ -118,7 +121,7 @@ namespace Gandalf.Contracts.Shadowfax
             var startTime = DateTime.UtcNow.AddSeconds(1).ToTimestamp();
             var endTime = DateTime.UtcNow.AddSeconds(60).ToTimestamp();
             await AddPublicOffering(startTime, endTime);
-            var offering = await tomStub.GetPublicOffering.CallAsync(new Int32Value
+            var offering = await tomStub.PublicOfferings.CallAsync(new Int64Value
             {
                 Value = 0
             });
@@ -153,7 +156,7 @@ namespace Gandalf.Contracts.Shadowfax
                 Symbol = TokenWantSymbol
             });
             wantTokenBalanceOfKitty.Balance.ShouldBe(1000000 - 2000);
-            offering = await tomStub.GetPublicOffering.CallAsync(new Int32Value
+            offering = await tomStub.PublicOfferings.CallAsync(new Int64Value
             {
                 Value = 0
             });
@@ -161,7 +164,7 @@ namespace Gandalf.Contracts.Shadowfax
             var obtainAmount = offering.OfferingTokenAmount.Mul(2000).Div(offering.WantTokenAmount);
 
             offering.SubscribedOfferingAmount.ShouldBe(obtainAmount);
-            var userInfo = await kittyStub.GetUserInfo.CallAsync(new UserInfoInput
+            var userInfo = await kittyStub.UserInfo.CallAsync(new UserInfoInput
             {
                 User = Kitty,
                 PublicId = 0
@@ -182,13 +185,13 @@ namespace Gandalf.Contracts.Shadowfax
             });
 
             wantTokenBalanceOfKitty.Balance.ShouldBe(1000000 - 2000 - 18000);
-            offering = await tomStub.GetPublicOffering.CallAsync(new Int32Value
+            offering = await tomStub.PublicOfferings.CallAsync(new Int64Value
             {
                 Value = 0
             });
             offering.WantTokenBalance.ShouldBe(20000);
 
-            userInfo = await kittyStub.GetUserInfo.CallAsync(new UserInfoInput
+            userInfo = await kittyStub.UserInfo.CallAsync(new UserInfoInput
             {
                 User = Kitty,
                 PublicId = 0
@@ -197,20 +200,20 @@ namespace Gandalf.Contracts.Shadowfax
             userInfo.ObtainAmount.ShouldBe(100000);
 
             await Task.Delay(60 * 1000);
-            
+
             var offerTokenbalance = await tokenKitty.GetBalance.CallAsync(new GetBalanceInput
             {
                 Owner = Kitty,
                 Symbol = TokenOfferSymbol
             });
-            offerTokenbalance.Balance.ShouldBe(0); 
-            
-            await kittyStub.Harvest.SendAsync(new Int32Value
+            offerTokenbalance.Balance.ShouldBe(0);
+
+            await kittyStub.Harvest.SendAsync(new Int64Value
             {
                 Value = 0
             });
 
-            userInfo = await kittyStub.GetUserInfo.CallAsync(new UserInfoInput
+            userInfo = await kittyStub.UserInfo.CallAsync(new UserInfoInput
             {
                 User = Kitty,
                 PublicId = 0
@@ -225,7 +228,7 @@ namespace Gandalf.Contracts.Shadowfax
 
             offerTokenbalance.Balance.ShouldBe(100000);
         }
-        
+
         [Fact]
         public async Task Pulisher_Raise_Full_And_Withdraw_Test()
         {
@@ -250,19 +253,19 @@ namespace Gandalf.Contracts.Shadowfax
             });
 
             var tomStub = GetShadowfaxContractStub(TomKeyPair);
-           
 
-            (await Assert.ThrowsAsync<Exception>(() => tomStub.Withdraw.SendAsync(new Int32Value
+
+            (await Assert.ThrowsAsync<Exception>(() => tomStub.Withdraw.SendAsync(new Int64Value
             {
                 Value = 0
             }))).Message.ShouldContain("Game not over.");
 
             await Task.Delay(60 * 1000);
-            await tomStub.Withdraw.SendAsync(new Int32Value
+            await tomStub.Withdraw.SendAsync(new Int64Value
             {
                 Value = 0
             });
-            
+
             var balanceCallAsync = await tokenKitty.GetBalance.CallAsync(new GetBalanceInput
             {
                 Owner = Tom,
@@ -270,7 +273,7 @@ namespace Gandalf.Contracts.Shadowfax
             });
             balanceCallAsync.Balance.ShouldBe(20000);
         }
-        
+
         [Fact]
         public async Task Publisher_Should_Withdraw_Success_Test()
         {
@@ -296,8 +299,8 @@ namespace Gandalf.Contracts.Shadowfax
                 Amount = 2000,
                 PublicId = 0
             });
-            
-            var offering = await kittyStub.GetPublicOffering.CallAsync(new Int32Value
+
+            var offering = await kittyStub.PublicOfferings.CallAsync(new Int64Value
             {
                 Value = 0
             });
@@ -305,14 +308,14 @@ namespace Gandalf.Contracts.Shadowfax
             offering.Publisher.ShouldBe(Tom);
             offering.WantTokenBalance.ShouldBe(2000);
 
-            (await Assert.ThrowsAsync<Exception>(() => kittyStub.Withdraw.SendAsync(new Int32Value
+            (await Assert.ThrowsAsync<Exception>(() => kittyStub.Withdraw.SendAsync(new Int64Value
             {
                 Value = 0
-            }))).Message.ShouldContain( "No rights.");
+            }))).Message.ShouldContain("No rights.");
             await Task.Delay(60 * 1000);
 
             var tomStub = GetShadowfaxContractStub(TomKeyPair);
-            await tomStub.Withdraw.SendAsync(new Int32Value
+            await tomStub.Withdraw.SendAsync(new Int64Value
             {
                 Value = 0
             });
@@ -323,9 +326,8 @@ namespace Gandalf.Contracts.Shadowfax
             });
             tomWantTokenBalance.Balance.ShouldBe(2000);
         }
-        
-        
-        
+
+
         [Fact]
         public async Task Publisher_Should_Change_Ascription_Test()
         {
@@ -345,14 +347,14 @@ namespace Gandalf.Contracts.Shadowfax
                 Symbol = TokenOfferSymbol
             });
             kittyOfferingTokenBalacne.Balance.ShouldBe(20000);
-            
+
             var startTime = DateTime.UtcNow.AddSeconds(1).ToTimestamp();
             var endTime = DateTime.UtcNow.AddSeconds(60).ToTimestamp();
             await AddPublicOffering(startTime, endTime);
             var kittyStub = GetKittyStub();
-            var tokenOwner = await kittyStub.Result.GetTokenOwnership.CallAsync(new Token
+            var tokenOwner = await kittyStub.Result.Ascription.CallAsync(new StringValue
             {
-                TokenSymbol =  TokenOfferSymbol
+                Value = TokenOfferSymbol
             });
             tokenOwner.Value.ShouldBe(Tom.Value);
             var tokenKittyStub = GetTokenContractStub(KittyKeyPair);
@@ -380,21 +382,20 @@ namespace Gandalf.Contracts.Shadowfax
                     Receiver = Tom,
                     TokenSymbol = TokenOfferSymbol
                 }))).Message.ShouldContain("No right to assign.");
-            
-            
-            
+
+
             var tomStub = GetShadowfaxContractStub(TomKeyPair);
             await tomStub.ChangeAscription.SendAsync(new ChangeAscriptionInput
             {
                 Receiver = Kitty,
                 TokenSymbol = TokenOfferSymbol
             });
-            
-            tokenOwner = await kittyStub.Result.GetTokenOwnership.CallAsync(new Token
+
+            tokenOwner = await kittyStub.Result.Ascription.CallAsync(new StringValue
             {
-                TokenSymbol =  TokenOfferSymbol
+                Value = TokenOfferSymbol
             });
-            
+
             tokenOwner.Value.ShouldBe(Kitty.Value);
             await kittyStub.Result.AddPublicOffering.SendAsync(new AddPublicOfferingInput
             {
@@ -406,17 +407,15 @@ namespace Gandalf.Contracts.Shadowfax
                 WantTokenSymbol = TokenWantSymbol
             });
 
-            var kittyOffering = await kittyStub.Result.GetPublicOffering.CallAsync(new Int32Value
+            var kittyOffering = await kittyStub.Result.PublicOfferings.CallAsync(new Int64Value
             {
                 Value = 1
             });
-            
+
             kittyOffering.Publisher.ShouldBe(Kitty);
         }
-        
-        
-        
-        
+
+
         private async Task AddPublicOffering(Timestamp startTime, Timestamp endTime)
         {
             var tomStub = GetShadowfaxContractStub(TomKeyPair);
@@ -449,9 +448,11 @@ namespace Gandalf.Contracts.Shadowfax
                 MinTimespan = 50
             });
 
-            var output = await stub.GetTimespan.CallAsync(new Empty());
-            output.MaxTimespan.ShouldBe(1000);
-            output.MinTimespan.ShouldBe(50);
+            var minimalTimespan = await stub.MinimalTimespan.CallAsync(new Empty());
+            var maximalTimeSpan = await stub.MaximalTimeSpan.CallAsync(new Empty());
+
+            maximalTimeSpan.Value.ShouldBe(1000);
+            minimalTimespan.Value.ShouldBe(50);
         }
 
 
@@ -502,8 +503,8 @@ namespace Gandalf.Contracts.Shadowfax
             });
             pandaBalance.Balance.ShouldBe(500000);
         }
-        
-        
+
+
         private async Task<ShadowfaxContractContainer.ShadowfaxContractStub> GetKittyStub()
         {
             return GetShadowfaxContractStub(KittyKeyPair);
@@ -518,7 +519,10 @@ namespace Gandalf.Contracts.Shadowfax
             TomKeyPair = AElf.ContractTestKit.SampleAccount.Accounts[2].KeyPair;
             Tom = Address.FromPublicKey(TomKeyPair.PublicKey);
             var stub = GetShadowfaxContractStub(OwnerKeyPair);
-            await stub.Initialize.SendAsync(Kitty);
+            await stub.Initialize.SendAsync(new InitializeInput
+            {
+                Owner = Kitty
+            });
             await CreateToken();
             return stub;
         }

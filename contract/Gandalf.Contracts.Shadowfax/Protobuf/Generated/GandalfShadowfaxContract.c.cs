@@ -134,10 +134,9 @@ namespace Gandalf.Contracts.Shadowfax {
     static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.InvestInput> __Marshaller_InvestInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.InvestInput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.ResetTimeSpanInput> __Marshaller_ResetTimeSpanInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.ResetTimeSpanInput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::AElf.Types.Address> __Marshaller_aelf_Address = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::AElf.Types.Address.Parser.ParseFrom);
-    static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.ResetTimeSpanOutput> __Marshaller_ResetTimeSpanOutput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.ResetTimeSpanOutput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput> __Marshaller_PublicOfferingOutput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.UserInfoInput> __Marshaller_UserInfoInput = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.UserInfoInput.Parser.ParseFrom);
-    static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.UserInfo> __Marshaller_UserInfo = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.UserInfo.Parser.ParseFrom);
+    static readonly aelf::Marshaller<global::Gandalf.Contracts.Shadowfax.UserInfoStruct> __Marshaller_UserInfoStruct = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Gandalf.Contracts.Shadowfax.UserInfoStruct.Parser.ParseFrom);
     static readonly aelf::Marshaller<global::Google.Protobuf.WellKnownTypes.StringValue> __Marshaller_google_protobuf_StringValue = aelf::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.StringValue.Parser.ParseFrom);
     #endregion
 
@@ -191,33 +190,40 @@ namespace Gandalf.Contracts.Shadowfax {
         __Marshaller_ResetTimeSpanInput,
         __Marshaller_google_protobuf_Empty);
 
-    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::AElf.Types.Address> __Method_GetOwner = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::AElf.Types.Address>(
+    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::AElf.Types.Address> __Method_Owner = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::AElf.Types.Address>(
         aelf::MethodType.View,
         __ServiceName,
-        "GetOwner",
+        "Owner",
         __Marshaller_google_protobuf_Empty,
         __Marshaller_aelf_Address);
 
-    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Gandalf.Contracts.Shadowfax.ResetTimeSpanOutput> __Method_GetTimespan = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Gandalf.Contracts.Shadowfax.ResetTimeSpanOutput>(
+    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int64Value> __Method_MaximalTimeSpan = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int64Value>(
         aelf::MethodType.View,
         __ServiceName,
-        "GetTimespan",
+        "MaximalTimeSpan",
         __Marshaller_google_protobuf_Empty,
-        __Marshaller_ResetTimeSpanOutput);
+        __Marshaller_google_protobuf_Int64Value);
 
-    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Int64Value, global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput> __Method_GetPublicOffering = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Int64Value, global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput>(
+    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int64Value> __Method_MinimalTimespan = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int64Value>(
         aelf::MethodType.View,
         __ServiceName,
-        "GetPublicOffering",
+        "MinimalTimespan",
+        __Marshaller_google_protobuf_Empty,
+        __Marshaller_google_protobuf_Int64Value);
+
+    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Int64Value, global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput> __Method_PublicOfferings = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Int64Value, global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput>(
+        aelf::MethodType.View,
+        __ServiceName,
+        "PublicOfferings",
         __Marshaller_google_protobuf_Int64Value,
         __Marshaller_PublicOfferingOutput);
 
-    static readonly aelf::Method<global::Gandalf.Contracts.Shadowfax.UserInfoInput, global::Gandalf.Contracts.Shadowfax.UserInfo> __Method_GetUserInfo = new aelf::Method<global::Gandalf.Contracts.Shadowfax.UserInfoInput, global::Gandalf.Contracts.Shadowfax.UserInfo>(
+    static readonly aelf::Method<global::Gandalf.Contracts.Shadowfax.UserInfoInput, global::Gandalf.Contracts.Shadowfax.UserInfoStruct> __Method_UserInfo = new aelf::Method<global::Gandalf.Contracts.Shadowfax.UserInfoInput, global::Gandalf.Contracts.Shadowfax.UserInfoStruct>(
         aelf::MethodType.View,
         __ServiceName,
-        "GetUserInfo",
+        "UserInfo",
         __Marshaller_UserInfoInput,
-        __Marshaller_UserInfo);
+        __Marshaller_UserInfoStruct);
 
     static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int64Value> __Method_GetPublicOfferingLength = new aelf::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Int64Value>(
         aelf::MethodType.View,
@@ -226,10 +232,10 @@ namespace Gandalf.Contracts.Shadowfax {
         __Marshaller_google_protobuf_Empty,
         __Marshaller_google_protobuf_Int64Value);
 
-    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.StringValue, global::AElf.Types.Address> __Method_GetTokenOwnership = new aelf::Method<global::Google.Protobuf.WellKnownTypes.StringValue, global::AElf.Types.Address>(
+    static readonly aelf::Method<global::Google.Protobuf.WellKnownTypes.StringValue, global::AElf.Types.Address> __Method_Ascription = new aelf::Method<global::Google.Protobuf.WellKnownTypes.StringValue, global::AElf.Types.Address>(
         aelf::MethodType.View,
         __ServiceName,
-        "GetTokenOwnership",
+        "Ascription",
         __Marshaller_google_protobuf_StringValue,
         __Marshaller_aelf_Address);
 
@@ -291,22 +297,27 @@ namespace Gandalf.Contracts.Shadowfax {
         throw new global::System.NotImplementedException();
       }
 
-      public virtual global::AElf.Types.Address GetOwner(global::Google.Protobuf.WellKnownTypes.Empty input)
+      public virtual global::AElf.Types.Address Owner(global::Google.Protobuf.WellKnownTypes.Empty input)
       {
         throw new global::System.NotImplementedException();
       }
 
-      public virtual global::Gandalf.Contracts.Shadowfax.ResetTimeSpanOutput GetTimespan(global::Google.Protobuf.WellKnownTypes.Empty input)
+      public virtual global::Google.Protobuf.WellKnownTypes.Int64Value MaximalTimeSpan(global::Google.Protobuf.WellKnownTypes.Empty input)
       {
         throw new global::System.NotImplementedException();
       }
 
-      public virtual global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput GetPublicOffering(global::Google.Protobuf.WellKnownTypes.Int64Value input)
+      public virtual global::Google.Protobuf.WellKnownTypes.Int64Value MinimalTimespan(global::Google.Protobuf.WellKnownTypes.Empty input)
       {
         throw new global::System.NotImplementedException();
       }
 
-      public virtual global::Gandalf.Contracts.Shadowfax.UserInfo GetUserInfo(global::Gandalf.Contracts.Shadowfax.UserInfoInput input)
+      public virtual global::Gandalf.Contracts.Shadowfax.PublicOfferingOutput PublicOfferings(global::Google.Protobuf.WellKnownTypes.Int64Value input)
+      {
+        throw new global::System.NotImplementedException();
+      }
+
+      public virtual global::Gandalf.Contracts.Shadowfax.UserInfoStruct UserInfo(global::Gandalf.Contracts.Shadowfax.UserInfoInput input)
       {
         throw new global::System.NotImplementedException();
       }
@@ -316,7 +327,7 @@ namespace Gandalf.Contracts.Shadowfax {
         throw new global::System.NotImplementedException();
       }
 
-      public virtual global::AElf.Types.Address GetTokenOwnership(global::Google.Protobuf.WellKnownTypes.StringValue input)
+      public virtual global::AElf.Types.Address Ascription(global::Google.Protobuf.WellKnownTypes.StringValue input)
       {
         throw new global::System.NotImplementedException();
       }
@@ -334,12 +345,13 @@ namespace Gandalf.Contracts.Shadowfax {
           .AddMethod(__Method_Invest, serviceImpl.Invest)
           .AddMethod(__Method_Harvest, serviceImpl.Harvest)
           .AddMethod(__Method_ResetTimeSpan, serviceImpl.ResetTimeSpan)
-          .AddMethod(__Method_GetOwner, serviceImpl.GetOwner)
-          .AddMethod(__Method_GetTimespan, serviceImpl.GetTimespan)
-          .AddMethod(__Method_GetPublicOffering, serviceImpl.GetPublicOffering)
-          .AddMethod(__Method_GetUserInfo, serviceImpl.GetUserInfo)
+          .AddMethod(__Method_Owner, serviceImpl.Owner)
+          .AddMethod(__Method_MaximalTimeSpan, serviceImpl.MaximalTimeSpan)
+          .AddMethod(__Method_MinimalTimespan, serviceImpl.MinimalTimespan)
+          .AddMethod(__Method_PublicOfferings, serviceImpl.PublicOfferings)
+          .AddMethod(__Method_UserInfo, serviceImpl.UserInfo)
           .AddMethod(__Method_GetPublicOfferingLength, serviceImpl.GetPublicOfferingLength)
-          .AddMethod(__Method_GetTokenOwnership, serviceImpl.GetTokenOwnership).Build();
+          .AddMethod(__Method_Ascription, serviceImpl.Ascription).Build();
     }
 
   }

@@ -239,31 +239,23 @@ namespace AElf.Contracts.Consensus.AEDPoS {
   #endregion
 
   #region Messages
-  internal sealed partial class InitialAElfConsensusContractInput : pb::IMessage<InitialAElfConsensusContractInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class InitialAElfConsensusContractInput : pb::IMessage<InitialAElfConsensusContractInput> {
     private static readonly pb::MessageParser<InitialAElfConsensusContractInput> _parser = new pb::MessageParser<InitialAElfConsensusContractInput>(() => new InitialAElfConsensusContractInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<InitialAElfConsensusContractInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InitialAElfConsensusContractInput() {
       OnConstruction();
     }
@@ -271,7 +263,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InitialAElfConsensusContractInput(InitialAElfConsensusContractInput other) : this() {
       isTermStayOne_ = other.isTermStayOne_;
       isSideChain_ = other.isSideChain_;
@@ -281,7 +272,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InitialAElfConsensusContractInput Clone() {
       return new InitialAElfConsensusContractInput(this);
     }
@@ -290,7 +280,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int IsTermStayOneFieldNumber = 1;
     private bool isTermStayOne_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsTermStayOne {
       get { return isTermStayOne_; }
       set {
@@ -302,7 +291,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int IsSideChainFieldNumber = 2;
     private bool isSideChain_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsSideChain {
       get { return isSideChain_; }
       set {
@@ -314,7 +302,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int PeriodSecondsFieldNumber = 3;
     private long periodSeconds_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long PeriodSeconds {
       get { return periodSeconds_; }
       set {
@@ -326,7 +313,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int MinerIncreaseIntervalFieldNumber = 4;
     private long minerIncreaseInterval_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long MinerIncreaseInterval {
       get { return minerIncreaseInterval_; }
       set {
@@ -335,13 +321,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as InitialAElfConsensusContractInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(InitialAElfConsensusContractInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -357,7 +341,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (IsTermStayOne != false) hash ^= IsTermStayOne.GetHashCode();
@@ -371,17 +354,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (IsTermStayOne != false) {
         output.WriteRawTag(8);
         output.WriteBool(IsTermStayOne);
@@ -401,37 +379,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (IsTermStayOne != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(IsTermStayOne);
-      }
-      if (IsSideChain != false) {
-        output.WriteRawTag(16);
-        output.WriteBool(IsSideChain);
-      }
-      if (PeriodSeconds != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(PeriodSeconds);
-      }
-      if (MinerIncreaseInterval != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(MinerIncreaseInterval);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (IsTermStayOne != false) {
@@ -453,7 +403,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(InitialAElfConsensusContractInput other) {
       if (other == null) {
         return;
@@ -474,11 +423,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -503,70 +448,30 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            IsTermStayOne = input.ReadBool();
-            break;
-          }
-          case 16: {
-            IsSideChain = input.ReadBool();
-            break;
-          }
-          case 24: {
-            PeriodSeconds = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            MinerIncreaseInterval = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
   /// <summary>
   /// Just used as parameter of consensus contract method.
   /// </summary>
-  internal sealed partial class UpdateValueInput : pb::IMessage<UpdateValueInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class UpdateValueInput : pb::IMessage<UpdateValueInput> {
     private static readonly pb::MessageParser<UpdateValueInput> _parser = new pb::MessageParser<UpdateValueInput>(() => new UpdateValueInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<UpdateValueInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UpdateValueInput() {
       OnConstruction();
     }
@@ -574,7 +479,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UpdateValueInput(UpdateValueInput other) : this() {
       outValue_ = other.outValue_ != null ? other.outValue_.Clone() : null;
       signature_ = other.signature_ != null ? other.signature_.Clone() : null;
@@ -592,7 +496,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UpdateValueInput Clone() {
       return new UpdateValueInput(this);
     }
@@ -604,7 +507,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     /// Calculated from current in value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash OutValue {
       get { return outValue_; }
       set {
@@ -619,7 +521,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     /// Calculated from current in value and signatures of previous round.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash Signature {
       get { return signature_; }
       set {
@@ -634,7 +535,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     /// To ensure the values to update will be apply to correct round by comparing round id.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RoundId {
       get { return roundId_; }
       set {
@@ -649,7 +549,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     /// Publish previous in value for validation previous signature and previous out value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash PreviousInValue {
       get { return previousInValue_; }
       set {
@@ -661,7 +560,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ActualMiningTimeFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp actualMiningTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ActualMiningTime {
       get { return actualMiningTime_; }
       set {
@@ -673,7 +571,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int SupposedOrderOfNextRoundFieldNumber = 6;
     private int supposedOrderOfNextRound_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int SupposedOrderOfNextRound {
       get { return supposedOrderOfNextRound_; }
       set {
@@ -687,7 +584,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
         = new pbc::MapField<string, int>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForInt32(16, 0), 58);
     private readonly pbc::MapField<string, int> tuneOrderInformation_ = new pbc::MapField<string, int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, int> TuneOrderInformation {
       get { return tuneOrderInformation_; }
     }
@@ -701,7 +597,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     /// For others to recover his in value of current round.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, pb::ByteString> EncryptedPieces {
       get { return encryptedPieces_; }
     }
@@ -712,7 +607,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
         = new pbc::MapField<string, pb::ByteString>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForBytes(18, pb::ByteString.Empty), 74);
     private readonly pbc::MapField<string, pb::ByteString> decryptedPieces_ = new pbc::MapField<string, pb::ByteString>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, pb::ByteString> DecryptedPieces {
       get { return decryptedPieces_; }
     }
@@ -721,7 +615,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ProducedBlocksFieldNumber = 10;
     private long producedBlocks_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ProducedBlocks {
       get { return producedBlocks_; }
       set {
@@ -735,7 +628,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
         = new pbc::MapField<string, global::AElf.Types.Hash>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::AElf.Types.Hash.Parser), 90);
     private readonly pbc::MapField<string, global::AElf.Types.Hash> minersPreviousInValues_ = new pbc::MapField<string, global::AElf.Types.Hash>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::AElf.Types.Hash> MinersPreviousInValues {
       get { return minersPreviousInValues_; }
     }
@@ -744,7 +636,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ImpliedIrreversibleBlockHeightFieldNumber = 12;
     private long impliedIrreversibleBlockHeight_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ImpliedIrreversibleBlockHeight {
       get { return impliedIrreversibleBlockHeight_; }
       set {
@@ -753,13 +644,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as UpdateValueInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(UpdateValueInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -783,7 +672,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (outValue_ != null) hash ^= OutValue.GetHashCode();
@@ -805,17 +693,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (outValue_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(OutValue);
@@ -855,57 +738,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (outValue_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(OutValue);
-      }
-      if (signature_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Signature);
-      }
-      if (RoundId != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(RoundId);
-      }
-      if (previousInValue_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(PreviousInValue);
-      }
-      if (actualMiningTime_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(ActualMiningTime);
-      }
-      if (SupposedOrderOfNextRound != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(SupposedOrderOfNextRound);
-      }
-      tuneOrderInformation_.WriteTo(ref output, _map_tuneOrderInformation_codec);
-      encryptedPieces_.WriteTo(ref output, _map_encryptedPieces_codec);
-      decryptedPieces_.WriteTo(ref output, _map_decryptedPieces_codec);
-      if (ProducedBlocks != 0L) {
-        output.WriteRawTag(80);
-        output.WriteInt64(ProducedBlocks);
-      }
-      minersPreviousInValues_.WriteTo(ref output, _map_minersPreviousInValues_codec);
-      if (ImpliedIrreversibleBlockHeight != 0L) {
-        output.WriteRawTag(96);
-        output.WriteInt64(ImpliedIrreversibleBlockHeight);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (outValue_ != null) {
@@ -943,7 +778,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(UpdateValueInput other) {
       if (other == null) {
         return;
@@ -992,11 +826,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1065,114 +895,30 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (outValue_ == null) {
-              OutValue = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(OutValue);
-            break;
-          }
-          case 18: {
-            if (signature_ == null) {
-              Signature = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(Signature);
-            break;
-          }
-          case 24: {
-            RoundId = input.ReadInt64();
-            break;
-          }
-          case 34: {
-            if (previousInValue_ == null) {
-              PreviousInValue = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(PreviousInValue);
-            break;
-          }
-          case 42: {
-            if (actualMiningTime_ == null) {
-              ActualMiningTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(ActualMiningTime);
-            break;
-          }
-          case 48: {
-            SupposedOrderOfNextRound = input.ReadInt32();
-            break;
-          }
-          case 58: {
-            tuneOrderInformation_.AddEntriesFrom(ref input, _map_tuneOrderInformation_codec);
-            break;
-          }
-          case 66: {
-            encryptedPieces_.AddEntriesFrom(ref input, _map_encryptedPieces_codec);
-            break;
-          }
-          case 74: {
-            decryptedPieces_.AddEntriesFrom(ref input, _map_decryptedPieces_codec);
-            break;
-          }
-          case 80: {
-            ProducedBlocks = input.ReadInt64();
-            break;
-          }
-          case 90: {
-            minersPreviousInValues_.AddEntriesFrom(ref input, _map_minersPreviousInValues_codec);
-            break;
-          }
-          case 96: {
-            ImpliedIrreversibleBlockHeight = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
   /// <summary>
   /// The miners public key list for each term.
   /// </summary>
-  internal sealed partial class MinerList : pb::IMessage<MinerList>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class MinerList : pb::IMessage<MinerList> {
     private static readonly pb::MessageParser<MinerList> _parser = new pb::MessageParser<MinerList>(() => new MinerList());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MinerList> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MinerList() {
       OnConstruction();
     }
@@ -1180,14 +926,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MinerList(MinerList other) : this() {
       pubkeys_ = other.pubkeys_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MinerList Clone() {
       return new MinerList(this);
     }
@@ -1198,19 +942,16 @@ namespace AElf.Contracts.Consensus.AEDPoS {
         = pb::FieldCodec.ForBytes(10);
     private readonly pbc::RepeatedField<pb::ByteString> pubkeys_ = new pbc::RepeatedField<pb::ByteString>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<pb::ByteString> Pubkeys {
       get { return pubkeys_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MinerList);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MinerList other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1223,7 +964,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= pubkeys_.GetHashCode();
@@ -1234,37 +974,19 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       pubkeys_.WriteTo(output, _repeated_pubkeys_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      pubkeys_.WriteTo(ref output, _repeated_pubkeys_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += pubkeys_.CalculateSize(_repeated_pubkeys_codec);
@@ -1275,7 +997,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MinerList other) {
       if (other == null) {
         return;
@@ -1285,11 +1006,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1302,55 +1019,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            pubkeys_.AddEntriesFrom(ref input, _repeated_pubkeys_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class PubkeyList : pb::IMessage<PubkeyList>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class PubkeyList : pb::IMessage<PubkeyList> {
     private static readonly pb::MessageParser<PubkeyList> _parser = new pb::MessageParser<PubkeyList>(() => new PubkeyList());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PubkeyList> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PubkeyList() {
       OnConstruction();
     }
@@ -1358,14 +1047,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PubkeyList(PubkeyList other) : this() {
       pubkeys_ = other.pubkeys_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PubkeyList Clone() {
       return new PubkeyList(this);
     }
@@ -1376,19 +1063,16 @@ namespace AElf.Contracts.Consensus.AEDPoS {
         = pb::FieldCodec.ForString(10);
     private readonly pbc::RepeatedField<string> pubkeys_ = new pbc::RepeatedField<string>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Pubkeys {
       get { return pubkeys_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PubkeyList);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PubkeyList other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1401,7 +1085,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= pubkeys_.GetHashCode();
@@ -1412,37 +1095,19 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       pubkeys_.WriteTo(output, _repeated_pubkeys_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      pubkeys_.WriteTo(ref output, _repeated_pubkeys_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += pubkeys_.CalculateSize(_repeated_pubkeys_codec);
@@ -1453,7 +1118,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PubkeyList other) {
       if (other == null) {
         return;
@@ -1463,11 +1127,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1480,58 +1140,30 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            pubkeys_.AddEntriesFrom(ref input, _repeated_pubkeys_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
   /// <summary>
   /// To query first round number of each term.
   /// </summary>
-  internal sealed partial class TermNumberLookUp : pb::IMessage<TermNumberLookUp>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class TermNumberLookUp : pb::IMessage<TermNumberLookUp> {
     private static readonly pb::MessageParser<TermNumberLookUp> _parser = new pb::MessageParser<TermNumberLookUp>(() => new TermNumberLookUp());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TermNumberLookUp> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TermNumberLookUp() {
       OnConstruction();
     }
@@ -1539,14 +1171,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TermNumberLookUp(TermNumberLookUp other) : this() {
       map_ = other.map_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TermNumberLookUp Clone() {
       return new TermNumberLookUp(this);
     }
@@ -1560,19 +1190,16 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     /// Term number -> Round number.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<long, long> Map {
       get { return map_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TermNumberLookUp);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TermNumberLookUp other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1585,7 +1212,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= Map.GetHashCode();
@@ -1596,37 +1222,19 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       map_.WriteTo(output, _map_map_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      map_.WriteTo(ref output, _map_map_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += map_.CalculateSize(_map_map_codec);
@@ -1637,7 +1245,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TermNumberLookUp other) {
       if (other == null) {
         return;
@@ -1647,11 +1254,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1664,58 +1267,30 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            map_.AddEntriesFrom(ref input, _map_map_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
   /// <summary>
   /// All the candidates.
   /// </summary>
-  internal sealed partial class Candidates : pb::IMessage<Candidates>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class Candidates : pb::IMessage<Candidates> {
     private static readonly pb::MessageParser<Candidates> _parser = new pb::MessageParser<Candidates>(() => new Candidates());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Candidates> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Candidates() {
       OnConstruction();
     }
@@ -1723,14 +1298,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Candidates(Candidates other) : this() {
       pubkeys_ = other.pubkeys_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Candidates Clone() {
       return new Candidates(this);
     }
@@ -1741,19 +1314,16 @@ namespace AElf.Contracts.Consensus.AEDPoS {
         = pb::FieldCodec.ForBytes(10);
     private readonly pbc::RepeatedField<pb::ByteString> pubkeys_ = new pbc::RepeatedField<pb::ByteString>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<pb::ByteString> Pubkeys {
       get { return pubkeys_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Candidates);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Candidates other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1766,7 +1336,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= pubkeys_.GetHashCode();
@@ -1777,37 +1346,19 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       pubkeys_.WriteTo(output, _repeated_pubkeys_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      pubkeys_.WriteTo(ref output, _repeated_pubkeys_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += pubkeys_.CalculateSize(_repeated_pubkeys_codec);
@@ -1818,7 +1369,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Candidates other) {
       if (other == null) {
         return;
@@ -1828,11 +1378,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -1845,58 +1391,30 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            pubkeys_.AddEntriesFrom(ref input, _repeated_pubkeys_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
   /// <summary>
   /// The information of a round.
   /// </summary>
-  internal sealed partial class Round : pb::IMessage<Round>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class Round : pb::IMessage<Round> {
     private static readonly pb::MessageParser<Round> _parser = new pb::MessageParser<Round>(() => new Round());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Round> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Round() {
       OnConstruction();
     }
@@ -1904,7 +1422,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Round(Round other) : this() {
       roundNumber_ = other.roundNumber_;
       realTimeMinersInformation_ = other.realTimeMinersInformation_.Clone();
@@ -1920,7 +1437,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Round Clone() {
       return new Round(this);
     }
@@ -1929,7 +1445,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int RoundNumberFieldNumber = 1;
     private long roundNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RoundNumber {
       get { return roundNumber_; }
       set {
@@ -1943,7 +1458,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
         = new pbc::MapField<string, global::AElf.Contracts.Consensus.AEDPoS.MinerInRound>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::AElf.Contracts.Consensus.AEDPoS.MinerInRound.Parser), 18);
     private readonly pbc::MapField<string, global::AElf.Contracts.Consensus.AEDPoS.MinerInRound> realTimeMinersInformation_ = new pbc::MapField<string, global::AElf.Contracts.Consensus.AEDPoS.MinerInRound>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::AElf.Contracts.Consensus.AEDPoS.MinerInRound> RealTimeMinersInformation {
       get { return realTimeMinersInformation_; }
     }
@@ -1952,7 +1466,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int MainChainMinersRoundNumberFieldNumber = 3;
     private long mainChainMinersRoundNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long MainChainMinersRoundNumber {
       get { return mainChainMinersRoundNumber_; }
       set {
@@ -1964,7 +1477,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int BlockchainAgeFieldNumber = 4;
     private long blockchainAge_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long BlockchainAge {
       get { return blockchainAge_; }
       set {
@@ -1976,7 +1488,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ExtraBlockProducerOfPreviousRoundFieldNumber = 5;
     private string extraBlockProducerOfPreviousRound_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ExtraBlockProducerOfPreviousRound {
       get { return extraBlockProducerOfPreviousRound_; }
       set {
@@ -1988,7 +1499,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int TermNumberFieldNumber = 6;
     private long termNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long TermNumber {
       get { return termNumber_; }
       set {
@@ -2000,7 +1510,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ConfirmedIrreversibleBlockHeightFieldNumber = 7;
     private long confirmedIrreversibleBlockHeight_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ConfirmedIrreversibleBlockHeight {
       get { return confirmedIrreversibleBlockHeight_; }
       set {
@@ -2012,7 +1521,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ConfirmedIrreversibleBlockRoundNumberFieldNumber = 8;
     private long confirmedIrreversibleBlockRoundNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ConfirmedIrreversibleBlockRoundNumber {
       get { return confirmedIrreversibleBlockRoundNumber_; }
       set {
@@ -2024,7 +1532,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int IsMinerListJustChangedFieldNumber = 9;
     private bool isMinerListJustChanged_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsMinerListJustChanged {
       get { return isMinerListJustChanged_; }
       set {
@@ -2036,7 +1543,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int RoundIdForValidationFieldNumber = 10;
     private long roundIdForValidation_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RoundIdForValidation {
       get { return roundIdForValidation_; }
       set {
@@ -2045,13 +1551,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Round);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Round other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2073,7 +1577,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (RoundNumber != 0L) hash ^= RoundNumber.GetHashCode();
@@ -2093,17 +1596,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (RoundNumber != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(RoundNumber);
@@ -2144,58 +1642,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (RoundNumber != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(RoundNumber);
-      }
-      realTimeMinersInformation_.WriteTo(ref output, _map_realTimeMinersInformation_codec);
-      if (MainChainMinersRoundNumber != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(MainChainMinersRoundNumber);
-      }
-      if (BlockchainAge != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(BlockchainAge);
-      }
-      if (ExtraBlockProducerOfPreviousRound.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(ExtraBlockProducerOfPreviousRound);
-      }
-      if (TermNumber != 0L) {
-        output.WriteRawTag(48);
-        output.WriteInt64(TermNumber);
-      }
-      if (ConfirmedIrreversibleBlockHeight != 0L) {
-        output.WriteRawTag(56);
-        output.WriteInt64(ConfirmedIrreversibleBlockHeight);
-      }
-      if (ConfirmedIrreversibleBlockRoundNumber != 0L) {
-        output.WriteRawTag(64);
-        output.WriteInt64(ConfirmedIrreversibleBlockRoundNumber);
-      }
-      if (IsMinerListJustChanged != false) {
-        output.WriteRawTag(72);
-        output.WriteBool(IsMinerListJustChanged);
-      }
-      if (RoundIdForValidation != 0L) {
-        output.WriteRawTag(80);
-        output.WriteInt64(RoundIdForValidation);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (RoundNumber != 0L) {
@@ -2233,7 +1682,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Round other) {
       if (other == null) {
         return;
@@ -2270,11 +1718,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -2323,94 +1767,30 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            RoundNumber = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            realTimeMinersInformation_.AddEntriesFrom(ref input, _map_realTimeMinersInformation_codec);
-            break;
-          }
-          case 24: {
-            MainChainMinersRoundNumber = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            BlockchainAge = input.ReadInt64();
-            break;
-          }
-          case 42: {
-            ExtraBlockProducerOfPreviousRound = input.ReadString();
-            break;
-          }
-          case 48: {
-            TermNumber = input.ReadInt64();
-            break;
-          }
-          case 56: {
-            ConfirmedIrreversibleBlockHeight = input.ReadInt64();
-            break;
-          }
-          case 64: {
-            ConfirmedIrreversibleBlockRoundNumber = input.ReadInt64();
-            break;
-          }
-          case 72: {
-            IsMinerListJustChanged = input.ReadBool();
-            break;
-          }
-          case 80: {
-            RoundIdForValidation = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
   /// <summary>
   /// The information of a miner in a specific round.
   /// </summary>
-  internal sealed partial class MinerInRound : pb::IMessage<MinerInRound>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class MinerInRound : pb::IMessage<MinerInRound> {
     private static readonly pb::MessageParser<MinerInRound> _parser = new pb::MessageParser<MinerInRound>(() => new MinerInRound());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MinerInRound> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MinerInRound() {
       OnConstruction();
     }
@@ -2418,7 +1798,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MinerInRound(MinerInRound other) : this() {
       order_ = other.order_;
       isExtraBlockProducer_ = other.isExtraBlockProducer_;
@@ -2441,7 +1820,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MinerInRound Clone() {
       return new MinerInRound(this);
     }
@@ -2450,7 +1828,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int OrderFieldNumber = 1;
     private int order_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Order {
       get { return order_; }
       set {
@@ -2462,7 +1839,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int IsExtraBlockProducerFieldNumber = 2;
     private bool isExtraBlockProducer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsExtraBlockProducer {
       get { return isExtraBlockProducer_; }
       set {
@@ -2474,7 +1850,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int InValueFieldNumber = 3;
     private global::AElf.Types.Hash inValue_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash InValue {
       get { return inValue_; }
       set {
@@ -2486,7 +1861,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int OutValueFieldNumber = 4;
     private global::AElf.Types.Hash outValue_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash OutValue {
       get { return outValue_; }
       set {
@@ -2498,7 +1872,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int SignatureFieldNumber = 5;
     private global::AElf.Types.Hash signature_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash Signature {
       get { return signature_; }
       set {
@@ -2510,7 +1883,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ExpectedMiningTimeFieldNumber = 6;
     private global::Google.Protobuf.WellKnownTypes.Timestamp expectedMiningTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ExpectedMiningTime {
       get { return expectedMiningTime_; }
       set {
@@ -2522,7 +1894,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ProducedBlocksFieldNumber = 7;
     private long producedBlocks_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ProducedBlocks {
       get { return producedBlocks_; }
       set {
@@ -2534,7 +1905,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int MissedTimeSlotsFieldNumber = 8;
     private long missedTimeSlots_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long MissedTimeSlots {
       get { return missedTimeSlots_; }
       set {
@@ -2546,7 +1916,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int PubkeyFieldNumber = 9;
     private string pubkey_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Pubkey {
       get { return pubkey_; }
       set {
@@ -2558,7 +1927,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int PreviousInValueFieldNumber = 10;
     private global::AElf.Types.Hash previousInValue_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash PreviousInValue {
       get { return previousInValue_; }
       set {
@@ -2570,7 +1938,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int SupposedOrderOfNextRoundFieldNumber = 11;
     private int supposedOrderOfNextRound_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int SupposedOrderOfNextRound {
       get { return supposedOrderOfNextRound_; }
       set {
@@ -2582,7 +1949,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int FinalOrderOfNextRoundFieldNumber = 12;
     private int finalOrderOfNextRound_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int FinalOrderOfNextRound {
       get { return finalOrderOfNextRound_; }
       set {
@@ -2599,7 +1965,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     /// Miners must fill actual mining time when they do the mining.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Google.Protobuf.WellKnownTypes.Timestamp> ActualMiningTimes {
       get { return actualMiningTimes_; }
     }
@@ -2610,7 +1975,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
         = new pbc::MapField<string, pb::ByteString>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForBytes(18, pb::ByteString.Empty), 114);
     private readonly pbc::MapField<string, pb::ByteString> encryptedPieces_ = new pbc::MapField<string, pb::ByteString>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, pb::ByteString> EncryptedPieces {
       get { return encryptedPieces_; }
     }
@@ -2621,7 +1985,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
         = new pbc::MapField<string, pb::ByteString>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForBytes(18, pb::ByteString.Empty), 122);
     private readonly pbc::MapField<string, pb::ByteString> decryptedPieces_ = new pbc::MapField<string, pb::ByteString>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, pb::ByteString> DecryptedPieces {
       get { return decryptedPieces_; }
     }
@@ -2630,7 +1993,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ProducedTinyBlocksFieldNumber = 16;
     private long producedTinyBlocks_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ProducedTinyBlocks {
       get { return producedTinyBlocks_; }
       set {
@@ -2642,7 +2004,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ImpliedIrreversibleBlockHeightFieldNumber = 17;
     private long impliedIrreversibleBlockHeight_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ImpliedIrreversibleBlockHeight {
       get { return impliedIrreversibleBlockHeight_; }
       set {
@@ -2651,13 +2012,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MinerInRound);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MinerInRound other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2686,7 +2045,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Order != 0) hash ^= Order.GetHashCode();
@@ -2713,17 +2071,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Order != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(Order);
@@ -2786,80 +2139,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Order != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Order);
-      }
-      if (IsExtraBlockProducer != false) {
-        output.WriteRawTag(16);
-        output.WriteBool(IsExtraBlockProducer);
-      }
-      if (inValue_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(InValue);
-      }
-      if (outValue_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(OutValue);
-      }
-      if (signature_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(Signature);
-      }
-      if (expectedMiningTime_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(ExpectedMiningTime);
-      }
-      if (ProducedBlocks != 0L) {
-        output.WriteRawTag(56);
-        output.WriteInt64(ProducedBlocks);
-      }
-      if (MissedTimeSlots != 0L) {
-        output.WriteRawTag(64);
-        output.WriteInt64(MissedTimeSlots);
-      }
-      if (Pubkey.Length != 0) {
-        output.WriteRawTag(74);
-        output.WriteString(Pubkey);
-      }
-      if (previousInValue_ != null) {
-        output.WriteRawTag(82);
-        output.WriteMessage(PreviousInValue);
-      }
-      if (SupposedOrderOfNextRound != 0) {
-        output.WriteRawTag(88);
-        output.WriteInt32(SupposedOrderOfNextRound);
-      }
-      if (FinalOrderOfNextRound != 0) {
-        output.WriteRawTag(96);
-        output.WriteInt32(FinalOrderOfNextRound);
-      }
-      actualMiningTimes_.WriteTo(ref output, _repeated_actualMiningTimes_codec);
-      encryptedPieces_.WriteTo(ref output, _map_encryptedPieces_codec);
-      decryptedPieces_.WriteTo(ref output, _map_decryptedPieces_codec);
-      if (ProducedTinyBlocks != 0L) {
-        output.WriteRawTag(128, 1);
-        output.WriteInt64(ProducedTinyBlocks);
-      }
-      if (ImpliedIrreversibleBlockHeight != 0L) {
-        output.WriteRawTag(136, 1);
-        output.WriteInt64(ImpliedIrreversibleBlockHeight);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Order != 0) {
@@ -2914,7 +2196,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MinerInRound other) {
       if (other == null) {
         return;
@@ -2983,11 +2264,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3079,134 +2356,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Order = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            IsExtraBlockProducer = input.ReadBool();
-            break;
-          }
-          case 26: {
-            if (inValue_ == null) {
-              InValue = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(InValue);
-            break;
-          }
-          case 34: {
-            if (outValue_ == null) {
-              OutValue = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(OutValue);
-            break;
-          }
-          case 42: {
-            if (signature_ == null) {
-              Signature = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(Signature);
-            break;
-          }
-          case 50: {
-            if (expectedMiningTime_ == null) {
-              ExpectedMiningTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(ExpectedMiningTime);
-            break;
-          }
-          case 56: {
-            ProducedBlocks = input.ReadInt64();
-            break;
-          }
-          case 64: {
-            MissedTimeSlots = input.ReadInt64();
-            break;
-          }
-          case 74: {
-            Pubkey = input.ReadString();
-            break;
-          }
-          case 82: {
-            if (previousInValue_ == null) {
-              PreviousInValue = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(PreviousInValue);
-            break;
-          }
-          case 88: {
-            SupposedOrderOfNextRound = input.ReadInt32();
-            break;
-          }
-          case 96: {
-            FinalOrderOfNextRound = input.ReadInt32();
-            break;
-          }
-          case 106: {
-            actualMiningTimes_.AddEntriesFrom(ref input, _repeated_actualMiningTimes_codec);
-            break;
-          }
-          case 114: {
-            encryptedPieces_.AddEntriesFrom(ref input, _map_encryptedPieces_codec);
-            break;
-          }
-          case 122: {
-            decryptedPieces_.AddEntriesFrom(ref input, _map_decryptedPieces_codec);
-            break;
-          }
-          case 128: {
-            ProducedTinyBlocks = input.ReadInt64();
-            break;
-          }
-          case 136: {
-            ImpliedIrreversibleBlockHeight = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class AElfConsensusHeaderInformation : pb::IMessage<AElfConsensusHeaderInformation>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class AElfConsensusHeaderInformation : pb::IMessage<AElfConsensusHeaderInformation> {
     private static readonly pb::MessageParser<AElfConsensusHeaderInformation> _parser = new pb::MessageParser<AElfConsensusHeaderInformation>(() => new AElfConsensusHeaderInformation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AElfConsensusHeaderInformation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AElfConsensusHeaderInformation() {
       OnConstruction();
     }
@@ -3214,7 +2384,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AElfConsensusHeaderInformation(AElfConsensusHeaderInformation other) : this() {
       senderPubkey_ = other.senderPubkey_;
       round_ = other.round_ != null ? other.round_.Clone() : null;
@@ -3223,7 +2392,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AElfConsensusHeaderInformation Clone() {
       return new AElfConsensusHeaderInformation(this);
     }
@@ -3232,7 +2400,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int SenderPubkeyFieldNumber = 1;
     private pb::ByteString senderPubkey_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString SenderPubkey {
       get { return senderPubkey_; }
       set {
@@ -3244,7 +2411,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int RoundFieldNumber = 2;
     private global::AElf.Contracts.Consensus.AEDPoS.Round round_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Contracts.Consensus.AEDPoS.Round Round {
       get { return round_; }
       set {
@@ -3256,7 +2422,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int BehaviourFieldNumber = 3;
     private global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour behaviour_ = global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour.UpdateValue;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour Behaviour {
       get { return behaviour_; }
       set {
@@ -3265,13 +2430,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AElfConsensusHeaderInformation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AElfConsensusHeaderInformation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3286,7 +2449,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (SenderPubkey.Length != 0) hash ^= SenderPubkey.GetHashCode();
@@ -3299,17 +2461,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (SenderPubkey.Length != 0) {
         output.WriteRawTag(10);
         output.WriteBytes(SenderPubkey);
@@ -3325,33 +2482,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (SenderPubkey.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteBytes(SenderPubkey);
-      }
-      if (round_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Round);
-      }
-      if (Behaviour != global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour.UpdateValue) {
-        output.WriteRawTag(24);
-        output.WriteEnum((int) Behaviour);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (SenderPubkey.Length != 0) {
@@ -3370,7 +2503,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AElfConsensusHeaderInformation other) {
       if (other == null) {
         return;
@@ -3391,11 +2523,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3419,66 +2547,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            SenderPubkey = input.ReadBytes();
-            break;
-          }
-          case 18: {
-            if (round_ == null) {
-              Round = new global::AElf.Contracts.Consensus.AEDPoS.Round();
-            }
-            input.ReadMessage(Round);
-            break;
-          }
-          case 24: {
-            Behaviour = (global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class AElfConsensusHint : pb::IMessage<AElfConsensusHint>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class AElfConsensusHint : pb::IMessage<AElfConsensusHint> {
     private static readonly pb::MessageParser<AElfConsensusHint> _parser = new pb::MessageParser<AElfConsensusHint>(() => new AElfConsensusHint());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AElfConsensusHint> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AElfConsensusHint() {
       OnConstruction();
     }
@@ -3486,7 +2575,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AElfConsensusHint(AElfConsensusHint other) : this() {
       behaviour_ = other.behaviour_;
       roundId_ = other.roundId_;
@@ -3495,7 +2583,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AElfConsensusHint Clone() {
       return new AElfConsensusHint(this);
     }
@@ -3504,7 +2591,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int BehaviourFieldNumber = 1;
     private global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour behaviour_ = global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour.UpdateValue;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour Behaviour {
       get { return behaviour_; }
       set {
@@ -3516,7 +2602,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int RoundIdFieldNumber = 2;
     private long roundId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RoundId {
       get { return roundId_; }
       set {
@@ -3528,7 +2613,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int PreviousRoundIdFieldNumber = 3;
     private long previousRoundId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long PreviousRoundId {
       get { return previousRoundId_; }
       set {
@@ -3537,13 +2621,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AElfConsensusHint);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AElfConsensusHint other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3558,7 +2640,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Behaviour != global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour.UpdateValue) hash ^= Behaviour.GetHashCode();
@@ -3571,17 +2652,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Behaviour != global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour.UpdateValue) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Behaviour);
@@ -3597,33 +2673,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Behaviour != global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour.UpdateValue) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) Behaviour);
-      }
-      if (RoundId != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(RoundId);
-      }
-      if (PreviousRoundId != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(PreviousRoundId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Behaviour != global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour.UpdateValue) {
@@ -3642,7 +2694,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AElfConsensusHint other) {
       if (other == null) {
         return;
@@ -3660,11 +2711,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -3685,63 +2732,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Behaviour = (global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour) input.ReadEnum();
-            break;
-          }
-          case 16: {
-            RoundId = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            PreviousRoundId = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class AElfConsensusTriggerInformation : pb::IMessage<AElfConsensusTriggerInformation>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class AElfConsensusTriggerInformation : pb::IMessage<AElfConsensusTriggerInformation> {
     private static readonly pb::MessageParser<AElfConsensusTriggerInformation> _parser = new pb::MessageParser<AElfConsensusTriggerInformation>(() => new AElfConsensusTriggerInformation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AElfConsensusTriggerInformation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AElfConsensusTriggerInformation() {
       OnConstruction();
     }
@@ -3749,7 +2760,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AElfConsensusTriggerInformation(AElfConsensusTriggerInformation other) : this() {
       pubkey_ = other.pubkey_;
       inValue_ = other.inValue_ != null ? other.inValue_.Clone() : null;
@@ -3762,7 +2772,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AElfConsensusTriggerInformation Clone() {
       return new AElfConsensusTriggerInformation(this);
     }
@@ -3774,7 +2783,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     /// A must-have.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Pubkey {
       get { return pubkey_; }
       set {
@@ -3786,7 +2794,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int InValueFieldNumber = 2;
     private global::AElf.Types.Hash inValue_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash InValue {
       get { return inValue_; }
       set {
@@ -3801,7 +2808,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     /// Random hash of previous round for validation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash PreviousInValue {
       get { return previousInValue_; }
       set {
@@ -3813,7 +2819,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int BehaviourFieldNumber = 4;
     private global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour behaviour_ = global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour.UpdateValue;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour Behaviour {
       get { return behaviour_; }
       set {
@@ -3827,7 +2832,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
         = new pbc::MapField<string, pb::ByteString>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForBytes(18, pb::ByteString.Empty), 42);
     private readonly pbc::MapField<string, pb::ByteString> encryptedPieces_ = new pbc::MapField<string, pb::ByteString>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, pb::ByteString> EncryptedPieces {
       get { return encryptedPieces_; }
     }
@@ -3838,7 +2842,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
         = new pbc::MapField<string, pb::ByteString>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForBytes(18, pb::ByteString.Empty), 50);
     private readonly pbc::MapField<string, pb::ByteString> decryptedPieces_ = new pbc::MapField<string, pb::ByteString>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, pb::ByteString> DecryptedPieces {
       get { return decryptedPieces_; }
     }
@@ -3849,19 +2852,16 @@ namespace AElf.Contracts.Consensus.AEDPoS {
         = new pbc::MapField<string, global::AElf.Types.Hash>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::AElf.Types.Hash.Parser), 58);
     private readonly pbc::MapField<string, global::AElf.Types.Hash> revealedInValues_ = new pbc::MapField<string, global::AElf.Types.Hash>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::AElf.Types.Hash> RevealedInValues {
       get { return revealedInValues_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AElfConsensusTriggerInformation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AElfConsensusTriggerInformation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3880,7 +2880,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Pubkey.Length != 0) hash ^= Pubkey.GetHashCode();
@@ -3897,17 +2896,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Pubkey.Length != 0) {
         output.WriteRawTag(10);
         output.WriteBytes(Pubkey);
@@ -3930,40 +2924,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Pubkey.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteBytes(Pubkey);
-      }
-      if (inValue_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(InValue);
-      }
-      if (previousInValue_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(PreviousInValue);
-      }
-      if (Behaviour != global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour.UpdateValue) {
-        output.WriteRawTag(32);
-        output.WriteEnum((int) Behaviour);
-      }
-      encryptedPieces_.WriteTo(ref output, _map_encryptedPieces_codec);
-      decryptedPieces_.WriteTo(ref output, _map_decryptedPieces_codec);
-      revealedInValues_.WriteTo(ref output, _map_revealedInValues_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Pubkey.Length != 0) {
@@ -3988,7 +2951,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AElfConsensusTriggerInformation other) {
       if (other == null) {
         return;
@@ -4018,11 +2980,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4065,85 +3023,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Pubkey = input.ReadBytes();
-            break;
-          }
-          case 18: {
-            if (inValue_ == null) {
-              InValue = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(InValue);
-            break;
-          }
-          case 26: {
-            if (previousInValue_ == null) {
-              PreviousInValue = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(PreviousInValue);
-            break;
-          }
-          case 32: {
-            Behaviour = (global::AElf.Contracts.Consensus.AEDPoS.AElfConsensusBehaviour) input.ReadEnum();
-            break;
-          }
-          case 42: {
-            encryptedPieces_.AddEntriesFrom(ref input, _map_encryptedPieces_codec);
-            break;
-          }
-          case 50: {
-            decryptedPieces_.AddEntriesFrom(ref input, _map_decryptedPieces_codec);
-            break;
-          }
-          case 58: {
-            revealedInValues_.AddEntriesFrom(ref input, _map_revealedInValues_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class TermInfo : pb::IMessage<TermInfo>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class TermInfo : pb::IMessage<TermInfo> {
     private static readonly pb::MessageParser<TermInfo> _parser = new pb::MessageParser<TermInfo>(() => new TermInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TermInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TermInfo() {
       OnConstruction();
     }
@@ -4151,7 +3051,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TermInfo(TermInfo other) : this() {
       termNumber_ = other.termNumber_;
       roundNumber_ = other.roundNumber_;
@@ -4159,7 +3058,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TermInfo Clone() {
       return new TermInfo(this);
     }
@@ -4168,7 +3066,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int TermNumberFieldNumber = 1;
     private long termNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long TermNumber {
       get { return termNumber_; }
       set {
@@ -4180,7 +3077,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int RoundNumberFieldNumber = 2;
     private long roundNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RoundNumber {
       get { return roundNumber_; }
       set {
@@ -4189,13 +3085,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TermInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TermInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4209,7 +3103,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (TermNumber != 0L) hash ^= TermNumber.GetHashCode();
@@ -4221,17 +3114,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (TermNumber != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(TermNumber);
@@ -4243,29 +3131,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TermNumber != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(TermNumber);
-      }
-      if (RoundNumber != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(RoundNumber);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (TermNumber != 0L) {
@@ -4281,7 +3149,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TermInfo other) {
       if (other == null) {
         return;
@@ -4296,11 +3163,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4317,59 +3180,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            TermNumber = input.ReadInt64();
-            break;
-          }
-          case 16: {
-            RoundNumber = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class MinerListWithRoundNumber : pb::IMessage<MinerListWithRoundNumber>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class MinerListWithRoundNumber : pb::IMessage<MinerListWithRoundNumber> {
     private static readonly pb::MessageParser<MinerListWithRoundNumber> _parser = new pb::MessageParser<MinerListWithRoundNumber>(() => new MinerListWithRoundNumber());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MinerListWithRoundNumber> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MinerListWithRoundNumber() {
       OnConstruction();
     }
@@ -4377,7 +3208,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MinerListWithRoundNumber(MinerListWithRoundNumber other) : this() {
       minerList_ = other.minerList_ != null ? other.minerList_.Clone() : null;
       roundNumber_ = other.roundNumber_;
@@ -4385,7 +3215,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MinerListWithRoundNumber Clone() {
       return new MinerListWithRoundNumber(this);
     }
@@ -4394,7 +3223,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int MinerListFieldNumber = 1;
     private global::AElf.Contracts.Consensus.AEDPoS.MinerList minerList_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Contracts.Consensus.AEDPoS.MinerList MinerList {
       get { return minerList_; }
       set {
@@ -4406,7 +3234,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int RoundNumberFieldNumber = 2;
     private long roundNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RoundNumber {
       get { return roundNumber_; }
       set {
@@ -4415,13 +3242,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MinerListWithRoundNumber);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MinerListWithRoundNumber other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4435,7 +3260,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (minerList_ != null) hash ^= MinerList.GetHashCode();
@@ -4447,17 +3271,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (minerList_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(MinerList);
@@ -4469,29 +3288,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (minerList_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(MinerList);
-      }
-      if (RoundNumber != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(RoundNumber);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (minerList_ != null) {
@@ -4507,7 +3306,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MinerListWithRoundNumber other) {
       if (other == null) {
         return;
@@ -4525,11 +3323,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4549,62 +3343,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (minerList_ == null) {
-              MinerList = new global::AElf.Contracts.Consensus.AEDPoS.MinerList();
-            }
-            input.ReadMessage(MinerList);
-            break;
-          }
-          case 16: {
-            RoundNumber = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class TinyBlockInput : pb::IMessage<TinyBlockInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class TinyBlockInput : pb::IMessage<TinyBlockInput> {
     private static readonly pb::MessageParser<TinyBlockInput> _parser = new pb::MessageParser<TinyBlockInput>(() => new TinyBlockInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TinyBlockInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TinyBlockInput() {
       OnConstruction();
     }
@@ -4612,7 +3371,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TinyBlockInput(TinyBlockInput other) : this() {
       roundId_ = other.roundId_;
       actualMiningTime_ = other.actualMiningTime_ != null ? other.actualMiningTime_.Clone() : null;
@@ -4621,7 +3379,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TinyBlockInput Clone() {
       return new TinyBlockInput(this);
     }
@@ -4630,7 +3387,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int RoundIdFieldNumber = 1;
     private long roundId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RoundId {
       get { return roundId_; }
       set {
@@ -4642,7 +3398,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ActualMiningTimeFieldNumber = 2;
     private global::Google.Protobuf.WellKnownTypes.Timestamp actualMiningTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ActualMiningTime {
       get { return actualMiningTime_; }
       set {
@@ -4654,7 +3409,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ProducedBlocksFieldNumber = 3;
     private long producedBlocks_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ProducedBlocks {
       get { return producedBlocks_; }
       set {
@@ -4663,13 +3417,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as TinyBlockInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(TinyBlockInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4684,7 +3436,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (RoundId != 0L) hash ^= RoundId.GetHashCode();
@@ -4697,17 +3448,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (RoundId != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(RoundId);
@@ -4723,33 +3469,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (RoundId != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(RoundId);
-      }
-      if (actualMiningTime_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ActualMiningTime);
-      }
-      if (ProducedBlocks != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(ProducedBlocks);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (RoundId != 0L) {
@@ -4768,7 +3490,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(TinyBlockInput other) {
       if (other == null) {
         return;
@@ -4789,11 +3510,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -4817,66 +3534,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            RoundId = input.ReadInt64();
-            break;
-          }
-          case 18: {
-            if (actualMiningTime_ == null) {
-              ActualMiningTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(ActualMiningTime);
-            break;
-          }
-          case 24: {
-            ProducedBlocks = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class VoteMinersCountInput : pb::IMessage<VoteMinersCountInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class VoteMinersCountInput : pb::IMessage<VoteMinersCountInput> {
     private static readonly pb::MessageParser<VoteMinersCountInput> _parser = new pb::MessageParser<VoteMinersCountInput>(() => new VoteMinersCountInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<VoteMinersCountInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VoteMinersCountInput() {
       OnConstruction();
     }
@@ -4884,7 +3562,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VoteMinersCountInput(VoteMinersCountInput other) : this() {
       minersCount_ = other.minersCount_;
       amount_ = other.amount_;
@@ -4892,7 +3569,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public VoteMinersCountInput Clone() {
       return new VoteMinersCountInput(this);
     }
@@ -4901,7 +3577,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int MinersCountFieldNumber = 1;
     private int minersCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int MinersCount {
       get { return minersCount_; }
       set {
@@ -4913,7 +3588,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int AmountFieldNumber = 2;
     private long amount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Amount {
       get { return amount_; }
       set {
@@ -4922,13 +3596,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as VoteMinersCountInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(VoteMinersCountInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4942,7 +3614,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (MinersCount != 0) hash ^= MinersCount.GetHashCode();
@@ -4954,17 +3625,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (MinersCount != 0) {
         output.WriteRawTag(8);
         output.WriteInt32(MinersCount);
@@ -4976,29 +3642,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MinersCount != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(MinersCount);
-      }
-      if (Amount != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Amount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (MinersCount != 0) {
@@ -5014,7 +3660,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(VoteMinersCountInput other) {
       if (other == null) {
         return;
@@ -5029,11 +3674,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5050,59 +3691,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            MinersCount = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Amount = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class ConsensusInformation : pb::IMessage<ConsensusInformation>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class ConsensusInformation : pb::IMessage<ConsensusInformation> {
     private static readonly pb::MessageParser<ConsensusInformation> _parser = new pb::MessageParser<ConsensusInformation>(() => new ConsensusInformation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ConsensusInformation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ConsensusInformation() {
       OnConstruction();
     }
@@ -5110,14 +3719,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ConsensusInformation(ConsensusInformation other) : this() {
       value_ = other.value_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ConsensusInformation Clone() {
       return new ConsensusInformation(this);
     }
@@ -5126,7 +3733,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ValueFieldNumber = 1;
     private pb::ByteString value_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Value {
       get { return value_; }
       set {
@@ -5135,13 +3741,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ConsensusInformation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ConsensusInformation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5154,7 +3758,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Value.Length != 0) hash ^= Value.GetHashCode();
@@ -5165,17 +3768,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Value.Length != 0) {
         output.WriteRawTag(10);
         output.WriteBytes(Value);
@@ -5183,25 +3781,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteBytes(Value);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Value.Length != 0) {
@@ -5214,7 +3796,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ConsensusInformation other) {
       if (other == null) {
         return;
@@ -5226,11 +3807,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5243,55 +3820,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Value = input.ReadBytes();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class GetMinerListInput : pb::IMessage<GetMinerListInput>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class GetMinerListInput : pb::IMessage<GetMinerListInput> {
     private static readonly pb::MessageParser<GetMinerListInput> _parser = new pb::MessageParser<GetMinerListInput>(() => new GetMinerListInput());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GetMinerListInput> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetMinerListInput() {
       OnConstruction();
     }
@@ -5299,14 +3848,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetMinerListInput(GetMinerListInput other) : this() {
       termNumber_ = other.termNumber_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetMinerListInput Clone() {
       return new GetMinerListInput(this);
     }
@@ -5315,7 +3862,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int TermNumberFieldNumber = 1;
     private long termNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long TermNumber {
       get { return termNumber_; }
       set {
@@ -5324,13 +3870,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GetMinerListInput);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GetMinerListInput other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5343,7 +3887,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (TermNumber != 0L) hash ^= TermNumber.GetHashCode();
@@ -5354,17 +3897,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (TermNumber != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(TermNumber);
@@ -5372,25 +3910,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TermNumber != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(TermNumber);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (TermNumber != 0L) {
@@ -5403,7 +3925,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GetMinerListInput other) {
       if (other == null) {
         return;
@@ -5415,11 +3936,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5432,55 +3949,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            TermNumber = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class RandomNumberRequestInformation : pb::IMessage<RandomNumberRequestInformation>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class RandomNumberRequestInformation : pb::IMessage<RandomNumberRequestInformation> {
     private static readonly pb::MessageParser<RandomNumberRequestInformation> _parser = new pb::MessageParser<RandomNumberRequestInformation>(() => new RandomNumberRequestInformation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RandomNumberRequestInformation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RandomNumberRequestInformation() {
       OnConstruction();
     }
@@ -5488,7 +3977,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RandomNumberRequestInformation(RandomNumberRequestInformation other) : this() {
       targetRoundNumber_ = other.targetRoundNumber_;
       order_ = other.order_;
@@ -5497,7 +3985,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RandomNumberRequestInformation Clone() {
       return new RandomNumberRequestInformation(this);
     }
@@ -5509,7 +3996,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     /// The random hash is likely generated during this round.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long TargetRoundNumber {
       get { return targetRoundNumber_; }
       set {
@@ -5521,7 +4007,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int OrderFieldNumber = 2;
     private long order_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Order {
       get { return order_; }
       set {
@@ -5533,7 +4018,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int ExpectedBlockHeightFieldNumber = 3;
     private long expectedBlockHeight_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ExpectedBlockHeight {
       get { return expectedBlockHeight_; }
       set {
@@ -5542,13 +4026,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RandomNumberRequestInformation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RandomNumberRequestInformation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5563,7 +4045,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (TargetRoundNumber != 0L) hash ^= TargetRoundNumber.GetHashCode();
@@ -5576,17 +4057,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (TargetRoundNumber != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(TargetRoundNumber);
@@ -5602,33 +4078,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TargetRoundNumber != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(TargetRoundNumber);
-      }
-      if (Order != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Order);
-      }
-      if (ExpectedBlockHeight != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(ExpectedBlockHeight);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (TargetRoundNumber != 0L) {
@@ -5647,7 +4099,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RandomNumberRequestInformation other) {
       if (other == null) {
         return;
@@ -5665,11 +4116,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5690,63 +4137,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            TargetRoundNumber = input.ReadInt64();
-            break;
-          }
-          case 16: {
-            Order = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            ExpectedBlockHeight = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class HashList : pb::IMessage<HashList>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class HashList : pb::IMessage<HashList> {
     private static readonly pb::MessageParser<HashList> _parser = new pb::MessageParser<HashList>(() => new HashList());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<HashList> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public HashList() {
       OnConstruction();
     }
@@ -5754,14 +4165,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public HashList(HashList other) : this() {
       values_ = other.values_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public HashList Clone() {
       return new HashList(this);
     }
@@ -5772,19 +4181,16 @@ namespace AElf.Contracts.Consensus.AEDPoS {
         = pb::FieldCodec.ForMessage(10, global::AElf.Types.Hash.Parser);
     private readonly pbc::RepeatedField<global::AElf.Types.Hash> values_ = new pbc::RepeatedField<global::AElf.Types.Hash>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::AElf.Types.Hash> Values {
       get { return values_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as HashList);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(HashList other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5797,7 +4203,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= values_.GetHashCode();
@@ -5808,37 +4213,19 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       values_.WriteTo(output, _repeated_values_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      values_.WriteTo(ref output, _repeated_values_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += values_.CalculateSize(_repeated_values_codec);
@@ -5849,7 +4236,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(HashList other) {
       if (other == null) {
         return;
@@ -5859,11 +4245,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -5876,55 +4258,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            values_.AddEntriesFrom(ref input, _repeated_values_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class LatestPubkeyToTinyBlocksCount : pb::IMessage<LatestPubkeyToTinyBlocksCount>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class LatestPubkeyToTinyBlocksCount : pb::IMessage<LatestPubkeyToTinyBlocksCount> {
     private static readonly pb::MessageParser<LatestPubkeyToTinyBlocksCount> _parser = new pb::MessageParser<LatestPubkeyToTinyBlocksCount>(() => new LatestPubkeyToTinyBlocksCount());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<LatestPubkeyToTinyBlocksCount> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LatestPubkeyToTinyBlocksCount() {
       OnConstruction();
     }
@@ -5932,7 +4286,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LatestPubkeyToTinyBlocksCount(LatestPubkeyToTinyBlocksCount other) : this() {
       pubkey_ = other.pubkey_;
       blocksCount_ = other.blocksCount_;
@@ -5940,7 +4293,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LatestPubkeyToTinyBlocksCount Clone() {
       return new LatestPubkeyToTinyBlocksCount(this);
     }
@@ -5949,7 +4301,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int PubkeyFieldNumber = 1;
     private string pubkey_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Pubkey {
       get { return pubkey_; }
       set {
@@ -5961,7 +4312,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int BlocksCountFieldNumber = 2;
     private long blocksCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long BlocksCount {
       get { return blocksCount_; }
       set {
@@ -5970,13 +4320,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as LatestPubkeyToTinyBlocksCount);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(LatestPubkeyToTinyBlocksCount other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5990,7 +4338,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Pubkey.Length != 0) hash ^= Pubkey.GetHashCode();
@@ -6002,17 +4349,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Pubkey.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Pubkey);
@@ -6024,29 +4366,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Pubkey.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Pubkey);
-      }
-      if (BlocksCount != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(BlocksCount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Pubkey.Length != 0) {
@@ -6062,7 +4384,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(LatestPubkeyToTinyBlocksCount other) {
       if (other == null) {
         return;
@@ -6077,11 +4398,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6098,62 +4415,30 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Pubkey = input.ReadString();
-            break;
-          }
-          case 16: {
-            BlocksCount = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
   /// <summary>
   /// Events
   /// </summary>
-  internal sealed partial class IrreversibleBlockFound : pb::IMessage<IrreversibleBlockFound>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class IrreversibleBlockFound : pb::IMessage<IrreversibleBlockFound> {
     private static readonly pb::MessageParser<IrreversibleBlockFound> _parser = new pb::MessageParser<IrreversibleBlockFound>(() => new IrreversibleBlockFound());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<IrreversibleBlockFound> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IrreversibleBlockFound() {
       OnConstruction();
     }
@@ -6161,14 +4446,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IrreversibleBlockFound(IrreversibleBlockFound other) : this() {
       irreversibleBlockHeight_ = other.irreversibleBlockHeight_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IrreversibleBlockFound Clone() {
       return new IrreversibleBlockFound(this);
     }
@@ -6177,7 +4460,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int IrreversibleBlockHeightFieldNumber = 1;
     private long irreversibleBlockHeight_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long IrreversibleBlockHeight {
       get { return irreversibleBlockHeight_; }
       set {
@@ -6186,13 +4468,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as IrreversibleBlockFound);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(IrreversibleBlockFound other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6205,7 +4485,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (IrreversibleBlockHeight != 0L) hash ^= IrreversibleBlockHeight.GetHashCode();
@@ -6216,17 +4495,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (IrreversibleBlockHeight != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(IrreversibleBlockHeight);
@@ -6234,25 +4508,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (IrreversibleBlockHeight != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(IrreversibleBlockHeight);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (IrreversibleBlockHeight != 0L) {
@@ -6265,7 +4523,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(IrreversibleBlockFound other) {
       if (other == null) {
         return;
@@ -6277,11 +4534,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6294,55 +4547,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            IrreversibleBlockHeight = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class IrreversibleBlockHeightUnacceptable : pb::IMessage<IrreversibleBlockHeightUnacceptable>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class IrreversibleBlockHeightUnacceptable : pb::IMessage<IrreversibleBlockHeightUnacceptable> {
     private static readonly pb::MessageParser<IrreversibleBlockHeightUnacceptable> _parser = new pb::MessageParser<IrreversibleBlockHeightUnacceptable>(() => new IrreversibleBlockHeightUnacceptable());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<IrreversibleBlockHeightUnacceptable> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IrreversibleBlockHeightUnacceptable() {
       OnConstruction();
     }
@@ -6350,14 +4575,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IrreversibleBlockHeightUnacceptable(IrreversibleBlockHeightUnacceptable other) : this() {
       distanceToIrreversibleBlockHeight_ = other.distanceToIrreversibleBlockHeight_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IrreversibleBlockHeightUnacceptable Clone() {
       return new IrreversibleBlockHeightUnacceptable(this);
     }
@@ -6366,7 +4589,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int DistanceToIrreversibleBlockHeightFieldNumber = 1;
     private long distanceToIrreversibleBlockHeight_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long DistanceToIrreversibleBlockHeight {
       get { return distanceToIrreversibleBlockHeight_; }
       set {
@@ -6375,13 +4597,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as IrreversibleBlockHeightUnacceptable);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(IrreversibleBlockHeightUnacceptable other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6394,7 +4614,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (DistanceToIrreversibleBlockHeight != 0L) hash ^= DistanceToIrreversibleBlockHeight.GetHashCode();
@@ -6405,17 +4624,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (DistanceToIrreversibleBlockHeight != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(DistanceToIrreversibleBlockHeight);
@@ -6423,25 +4637,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (DistanceToIrreversibleBlockHeight != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(DistanceToIrreversibleBlockHeight);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (DistanceToIrreversibleBlockHeight != 0L) {
@@ -6454,7 +4652,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(IrreversibleBlockHeightUnacceptable other) {
       if (other == null) {
         return;
@@ -6466,11 +4663,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6483,55 +4676,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            DistanceToIrreversibleBlockHeight = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class MiningInformationUpdated : pb::IMessage<MiningInformationUpdated>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class MiningInformationUpdated : pb::IMessage<MiningInformationUpdated> {
     private static readonly pb::MessageParser<MiningInformationUpdated> _parser = new pb::MessageParser<MiningInformationUpdated>(() => new MiningInformationUpdated());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MiningInformationUpdated> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MiningInformationUpdated() {
       OnConstruction();
     }
@@ -6539,7 +4704,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MiningInformationUpdated(MiningInformationUpdated other) : this() {
       pubkey_ = other.pubkey_;
       miningTime_ = other.miningTime_ != null ? other.miningTime_.Clone() : null;
@@ -6550,7 +4714,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MiningInformationUpdated Clone() {
       return new MiningInformationUpdated(this);
     }
@@ -6559,7 +4722,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int PubkeyFieldNumber = 1;
     private string pubkey_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Pubkey {
       get { return pubkey_; }
       set {
@@ -6571,7 +4733,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int MiningTimeFieldNumber = 2;
     private global::Google.Protobuf.WellKnownTypes.Timestamp miningTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp MiningTime {
       get { return miningTime_; }
       set {
@@ -6583,7 +4744,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int BehaviourFieldNumber = 3;
     private string behaviour_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Behaviour {
       get { return behaviour_; }
       set {
@@ -6595,7 +4755,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int BlockHeightFieldNumber = 4;
     private long blockHeight_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long BlockHeight {
       get { return blockHeight_; }
       set {
@@ -6607,7 +4766,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int PreviousBlockHashFieldNumber = 5;
     private global::AElf.Types.Hash previousBlockHash_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Types.Hash PreviousBlockHash {
       get { return previousBlockHash_; }
       set {
@@ -6616,13 +4774,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MiningInformationUpdated);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MiningInformationUpdated other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6639,7 +4795,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Pubkey.Length != 0) hash ^= Pubkey.GetHashCode();
@@ -6654,17 +4809,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (Pubkey.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(Pubkey);
@@ -6688,41 +4838,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Pubkey.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Pubkey);
-      }
-      if (miningTime_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(MiningTime);
-      }
-      if (Behaviour.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Behaviour);
-      }
-      if (BlockHeight != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(BlockHeight);
-      }
-      if (previousBlockHash_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(PreviousBlockHash);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Pubkey.Length != 0) {
@@ -6747,7 +4865,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MiningInformationUpdated other) {
       if (other == null) {
         return;
@@ -6777,11 +4894,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -6816,77 +4929,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Pubkey = input.ReadString();
-            break;
-          }
-          case 18: {
-            if (miningTime_ == null) {
-              MiningTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(MiningTime);
-            break;
-          }
-          case 26: {
-            Behaviour = input.ReadString();
-            break;
-          }
-          case 32: {
-            BlockHeight = input.ReadInt64();
-            break;
-          }
-          case 42: {
-            if (previousBlockHash_ == null) {
-              PreviousBlockHash = new global::AElf.Types.Hash();
-            }
-            input.ReadMessage(PreviousBlockHash);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class SecretSharingInformation : pb::IMessage<SecretSharingInformation>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class SecretSharingInformation : pb::IMessage<SecretSharingInformation> {
     private static readonly pb::MessageParser<SecretSharingInformation> _parser = new pb::MessageParser<SecretSharingInformation>(() => new SecretSharingInformation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SecretSharingInformation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SecretSharingInformation() {
       OnConstruction();
     }
@@ -6894,7 +4957,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SecretSharingInformation(SecretSharingInformation other) : this() {
       previousRound_ = other.previousRound_ != null ? other.previousRound_.Clone() : null;
       currentRoundId_ = other.currentRoundId_;
@@ -6903,7 +4965,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SecretSharingInformation Clone() {
       return new SecretSharingInformation(this);
     }
@@ -6912,7 +4973,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int PreviousRoundFieldNumber = 1;
     private global::AElf.Contracts.Consensus.AEDPoS.Round previousRound_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::AElf.Contracts.Consensus.AEDPoS.Round PreviousRound {
       get { return previousRound_; }
       set {
@@ -6924,7 +4984,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int CurrentRoundIdFieldNumber = 2;
     private long currentRoundId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long CurrentRoundId {
       get { return currentRoundId_; }
       set {
@@ -6936,7 +4995,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int PreviousRoundIdFieldNumber = 3;
     private long previousRoundId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long PreviousRoundId {
       get { return previousRoundId_; }
       set {
@@ -6945,13 +5003,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SecretSharingInformation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SecretSharingInformation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6966,7 +5022,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (previousRound_ != null) hash ^= PreviousRound.GetHashCode();
@@ -6979,17 +5034,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (previousRound_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(PreviousRound);
@@ -7005,33 +5055,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (previousRound_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(PreviousRound);
-      }
-      if (CurrentRoundId != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(CurrentRoundId);
-      }
-      if (PreviousRoundId != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(PreviousRoundId);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (previousRound_ != null) {
@@ -7050,7 +5076,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SecretSharingInformation other) {
       if (other == null) {
         return;
@@ -7071,11 +5096,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7099,66 +5120,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (previousRound_ == null) {
-              PreviousRound = new global::AElf.Contracts.Consensus.AEDPoS.Round();
-            }
-            input.ReadMessage(PreviousRound);
-            break;
-          }
-          case 16: {
-            CurrentRoundId = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            PreviousRoundId = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class MiningRewardGenerated : pb::IMessage<MiningRewardGenerated>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class MiningRewardGenerated : pb::IMessage<MiningRewardGenerated> {
     private static readonly pb::MessageParser<MiningRewardGenerated> _parser = new pb::MessageParser<MiningRewardGenerated>(() => new MiningRewardGenerated());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MiningRewardGenerated> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MiningRewardGenerated() {
       OnConstruction();
     }
@@ -7166,7 +5148,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MiningRewardGenerated(MiningRewardGenerated other) : this() {
       termNumber_ = other.termNumber_;
       amount_ = other.amount_;
@@ -7174,7 +5155,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MiningRewardGenerated Clone() {
       return new MiningRewardGenerated(this);
     }
@@ -7183,7 +5163,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int TermNumberFieldNumber = 1;
     private long termNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long TermNumber {
       get { return termNumber_; }
       set {
@@ -7195,7 +5174,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int AmountFieldNumber = 2;
     private long amount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Amount {
       get { return amount_; }
       set {
@@ -7204,13 +5182,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MiningRewardGenerated);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MiningRewardGenerated other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7224,7 +5200,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (TermNumber != 0L) hash ^= TermNumber.GetHashCode();
@@ -7236,17 +5211,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (TermNumber != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(TermNumber);
@@ -7258,29 +5228,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TermNumber != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(TermNumber);
-      }
-      if (Amount != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Amount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (TermNumber != 0L) {
@@ -7296,7 +5246,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MiningRewardGenerated other) {
       if (other == null) {
         return;
@@ -7311,11 +5260,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7332,59 +5277,27 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            TermNumber = input.ReadInt64();
-            break;
-          }
-          case 16: {
-            Amount = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 
-  internal sealed partial class MinerReplaced : pb::IMessage<MinerReplaced>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  internal sealed partial class MinerReplaced : pb::IMessage<MinerReplaced> {
     private static readonly pb::MessageParser<MinerReplaced> _parser = new pb::MessageParser<MinerReplaced>(() => new MinerReplaced());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MinerReplaced> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::AElf.Contracts.Consensus.AEDPoS.AedposContractReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MinerReplaced() {
       OnConstruction();
     }
@@ -7392,14 +5305,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MinerReplaced(MinerReplaced other) : this() {
       newMinerPubkey_ = other.newMinerPubkey_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MinerReplaced Clone() {
       return new MinerReplaced(this);
     }
@@ -7408,7 +5319,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     public const int NewMinerPubkeyFieldNumber = 1;
     private string newMinerPubkey_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string NewMinerPubkey {
       get { return newMinerPubkey_; }
       set {
@@ -7417,13 +5327,11 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MinerReplaced);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MinerReplaced other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -7436,7 +5344,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (NewMinerPubkey.Length != 0) hash ^= NewMinerPubkey.GetHashCode();
@@ -7447,17 +5354,12 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (NewMinerPubkey.Length != 0) {
         output.WriteRawTag(10);
         output.WriteString(NewMinerPubkey);
@@ -7465,25 +5367,9 @@ namespace AElf.Contracts.Consensus.AEDPoS {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (NewMinerPubkey.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(NewMinerPubkey);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (NewMinerPubkey.Length != 0) {
@@ -7496,7 +5382,6 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MinerReplaced other) {
       if (other == null) {
         return;
@@ -7508,11 +5393,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -7525,27 +5406,7 @@ namespace AElf.Contracts.Consensus.AEDPoS {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            NewMinerPubkey = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
   }
 

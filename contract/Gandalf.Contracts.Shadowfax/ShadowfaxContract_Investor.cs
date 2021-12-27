@@ -29,7 +29,7 @@ namespace Gandalf.Contracts.Shadowfax
 
             var obtainAmount = offering.OfferingTokenAmount.Mul(actualUsed).Div(offering.WantTokenAmount);
 
-            var userInfo = State.UserInfo[input.PublicId][Context.Sender] ?? new UserInfo
+            var userInfo = State.UserInfo[input.PublicId][Context.Sender] ?? new UserInfoStruct
             {
                 Claimed = false
             };
