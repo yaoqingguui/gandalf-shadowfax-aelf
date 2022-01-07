@@ -38,7 +38,6 @@ service ShadowfaxContract {
     rpc MinimalTimespan(google.protobuf.Empty) returns (google.protobuf.Int64Value){
         option (aelf.is_view) = true;
     }
-    
     rpc PublicOfferings (google.protobuf.Int64Value) returns (PublicOfferingOutput){
         option (aelf.is_view) = true;
     }
@@ -122,8 +121,8 @@ message PublicOfferingOutput{
     int64 public_id = 7;
     aelf.Address publisher = 8;
     bool claimed = 9;
-    int64 Want_Token_Balance = 10;
-    int64 Subscribed_Offering_Amount = 11;
+    int64 want_token_balance = 10;
+    int64 subscribed_offering_amount = 11;
 }
 
 // Events

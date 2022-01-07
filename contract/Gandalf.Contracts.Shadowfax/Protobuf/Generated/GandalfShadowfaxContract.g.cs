@@ -56,8 +56,8 @@ namespace Gandalf.Contracts.Shadowfax {
             "dG9idWYuVGltZXN0YW1wEiwKCGVuZF90aW1lGAYgASgLMhouZ29vZ2xlLnBy",
             "b3RvYnVmLlRpbWVzdGFtcBIRCglwdWJsaWNfaWQYByABKAMSIAoJcHVibGlz",
             "aGVyGAggASgLMg0uYWVsZi5BZGRyZXNzEg8KB2NsYWltZWQYCSABKAgSGgoS",
-            "V2FudF9Ub2tlbl9CYWxhbmNlGAogASgDEiIKGlN1YnNjcmliZWRfT2ZmZXJp",
-            "bmdfQW1vdW50GAsgASgDIqACChFBZGRQdWJsaWNPZmZlcmluZxIdChVvZmZl",
+            "d2FudF90b2tlbl9iYWxhbmNlGAogASgDEiIKGnN1YnNjcmliZWRfb2ZmZXJp",
+            "bmdfYW1vdW50GAsgASgDIqACChFBZGRQdWJsaWNPZmZlcmluZxIdChVvZmZl",
             "cmluZ190b2tlbl9zeW1ib2wYASABKAkSHQoVb2ZmZXJpbmdfdG9rZW5fYW1v",
             "dW50GAIgASgDEhkKEXdhbnRfdG9rZW5fc3ltYm9sGAMgASgJEhkKEXdhbnRf",
             "dG9rZW5fYW1vdW50GAQgASgDEiAKCXB1Ymxpc2hlchgFIAEoCzINLmFlbGYu",
@@ -1913,7 +1913,7 @@ namespace Gandalf.Contracts.Shadowfax {
       }
     }
 
-    /// <summary>Field number for the "Want_Token_Balance" field.</summary>
+    /// <summary>Field number for the "want_token_balance" field.</summary>
     public const int WantTokenBalanceFieldNumber = 10;
     private long wantTokenBalance_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1924,7 +1924,7 @@ namespace Gandalf.Contracts.Shadowfax {
       }
     }
 
-    /// <summary>Field number for the "Subscribed_Offering_Amount" field.</summary>
+    /// <summary>Field number for the "subscribed_offering_amount" field.</summary>
     public const int SubscribedOfferingAmountFieldNumber = 11;
     private long subscribedOfferingAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
