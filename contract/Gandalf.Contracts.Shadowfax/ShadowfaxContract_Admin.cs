@@ -7,6 +7,7 @@ namespace Gandalf.Contracts.Shadowfax
         public override Empty ResetTimeSpan(ResetTimeSpanInput input)
         {
             AssertSenderIsOwner();
+            AssertContractInitialized();
             Assert(input.MaxTimespan > input.MinTimespan, "Invalid parameter.");
             State.MaximalTimeSpan.Value = input.MaxTimespan;
             State.MinimalTimespan.Value = input.MinTimespan;
@@ -15,7 +16,7 @@ namespace Gandalf.Contracts.Shadowfax
 
         private void AssertSenderIsOwner()
         {
-            Assert(State.Owner.Value != null, "Contract not initialized.");
+            AssertContractInitialized();
             Assert(Context.Sender == State.Owner.Value,"Not Owner.");
         }
     }

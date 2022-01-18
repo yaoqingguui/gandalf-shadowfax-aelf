@@ -50,11 +50,9 @@ service ShadowfaxContract {
     rpc Ascription (google.protobuf.StringValue) returns (aelf.Address){
         option (aelf.is_view) = true;
     }
-    
-    
 }
 
-// Stucts
+// Structs
 message PublicOffering {
     string offering_token_symbol = 1;
     int64 offering_token_amount = 2;
@@ -62,7 +60,7 @@ message PublicOffering {
     int64 want_token_amount = 4;
     google.protobuf.Timestamp start_time = 5;
     google.protobuf.Timestamp end_time = 6;
-    aelf.Address  publisher = 7;
+    aelf.Address publisher = 7;
     bool claimed = 8;
     int64 want_token_balance = 9;
     int64 subscribed_offering_amount = 10;
@@ -111,7 +109,7 @@ message ResetTimeSpanInput {
 
 // Outputs
 
-message PublicOfferingOutput{
+message PublicOfferingOutput {
     string offering_token_symbol = 1;
     int64 offering_token_amount = 2;
     string want_token_symbol = 3;
@@ -126,7 +124,8 @@ message PublicOfferingOutput{
 }
 
 // Events
-message AddPublicOffering{
+
+message AddPublicOffering {
     option (aelf.is_event) = true;
     string offering_token_symbol = 1;
     int64 offering_token_amount = 2;
@@ -138,7 +137,7 @@ message AddPublicOffering{
     int64 public_id = 8;
 }
 
-message ChangeAscription{
+message ChangeAscription {
     option (aelf.is_event) = true;
     string token_symbol = 1;
     aelf.Address old_publisher = 2;

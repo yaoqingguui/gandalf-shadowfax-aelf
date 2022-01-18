@@ -52,7 +52,7 @@ namespace Gandalf.Contracts.Shadowfax
 
         public override UserInfoStruct UserInfo(UserInfoInput input)
         {
-            var userInfo = State.UserInfo[input.PublicId][input.User];
+            var userInfo = State.UserInfoMap[input.PublicId][input.User];
             if (userInfo != null)
             {
                 return userInfo;
@@ -73,10 +73,9 @@ namespace Gandalf.Contracts.Shadowfax
             };
         }
 
-
         public override Address Ascription(StringValue input)
         {
-            return State.Ascription[input.Value];
+            return State.AscriptionMap[input.Value];
         }
     }
 }

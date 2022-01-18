@@ -10,18 +10,20 @@ namespace Gandalf.Contracts.Shadowfax
     {
         public override Int64Value AddPublicOffering(AddPublicOfferingInput input)
         {
+            AssertContractInitialized();
+
             Assert(input.OfferingTokenAmount > 0, "Need deposit some offering token.");
             Assert(input.StartTime >= Context.CurrentBlockTime, "Invalid start time.");
             Assert(input.EndTime.Seconds <= input.StartTime.Seconds + State.MaximalTimeSpan.Value &&
                    input.EndTime.Seconds >= input.StartTime.Seconds + State.MinimalTimespan.Value, "Invalid end time.");
-            var owner = State.Ascription[input.OfferingTokenSymbol];
+            var owner = State.AscriptionMap[input.OfferingTokenSymbol];
             if (owner != null)
             {
                 Assert(owner == Context.Sender, "Another has published the token before.");
             }
             else
             {
-                State.Ascription[input.OfferingTokenSymbol] = Context.Sender;
+                State.AscriptionMap[input.OfferingTokenSymbol] = Context.Sender;
             }
 
             State.TokenContract.TransferFrom.Send(new TransferFromInput
@@ -42,24 +44,23 @@ namespace Gandalf.Contracts.Shadowfax
                 StartTime = input.StartTime,
                 EndTime = input.EndTime,
                 Publisher = Context.Sender,
-                Claimed = false,
-                WantTokenBalance = 0,
-                SubscribedOfferingAmount = 0
             };
             State.PublicOfferingMap[publicId] = offering;
 
             State.CurrentPublicOfferingId.Value = publicId.Add(1);
+
             Context.Fire(new AddPublicOffering
             {
-                OfferingTokenSymbol = input.OfferingTokenSymbol,
-                OfferingTokenAmount = input.OfferingTokenAmount,
-                WantTokenSymbol = input.WantTokenSymbol,
-                WantTokenAmount = input.WantTokenAmount,
+                OfferingTokenSymbol = offering.OfferingTokenSymbol,
+                OfferingTokenAmount = offering.OfferingTokenAmount,
+                WantTokenSymbol = offering.WantTokenSymbol,
+                WantTokenAmount = offering.WantTokenAmount,
                 Publisher = Context.Sender,
-                StartTime = input.StartTime,
-                EndTime = input.EndTime,
+                StartTime = offering.StartTime,
+                EndTime = offering.EndTime,
                 PublicId = publicId
             });
+
             return new Int64Value
             {
                 Value = publicId
@@ -68,8 +69,11 @@ namespace Gandalf.Contracts.Shadowfax
 
         public override Empty ChangeAscription(ChangeAscriptionInput input)
         {
-            Assert(State.Ascription[input.TokenSymbol] == Context.Sender, "No right to assign.");
-            State.Ascription[input.TokenSymbol] = input.Receiver;
+            AssertContractInitialized();
+
+            Assert(State.AscriptionMap[input.TokenSymbol] == Context.Sender || State.Owner.Value == Context.Sender,
+                "No permission.");
+            State.AscriptionMap[input.TokenSymbol] = input.Receiver;
             Context.Fire(new ChangeAscription
             {
                 TokenSymbol = input.TokenSymbol,
@@ -81,18 +85,19 @@ namespace Gandalf.Contracts.Shadowfax
 
         public override Empty Withdraw(Int64Value input)
         {
+            AssertContractInitialized();
+
             Assert(input.Value >= 0, "Invalid number.");
             var offering = GetOffering(input.Value);
             Assert(!offering.Claimed, "Have withdrawn.");
-            Assert(offering.Publisher == Context.Sender, "No rights.");
+            Assert(offering.Publisher == Context.Sender, "No permission.");
             Assert(Context.CurrentBlockTime > offering.EndTime, "Game not over.");
             offering.Claimed = true;
-            BigInteger wantTokenBalance = offering.WantTokenBalance;
-            BigInteger surplus = offering.OfferingTokenAmount.Sub(offering.SubscribedOfferingAmount);
+            var surplus = offering.OfferingTokenAmount.Sub(offering.SubscribedOfferingAmount);
             State.TokenContract.Transfer.Send(new TransferInput
             {
                 To = Context.Sender,
-                Amount = (long) wantTokenBalance,
+                Amount = offering.WantTokenBalance,
                 Symbol = offering.WantTokenSymbol
             });
 
@@ -100,7 +105,7 @@ namespace Gandalf.Contracts.Shadowfax
             {
                 State.TokenContract.Transfer.Send(new TransferInput
                 {
-                    Amount = (long) surplus,
+                    Amount = surplus,
                     Symbol = offering.OfferingTokenSymbol,
                     To = Context.Sender,
                 });
@@ -110,8 +115,8 @@ namespace Gandalf.Contracts.Shadowfax
             {
                 PubilicId = input.Value,
                 To = Context.Sender,
-                OfferingToken = (long) surplus,
-                WantToken = (long) wantTokenBalance
+                OfferingToken = surplus,
+                WantToken = offering.WantTokenBalance
             });
             return new Empty();
         }

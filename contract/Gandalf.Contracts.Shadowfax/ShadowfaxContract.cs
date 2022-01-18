@@ -15,5 +15,10 @@ namespace Gandalf.Contracts.Shadowfax
                 Context.GetContractAddressByName(SmartContractConstants.TokenContractSystemName);
             return new Empty();
         }
+
+        private void AssertContractInitialized()
+        {
+            Assert(State.Owner.Value != null, "Contract not initialized.");
+        }
     }
 }
