@@ -72,6 +72,12 @@ namespace Awaken.Contracts.Shadowfax
 
             Assert(State.AscriptionMap[input.TokenSymbol] == Context.Sender || State.Owner.Value == Context.Sender,
                 "No permission.");
+            // test
+
+            var stateAscription = State.AscriptionMap[input.TokenSymbol];
+            var contextSender = Context.Sender;
+            var ownerValue = State.Owner.Value;
+            // test
             State.AscriptionMap[input.TokenSymbol] = input.Receiver;
             Context.Fire(new ChangeAscription
             {

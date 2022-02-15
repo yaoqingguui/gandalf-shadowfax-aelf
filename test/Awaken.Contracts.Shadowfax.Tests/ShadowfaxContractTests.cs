@@ -29,7 +29,7 @@ namespace Awaken.Contracts.Shadowfax
         {
             var stub = await InitializeGame();
             var addr = await stub.Owner.SendAsync(new Empty());
-            addr.Output.ShouldBe(_kitty);
+            addr.Output.ShouldBe(_owner);
         }
 
         [Fact]
@@ -107,7 +107,7 @@ namespace Awaken.Contracts.Shadowfax
             {
                 PublicId = 0,
                 Amount = 2000
-            }))).Message.ShouldContain("Activity id not exist.");
+            }))).Message.ShouldContain("Invalid activity id.");
         }
 
         [Fact]
@@ -308,7 +308,7 @@ namespace Awaken.Contracts.Shadowfax
             (await Assert.ThrowsAsync<Exception>(() => kittyStub.Withdraw.SendAsync(new Int64Value
             {
                 Value = 0
-            }))).Message.ShouldContain("No rights.");
+            }))).Message.ShouldContain("No permission.");
             await Task.Delay(60 * 1000);
 
             var tomStub = GetShadowfaxContractStub(_tomKeyPair);
@@ -372,12 +372,18 @@ namespace Awaken.Contracts.Shadowfax
                     WantTokenSymbol = TokenWantSymbol
                 }))).Message.ShouldContain("Another has published the token before.");
 
+            var owner = await kittyStub.Result.Ascription.CallAsync(new StringValue
+            {
+                Value = TokenOfferSymbol
+            });
+            
             (await Assert.ThrowsAsync<Exception>(() => kittyStub.Result.ChangeAscription.SendAsync(
                 new ChangeAscriptionInput
                 {
                     Receiver = _tom,
                     TokenSymbol = TokenOfferSymbol
-                }))).Message.ShouldContain("No right to assign.");
+                }))).Message.ShouldContain("No permission.");
+            
 
             var tomStub = GetShadowfaxContractStub(_tomKeyPair);
             await tomStub.ChangeAscription.SendAsync(new ChangeAscriptionInput
@@ -434,7 +440,7 @@ namespace Awaken.Contracts.Shadowfax
 
         private async Task ResetTimeSpan()
         {
-            var stub = await GetKittyStub();
+            var stub = GetShadowfaxContractStub(_ownerKeyPair);
             await stub.ResetTimeSpan.SendAsync(new ResetTimeSpanInput
             {
                 MaxTimespan = 1000,
@@ -501,7 +507,7 @@ namespace Awaken.Contracts.Shadowfax
         {
             return GetShadowfaxContractStub(_kittyKeyPair);
         }
-
+        
         private async Task<ShadowfaxContractContainer.ShadowfaxContractStub> InitializeGame()
         {
             _ownerKeyPair = SampleAccount.Accounts.First().KeyPair;
@@ -513,7 +519,7 @@ namespace Awaken.Contracts.Shadowfax
             var stub = GetShadowfaxContractStub(_ownerKeyPair);
             await stub.Initialize.SendAsync(new InitializeInput
             {
-                Owner = _kitty
+                Owner = _owner
             });
             await CreateToken();
             return stub;
