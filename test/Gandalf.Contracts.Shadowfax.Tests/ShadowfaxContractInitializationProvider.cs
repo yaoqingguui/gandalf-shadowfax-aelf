@@ -3,7 +3,7 @@ using AElf.Boilerplate.TestBase;
 using AElf.Kernel.SmartContract.Application;
 using AElf.Types;
 
-namespace Gandalf.Contracts.Shadowfax
+namespace Awaken.Contracts.Shadowfax
 {
     public class ShadowfaxContractInitializationProvider : IContractInitializationProvider
     {
@@ -13,6 +13,6 @@ namespace Gandalf.Contracts.Shadowfax
         }
 
         public Hash SystemSmartContractName { get; } = DAppSmartContractAddressNameProvider.Name;
-        public string ContractCodeName { get; } = "Gandalf.Contracts.Shadowfax";
+        public string ContractCodeName { get; } = "Awaken.Contracts.Shadowfax";
     }
 }

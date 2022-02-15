@@ -1,10 +1,9 @@
-using System.Numerics;
 using AElf.Contracts.MultiToken;
 using AElf.CSharp.Core;
 using AElf.Sdk.CSharp;
 using Google.Protobuf.WellKnownTypes;
 
-namespace Gandalf.Contracts.Shadowfax
+namespace Awaken.Contracts.Shadowfax
 {
     public partial class ShadowfaxContract
     {

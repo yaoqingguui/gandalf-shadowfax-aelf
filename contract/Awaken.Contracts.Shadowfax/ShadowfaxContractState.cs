@@ -1,7 +1,7 @@
 using AElf.Sdk.CSharp.State;
 using AElf.Types;
 
-namespace Gandalf.Contracts.Shadowfax
+namespace Awaken.Contracts.Shadowfax
 {
     public partial class ShadowfaxContractState : ContractState
     {

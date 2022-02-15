@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <RootNamespace>Gandalf.Contracts.Shadowfax</RootNamespace>
+        <RootNamespace>Awaken.Contracts.Shadowfax</RootNamespace>
         <IsContract>true</IsContract>
-        <AssemblyName>Gandalf.Contracts.Shadowfax</AssemblyName>
+        <PackageId>Awaken.Contracts.Shadowfax</PackageId>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
         <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
@@ -12,8 +12,8 @@
         <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
     </PropertyGroup>
     <ItemGroup>
-        <ContractCode Include="..\..\protobuf\gandalf_shadowfax_contract.proto">
-            <Link>Protobuf\Proto\gandalf_shadowfax_contract.proto</Link>
+        <ContractCode Include="..\..\protobuf\awaken_shadowfax_contract.proto">
+            <Link>Protobuf\Proto\awaken_shadowfax_contract.proto</Link>
         </ContractCode>
     </ItemGroup>
     

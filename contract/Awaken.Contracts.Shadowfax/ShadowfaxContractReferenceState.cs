@@ -1,6 +1,6 @@
 using AElf.Contracts.MultiToken;
 
-namespace Gandalf.Contracts.Shadowfax
+namespace Awaken.Contracts.Shadowfax
 {
     public partial class ShadowfaxContractState
     {

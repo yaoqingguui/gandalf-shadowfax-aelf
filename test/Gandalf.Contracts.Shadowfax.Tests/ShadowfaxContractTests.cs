@@ -10,7 +10,7 @@ using Google.Protobuf.WellKnownTypes;
 using Shouldly;
 using Xunit;
 
-namespace Gandalf.Contracts.Shadowfax
+namespace Awaken.Contracts.Shadowfax
 {
     public class ShadowfaxContractTests : ShadowfaxContractTestBase
     {

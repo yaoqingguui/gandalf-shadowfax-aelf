@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Gandalf.Contracts.Shadowfax</RootNamespace>
+    <RootNamespace>Awaken.Contracts.Shadowfax</RootNamespace>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -32,8 +32,8 @@
     </ContractMessage>
   </ItemGroup>
   <ItemGroup>
-    <ContractStub Include="..\..\protobuf\gandalf_shadowfax_contract.proto">
-      <Link>Protobuf\Proto\gandalf_shadowfax_contract.proto</Link>
+    <ContractStub Include="..\..\protobuf\awaken_shadowfax_contract.proto">
+      <Link>Protobuf\Proto\awaken_shadowfax_contract.proto</Link>
     </ContractStub>
     <ContractStub Include="..\..\protobuf\token_contract.proto">
       <Link>Protobuf\Proto\token_contract.proto</Link>
@@ -41,7 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\contract\Gandalf.Contracts.Shadowfax\Gandalf.Contracts.Shadowfax.csproj" />
+    <ProjectReference Include="..\..\contract\Awaken.Contracts.Shadowfax\Awaken.Contracts.Shadowfax.csproj" />
     <ProjectReference Include="..\..\src\AElf.Boilerplate.TestBase\AElf.Boilerplate.TestBase.csproj" />
   </ItemGroup>
 

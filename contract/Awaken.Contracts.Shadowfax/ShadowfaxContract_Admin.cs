@@ -1,6 +1,6 @@
 using Google.Protobuf.WellKnownTypes;
 
-namespace Gandalf.Contracts.Shadowfax
+namespace Awaken.Contracts.Shadowfax
 {
     public partial class ShadowfaxContract
     {

@@ -2,7 +2,7 @@ using AElf.Boilerplate.TestBase;
 using AElf.Contracts.MultiToken;
 using AElf.Cryptography.ECDSA;
 
-namespace Gandalf.Contracts.Shadowfax
+namespace Awaken.Contracts.Shadowfax
 {
     public class ShadowfaxContractTestBase : DAppContractTestBase<ShadowfaxContractTestModule>
     {

@@ -17,7 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\contract\Gandalf.Contracts.Shadowfax\Gandalf.Contracts.Shadowfax.csproj">
+        <ProjectReference Include="..\..\contract\Awaken.Contracts.Shadowfax\Awaken.Contracts.Shadowfax.csproj">
             <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
             <OutputItemType>Contract</OutputItemType>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

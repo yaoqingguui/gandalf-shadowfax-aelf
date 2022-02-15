@@ -49,7 +49,7 @@ namespace AElf.Boilerplate.ShadowfaxContract.Launcher
         private byte[] GetContractCodes()
         {
             return ContractsDeployer.GetContractCodes<DeployContractsSystemTransactionGenerator>(_contractOptions
-                .GenesisContractDir)["Gandalf.Contracts.Shadowfax"];
+                .GenesisContractDir)["Awaken.Contracts.Shadowfax"];
         }
     }
 }

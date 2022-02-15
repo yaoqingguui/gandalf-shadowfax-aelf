@@ -20,7 +20,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AElf.Boilerplate.TestBase",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AElf.Boilerplate.SystemTransactionGenerator", "src\AElf.Boilerplate.SystemTransactionGenerator\AElf.Boilerplate.SystemTransactionGenerator.csproj", "{217599C5-2CF0-411E-97B5-5657739CEE5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gandalf.Contracts.Shadowfax", "contract\Gandalf.Contracts.Shadowfax\Gandalf.Contracts.Shadowfax.csproj", "{AC06E580-EFC8-4D3F-BA4A-B2D2D1F65B9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awaken.Contracts.Shadowfax", "contract\Awaken.Contracts.Shadowfax\Awaken.Contracts.Shadowfax.csproj", "{AC06E580-EFC8-4D3F-BA4A-B2D2D1F65B9F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gandalf.Contracts.Shadowfax.Tests", "test\Gandalf.Contracts.Shadowfax.Tests\Gandalf.Contracts.Shadowfax.Tests.csproj", "{3631B538-C617-4FCE-9C9B-1D1B5F290A7F}"
 EndProject
