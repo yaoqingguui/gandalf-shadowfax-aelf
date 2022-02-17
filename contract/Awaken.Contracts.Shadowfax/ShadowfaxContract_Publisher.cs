@@ -118,7 +118,7 @@ namespace Awaken.Contracts.Shadowfax
 
             Context.Fire(new Withdraw
             {
-                PubilicId = input.Value,
+                PubilcId = input.Value,
                 To = Context.Sender,
                 OfferingToken = surplus,
                 WantToken = offering.WantTokenBalance
