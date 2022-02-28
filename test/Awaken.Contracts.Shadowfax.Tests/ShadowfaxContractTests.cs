@@ -23,7 +23,91 @@ namespace Awaken.Contracts.Shadowfax
 
         private const string TokenOfferSymbol = "PANDA";
         private const string TokenWantSymbol = "CAKE";
+        
+        [Fact]
+        public async Task SpecialCaseTest()
+        {
+            await Initialize();
+            var kittyTokenStub = GetTokenContractStub(_kittyKeyPair);
+            await kittyTokenStub.Create.SendAsync(new CreateInput
+            {
+                Decimals = 8,
+                Issuer = _kitty,
+                Symbol = TokenOfferSymbol,
+                IsBurnable = true,
+                TokenName = TokenOfferSymbol,
+                TotalSupply = 500000_00000000,
+            });
+            await kittyTokenStub.Issue.SendAsync(new IssueInput
+            {
+                Amount = 500000_00000000,
+                Symbol = TokenOfferSymbol,
+                To = _kitty
+            });
 
+            var tomTokenStub = GetTokenContractStub(_tomKeyPair);
+            await tomTokenStub.Create.SendAsync(new CreateInput
+            {
+                Decimals = 8,
+                Symbol = TokenWantSymbol,
+                IsBurnable = true,
+                Issuer = _tom,
+                TokenName = TokenWantSymbol,
+                TotalSupply = 25000_00000000,
+            });
+
+            await tomTokenStub.Issue.SendAsync(new IssueInput
+            {
+                Amount = 25000_00000000,
+                Symbol = TokenWantSymbol,
+                To = _tom
+            });
+
+            await ResetTimeSpan();
+
+            var shadowfaxContractStub = GetShadowfaxContractStub(_kittyKeyPair);
+            await kittyTokenStub.Approve.SendAsync(new ApproveInput
+            {
+                Amount = 500000_00000000,
+                Symbol = TokenOfferSymbol,
+                Spender = DAppContractAddress
+            });
+            
+            var startTime = DateTime.UtcNow.AddSeconds(1).ToTimestamp();
+            var endTime = DateTime.UtcNow.AddSeconds(60).ToTimestamp();
+            await shadowfaxContractStub.AddPublicOffering.SendAsync(new AddPublicOfferingInput
+            {
+                StartTime = startTime,
+                EndTime = endTime,
+                OfferingTokenSymbol = TokenOfferSymbol,
+                OfferingTokenAmount = 500000_00000000,
+                WantTokenSymbol = TokenWantSymbol,
+                WantTokenAmount = 25000_00000000
+            });
+            
+            // invest
+            await Task.Delay(2000);
+            var tomShadowFaxStub = GetShadowfaxContractStub(_tomKeyPair);
+            await tomTokenStub.Approve.SendAsync(new ApproveInput
+            {
+                Amount = 25_00000000,
+                Spender = DAppContractAddress,
+                Symbol = TokenWantSymbol
+            });
+            await tomShadowFaxStub.Invest.SendAsync(new InvestInput
+            {
+                PublicId = 0,
+                Amount = 25_00000000,
+            });
+
+            var userInfo = await tomShadowFaxStub.UserInfo.CallAsync(new UserInfoInput
+            {
+                PublicId = 0,
+                User = _tom
+            });
+            userInfo.ObtainAmount.ShouldBe(50000000000);
+        }
+        
         [Fact]
         public async Task Init_Success_Test()
         {
@@ -510,6 +594,13 @@ namespace Awaken.Contracts.Shadowfax
         
         private async Task<ShadowfaxContractContainer.ShadowfaxContractStub> InitializeGame()
         {
+            var stub = await Initialize();
+            await CreateToken();
+            return stub;
+        }
+        
+        private async Task<ShadowfaxContractContainer.ShadowfaxContractStub> Initialize()
+        {
             _ownerKeyPair = SampleAccount.Accounts.First().KeyPair;
             _owner = Address.FromPublicKey(_ownerKeyPair.PublicKey);
             _kittyKeyPair = SampleAccount.Accounts[1].KeyPair;
@@ -521,7 +612,6 @@ namespace Awaken.Contracts.Shadowfax
             {
                 Owner = _owner
             });
-            await CreateToken();
             return stub;
         }
     }

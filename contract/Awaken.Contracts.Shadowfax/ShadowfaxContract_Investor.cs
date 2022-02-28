@@ -2,6 +2,7 @@ using System;
 using AElf.Contracts.MultiToken;
 using AElf.CSharp.Core;
 using AElf.Sdk.CSharp;
+using AElf.Types;
 using Google.Protobuf.WellKnownTypes;
 
 namespace Awaken.Contracts.Shadowfax
@@ -28,8 +29,11 @@ namespace Awaken.Contracts.Shadowfax
                 To = Context.Self
             });
 
-            var obtainAmount = offering.OfferingTokenAmount.Mul(actualUsed).Div(offering.WantTokenAmount);
-
+            var obtainAmountBigIntValue = new BigIntValue(offering.OfferingTokenAmount).Mul(actualUsed).Div(offering.WantTokenAmount);
+            if (!long.TryParse(obtainAmountBigIntValue.Value,out long obtainAmount))
+            {
+                throw new AssertionException($"Fail to parse {obtainAmountBigIntValue.Value}");
+            }
             var userInfo = State.UserInfoMap[input.PublicId][Context.Sender] ?? new UserInfoStruct();
             userInfo.ObtainAmount = userInfo.ObtainAmount.Add(obtainAmount);
             State.UserInfoMap[input.PublicId][Context.Sender] = userInfo;
